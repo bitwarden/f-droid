@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>bitwarden/renovate-config"],
-  "enabledManagers": ["cargo", "github-actions", "npm", "nuget"],
+  "enabledManagers": ["cargo", "github-actions", "npm", "nuget", "gomod"],
   "packageRules": [
     {
       "groupName": "cargo minor",
@@ -21,6 +21,11 @@
     {
       "groupName": "nuget minor",
       "matchManagers": ["nuget"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "golang minor",
+      "matchManagers": ["gomod"],
       "matchUpdateTypes": ["minor", "patch"]
     }
   ]
