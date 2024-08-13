@@ -22,3 +22,19 @@ Thumbs.db
 # Node
 node_modules
 npm-debug.log
+
+# Secrets
+config.yml
+keystore.p12
+keystore.jks
+
+# F-Droid tools
+fdroid/tmp
+fdroid/repo/status
+fdroid/metadata/**/phoneScreenshots
+
+# Metascoop
+metascoop/metascoop
+config.py
+out.txt
+**.tmp
