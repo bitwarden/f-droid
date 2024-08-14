@@ -71,16 +71,6 @@ jobs:
           --name store_fdroid-keystore.jks fdroid/keystore.p12 --output none \
           --name fdroid-config.yml --file fdroid/config.yml --output none
 
-      - name: Configure F-Droid server
-        env: 
-          FDROID_STORE_KEYSTORE_PASSWORD: ${{ secrets.FDROID_STORE_KEYSTORE_PASSWORD }}
-        run: |
-          chmod 600 fdroid/config.yml
-          echo "keypass: $FDROID_STORE_KEYSTORE_PASSWORD" >> fdroid/config.yml
-          echo "keystorepass: $FDROID_STORE_KEYSTORE_PASSWORD" >> fdroid/config.yml
-          echo "archive_older: 0" >> fdroid/config.yml
-          echo "repo_url: https://raw.githubusercontent.com/bitwarden/fdroid/main/fdroid/repo" >> fdroid/config.yml
-
       - name: Set up Go
         uses: actions/setup-go@0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32 # v5.0.2
         with:
