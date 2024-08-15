@@ -30,15 +30,6 @@ jobs:
          sudo apt-get update
          sudo apt-get install fdroidserver
 
-      - name: Set up Git credentials
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        run: |
-          git config --global credential.helper store
-          echo "https://${ACCESS_TOKEN}:x-oauth-basic@github.com" >> ~/.git-credentials
-          git config --global user.email "ci@bitwarden.com"
-          git config --global user.name "Bitwarden CI"
-
       - name: Login to Azure - CI Subscription
         uses: Azure/login@e15b166166a8746d1a47596803bd8c1b595455cf # v1.6.0
         with:
@@ -56,7 +47,7 @@ jobs:
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@01dd5d3ca463c7f10f7f4f7b4f177225ac661ee4 # v6.1.0
         with:
-          gpg_private_key: ${{ steps.retrive-secrets.outputs.github-gpg-private-key }}
+          gpg_private_key: ${{ steps.retrieve-secrets.outputs.github-gpg-private-key }}
           passphrase: ${{ steps.retrieve-secrets.outputs.github-gpg-private-key-passphrase }}
           git_user_signingkey: true
           git_commit_gpgsign: true
@@ -79,4 +70,4 @@ jobs:
       - name: Run update script
         run: bash update.sh 2>&1
         env:
-          GH_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GH_ACCESS_TOKEN: ${{ GITHUB_TOKEN }}
