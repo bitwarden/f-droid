@@ -119,26 +119,17 @@ func main() {
 
 				log.Printf("Working on release with tag name %q", release.GetTagName())
 				var apk *github.ReleaseAsset
-				
-				if release.GetPrerelease() {
-					if !app.Prerelease {
-						log.Printf("Skipping prerelease build for release application")
-						return false
-					}
 
-					log.Printf("Looking for prerelease asset %s", release.GetName())
-					apk = apps.FindAPKBeta(release)
+				if app.Prerelease {
+				    log.Printf("Looking for pre-release asset %s", release.GetName())
+                    apk = apps.FindAPKBeta(release)
 				} else {
-					if app.Prerelease {
-						log.Printf("Skipping release asset for prerelease application")
-						return false
-					}
-					log.Printf("Looking for production asset %s", release.GetName())
-					apk = apps.FindAPKRelease(release)
+				    log.Printf("Looking for production asset %s", release.GetName())
+                    apk = apps.FindAPKRelease(release)
 				}
-				
+
 				if apk == nil {
-					log.Printf("Couldn't find any F-Droid assets")
+					log.Printf("Couldn't find any F-Droid assets for application %s in %s", app.FriendlyName, release.GetName())
 					return false
 				}
 
