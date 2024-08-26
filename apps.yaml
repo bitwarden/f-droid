@@ -2,15 +2,16 @@ bitwarden:
   git: https://github.com/bitwarden/android
   name: "Bitwarden"
   description: |
-    This repo has the new native Android app, currently in Beta. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.  
+    This repo has the new native Android app. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.
+  filename: "com.x8bit.bitwarden-fdroid.apk"
   categories: 
     - Security
 
 bitwarden-beta:
   git: https://github.com/bitwarden/android
   name: "Bitwarden Beta"
-  prerelease: true
+  filename: "com.x8bit.bitwarden.beta-fdroid.apk"
   description: |
-    This repo has the new native Android app. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.
+    This repo has the new native Android app Beta version. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.
   categories: 
     - Security

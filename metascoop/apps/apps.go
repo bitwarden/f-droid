@@ -25,11 +25,11 @@ type AppInfo struct {
 
 	AntiFeatures []string `yaml:"anti_features"`
 
+	Filename string `yaml:"filename"`
+
 	ReleaseDescription string
 
 	License string
-
-	Prerelease bool `yaml:"prerelease"`
 }
 
 func (a AppInfo) Name() string {
