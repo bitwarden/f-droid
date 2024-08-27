@@ -39,7 +39,7 @@ jobs:
       - name: Login to Azure - CI Subscription
         uses: Azure/login@6c251865b4e6290e7b78be643ea2d005bc51f69a # v2.1.1
         with:
-          cred: ${{ secrets.AZURE_KV_CI_SERVICE_PRINCIPAL }}
+          creds: ${{ secrets.AZURE_KV_CI_SERVICE_PRINCIPAL }}
 
       - name: Retrieve secrets
         id: retrieve-secrets
