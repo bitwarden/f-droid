@@ -1,11 +1,14 @@
+---
 name: Generate F-Droid repo
+
 
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
   schedule:
-  - cron: "45 2 * * *"
+    - cron: "45 2 * * *"
+
 
 jobs:
   apps:
@@ -15,14 +18,16 @@ jobs:
 
     steps:
       - name: Checkout repo
-      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+
 
       - name: Create basic directory structure
         run: mkdir -p fdroid/repo
 
       - name: Restore correct mtime
         run: |
-          sudo apt install git-restore-mtime 
+          sudo apt install git-restore-mtime
+
           git restore-mtime
 
       - name: Install F-Droid server software
@@ -66,9 +71,10 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32 # v5.0.2
         with:
-          go-version: '^1.17.0' 
-        
+          go-version: '^1.17.0'
+
       - name: Run update script
         run: bash update.sh 2>&1
         env:
-          GH_ACCESS_TOKEN: ${{ GITHUB_TOKEN }}
+          GH_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
