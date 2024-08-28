@@ -61,6 +61,14 @@ jobs:
 
       - name: Validate secrets
         run: |
+          if [ -f "fdroid/config.yml" ]; then
+            echo "config downloaded. setting permission to 0600"
+            chmod 0600 fdroid/config.yml
+          else
+            echo "config not downloaded"
+            exit 1
+          fi
+          
           if [ -f "fdroid/keystore.p12" ]; then
             echo "keystore downloaded"
           else
@@ -68,13 +76,6 @@ jobs:
             exit 1
           fi
           
-          if [ -f "fdroid/config.yml" ]; then
-            echo "config downloaded"
-          else
-            echo "config not downloaded"
-            exit 1
-          fi
-
       - name: Install F-Droid server software
         run: |
          sudo add-apt-repository ppa:fdroid/fdroidserver
