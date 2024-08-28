@@ -1,0 +1,40 @@
+{
+  "repo": {
+    "timestamp": 1724857596000,
+    "version": 20002,
+    "name": "Bitwarden F-Droid",
+    "icon": "icon.png",
+    "address": "https://raw.githubusercontent.com/bitwarden/fdroid/main/fdroid/repo",
+    "description": "This is a repository of Bitwarden apps to be used with F-Droid. Applications in this repository are either official binaries built by Bitwarden,  or are binaries built from source by the admin of f-droid.org using the tools on https://gitlab.com/fdroid."
+  },
+  "requests": {
+    "install": [],
+    "uninstall": []
+  },
+  "apps": [
+    {
+      "categories": [
+        "fdroid"
+      ],
+      "suggestedVersionCode": "2147483647",
+      "license": "Unknown",
+      "name": ".DS_Store",
+      "added": 1724857596000,
+      "packageName": "5975f6e10f2572ba31a1335f4535acd6b37a3276cbea238f91ccfc8695da4db1",
+      "lastUpdated": 1724857596000
+    }
+  ],
+  "packages": {
+    "5975f6e10f2572ba31a1335f4535acd6b37a3276cbea238f91ccfc8695da4db1": [
+      {
+        "added": 1724857596000,
+        "apkName": ".DS_Store",
+        "hash": "5975f6e10f2572ba31a1335f4535acd6b37a3276cbea238f91ccfc8695da4db1",
+        "hashType": "sha256",
+        "packageName": "5975f6e10f2572ba31a1335f4535acd6b37a3276cbea238f91ccfc8695da4db1",
+        "size": 8196,
+        "versionName": "5975f6e"
+      }
+    ]
+  }
+}

@@ -62,9 +62,8 @@ jobs:
           ACCOUNT_NAME: bitwardenci
           CONTAINER_NAME: mobile
         run: |
-          mkdir -p $HOME/secrets
           az storage blob download --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME \
-          --name store_fdroid-keystore.jks --file fdroid/keystore.p12 --output none \
+          --name app_fdroid-keystore.jks --file keystore.p12 --output none \
           --name fdroid-config.yml --file fdroid/config.yml --output none
 
       - name: Set up Go
