@@ -20,7 +20,6 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
 
-
       - name: Create basic directory structure
         run: mkdir -p fdroid/repo
 
@@ -29,12 +28,6 @@ jobs:
           sudo apt install git-restore-mtime
 
           git restore-mtime
-
-      - name: Install F-Droid server software
-        run: |
-         sudo add-apt-repository ppa:fdroid/fdroidserver
-         sudo apt-get update
-         sudo apt-get install fdroidserver
 
       - name: Login to Azure - CI Subscription
         uses: Azure/login@6c251865b4e6290e7b78be643ea2d005bc51f69a # v2.1.1
@@ -63,8 +56,30 @@ jobs:
           CONTAINER_NAME: mobile
         run: |
           az storage blob download --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME \
-          --name app_fdroid-keystore.jks --file keystore.p12 --output none \
+          --name app_fdroid-keystore.jks --file fdroid/keystore.p12 --output none \
           --name fdroid-config.yml --file fdroid/config.yml --output none
+
+      - name: Validate secrets
+        run: |
+          if [ -f "fdroid/keystore.p12" ]; then
+            echo "keystore downloaded"
+          else
+            echo "keystore not downloaded"
+            exit 1
+          fi
+          
+          if [ -f "fdroid/config.yml" ]; then
+            echo "config downloaded"
+          else
+            echo "config not downloaded"
+            exit 1
+          fi
+
+      - name: Install F-Droid server software
+        run: |
+         sudo add-apt-repository ppa:fdroid/fdroidserver
+         sudo apt-get update
+         sudo apt-get install fdroidserver
 
       - name: Set up Go
         uses: actions/setup-go@0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32 # v5.0.2
