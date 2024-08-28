@@ -6,6 +6,13 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
+    inputs:
+      dry-run:
+        description: "Skips pushing changes when enabled. Optional. Defaults to false."
+        type: boolean
+        default: false
+        required: false
+
   schedule:
     - cron: "45 2 * * *"
 
@@ -62,17 +69,17 @@ jobs:
       - name: Validate secrets
         run: |
           if [ -f "fdroid/config.yml" ]; then
-            echo "config downloaded. setting permission to 0600"
+            echo "config found. setting permission to 0600"
             chmod 0600 fdroid/config.yml
           else
-            echo "config not downloaded"
+            echo "config not found!"
             exit 1
           fi
           
           if [ -f "fdroid/keystore.p12" ]; then
-            echo "keystore downloaded"
+            echo "keystore found"
           else
-            echo "keystore not downloaded"
+            echo "keystore not found!"
             exit 1
           fi
           
@@ -88,7 +95,7 @@ jobs:
           go-version: '^1.17.0'
 
       - name: Run update script
-        run: bash update.sh 2>&1
         env:
           GH_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+        run: |
+          bash update.sh --dry-run ${{ inputs.dry_run }}
