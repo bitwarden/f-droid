@@ -3,8 +3,6 @@ name: Generate F-Droid repo
 
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
     inputs:
       dry-run:
