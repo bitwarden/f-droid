@@ -168,7 +168,7 @@ func main() {
 				log.Printf("Successfully downloaded app for version %q", release.GetTagName())
 				return true
 			}() 
-			// Stop after the first [release] of this [app] is downloaded to prevent backfilling legacy releases.
+			// Stop after the first [release] of this [app] is downloaded to prevent back-filling legacy releases.
 			if isReleaseDownloaded {
 				break
 			}
