@@ -13,5 +13,5 @@ bitwarden-beta:
   filename: "com.x8bit.bitwarden.beta-fdroid.apk"
   description: |
     This repo has the new native Android app Beta version. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.
-  categories: 
+  categories:
     - Security

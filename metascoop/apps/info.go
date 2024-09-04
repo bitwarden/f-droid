@@ -12,13 +12,13 @@ import (
 	"golang.org/x/text/unicode/norm"
 )
 
-func FindAPK(release* github.RepositoryRelease, fileName string) *github.ReleaseAsset {
+func FindAPK(release *github.RepositoryRelease, filename string) *github.ReleaseAsset {
 	for _, asset := range release.Assets {
 		if asset.State == nil || *asset.State != "uploaded" {
 			continue
 		}
 
-		if asset.Name != nil && asset.Name == filename {
+		if asset.Name != nil && asset.GetName() == filename {
 			return asset
 		}
 	}

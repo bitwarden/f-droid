@@ -118,12 +118,10 @@ func main() {
 				}
 
 				log.Printf("Working on release with tag name %q", release.GetTagName())
-				var apk *github.ReleaseAsset
-
-                apk = apps.FindAPK(app.Filename)
+				var apk *github.ReleaseAsset = apps.FindAPK(release, app.Filename)
 
 				if apk == nil {
-					log.Printf("Couldn't find any F-Droid assets for application %s in %s with file name %s", app.FriendlyName, release.GetName(), app.FileName)
+					log.Printf("Couldn't find any F-Droid assets for application %s in %s with file name %s", app.FriendlyName, release.GetName(), app.Filename)
 					return false
 				}
 
@@ -142,7 +140,7 @@ func main() {
 
 				appTargetPath := filepath.Join(*repoDir, appName)
 
-				// If the app file already exists for this version, we continue
+				// If the app file already exists for this version, we stop processing this app and move to the next
 				if _, err := os.Stat(appTargetPath); !errors.Is(err, os.ErrNotExist) {
 					log.Printf("Already have APK for version %q at %q", release.GetTagName(), appTargetPath)
 					return true
@@ -170,7 +168,7 @@ func main() {
 				log.Printf("Successfully downloaded app for version %q", release.GetTagName())
 				return true
 			}() 
-			// Stop after the first [release] of this [app] is downloaded to prevent backfilling legacy releases.
+			// Stop after the first [release] of this [app] is downloaded to prevent back-filling legacy releases.
 			if isReleaseDownloaded {
 				break
 			}
