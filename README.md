@@ -5,7 +5,9 @@ This repository hosts an [F-Droid](https://f-droid.org/) repo for Bitwarden apps
 
 <!-- This table is auto-generated. Do not edit -->
 | Icon | Name | Description | Version |
-|------|------|-------------|---------|
+| --- | --- | --- | --- |
+| <a href="https://github.com/bitwarden/android"><img src="fdroid/repo/icons/" alt="Bitwarden icon" width="36px" height="36px"></a> | [**Bitwarden**](https://github.com/bitwarden/android) | Bitwarden mobile app for Android. | 2024.8.1 (19099) |
+| <a href="https://github.com/bitwarden/android"><img src="fdroid/repo/icons/" alt="Bitwarden Beta icon" width="36px" height="36px"></a> | [**Bitwarden Beta**](https://github.com/bitwarden/android) | Bitwarden mobile app for Android. | 2024.8.1 (19099) |
 <!-- end apps table -->
 
 ### How to use
