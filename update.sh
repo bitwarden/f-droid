@@ -59,10 +59,8 @@ elif [ $EXIT_CODE -eq 0 ]; then
         echo "Performing a dry run (no actual push)"
     else
       echo "Pushing changes..."
-      git config --local user.name 'Bitwarden CI'
-      git config --local user.email 'ci@bitwarden.com'
       git add .
-      git commit -m"Automated update"
+      git commit -m "Automated update"
       git push
     fi
 else
