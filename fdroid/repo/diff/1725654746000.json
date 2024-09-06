@@ -1,0 +1,39 @@
+{
+  "repo": {
+    "timestamp": 1725654769000
+  },
+  "packages": {
+    "com.x8bit.bitwarden": {
+      "metadata": {
+        "categories": [
+          "Security"
+        ],
+        "license": "GPL-3.0",
+        "sourceCode": "https://github.com/bitwarden/android",
+        "authorName": "bitwarden",
+        "summary": {
+          "en-US": "Bitwarden mobile app for Android."
+        },
+        "description": {
+          "en-US": "This repo has the new native Android app. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.\n"
+        }
+      }
+    },
+    "com.x8bit.bitwarden.beta": {
+      "metadata": {
+        "categories": [
+          "Security"
+        ],
+        "license": "GPL-3.0",
+        "sourceCode": "https://github.com/bitwarden/android",
+        "authorName": "bitwarden",
+        "summary": {
+          "en-US": "Bitwarden mobile app for Android."
+        },
+        "description": {
+          "en-US": "This repo has the new native Android app Beta version. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.\n"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+AuthorName: bitwarden
+Categories:
+    - Security
+CurrentVersion: 2024.8.1
+CurrentVersionCode: 19099
+Description: |
+    This repo has the new native Android app. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.
+IssueTracker: ""
+License: GPL-3.0
+Name: Bitwarden
+SourceCode: https://github.com/bitwarden/android
+Summary: Bitwarden mobile app for Android.
+WebSite: ""
