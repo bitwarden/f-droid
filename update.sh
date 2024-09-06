@@ -68,11 +68,10 @@ elif [ $EXIT_CODE -eq 0 ]; then
         --base main \
         --label "automated pr" \
         --body "
-            ## Objective
-            Automated update of Bitwarden F-droid applications to the latest version.")
-      gh pr merge $PR_URL --squash --auto --delete-branch
-      gh pr review $PR_URL --approve
+        ## Objective
+        Automated update of Bitwarden F-droid applications to the latest version.")
       echo "pr_number=${PR_URL##*/}"
+      gh pr merge $PR_URL --squash --admin --delete-branch
     fi
 else
     echo "This is an unexpected error"
