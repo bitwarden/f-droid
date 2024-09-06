@@ -103,5 +103,6 @@ jobs:
       - name: Run update script
         env:
           GH_ACCESS_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
+          GH_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
         run: |
           bash update.sh --dry-run ${{ inputs.dry-run }}
