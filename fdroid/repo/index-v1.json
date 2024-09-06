@@ -1,11 +1,11 @@
 {
   "repo": {
-    "timestamp": 1724857596000,
+    "timestamp": 1725655143000,
     "version": 20002,
     "name": "Bitwarden F-Droid",
     "icon": "icon.png",
     "address": "https://raw.githubusercontent.com/bitwarden/fdroid/main/fdroid/repo",
-    "description": "This is a repository of Bitwarden apps to be used with F-Droid. Applications in this repository are either official binaries built by Bitwarden,  or are binaries built from source by the admin of f-droid.org using the tools on https://gitlab.com/fdroid."
+    "description": "This is a repository of Bitwarden apps to be used with F-Droid. Applications in this repository are official binaries built by Bitwarden."
   },
   "requests": {
     "install": [],
@@ -13,27 +13,189 @@
   },
   "apps": [
     {
+      "authorName": "bitwarden",
       "categories": [
-        "fdroid"
+        "Security"
       ],
-      "suggestedVersionCode": "2147483647",
-      "license": "Unknown",
-      "name": ".DS_Store",
-      "added": 1724857596000,
-      "packageName": "5975f6e10f2572ba31a1335f4535acd6b37a3276cbea238f91ccfc8695da4db1",
-      "lastUpdated": 1724857596000
+      "suggestedVersionName": "2024.8.1",
+      "suggestedVersionCode": "19099",
+      "description": "This repo has the new native Android app. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.\n",
+      "license": "GPL-3.0",
+      "name": "Bitwarden",
+      "sourceCode": "https://github.com/bitwarden/android",
+      "summary": "Bitwarden mobile app for Android.",
+      "added": 1725655121000,
+      "packageName": "com.x8bit.bitwarden",
+      "lastUpdated": 1725655121000,
+      "localized": {
+        "en-US": {
+          "whatsNew": "## What's Changed\n* [PM-10065] Use appropriate back behavior depending on how you are take to auth approval screen by @dseverns-livefront in https://github.com/bitwarden/android/pull/3695\n* PM-10729: Add a helper method for determining if the app is in portrait orientation by @david-livefront in https://github.com/bitwarden/android/pull/3698\n* Fix a minor parcelable warning by @david-livefront in https://github.com/bitwarden/android/pull/3701\n* [PM-9833] Allow passkey deletion edit view by @LRNc"
+        }
+      }
+    },
+    {
+      "authorName": "bitwarden",
+      "categories": [
+        "Security"
+      ],
+      "suggestedVersionName": "2024.8.1",
+      "suggestedVersionCode": "19099",
+      "description": "This repo has the new native Android app Beta version. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.\n",
+      "license": "GPL-3.0",
+      "name": "Bitwarden Beta",
+      "sourceCode": "https://github.com/bitwarden/android",
+      "summary": "Bitwarden mobile app for Android.",
+      "added": 1725655120000,
+      "packageName": "com.x8bit.bitwarden.beta",
+      "lastUpdated": 1725655120000,
+      "localized": {
+        "en-US": {
+          "whatsNew": "## What's Changed\n* [PM-10065] Use appropriate back behavior depending on how you are take to auth approval screen by @dseverns-livefront in https://github.com/bitwarden/android/pull/3695\n* PM-10729: Add a helper method for determining if the app is in portrait orientation by @david-livefront in https://github.com/bitwarden/android/pull/3698\n* Fix a minor parcelable warning by @david-livefront in https://github.com/bitwarden/android/pull/3701\n* [PM-9833] Allow passkey deletion edit view by @LRNc"
+        }
+      }
     }
   ],
   "packages": {
-    "5975f6e10f2572ba31a1335f4535acd6b37a3276cbea238f91ccfc8695da4db1": [
+    "com.x8bit.bitwarden": [
       {
-        "added": 1724857596000,
-        "apkName": ".DS_Store",
-        "hash": "5975f6e10f2572ba31a1335f4535acd6b37a3276cbea238f91ccfc8695da4db1",
+        "added": 1725655121000,
+        "apkName": "bitwarden_v2024.8.1.apk",
+        "hash": "5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5",
         "hashType": "sha256",
-        "packageName": "5975f6e10f2572ba31a1335f4535acd6b37a3276cbea238f91ccfc8695da4db1",
-        "size": 8196,
-        "versionName": "5975f6e"
+        "minSdkVersion": 29,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi",
+          "armeabi-v7a",
+          "mips",
+          "mips64",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "com.x8bit.bitwarden",
+        "sig": "4eca64d92c5726e95b1fcf98e8feef4c",
+        "signer": "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90",
+        "size": 71265987,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.USE_BIOMETRIC",
+            null
+          ],
+          [
+            "android.permission.NFC",
+            null
+          ],
+          [
+            "android.permission.CAMERA",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.USE_FINGERPRINT",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 19099,
+        "versionName": "2024.8.1"
+      }
+    ],
+    "com.x8bit.bitwarden.beta": [
+      {
+        "added": 1725655120000,
+        "apkName": "bitwarden-beta_v2024.8.1.apk",
+        "hash": "f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370",
+        "hashType": "sha256",
+        "minSdkVersion": 29,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi",
+          "armeabi-v7a",
+          "mips",
+          "mips64",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "com.x8bit.bitwarden.beta",
+        "sig": "7619526d81e6c4f0fa16ccaef4bb11f4",
+        "signer": "3c8f03c4225bc173812def564f7ae8a1b3ef34f1bbdcc8748dadc39eb0a69f74",
+        "size": 71267419,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.USE_BIOMETRIC",
+            null
+          ],
+          [
+            "android.permission.NFC",
+            null
+          ],
+          [
+            "android.permission.CAMERA",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.USE_FINGERPRINT",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "com.x8bit.bitwarden.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 19099,
+        "versionName": "2024.8.1"
       }
     ]
   }

@@ -1,0 +1,117 @@
+## What's Changed
+* [PM-10065] Use appropriate back behavior depending on how you are take to auth approval screen by @dseverns-livefront in https://github.com/bitwarden/android/pull/3695
+* PM-10729: Add a helper method for determining if the app is in portrait orientation by @david-livefront in https://github.com/bitwarden/android/pull/3698
+* Fix a minor parcelable warning by @david-livefront in https://github.com/bitwarden/android/pull/3701
+* [PM-9833] Allow passkey deletion edit view by @LRNcardozoWDF in https://github.com/bitwarden/android/pull/3654
+* [PM-10618] MP guidance screen with info and clickable card to navigate … by @dseverns-livefront in https://github.com/bitwarden/android/pull/3697
+* PM-10621: Add the SetupUnlockScreen by @david-livefront in https://github.com/bitwarden/android/pull/3699
+* Add logic for biometric unlock to SetupUnlockScreen by @david-livefront in https://github.com/bitwarden/android/pull/3702
+* Autosync Crowdin Translations by @github-actions in https://github.com/bitwarden/android/pull/3703
+* Allow the ShowShareSheet event to be launched after the screen is paused by @david-livefront in https://github.com/bitwarden/android/pull/3706
+* PM-10628: Add pin unlock to SetupUnlockViewModel by @david-livefront in https://github.com/bitwarden/android/pull/3709
+* [PM-6702] 1# Add service calls for email verification by @andrebispo5 in https://github.com/bitwarden/android/pull/3617
+* PM-10071 ensure that lowercase letters take priority over the upperca… by @dseverns-livefront in https://github.com/bitwarden/android/pull/3707
+* Add helper method for standardizing margins by @david-livefront in https://github.com/bitwarden/android/pull/3712
+* [PM-10697] Auto-focus on PIN Dialog field by @SaintPatrck in https://github.com/bitwarden/android/pull/3713
+* PM-10243: Update carousel text by @david-livefront in https://github.com/bitwarden/android/pull/3714
+* PM-10620 prevent account lockout tips screen by @dseverns-livefront in https://github.com/bitwarden/android/pull/3711
+* [PM-10696] Dismiss vault unlock keyboard by @SaintPatrck in https://github.com/bitwarden/android/pull/3718
+* PM-10118: Remember generator types by @shannon-livefront in https://github.com/bitwarden/android/pull/3708
+* [PM-6702] 2# Region load in complete registration step by @andrebispo5 in https://github.com/bitwarden/android/pull/3618
+* PM-10835: Make config request after environment update by @david-livefront in https://github.com/bitwarden/android/pull/3720
+* PM-8522: Fix vault tab nav bar title when logging in by @shannon-livefront in https://github.com/bitwarden/android/pull/3710
+* PM-10619 screen to generate master password by @dseverns-livefront in https://github.com/bitwarden/android/pull/3721
+* PM-10855: Update the minimum SDK to API 29 (Android 10) by @david-livefront in https://github.com/bitwarden/android/pull/3723
+* PM-10878: Access parcelable data in a safe manor across SDK versions by @david-livefront in https://github.com/bitwarden/android/pull/3727
+* [PM-10664] Display server error message during 2FA login by @SaintPatrck in https://github.com/bitwarden/android/pull/3719
+* PM-10874: Fix biometrics auto-prompt by @shannon-livefront in https://github.com/bitwarden/android/pull/3728
+* PM-10851 make the default top app bar reactive  by @dseverns-livefront in https://github.com/bitwarden/android/pull/3726
+* Remove API specific autofill configuration file by @david-livefront in https://github.com/bitwarden/android/pull/3730
+* PM-10894: Add flag for disabling remote feature flag configuration by @david-livefront in https://github.com/bitwarden/android/pull/3729
+* Fix a failing test by @david-livefront in https://github.com/bitwarden/android/pull/3734
+* Update WorkManager to 2.9.1 by @david-livefront in https://github.com/bitwarden/android/pull/3737
+* Remove unused dangerfile by @david-livefront in https://github.com/bitwarden/android/pull/3735
+* Update to AGP 8.5.2 by @david-livefront in https://github.com/bitwarden/android/pull/3736
+* Add logging for SDK functionality in debug only by @david-livefront in https://github.com/bitwarden/android/pull/3738
+* [PM-6702] 3# Open app from App Link to CompleteRegistration by @andrebispo5 in https://github.com/bitwarden/android/pull/3619
+* PM-10909: Add persistance layer for usersKeyConnector by @david-livefront in https://github.com/bitwarden/android/pull/3740
+* All booleans stored are nullable for consistency by @david-livefront in https://github.com/bitwarden/android/pull/3747
+* [PM-6702] 4# Start registration screen by @andrebispo5 in https://github.com/bitwarden/android/pull/3620
+* [PM-6702] 5# Check your email screen by @andrebispo5 in https://github.com/bitwarden/android/pull/3621
+* PM-10936: Add account apis for key connectors by @david-livefront in https://github.com/bitwarden/android/pull/3748
+* Add helper function for static retrofit instances by @david-livefront in https://github.com/bitwarden/android/pull/3749
+* PM-10954: Add network APIs for key-connector by @david-livefront in https://github.com/bitwarden/android/pull/3752
+* PM-10956: Add support for leave organization API by @david-livefront in https://github.com/bitwarden/android/pull/3754
+* PM-10874: Prompt for biometrics after switching accounts by @shannon-livefront in https://github.com/bitwarden/android/pull/3753
+* Rename APIs for extra specificity by @david-livefront in https://github.com/bitwarden/android/pull/3755
+* [PM-6702] 6# Complete registration screen by @andrebispo5 in https://github.com/bitwarden/android/pull/3622
+* Autosync Crowdin Translations by @github-actions in https://github.com/bitwarden/android/pull/3756
+* Simplify error responses by @david-livefront in https://github.com/bitwarden/android/pull/3762
+* [deps]: Update gh minor by @renovate in https://github.com/bitwarden/android/pull/3758
+* [deps]: Update gradle/actions action to v4 by @renovate in https://github.com/bitwarden/android/pull/3759
+* [deps]: Lock file maintenance by @renovate in https://github.com/bitwarden/android/pull/3760
+* [PM-10884] Catch ProviderException when generating a secure key by @SaintPatrck in https://github.com/bitwarden/android/pull/3733
+* PM-10986 explicitly keep AuthenticatedKeyConnectionApi to prevent cla… by @dseverns-livefront in https://github.com/bitwarden/android/pull/3765
+* [deps]: Lock file maintenance by @renovate in https://github.com/bitwarden/android/pull/3772
+* [PM-10883] Support deserializing Forward Email service type details by @SaintPatrck in https://github.com/bitwarden/android/pull/3739
+* [deps]: Update kotlin by @renovate in https://github.com/bitwarden/android/pull/3770
+* [deps]: Update gradle minor by @renovate in https://github.com/bitwarden/android/pull/3771
+* Apply formatter to the app by @david-livefront in https://github.com/bitwarden/android/pull/3777
+* [PM-10282] Default to last active account for passkey creation by @SaintPatrck in https://github.com/bitwarden/android/pull/3780
+* PM-10954: Update the key connector APIs to use the correct url and responses by @david-livefront in https://github.com/bitwarden/android/pull/3781
+* Update to the latest Bitwarden SDK by @david-livefront in https://github.com/bitwarden/android/pull/3779
+* PM-11140: Update hasMasterPassword logic for key connectors by @david-livefront in https://github.com/bitwarden/android/pull/3775
+* [PM-10282] Update build artifact names by @SaintPatrck in https://github.com/bitwarden/android/pull/3774
+* [Pm 10616] create account start design by @dseverns-livefront in https://github.com/bitwarden/android/pull/3751
+* [PM-9933] Update marketing copy by @andrebispo5 in https://github.com/bitwarden/android/pull/3778
+* [deps]: Update github/codeql-action action to v3.26.3 by @renovate in https://github.com/bitwarden/android/pull/3784
+* [deps]: Update sonarsource/sonarcloud-github-action action to v3 by @renovate in https://github.com/bitwarden/android/pull/3785
+* [deps]: Lock file maintenance by @renovate in https://github.com/bitwarden/android/pull/3786
+* PM-11154: Create basic Remove Master Password UI by @david-livefront in https://github.com/bitwarden/android/pull/3782
+* Update public suffix list by @withinfocus in https://github.com/bitwarden/android/pull/3790
+* PM-11223: Enable remote confg for email verification feature by @david-livefront in https://github.com/bitwarden/android/pull/3792
+* PM-11192 update check email screen to new design by @dseverns-livefront in https://github.com/bitwarden/android/pull/3788
+* PM-11236: Add build type and flavor to the user agent by @david-livefront in https://github.com/bitwarden/android/pull/3797
+* PM-11226: Wrap Key Connector APIs by @david-livefront in https://github.com/bitwarden/android/pull/3794
+* Fix IllegalArgumentException in test by @david-livefront in https://github.com/bitwarden/android/pull/3799
+* PM-11248: Add isUsingKeyConnector flag to UserState by @david-livefront in https://github.com/bitwarden/android/pull/3798
+* PM-11155: Add logic for handling remove password flow by @david-livefront in https://github.com/bitwarden/android/pull/3801
+* PM-10617 + PM-10637 update complete registration screen to match new onboarding design by @dseverns-livefront in https://github.com/bitwarden/android/pull/3787
+* PM-11256: Add RootNav logic to display Remove Password Screen by @david-livefront in https://github.com/bitwarden/android/pull/3803
+* PM-11254: Add logic for logging in with Key Connector by @david-livefront in https://github.com/bitwarden/android/pull/3802
+* PM-10617 modify pw strength indicator to show min chars if required. by @dseverns-livefront in https://github.com/bitwarden/android/pull/3793
+* Simplify common login helper methods by @david-livefront in https://github.com/bitwarden/android/pull/3805
+* PM-11264: Ensure user has valid timeout action after migrating to Key Connector by @david-livefront in https://github.com/bitwarden/android/pull/3807
+* PM-10917: Fix crash caused when adding an item from a collection by @david-livefront in https://github.com/bitwarden/android/pull/3809
+* [PM-11270] Hide all new UI behind onboarding flow flag. by @dseverns-livefront in https://github.com/bitwarden/android/pull/3810
+* PM-11265: Remove the leave organization API by @david-livefront in https://github.com/bitwarden/android/pull/3811
+* PM-11273: Update the 'useKeyConnector' with 'keyConnectorEnabled' by @david-livefront in https://github.com/bitwarden/android/pull/3813
+* [PM-6702] AppLink new redirect path by @andrebispo5 in https://github.com/bitwarden/android/pull/3814
+* Autosync Crowdin Translations by @github-actions in https://github.com/bitwarden/android/pull/3815
+* Minor formatting an import cleanup by @david-livefront in https://github.com/bitwarden/android/pull/3819
+* PM-11299: Update the userState to properly parse the hasManageResetPasswordPermission flag by @david-livefront in https://github.com/bitwarden/android/pull/3820
+* [PM-11270] hide new UI in complete registration screen behind flag pt. 2 by @dseverns-livefront in https://github.com/bitwarden/android/pull/3812
+* PM-10899: Fix user not being logged out properly on app restart by @david-livefront in https://github.com/bitwarden/android/pull/3822
+* PM-10692 pass a generated password back to the complete registration … by @dseverns-livefront in https://github.com/bitwarden/android/pull/3806
+* [PM-9818][PM-9819] Add My Vault and Password Generator Quick Settings tiles by @mpbw2 in https://github.com/bitwarden/android/pull/3764
+* Simplify manual unlock check by @david-livefront in https://github.com/bitwarden/android/pull/3824
+* [PM-10685] Support keyboard Done event as CTA Unlock on Pin\Master Password unlock screen by @qwexter in https://github.com/bitwarden/android/pull/3691
+* [PM-11307] Fix typo in method name: shouldShouldRequestPermissionRationale by @duquewu in https://github.com/bitwarden/android/pull/3821
+* Update the compose BOM (2024.08.00) by @david-livefront in https://github.com/bitwarden/android/pull/3830
+* PM-10899: Only display the TDE UI if a selection has not yet been made by @david-livefront in https://github.com/bitwarden/android/pull/3823
+* Update Firebase BOM to 33.2.0 by @david-livefront in https://github.com/bitwarden/android/pull/3832
+* Carousel buttons should be full width by @david-livefront in https://github.com/bitwarden/android/pull/3833
+* Update internal BitwardenTextButton padding to be consistent with all Bitwarden Buttons by @david-livefront in https://github.com/bitwarden/android/pull/3834
+* PM-11354: TDE unlock since we already have the correct key from the identity service by @david-livefront in https://github.com/bitwarden/android/pull/3835
+* PM-11394 String parse issue with app link by @dseverns-livefront in https://github.com/bitwarden/android/pull/3839
+* PM-11310 handle email registration special circumstance after successful login by @dseverns-livefront in https://github.com/bitwarden/android/pull/3831
+* [PM-10902] Base64 encode sensitive 2FA nav args by @SaintPatrck in https://github.com/bitwarden/android/pull/3841
+* [PM-10762] Remove Passkey button should be hidden when I have Can View permission by @LRNcardozoWDF in https://github.com/bitwarden/android/pull/3829
+* PM-11224 Add menu to update feature flags with overridden values in real time by @dseverns-livefront in https://github.com/bitwarden/android/pull/3838
+* PM-11387 on new create account with email verification, attempt login… by @dseverns-livefront in https://github.com/bitwarden/android/pull/3842
+
+## New Contributors
+* @duquewu made their first contribution in https://github.com/bitwarden/android/pull/3821
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2024.8.0...v2024.8.1
+**Builds source**: https://github.com/bitwarden/android/actions/runs/10620322142
