@@ -38,7 +38,7 @@ cd metascoop
 echo "::group::Building metascoop executable"
 go build -o metascoop
 echo "::endgroup::"
-./metascoop -ap=../apps.yaml -rd=../fdroid/repo -pat="$ACCESS_TOKEN"
+./metascoop -ap=../apps.yaml -rd=../fdroid/repo -pat="$GH_ACCESS_TOKEN"
 EXIT_CODE=$?
 cd ..
 
@@ -60,8 +60,19 @@ elif [ $EXIT_CODE -eq 0 ]; then
     else
       echo "Pushing changes..."
       git add .
-      git commit -m "Automated update"
-      git push
+      git checkout -b update_fdroid_apps
+      git commit -m "Automated Bitwarden F-droid repo update"
+      git push -f -u origin update_fdroid_apps
+      echo "Creating PR..."
+      PR_URL=$(gh pr create --title "Automated Bitwarden F-droid repo update" \
+        --base main \
+        --label "automated pr" \
+        --body "
+            ## Objective
+            Automated update of Bitwarden F-droid applications to the latest version.")
+      gh pr merge $PR_URL --squash --auto --delete-branch
+      gh pr review $PR_URL --approve
+      echo "pr_number=${PR_URL##*/}"
     fi
 else
     echo "This is an unexpected error"
