@@ -74,6 +74,8 @@ func main() {
 		toRemovePathsMutex sync.Mutex
 	)
 
+	// Track if changes are detected that will require re-generating metadata
+	regenerateMetadata := false
 	for _, repo := range reposList {
 		fmt.Printf("::group::Repo: %s/%s\n", repo.Author, repo.Identifier)
 
@@ -89,7 +91,7 @@ func main() {
 		for _, app := range repo.Applications {
 			fmt.Printf("::group::App %s\n", app.Name)
 
-			downloaded := false
+			foundArtifact := false
 
 			for _, release := range releases {
 				fmt.Printf("::group::Release %s\n", release.GetTagName())
@@ -131,7 +133,7 @@ func main() {
 				// If the app file already exists for this version, we stop processing this app and move to the next
 				if _, err := os.Stat(appTargetPath); !errors.Is(err, os.ErrNotExist) {
 					log.Printf("Already have APK for version %q at %q\n", release.GetTagName(), appTargetPath)
-					downloaded = true
+					foundArtifact = true
 					break
 				}
 
@@ -156,10 +158,11 @@ func main() {
 
 				log.Printf("Successfully downloaded app for version %q", release.GetTagName())
 				fmt.Printf("::endgroup:App %s\n", app.Name)
+				regenerateMetadata = true
 				break
 
 			}
-			if downloaded || haveError {
+			if foundArtifact || haveError {
 				// Stop after the first [release] of this [app] is downloaded to prevent back-filling legacy releases.
 				break
 			}
@@ -170,6 +173,11 @@ func main() {
 
 	if haveError {
 		os.Exit(1)
+	}
+
+	if !regenerateMetadata {
+		log.Printf("No changes detected.")
+		os.Exit(2)
 	}
 
 	if !*debugMode {
