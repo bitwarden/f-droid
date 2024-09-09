@@ -13,7 +13,6 @@ import (
 	"os/exec"
 	"path/filepath"
 	"strings"
-	"sync"
 	"time"
 
 	"metascoop/apps"
@@ -69,9 +68,7 @@ func main() {
 	var (
 		haveError          bool
 		apkInfoMap         = make(map[string]apps.Application)
-		apkInfoMapMutex    sync.Mutex
 		toRemovePaths      []string
-		toRemovePathsMutex sync.Mutex
 	)
 
 	// Track if changes are detected that will require re-generating metadata
@@ -124,9 +121,7 @@ func main() {
 					log.Printf("Release notes: \n%s\n", appClone.ReleaseDescription)
 				}
 
-				apkInfoMapMutex.Lock()
 				apkInfoMap[appName] = appClone
-				apkInfoMapMutex.Unlock()
 
 				appTargetPath := filepath.Join(*repoDir, appName)
 
@@ -369,9 +364,7 @@ func main() {
 				sccounter++
 			}
 
-			toRemovePathsMutex.Lock()
 			toRemovePaths = append(toRemovePaths, screenshotsPath)
-			toRemovePathsMutex.Unlock()
 
 			return nil
 		}()
