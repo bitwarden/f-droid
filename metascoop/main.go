@@ -77,7 +77,7 @@ func main() {
 	// Track if changes are detected that will require re-generating metadata
 	regenerateMetadata := false
 	for _, repo := range reposList {
-		fmt.Printf("::group::Repo: %s/%s\n", repo.Author, repo.Identifier)
+		fmt.Printf("::group::Repo: %s/%s\n", repo.Owner, repo.Name)
 
 		err, releases := getRepositoryReleases(githubClient, repo)
 		if err != nil {
@@ -142,7 +142,7 @@ func main() {
 				downloadContext, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
 				defer cancel()
 
-				appStream, _, err := githubClient.Repositories.DownloadReleaseAsset(downloadContext, repo.Author, repo.Identifier, apk.GetID(), http.DefaultClient)
+				appStream, _, err := githubClient.Repositories.DownloadReleaseAsset(downloadContext, repo.Owner, repo.Name, apk.GetID(), http.DefaultClient)
 				if err != nil {
 					log.Printf("Error while downloading app %q (artifact id %d) from from release %q: %s", repo.GitURL, apk.GetID(), release.GetTagName(), err.Error())
 					haveError = true
@@ -168,7 +168,7 @@ func main() {
 			}
 		}
 
-		fmt.Printf("::endgroup::Repo: %s/%s\n", repo.Author, repo.Identifier)
+		fmt.Printf("::endgroup::Repo: %s/%s\n", repo.Owner, repo.Name)
 	}
 
 	if haveError {
@@ -245,8 +245,9 @@ func main() {
 			// Now update with some info
 			for _, repo := range reposList {
 				if repoHasApp(repo, latestPackage.PackageName) {
-					setNonEmpty(meta, "AuthorName", repo.Author)
+					setNonEmpty(meta, "AuthorName", repo.Owner)
 					setNonEmpty(meta, "License", repo.License)
+					setNonEmpty(meta, "SourceCode", repo.GitURL)
 
 					summary := repo.Summary
 					// See https://f-droid.org/en/docs/Build_Metadata_Reference/#Summary for max length
@@ -266,7 +267,6 @@ func main() {
 				fn = apkInfo.Id
 			}
 			setNonEmpty(meta, "Name", fn)
-			setNonEmpty(meta, "SourceCode", apkInfo.GitURL)
 			setNonEmpty(meta, "Description", apkInfo.Description)
 
 			if len(apkInfo.Categories) != 0 {
@@ -465,8 +465,8 @@ func main() {
 }
 
 func getRepositoryReleases(githubClient *github.Client, repo apps.Repo) (error, []*github.RepositoryRelease) {
-	log.Printf("Looking up %s/%s on GitHub", repo.Author, repo.Identifier)
-	gitHubRepo, _, err := githubClient.Repositories.Get(context.Background(), repo.Author, repo.Identifier)
+	log.Printf("Looking up %s/%s on GitHub", repo.Owner, repo.Name)
+	gitHubRepo, _, err := githubClient.Repositories.Get(context.Background(), repo.Owner, repo.Name)
 	if err != nil {
 		log.Printf("Error while looking up repo: %s", err.Error())
 	} else {
@@ -479,7 +479,7 @@ func getRepositoryReleases(githubClient *github.Client, repo apps.Repo) (error, 
 		log.Printf("Data from GitHub: summary=%q, license=%q", repo.Summary, repo.License)
 	}
 
-	releases, err := apps.ListAllReleases(githubClient, repo.Author, repo.Identifier)
+	releases, err := apps.ListAllReleases(githubClient, repo.Owner, repo.Name)
 	return err, releases
 }
 

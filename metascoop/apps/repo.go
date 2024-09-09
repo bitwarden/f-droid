@@ -17,23 +17,18 @@ type Application struct {
 	Id           string   `yaml:"id"`
 	Name         string   `yaml:"name"`
 
-	RepoAuthor         string
 	ReleaseDescription string
-	GitURL             string
-	RepoLicense        string
 }
 type Repo struct {
 	GitURL       string        `yaml:"git"`
-	Identifier   string        `yaml:"identifier"`
-	Name         string        `yaml:"name"`
 	Summary      string        `yaml:"summary"`
 	Applications []Application `yaml:"applications"`
 
-	Author  string
+	Owner   string
+	Name	string
 	Host    string
 	License string
 }
-
 func ParseRepoFile(filepath string) (list []Repo, err error) {
 	f, err := os.Open(filepath)
 	if err != nil {
@@ -58,14 +53,9 @@ func ParseRepoFile(filepath string) (list []Repo, err error) {
 			return
 		}
 
-		r.Author = split[0]
+		r.Owner = split[0]
+		r.Name = split[1]
 		r.Host = strings.TrimPrefix(u.Host, "www.")
-		r.Identifier = k
-
-		for i := range r.Applications {
-			r.Applications[i].GitURL = r.GitURL
-			r.Applications[i].RepoAuthor = r.Author
-		}
 
 		list = append(list, r)
 	}
