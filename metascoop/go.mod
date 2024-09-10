@@ -7,7 +7,7 @@ toolchain go1.23.0
 require gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
 
 require (
-	github.com/google/go-github/v39 v39.2.0
+	github.com/google/go-github/v64 v64.0.0
 	github.com/google/go-github/v64 v64.0.0
 	github.com/hashicorp/go-version v1.7.0
 	github.com/r3labs/diff/v2 v2.15.1
