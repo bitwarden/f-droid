@@ -104,5 +104,6 @@ jobs:
         env:
           GH_ACCESS_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
           GH_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
+          DRY_RUN: ${{ !contains(inputs.dry-run, 'true') }}
         run: |
           bash update.sh --dry-run ${{ inputs.dry-run }}

@@ -1,0 +1,26 @@
+---
+android:
+  git: "https://github.com/bitwarden/android"
+  applications:
+    - description: "This repo has the new native Android app. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile."
+      filename: "com.x8bit.bitwarden-fdroid.apk"
+      id: "bitwarden"
+      name: "Bitwarden"
+      categories:
+        - Security
+    - description: "This repo has the new native Android app Beta version. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile."
+      filename: "com.x8bit.bitwarden.beta-fdroid.apk"
+      id: "bitwarden-beta"
+      name: "Bitwarden Beta"
+      categories:
+        - Security
+
+authenticator-android:
+  git: "https://github.com/bitwarden/authenticator-android"
+  applications:
+    - description: "This repo has the new native Android app. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile."
+      filename: "com.x8bit.bitwarden-fdroid.apk"
+      id: "bitwarden-authenticator"
+      name: "Bitwarden Authenticator"
+      categories:
+        - Security

@@ -38,7 +38,7 @@ cd metascoop
 echo "::group::Building metascoop executable"
 go build -o metascoop
 echo "::endgroup::"
-./metascoop -ap=../apps.yaml -rd=../fdroid/repo -pat="$GH_ACCESS_TOKEN"
+./metascoop -rp=../repos.yaml -rd=../fdroid/repo -pat="$GH_ACCESS_TOKEN"
 EXIT_CODE=$?
 cd ..
 
