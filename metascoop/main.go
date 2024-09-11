@@ -13,6 +13,7 @@ import (
 	"os/exec"
 	"path/filepath"
 	"strings"
+	"sync"
 	"time"
 
 	"metascoop/apps"
@@ -26,11 +27,11 @@ import (
 
 func main() {
 	var (
-		reposFilePath = flag.String("rp", "repos.yaml", "Path to repos.yaml file")
-		repoDir       = flag.String("rd", "fdroid/repo", "Path to fdroid \"repo\" directory")
-		accessToken   = flag.String("pat", "", "GitHub personal access token")
-
-		debugMode = flag.Bool("debug", false, "Debug mode won't run the fdroid command")
+		reposFilePath  = flag.String("rp", "repos.yaml", "Path to repos.yaml file")
+		repoDir        = flag.String("rd", "fdroid/repo", "Path to fdroid \"repo\" directory")
+		accessToken    = flag.String("pat", "", "GitHub personal access token")
+		commitMsgFile  = flag.String("cm", "commit_message.tmp", "Path to the commit message file")
+		debugMode      = flag.Bool("debug", false, "Debug mode won't run the fdroid command")
 	)
 	flag.Parse()
 
@@ -69,110 +70,194 @@ func main() {
 		haveError          bool
 		apkInfoMap         = make(map[string]apps.Application)
 		toRemovePaths      []string
+		changedRepos       = make(map[string]map[string]*github.RepositoryRelease)
+		mu                 sync.Mutex
+		wg                 sync.WaitGroup
 	)
 
-	// Track if changes are detected that will require re-generating metadata
 	regenerateMetadata := false
+
 	for _, repo := range reposList {
-		fmt.Printf("::group::Repo: %s/%s\n", repo.Owner, repo.Name)
+		wg.Add(1)
+		go func(repo apps.Repo) {
+			defer wg.Done()
 
-		err, releases := getRepositoryReleases(githubClient, repo)
+			fmt.Printf("::group::Repo: %s/%s\n", repo.Owner, repo.Name)
+
+			err, releases := getRepositoryReleases(githubClient, repo)
+			if err != nil {
+				log.Printf("Error while listing repo releases for %q: %s\n", repo.GitURL, err.Error())
+				mu.Lock()
+				haveError = true
+				mu.Unlock()
+				return
+			}
+
+			log.Printf("Received %d releases", len(releases))
+
+			var appWg sync.WaitGroup
+			repoChanged := false
+			for _, app := range repo.Applications {
+				appWg.Add(1)
+				go func(app apps.Application) {
+					defer appWg.Done()
+
+					fmt.Printf("::group::App %s\n", app.Name)
+
+					foundArtifact := false
+
+					for _, release := range releases {
+						fmt.Printf("::group::Release %s\n", release.GetTagName())
+
+						if release.GetDraft() {
+							log.Printf("Skipping draft %q\n", release.GetTagName())
+							continue
+						}
+						if release.GetTagName() == "" {
+							log.Printf("Skipping release with empty tag name")
+							continue
+						}
+
+						log.Printf("Working on release with tag name %q", release.GetTagName())
+						var apk *github.ReleaseAsset = apps.FindAPK(release, app.Filename)
+
+						if apk == nil {
+							log.Printf("Couldn't find any F-Droid assets for application %s in %s with file name %s", app.Filename, release.GetName(), app.Filename)
+							continue
+						}
+
+						appName := apps.GenerateReleaseFilename(app.Id, release.GetTagName())
+
+						log.Printf("Target APK name: %s\n", appName)
+
+						appClone := app
+
+						appClone.ReleaseDescription = release.GetBody()
+						if appClone.ReleaseDescription != "" {
+							log.Printf("Release notes: \n%s\n", appClone.ReleaseDescription)
+						}
+
+						mu.Lock()
+						apkInfoMap[appName] = appClone
+						mu.Unlock()
+
+						appTargetPath := filepath.Join(*repoDir, appName)
+
+						// If the app file already exists for this version, we stop processing this app and move to the next
+						if _, err := os.Stat(appTargetPath); !errors.Is(err, os.ErrNotExist) {
+							log.Printf("Already have APK for version %q at %q\n", release.GetTagName(), appTargetPath)
+							foundArtifact = true
+							break
+						}
+
+						log.Printf("Downloading APK %q from release %q to %q", apk.GetName(), release.GetTagName(), appTargetPath)
+
+						downloadContext, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
+						defer cancel()
+
+						appStream, _, err := githubClient.Repositories.DownloadReleaseAsset(downloadContext, repo.Owner, repo.Name, apk.GetID(), http.DefaultClient)
+						if err != nil {
+							log.Printf("Error while downloading app %q (artifact id %d) from from release %q: %s", repo.GitURL, apk.GetID(), release.GetTagName(), err.Error())
+							mu.Lock()
+							haveError = true
+							mu.Unlock()
+							break
+						}
+
+						err = downloadStream(appTargetPath, appStream)
+						if err != nil {
+							log.Printf("Error while downloading app %q (artifact id %d) from from release %q to %q: %s", repo.GitURL, *apk.ID, *release.TagName, appTargetPath, err.Error())
+							mu.Lock()
+							haveError = true
+							mu.Unlock()
+							break
+						}
+
+						log.Printf("Successfully downloaded app for version %q", release.GetTagName())
+						fmt.Printf("::endgroup:App %s\n", app.Name)
+						mu.Lock()
+						regenerateMetadata = true
+						repoChanged = true
+						if changedRepos[repo.GitURL] == nil {
+							changedRepos[repo.GitURL] = make(map[string]*github.RepositoryRelease)
+						}
+						changedRepos[repo.GitURL][app.Filename] = release
+						mu.Unlock()
+						break
+					}
+					if foundArtifact || haveError {
+						// Stop after the first [release] of this [app] is downloaded to prevent back-filling legacy releases.
+						return
+					}
+				}(app)
+			}
+
+			appWg.Wait()
+
+			if repoChanged {
+				log.Printf("Changes detected for repo: %s", repo.GitURL)
+			}
+
+			fmt.Printf("::endgroup::Repo: %s/%s\n", repo.Owner, repo.Name)
+		}(repo)
+	}
+
+	wg.Wait()
+
+	// Write changes to temporary commit message file
+	if regenerateMetadata {
+		var commitMsg strings.Builder
+		
+		// Create the first line with repo names
+		repoNames := make([]string, 0, len(changedRepos))
+		for repoURL := range changedRepos {
+			repoName := strings.TrimPrefix(repoURL, "https://github.com/")
+			repoNames = append(repoNames, repoName)
+		}
+		commitMsg.WriteString(fmt.Sprintf("Updated apps from %s\n\n", strings.Join(repoNames, ", ")))
+		
+		// Add details for each repo
+		for repoURL, apps := range changedRepos {
+			repoFullName := strings.TrimPrefix(repoURL, "https://github.com/")
+			
+			commitMsg.WriteString(fmt.Sprintf("<details>\n<summary>%s</summary>\n\n", repoFullName))
+			
+			// Group apps by release
+			releaseApps := make(map[*github.RepositoryRelease][]string)
+			for appFilename, release := range apps {
+				releaseApps[release] = append(releaseApps[release], appFilename)
+			}
+			
+			for release, appList := range releaseApps {
+				releaseName := release.GetName()
+				if releaseName == "" {
+					releaseName = release.GetTagName()
+				}
+				releaseTagURL := release.GetHTMLURL()
+				commitMsg.WriteString(fmt.Sprintf("### [%s](%s)\n\n", releaseName, releaseTagURL))
+				
+				for _, appFilename := range appList {
+					commitMsg.WriteString(fmt.Sprintf("- %s\n", appFilename))
+				}
+				commitMsg.WriteString("\n")
+			}
+			
+			commitMsg.WriteString("</details>\n\n")
+		}
+
+		err := os.WriteFile(*commitMsgFile, []byte(commitMsg.String()), 0644)
 		if err != nil {
-			log.Printf("Error while listing repo releases for %q: %s\n", repo.GitURL, err.Error())
-			haveError = true
-			return
+			log.Printf("Error writing commit message file: %s", err)
+		} else {
+			log.Printf("Commit message written to %s", *commitMsgFile)
 		}
-
-		log.Printf("Received %d releases", len(releases))
-
-		for _, app := range repo.Applications {
-			fmt.Printf("::group::App %s\n", app.Name)
-
-			foundArtifact := false
-
-			for _, release := range releases {
-				fmt.Printf("::group::Release %s\n", release.GetTagName())
-
-				if release.GetDraft() {
-					log.Printf("Skipping draft %q\n", release.GetTagName())
-					continue
-				}
-				if release.GetTagName() == "" {
-					log.Printf("Skipping release with empty tag name")
-					continue
-				}
-
-				log.Printf("Working on release with tag name %q", release.GetTagName())
-				var apk *github.ReleaseAsset = apps.FindAPK(release, app.Filename)
-
-				if apk == nil {
-					log.Printf("Couldn't find any F-Droid assets for application %s in %s with file name %s", app.Filename, release.GetName(), app.Filename)
-					continue
-				}
-
-				appName := apps.GenerateReleaseFilename(app.Id, release.GetTagName())
-
-				log.Printf("Target APK name: %s\n", appName)
-
-				appClone := app
-
-				appClone.ReleaseDescription = release.GetBody()
-				if appClone.ReleaseDescription != "" {
-					log.Printf("Release notes: \n%s\n", appClone.ReleaseDescription)
-				}
-
-				apkInfoMap[appName] = appClone
-
-				appTargetPath := filepath.Join(*repoDir, appName)
-
-				// If the app file already exists for this version, we stop processing this app and move to the next
-				if _, err := os.Stat(appTargetPath); !errors.Is(err, os.ErrNotExist) {
-					log.Printf("Already have APK for version %q at %q\n", release.GetTagName(), appTargetPath)
-					foundArtifact = true
-					break
-				}
-
-				log.Printf("Downloading APK %q from release %q to %q", apk.GetName(), release.GetTagName(), appTargetPath)
-
-				downloadContext, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
-				defer cancel()
-
-				appStream, _, err := githubClient.Repositories.DownloadReleaseAsset(downloadContext, repo.Owner, repo.Name, apk.GetID(), http.DefaultClient)
-				if err != nil {
-					log.Printf("Error while downloading app %q (artifact id %d) from from release %q: %s", repo.GitURL, apk.GetID(), release.GetTagName(), err.Error())
-					haveError = true
-					break
-				}
-
-				err = downloadStream(appTargetPath, appStream)
-				if err != nil {
-					log.Printf("Error while downloading app %q (artifact id %d) from from release %q to %q: %s", repo.GitURL, *apk.ID, *release.TagName, appTargetPath, err.Error())
-					haveError = true
-					break
-				}
-
-				log.Printf("Successfully downloaded app for version %q", release.GetTagName())
-				fmt.Printf("::endgroup:App %s\n", app.Name)
-				regenerateMetadata = true
-				break
-
-			}
-			if foundArtifact || haveError {
-				// Stop after the first [release] of this [app] is downloaded to prevent back-filling legacy releases.
-				break
-			}
-		}
-
-		fmt.Printf("::endgroup::Repo: %s/%s\n", repo.Owner, repo.Name)
+	} else {
+		log.Printf("No changes detected.")
+		os.Exit(2)
 	}
 
 	if haveError {
 		os.Exit(1)
-	}
-
-	if !regenerateMetadata {
-		log.Printf("No changes detected.")
-		os.Exit(2)
 	}
 
 	if !*debugMode {
