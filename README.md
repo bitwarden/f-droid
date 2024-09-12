@@ -1,7 +1,16 @@
-# fdroid
-This repository hosts an [F-Droid](https://f-droid.org/) repo for Bitwarden apps. This allows you to install and update Bitwarden apps very easily.
+# Bitwarden F-Droid Repository
 
-### Bitwarden Apps
+<p align="center">
+    <img src="fdroid/btn.png" alt="F-Droid repo url button"/>
+    <img src="fdroid/repo/index.png?raw=true" alt="F-Droid repo QR code"/>
+</p>
+
+URL:
+```
+https://raw.githubusercontent.com/bitwarden/fdroid/main/fdroid/repo?fingerprint=5F9D110B95D7068C41C70B85D732F482FE3987902AD5FF8454C8FE7D6DB249E3
+```
+
+## Bitwarden Apps
 
 <!-- This table is auto-generated. Do not edit -->
 | Icon | Name | Description | Version |
@@ -10,21 +19,18 @@ This repository hosts an [F-Droid](https://f-droid.org/) repo for Bitwarden apps
 | <a href="https://github.com/bitwarden/android"><img src="fdroid/repo/icons/" alt="Bitwarden Beta icon" width="36px" height="36px"></a> | [**Bitwarden Beta**](https://github.com/bitwarden/android) | Bitwarden mobile app for Android. | 2024.8.1 (19099) |
 <!-- end apps table -->
 
-### How to use
-1. At first, you should [install the F-Droid app](https://f-droid.org/), it's an alternative app store for Android.
-2. Now you can copy the following [link](https://raw.githubusercontent.com/bitwatrden/fdroid/main/fdroid/repo?fingerprint={fingerprint-hash}), then add this repository to your F-Droid client:
+## Instructions
+1. Install the [F-Droid client app](https://f-droid.org/).
+2. Scan the QR code from above or manually copy/paste the Bitwarden F-Droid repository [link](https://raw.githubusercontent.com/bitwatrden/fdroid/main/fdroid/repo?fingerprint=5F9D110B95D7068C41C70B85D732F482FE3987902AD5FF8454C8FE7D6DB249E3) into the F-Droid client app under Settings.
+3. Add the Bitwarden repository to the F-Droid client app.
+4. Refresh your F-Droid client app under the Categories tab.
+5. Install Bitwarden from the F-Droid client app listing.
 
-    ```
-    https://raw.githubusercontent.com/bitwarden/fdroid/main/fdroid/repo?fingerprint={fingerprint-hash}
-    ```
+## Limitations
 
-    Alternatively, you can also scan this QR code:
+Since the Bitwarden F-Droid build does not include Firebase Messaging, push notifications for live sync updates of your vault will not work. Manual vault syncing is required.
 
-    <p align="center">
-      <img src=".github/qrcode.png?raw=true" alt="F-Droid repo QR code"/>
-    </p>
+## Credits
 
-3. Open the link in F-Droid. It will ask you to add the repository. Everything should already be filled in correctly, so just press "OK".
-4. You can now install Bitwarden apps, e.g. start by searching for "Bitwarden" in the F-Droid client.
+This GitHub repository was forked and adapted from https://github.com/xarantolus/fdroid
 
-Please note that some apps published here might contain [Anti-Features](https://f-droid.org/en/docs/Anti-Features/). If you can't find an app by searching for it, you can go to settings and enable "Include anti-feature apps".
