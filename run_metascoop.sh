@@ -23,7 +23,7 @@ echo "Metascoop had an exit code of $EXIT_CODE"
 
 if [ $EXIT_CODE -eq 2 ]; then
     echo "There were no significant changes"
-    exit 0
+    exit 2
 elif [ $EXIT_CODE -eq 0 ]; then
     echo "Changes detected"
     exit 0

@@ -107,10 +107,21 @@ jobs:
           GH_ACCESS_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
         run: |
           bash run_metascoop.sh ${{ env.COMMIT_MSG_FILE }}
+          if [ $? -eq 0 ]; then
+            echo "Changes detected"
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          elif [ $? -eq 2 ]; then
+            echo "No changes detected"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Unexpected exit code: $?"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+        continue-on-error: true
 
       - name: Update repo
         env:
           GH_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
-        if: ${{ (github.event_name == 'schedule' || inputs.dry-run == 'false') }}
+        if: ${{ (github.event_name == 'schedule' || inputs.dry-run == 'false') && steps.run-metascoop.outputs.has_changes == 'true' }}
         run: |
           bash update_repo.sh ${{ env.COMMIT_MSG_FILE }}
