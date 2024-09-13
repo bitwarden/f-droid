@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/hashicorp/go-version"
-	"github.com/r3labs/diff/v2"
+	"github.com/r3labs/diff/v3"
 )
 
 type RepoIndex struct {

@@ -21,7 +21,7 @@ import (
 	"metascoop/git"
 	"metascoop/md"
 
-	"github.com/google/go-github/v39/github"
+	"github.com/google/go-github/v64/github"
 	"golang.org/x/oauth2"
 )
 
