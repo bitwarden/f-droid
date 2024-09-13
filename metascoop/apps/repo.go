@@ -25,10 +25,11 @@ type Repo struct {
 	Applications []Application `yaml:"applications"`
 
 	Owner   string
-	Name	string
+	Name    string
 	Host    string
 	License string
 }
+
 func ParseRepoFile(filepath string) (list []Repo, err error) {
 	f, err := os.Open(filepath)
 	if err != nil {

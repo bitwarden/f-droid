@@ -27,11 +27,11 @@ import (
 
 func main() {
 	var (
-		reposFilePath  = flag.String("rp", "repos.yaml", "Path to repos.yaml file")
-		repoDir        = flag.String("rd", "fdroid/repo", "Path to fdroid \"repo\" directory")
-		accessToken    = flag.String("pat", "", "GitHub personal access token")
-		commitMsgFile  = flag.String("cm", "commit_message.tmp", "Path to the commit message file")
-		debugMode      = flag.Bool("debug", false, "Debug mode won't run the fdroid command")
+		reposFilePath = flag.String("rp", "repos.yaml", "Path to repos.yaml file")
+		repoDir       = flag.String("rd", "fdroid/repo", "Path to fdroid \"repo\" directory")
+		accessToken   = flag.String("pat", "", "GitHub personal access token")
+		commitMsgFile = flag.String("cm", "commit_message.tmp", "Path to the commit message file")
+		debugMode     = flag.Bool("debug", false, "Debug mode won't run the fdroid command")
 	)
 	flag.Parse()
 
@@ -67,12 +67,12 @@ func main() {
 	fmt.Println("::endgroup::Initializing")
 
 	var (
-		haveError          bool
-		apkInfoMap         = make(map[string]apps.Application)
-		toRemovePaths      []string
-		changedRepos       = make(map[string]map[string]*github.RepositoryRelease)
-		mu                 sync.Mutex
-		wg                 sync.WaitGroup
+		haveError     bool
+		apkInfoMap    = make(map[string]apps.Application)
+		toRemovePaths []string
+		changedRepos  = make(map[string]map[string]*github.RepositoryRelease)
+		mu            sync.Mutex
+		wg            sync.WaitGroup
 	)
 
 	regenerateMetadata := false
@@ -207,7 +207,7 @@ func main() {
 	// Write changes to temporary commit message file
 	if regenerateMetadata {
 		var commitMsg strings.Builder
-		
+
 		// Create the first line with repo names
 		repoNames := make([]string, 0, len(changedRepos))
 		for repoURL := range changedRepos {
@@ -215,19 +215,19 @@ func main() {
 			repoNames = append(repoNames, repoName)
 		}
 		commitMsg.WriteString(fmt.Sprintf("Updated apps from %s\n\n", strings.Join(repoNames, ", ")))
-		
+
 		// Add details for each repo
 		for repoURL, apps := range changedRepos {
 			repoFullName := strings.TrimPrefix(repoURL, "https://github.com/")
-			
+
 			commitMsg.WriteString(fmt.Sprintf("<details>\n<summary>%s</summary>\n\n", repoFullName))
-			
+
 			// Group apps by release
 			releaseApps := make(map[*github.RepositoryRelease][]string)
 			for appFilename, release := range apps {
 				releaseApps[release] = append(releaseApps[release], appFilename)
 			}
-			
+
 			for release, appList := range releaseApps {
 				releaseName := release.GetName()
 				if releaseName == "" {
@@ -235,13 +235,13 @@ func main() {
 				}
 				releaseTagURL := release.GetHTMLURL()
 				commitMsg.WriteString(fmt.Sprintf("### [%s](%s)\n\n", releaseName, releaseTagURL))
-				
+
 				for _, appFilename := range appList {
 					commitMsg.WriteString(fmt.Sprintf("- %s\n", appFilename))
 				}
 				commitMsg.WriteString("\n")
 			}
-			
+
 			commitMsg.WriteString("</details>\n\n")
 		}
 
