@@ -22,7 +22,7 @@ SOFTWARE.
 
 -----
 
-https://github.com/xarantolus/fdroid
+Forked from https://github.com/xarantolus/fdroid
 
 MIT License
 
