@@ -34,5 +34,5 @@ indent_size = 2
 [*.{js,ts,scss,html}]
 indent_size = 2
 
-[*.{yml}]
+[*.yml]
 indent_size = 2

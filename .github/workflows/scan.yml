@@ -5,12 +5,9 @@ on:
   push:
     branches:
       - "main"
-      - "rc"
-      - "hotfix-rc"
   pull_request_target:
     types: [opened, synchronize]
 
-# TODO: see https://bitwarden.atlassian.net/l/cp/SLtTZJ90 for configuration tips
 jobs:
   check-run:
     name: Check PR run
@@ -75,3 +72,4 @@ jobs:
           args: >
             -Dsonar.organization=${{ github.repository_owner }}
             -Dsonar.projectKey=${{ github.repository_owner }}_${{ github.event.repository.name }}
+            -Dsonar.sources=.
