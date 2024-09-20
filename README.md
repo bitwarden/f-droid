@@ -7,7 +7,7 @@
 
 URL:
 ```
-https://raw.githubusercontent.com/bitwarden/fdroid/main/fdroid/repo?fingerprint=5F9D110B95D7068C41C70B85D732F482FE3987902AD5FF8454C8FE7D6DB249E3
+https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo?fingerprint=5F9D110B95D7068C41C70B85D732F482FE3987902AD5FF8454C8FE7D6DB249E3
 ```
 
 ## Bitwarden Apps
