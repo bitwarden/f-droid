@@ -1,1 +1,227 @@
-{"repo": {"name": {"en-US": "Bitwarden F-Droid"}, "description": {"en-US": "This is a repository of Bitwarden apps to be used with F-Droid. Applications in this repository are official binaries built by Bitwarden."}, "icon": {"en-US": {"name": "/icons/icon.png", "sha256": "15efe5cfe8c7bb4d90dc06b72a018208f6dc37202a85ceb623f75f8843ca3a5e", "size": 1362}}, "address": "https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo", "timestamp": 1726857890000}, "packages": {"com.x8bit.bitwarden": {"metadata": {"added": 1726857890000, "categories": ["Security"], "lastUpdated": 1726857890000, "license": "GPL-3.0", "sourceCode": "https://github.com/bitwarden/android", "featureGraphic": {"en-US": {"name": "/com.x8bit.bitwarden/en-US/featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png", "sha256": "3f1d2cab32758370f079b6ae926d10949ac26c45fe6f2ae37f3d031eadbbc16e", "size": 55973}}, "authorName": "bitwarden", "name": {"en-US": "Bitwarden"}, "summary": {"en-US": "Bitwarden mobile app for Android."}, "description": {"en-US": "This repo has the new native Android app. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.\n"}, "icon": {"en-US": {"name": "/com.x8bit.bitwarden/en-US/icon_oHucFA9p31FP-JvzlsHvxnwcLZFbI5Thw7pZSHGdkMM=.png", "sha256": "a07b9c140f69df514ff89bf396c1efc67c1c2d915b2394e1c3ba5948719d90c3", "size": 13229}}, "preferredSigner": "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"}, "versions": {"5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5": {"added": 1726857890000, "file": {"name": "/bitwarden_v2024.8.1.apk", "sha256": "5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5", "size": 71265987}, "manifest": {"nativecode": ["arm64-v8a", "armeabi", "armeabi-v7a", "mips", "mips64", "x86", "x86_64"], "versionName": "2024.8.1", "versionCode": 19099, "usesSdk": {"minSdkVersion": 29, "targetSdkVersion": 34}, "signer": {"sha256": ["de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"]}, "usesPermission": [{"name": "android.permission.ACCESS_NETWORK_STATE"}, {"name": "android.permission.USE_BIOMETRIC"}, {"name": "android.permission.NFC"}, {"name": "android.permission.CAMERA"}, {"name": "android.permission.INTERNET"}, {"name": "android.permission.POST_NOTIFICATIONS"}, {"name": "android.permission.USE_FINGERPRINT"}, {"name": "android.permission.WAKE_LOCK"}, {"name": "android.permission.RECEIVE_BOOT_COMPLETED"}, {"name": "android.permission.FOREGROUND_SERVICE"}, {"name": "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"}]}}}}, "com.x8bit.bitwarden.beta": {"metadata": {"added": 1726857889000, "categories": ["Security"], "lastUpdated": 1726857889000, "license": "GPL-3.0", "sourceCode": "https://github.com/bitwarden/android", "featureGraphic": {"en-US": {"name": "/com.x8bit.bitwarden.beta/en-US/featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png", "sha256": "3f1d2cab32758370f079b6ae926d10949ac26c45fe6f2ae37f3d031eadbbc16e", "size": 55973}}, "authorName": "bitwarden", "name": {"en-US": "Bitwarden Beta"}, "summary": {"en-US": "Bitwarden mobile app for Android."}, "description": {"en-US": "This repo has the new native Android app Beta version. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.\n"}, "icon": {"en-US": {"name": "/com.x8bit.bitwarden.beta/en-US/icon_qX6aLtm1hvjXAqqBukie1y4RC0NS39o0ih8kBPErlpE=.png", "sha256": "a97e9a2ed9b586f8d702aa81ba489ed72e110b4352dfda348a1f2404f12b9691", "size": 15715}}, "preferredSigner": "3c8f03c4225bc173812def564f7ae8a1b3ef34f1bbdcc8748dadc39eb0a69f74"}, "versions": {"f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370": {"added": 1726857889000, "file": {"name": "/bitwarden-beta_v2024.8.1.apk", "sha256": "f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370", "size": 71267419}, "manifest": {"nativecode": ["arm64-v8a", "armeabi", "armeabi-v7a", "mips", "mips64", "x86", "x86_64"], "versionName": "2024.8.1", "versionCode": 19099, "usesSdk": {"minSdkVersion": 29, "targetSdkVersion": 34}, "signer": {"sha256": ["3c8f03c4225bc173812def564f7ae8a1b3ef34f1bbdcc8748dadc39eb0a69f74"]}, "usesPermission": [{"name": "android.permission.ACCESS_NETWORK_STATE"}, {"name": "android.permission.USE_BIOMETRIC"}, {"name": "android.permission.NFC"}, {"name": "android.permission.CAMERA"}, {"name": "android.permission.INTERNET"}, {"name": "android.permission.POST_NOTIFICATIONS"}, {"name": "android.permission.USE_FINGERPRINT"}, {"name": "android.permission.WAKE_LOCK"}, {"name": "android.permission.RECEIVE_BOOT_COMPLETED"}, {"name": "android.permission.FOREGROUND_SERVICE"}, {"name": "com.x8bit.bitwarden.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"}]}}}}}}
+{
+  "repo": {
+    "name": {
+      "en-US": "Bitwarden F-Droid"
+    },
+    "description": {
+      "en-US": "This is a repository of Bitwarden apps to be used with F-Droid. Applications in this repository are official binaries built by Bitwarden."
+    },
+    "icon": {
+      "en-US": {
+        "name": "/icons/icon.png",
+        "sha256": "15efe5cfe8c7bb4d90dc06b72a018208f6dc37202a85ceb623f75f8843ca3a5e",
+        "size": 1362
+      }
+    },
+    "address": "https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo",
+    "timestamp": 1726865605000
+  },
+  "packages": {
+    "com.x8bit.bitwarden": {
+      "metadata": {
+        "added": 1726865605000,
+        "categories": [
+          "Security"
+        ],
+        "lastUpdated": 1726865605000,
+        "license": "GPL-3.0",
+        "sourceCode": "https://github.com/bitwarden/android",
+        "featureGraphic": {
+          "en-US": {
+            "name": "/com.x8bit.bitwarden/en-US/featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
+            "sha256": "3f1d2cab32758370f079b6ae926d10949ac26c45fe6f2ae37f3d031eadbbc16e",
+            "size": 55973
+          }
+        },
+        "authorName": "bitwarden",
+        "name": {
+          "en-US": "Bitwarden"
+        },
+        "summary": {
+          "en-US": "Bitwarden mobile app for Android."
+        },
+        "description": {
+          "en-US": "This repo has the new native Android app. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.\n"
+        },
+        "icon": {
+          "en-US": {
+            "name": "/com.x8bit.bitwarden/en-US/icon_oHucFA9p31FP-JvzlsHvxnwcLZFbI5Thw7pZSHGdkMM=.png",
+            "sha256": "a07b9c140f69df514ff89bf396c1efc67c1c2d915b2394e1c3ba5948719d90c3",
+            "size": 13229
+          }
+        },
+        "preferredSigner": "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+      },
+      "versions": {
+        "5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5": {
+          "added": 1726865605000,
+          "file": {
+            "name": "/bitwarden_v2024.8.1.apk",
+            "sha256": "5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5",
+            "size": 71265987
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "mips",
+              "mips64",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2024.8.1",
+            "versionCode": 19099,
+            "usesSdk": {
+              "minSdkVersion": 29,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.POST_NOTIFICATIONS"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE"
+              },
+              {
+                "name": "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "com.x8bit.bitwarden.beta": {
+      "metadata": {
+        "added": 1726865604000,
+        "categories": [
+          "Security"
+        ],
+        "lastUpdated": 1726865604000,
+        "license": "GPL-3.0",
+        "sourceCode": "https://github.com/bitwarden/android",
+        "featureGraphic": {
+          "en-US": {
+            "name": "/com.x8bit.bitwarden.beta/en-US/featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
+            "sha256": "3f1d2cab32758370f079b6ae926d10949ac26c45fe6f2ae37f3d031eadbbc16e",
+            "size": 55973
+          }
+        },
+        "authorName": "bitwarden",
+        "name": {
+          "en-US": "Bitwarden Beta"
+        },
+        "summary": {
+          "en-US": "Bitwarden mobile app for Android."
+        },
+        "description": {
+          "en-US": "This repo has the new native Android app Beta version. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.\n"
+        },
+        "icon": {
+          "en-US": {
+            "name": "/com.x8bit.bitwarden.beta/en-US/icon_qX6aLtm1hvjXAqqBukie1y4RC0NS39o0ih8kBPErlpE=.png",
+            "sha256": "a97e9a2ed9b586f8d702aa81ba489ed72e110b4352dfda348a1f2404f12b9691",
+            "size": 15715
+          }
+        },
+        "preferredSigner": "3c8f03c4225bc173812def564f7ae8a1b3ef34f1bbdcc8748dadc39eb0a69f74"
+      },
+      "versions": {
+        "f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370": {
+          "added": 1726865604000,
+          "file": {
+            "name": "/bitwarden-beta_v2024.8.1.apk",
+            "sha256": "f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370",
+            "size": 71267419
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "mips",
+              "mips64",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2024.8.1",
+            "versionCode": 19099,
+            "usesSdk": {
+              "minSdkVersion": 29,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "3c8f03c4225bc173812def564f7ae8a1b3ef34f1bbdcc8748dadc39eb0a69f74"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.POST_NOTIFICATIONS"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE"
+              },
+              {
+                "name": "com.x8bit.bitwarden.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
