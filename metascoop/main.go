@@ -75,7 +75,7 @@ func main() {
 		wg            sync.WaitGroup
 	)
 
-	regenerateMetadata := false
+	hasNewCommits := false
 
 	for _, repo := range reposList {
 		wg.Add(1)
@@ -176,7 +176,7 @@ func main() {
 						log.Printf("Successfully downloaded app for version %q", release.GetTagName())
 						fmt.Printf("::endgroup:App %s\n", app.Name)
 						mu.Lock()
-						regenerateMetadata = true
+						hasNewCommits = true
 						repoChanged = true
 						if changedRepos[repo.GitURL] == nil {
 							changedRepos[repo.GitURL] = make(map[string]*github.RepositoryRelease)
@@ -204,10 +204,9 @@ func main() {
 
 	wg.Wait()
 
-	// Write changes to temporary commit message file
-	if regenerateMetadata {
-		var commitMsg strings.Builder
-
+	var commitMsg strings.Builder
+	if hasNewCommits {
+		log.Printf("New commits detected in at least one repo. Creating commit message with application update details.")
 		// Create the first line with repo names
 		repoNames := make([]string, 0, len(changedRepos))
 		for repoURL := range changedRepos {
@@ -216,6 +215,7 @@ func main() {
 		}
 		commitMsg.WriteString(fmt.Sprintf("Updated apps from %s\n\n", strings.Join(repoNames, ", ")))
 
+		commitMsg.WriteString("## Repository updates:\n")
 		// Add details for each repo
 		for repoURL, apps := range changedRepos {
 			repoFullName := strings.TrimPrefix(repoURL, "https://github.com/")
@@ -244,16 +244,8 @@ func main() {
 
 			commitMsg.WriteString("</details>\n\n")
 		}
-
-		err := os.WriteFile(*commitMsgFile, []byte(commitMsg.String()), 0644)
-		if err != nil {
-			log.Printf("Error writing commit message file: %s", err)
-		} else {
-			log.Printf("Commit message written to %s", *commitMsgFile)
-		}
 	} else {
-		log.Printf("No changes detected.")
-		os.Exit(2)
+		log.Printf("No new commits detected.")
 	}
 
 	if haveError {
@@ -519,17 +511,32 @@ func main() {
 		}
 
 		// If only the index files changed, we ignore the commit
+		var modifiedFiles []string
 		for _, fname := range changedFiles {
 			if !strings.Contains(fname, "index") {
 				haveSignificantChanges = true
-
+				modifiedFiles = append(modifiedFiles, fname)
 				log.Printf("File %q is a significant change", fname)
 			}
 		}
 
-		if !haveSignificantChanges {
-			log.Printf("It doesn't look like there were any relevant changes, neither to the index file nor any file indexed by git.")
+		// If there were modified files, we add them to the commit message
+		if len(modifiedFiles) > 0 {
+
+			// If there were no new commits, we add a commit title indicating only metadata changes.
+			if !hasNewCommits {
+				commitMsg.WriteString("Automatic metadata updates\n\n")
+			}
+
+			commitMsg.WriteString("## Metadata updates:\n\n")
+			for _, fname := range modifiedFiles {
+				commitMsg.WriteString(fmt.Sprintf("  - %s\n", fname))
+			}
 		}
+	}
+
+	if haveError {
+		os.Exit(1)
 	}
 
 	fmt.Println("::endgroup::Assessing changes")
@@ -539,7 +546,23 @@ func main() {
 		os.Exit(2)
 	}
 
-	// If we have relevant changes, we exit with code 0
+	// If we have relevant changes, we write the commit message and exit with code 0.
+	
+	// Create a temporary commit message file.
+	tempFile, err := os.Create(*commitMsgFile)
+	if err != nil {
+		log.Fatalf("Error creating commit message file: %v", err)
+	}
+	defer tempFile.Close()
+	log.Printf("Commit message file created: %s", *commitMsgFile)
+
+	// Write the commit message to the file.
+	_, err = tempFile.WriteString(commitMsg.String())
+	if err != nil {
+		log.Printf("Error writing commit message file: %s", err)
+	} else {
+		log.Printf("Commit message written to %s\n%s", *commitMsgFile, commitMsg.String())
+	}
 }
 
 func getRepositoryReleases(githubClient *github.Client, repo apps.Repo) (error, []*github.RepositoryRelease) {
