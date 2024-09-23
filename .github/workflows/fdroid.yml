@@ -122,6 +122,11 @@ jobs:
       - name: Update repo
         env:
           GH_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
-        if: ${{ (github.event_name == 'schedule' || inputs.dry-run == 'false') && steps.run-metascoop.outputs.has_changes == 'true' }}
         run: |
-          bash update_repo.sh ${{ env.COMMIT_MSG_FILE }}
+          if [ "${{ inputs.dry-run }}" = "true" ]; then
+            echo "Dry run. Changes are not being saved."
+          elif [ "${{ steps.run-metascoop.outputs.has_changes }}" != "true" ]; then
+            echo "No changes to save."
+          else
+            bash update_repo.sh ${{ env.COMMIT_MSG_FILE }}
+          fi
