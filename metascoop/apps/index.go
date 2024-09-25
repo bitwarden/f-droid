@@ -75,6 +75,23 @@ func ReadIndex(path string) (index *RepoIndex, err error) {
 	return
 }
 
+// HasSignificantChanges compares two RepoIndex structs and determines if there are significant changes between them.
+//
+// Parameters:
+//   - old: A pointer to the original RepoIndex struct.
+//   - new: A pointer to the updated RepoIndex struct.
+//
+// Returns:
+//   - changedPath: A string representing the JSON path where a significant change was found.
+//   - changed: A boolean indicating whether a significant change was detected (true) or not (false).
+//
+// The function uses the diff package to compare the two structs. It ignores certain changes that are considered
+// non-significant, such as updates to the "added" or "lastUpdated" timestamps of apps, and updates to the repo timestamp.
+// Any other changes are considered significant.
+//
+// If a significant change is found, the function returns the path to the change and true.
+// If no significant changes are found, it returns an empty string and false.
+
 func HasSignificantChanges(old, new *RepoIndex) (changedPath string, changed bool) {
 	changelog, err := diff.Diff(old, new)
 	if err != nil {

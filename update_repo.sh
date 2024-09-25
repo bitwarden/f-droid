@@ -14,9 +14,11 @@ if [ -f "$COMMIT_MSG_FILE" ]; then
 
     # Read the first line as the PR title
     PR_TITLE=$(head -n 1 "$COMMIT_MSG_FILE")
+    echo "PR Title: $PR_TITLE"
 
     # Read the remaining lines as the PR body
     PR_BODY=$(tail -n +2 "$COMMIT_MSG_FILE")
+    echo "PR Body: $PR_BODY"
 
     echo "Pushing changes..."
     git add .
@@ -31,7 +33,7 @@ if [ -f "$COMMIT_MSG_FILE" ]; then
         --body "$PR_BODY")
     echo "pr_number=${PR_URL##*/}"
 
-    gh pr merge $PR_URL --squash --admin --delete-branch
+    # gh pr merge $PR_URL --squash --admin --delete-branch
 
     # Clean up the temporary commit message file
     rm "$COMMIT_MSG_FILE"
