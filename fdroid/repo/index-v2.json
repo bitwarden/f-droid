@@ -14,16 +14,16 @@
       }
     },
     "address": "https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo",
-    "timestamp": 1726865605000
+    "timestamp": 1727300128000
   },
   "packages": {
     "com.x8bit.bitwarden": {
       "metadata": {
-        "added": 1726865605000,
+        "added": 1727300124000,
         "categories": [
           "Security"
         ],
-        "lastUpdated": 1726865605000,
+        "lastUpdated": 1727300124000,
         "license": "GPL-3.0",
         "sourceCode": "https://github.com/bitwarden/android",
         "featureGraphic": {
@@ -41,7 +41,7 @@
           "en-US": "Bitwarden mobile app for Android."
         },
         "description": {
-          "en-US": "This repo has the new native Android app. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.\n"
+          "en-US": "Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.\n\nPassword theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.\n\nSecurity experts recommend that you use a different, randomly generated password for every account that you create. But how do you manage all those passwords? Bitwarden makes it easy for you to create, store, and access your passwords.\n\nBitwarden stores all of your logins in an encrypted vault that syncs across all of your devices. Since it's fully encrypted before it ever leaves your device, only you have access to your data. Not even the team at Bitwarden can read your data, even if we wanted to. Your data is sealed with AES-256 bit encryption, salted hashing, and PBKDF2 SHA-256.\n\nBitwarden is focused on open source software. The source code for Bitwarden is hosted on GitHub and everyone is free to review, audit, and contribute to the Bitwarden codebase.\n"
         },
         "icon": {
           "en-US": {
@@ -54,7 +54,7 @@
       },
       "versions": {
         "5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5": {
-          "added": 1726865605000,
+          "added": 1727300124000,
           "file": {
             "name": "/bitwarden_v2024.8.1.apk",
             "sha256": "5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5",
@@ -122,11 +122,11 @@
     },
     "com.x8bit.bitwarden.beta": {
       "metadata": {
-        "added": 1726865604000,
+        "added": 1727300122000,
         "categories": [
           "Security"
         ],
-        "lastUpdated": 1726865604000,
+        "lastUpdated": 1727300122000,
         "license": "GPL-3.0",
         "sourceCode": "https://github.com/bitwarden/android",
         "featureGraphic": {
@@ -144,7 +144,7 @@
           "en-US": "Bitwarden mobile app for Android."
         },
         "description": {
-          "en-US": "This repo has the new native Android app Beta version. Looking for the legacy .NET MAUI apps? Head on over to bitwarden/mobile.\n"
+          "en-US": "Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.\n\nPassword theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.\n\nSecurity experts recommend that you use a different, randomly generated password for every account that you create. But how do you manage all those passwords? Bitwarden makes it easy for you to create, store, and access your passwords.\n\nBitwarden stores all of your logins in an encrypted vault that syncs across all of your devices. Since it's fully encrypted before it ever leaves your device, only you have access to your data. Not even the team at Bitwarden can read your data, even if we wanted to. Your data is sealed with AES-256 bit encryption, salted hashing, and PBKDF2 SHA-256.\n\nBitwarden is focused on open source software. The source code for Bitwarden is hosted on GitHub and everyone is free to review, audit, and contribute to the Bitwarden codebase.\n"
         },
         "icon": {
           "en-US": {
@@ -157,7 +157,7 @@
       },
       "versions": {
         "f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370": {
-          "added": 1726865604000,
+          "added": 1727300122000,
           "file": {
             "name": "/bitwarden-beta_v2024.8.1.apk",
             "sha256": "f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370",
