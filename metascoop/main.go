@@ -502,6 +502,11 @@ func main() {
 	cpath, haveSignificantChanges := apps.HasSignificantChanges(initialFdroidIndex, fdroidIndex)
 	if haveSignificantChanges {
 		log.Printf("The index %q had a significant change at JSON path %q", fdroidIndexFilePath, cpath)
+		// If there were no new commits, we add a commit title indicating index has changes.
+		if !hasNewCommits {
+			commitMsg.WriteString("Automatic index update\n\n")
+		}
+		commitMsg.WriteString("Index updated to reflect recent changes to the F-Droid repository.\n")	
 	} else {
 		log.Printf("The index files didn't change significantly")
 
@@ -523,7 +528,7 @@ func main() {
 		// If there were modified files, we add them to the commit message
 		if len(modifiedFiles) > 0 {
 
-			// If there were no new commits, we add a commit title indicating only metadata changes.
+			// If there were no new commits, we add a commit title indicating only metadata changes occurred.
 			if !hasNewCommits {
 				commitMsg.WriteString("Automatic metadata updates\n\n")
 			}
