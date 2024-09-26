@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1727300128000,
+    "timestamp": 1727319815000,
     "version": 20002,
     "name": "Bitwarden F-Droid",
     "icon": "icon.png",
@@ -24,9 +24,9 @@
       "name": "Bitwarden",
       "sourceCode": "https://github.com/bitwarden/android",
       "summary": "Bitwarden mobile app for Android.",
-      "added": 1727300124000,
+      "added": 1727319811000,
       "packageName": "com.x8bit.bitwarden",
-      "lastUpdated": 1727300124000,
+      "lastUpdated": 1727319811000,
       "localized": {
         "en-US": {
           "featureGraphic": "featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
@@ -47,9 +47,9 @@
       "name": "Bitwarden Beta",
       "sourceCode": "https://github.com/bitwarden/android",
       "summary": "Bitwarden mobile app for Android.",
-      "added": 1727300122000,
+      "added": 1727319810000,
       "packageName": "com.x8bit.bitwarden.beta",
-      "lastUpdated": 1727300122000,
+      "lastUpdated": 1727319810000,
       "localized": {
         "en-US": {
           "featureGraphic": "featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
@@ -62,7 +62,7 @@
   "packages": {
     "com.x8bit.bitwarden": [
       {
-        "added": 1727300124000,
+        "added": 1727319811000,
         "apkName": "bitwarden_v2024.8.1.apk",
         "hash": "5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5",
         "hashType": "sha256",
@@ -133,7 +133,7 @@
     ],
     "com.x8bit.bitwarden.beta": [
       {
-        "added": 1727300122000,
+        "added": 1727319810000,
         "apkName": "bitwarden-beta_v2024.8.1.apk",
         "hash": "f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370",
         "hashType": "sha256",

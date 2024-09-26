@@ -14,16 +14,16 @@
       }
     },
     "address": "https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo",
-    "timestamp": 1727300128000
+    "timestamp": 1727319815000
   },
   "packages": {
     "com.x8bit.bitwarden": {
       "metadata": {
-        "added": 1727300124000,
+        "added": 1727319811000,
         "categories": [
           "Security"
         ],
-        "lastUpdated": 1727300124000,
+        "lastUpdated": 1727319811000,
         "license": "GPL-3.0",
         "sourceCode": "https://github.com/bitwarden/android",
         "featureGraphic": {
@@ -54,7 +54,7 @@
       },
       "versions": {
         "5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5": {
-          "added": 1727300124000,
+          "added": 1727319811000,
           "file": {
             "name": "/bitwarden_v2024.8.1.apk",
             "sha256": "5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5",
@@ -122,11 +122,11 @@
     },
     "com.x8bit.bitwarden.beta": {
       "metadata": {
-        "added": 1727300122000,
+        "added": 1727319810000,
         "categories": [
           "Security"
         ],
-        "lastUpdated": 1727300122000,
+        "lastUpdated": 1727319810000,
         "license": "GPL-3.0",
         "sourceCode": "https://github.com/bitwarden/android",
         "featureGraphic": {
@@ -157,7 +157,7 @@
       },
       "versions": {
         "f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370": {
-          "added": 1727300122000,
+          "added": 1727319810000,
           "file": {
             "name": "/bitwarden-beta_v2024.8.1.apk",
             "sha256": "f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370",
