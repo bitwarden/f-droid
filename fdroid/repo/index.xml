@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <fdroid>
-	<repo icon="icon.png" name="Bitwarden F-Droid" pubkey="3082029e30820186020101300d06092a864886f70d01010b0500301431123010060355040a0c0942697477617264656e3020170d3234303930333230353732325a180f32313234303831303230353732325a301431123010060355040a0c0942697477617264656e30820122300d06092a864886f70d01010105000382010f003082010a0282010100d717b1c5d538a773bc8eb2fd071addfad13301ed713ec7b7e537805b7908b0e4f295f170c2e3d6b5249d0ab4869ff4d471bfd028578449230232fe0c79038e1a03cd34b997df86c77dd0e8a9f33fbb055cc69fe6cc60d61fc82718dc573a7844a87b8b8b5a861dd4f6fa882f6efb1cc06113da9aef292f926743052033763ae4023e559e065e10bbacc9da03dda6466d210af8544fd6553b45985bf59bd1d88d2fc3a0ae0fe76487f0532f598ea19d58f28feb5441f7aa901969e31c4b03c112a7874a185d6cadcf5ad41ae0fd59661b0fd6ee655c14cb2e5a80927048d9b36155151b18fbfc0728853d0952ccb9b4298df2903be0d64449ba36480f836712430203010001300d06092a864886f70d01010b050003820101001d6fdcc8e333ada7b7a7bcfa2a433cf92cef29ec6a6e2f642ed3fdcac59ff14f4fcef322e8b69d64bcf74aeff7c896f8e6d8f846a326514cd36713c2a4054bb09eb6b9dc6ddef883a57c6f9f87075fb1c081df660f2b98d58f34eb1d4a98840524bba4b9a0d8e6786049b459895349d898f70c91821e4fd5d07c718a6e1ae80b671d95a15ef281f4d2ce280364b14bb654c33d3bbf5e63476cd08a15f643aa847bb4782bc9bd79d30b186a3e32bd20aaa5361b95ca049bb80859e2cb337e3127fb8eae26467b1daad8dd26418600a6f055965e4bd963571ca93c3465c1ba629af491effce43c29853b0f048510a269166197e9674e52a486188a1e35ad74b63e" timestamp="1727804664" url="https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo" version="20002">
+	<repo icon="icon.png" name="Bitwarden F-Droid" pubkey="3082029e30820186020101300d06092a864886f70d01010b0500301431123010060355040a0c0942697477617264656e3020170d3234303930333230353732325a180f32313234303831303230353732325a301431123010060355040a0c0942697477617264656e30820122300d06092a864886f70d01010105000382010f003082010a0282010100d717b1c5d538a773bc8eb2fd071addfad13301ed713ec7b7e537805b7908b0e4f295f170c2e3d6b5249d0ab4869ff4d471bfd028578449230232fe0c79038e1a03cd34b997df86c77dd0e8a9f33fbb055cc69fe6cc60d61fc82718dc573a7844a87b8b8b5a861dd4f6fa882f6efb1cc06113da9aef292f926743052033763ae4023e559e065e10bbacc9da03dda6466d210af8544fd6553b45985bf59bd1d88d2fc3a0ae0fe76487f0532f598ea19d58f28feb5441f7aa901969e31c4b03c112a7874a185d6cadcf5ad41ae0fd59661b0fd6ee655c14cb2e5a80927048d9b36155151b18fbfc0728853d0952ccb9b4298df2903be0d64449ba36480f836712430203010001300d06092a864886f70d01010b050003820101001d6fdcc8e333ada7b7a7bcfa2a433cf92cef29ec6a6e2f642ed3fdcac59ff14f4fcef322e8b69d64bcf74aeff7c896f8e6d8f846a326514cd36713c2a4054bb09eb6b9dc6ddef883a57c6f9f87075fb1c081df660f2b98d58f34eb1d4a98840524bba4b9a0d8e6786049b459895349d898f70c91821e4fd5d07c718a6e1ae80b671d95a15ef281f4d2ce280364b14bb654c33d3bbf5e63476cd08a15f643aa847bb4782bc9bd79d30b186a3e32bd20aaa5361b95ca049bb80859e2cb337e3127fb8eae26467b1daad8dd26418600a6f055965e4bd963571ca93c3465c1ba629af491effce43c29853b0f048510a269166197e9674e52a486188a1e35ad74b63e" timestamp="1727838129" url="https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo" version="20002">
 		<description>This is a repository of Bitwarden apps to be used with F-Droid. Applications in this repository are official binaries built by Bitwarden.</description>
 	</repo>
 	<application id="com.x8bit.bitwarden">
 		<id>com.x8bit.bitwarden</id>
-		<added>2024-10-01</added>
-		<lastupdated>2024-10-01</lastupdated>
+		<added>2024-10-02</added>
+		<lastupdated>2024-10-02</lastupdated>
 		<name>Bitwarden</name>
 		<summary>Bitwarden mobile app for Android.</summary>
 		<desc>Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.
@@ -36,7 +36,7 @@ Bitwarden is focused on open source software. The source code for Bitwarden is h
 			<size>72686638</size>
 			<sdkver>29</sdkver>
 			<targetSdkVersion>34</targetSdkVersion>
-			<added>2024-10-01</added>
+			<added>2024-10-02</added>
 			<sig>4eca64d92c5726e95b1fcf98e8feef4c</sig>
 			<permissions>ACCESS_NETWORK_STATE,CAMERA,FOREGROUND_SERVICE,INTERNET,NFC,POST_NOTIFICATIONS,RECEIVE_BOOT_COMPLETED,USE_BIOMETRIC,USE_FINGERPRINT,WAKE_LOCK,com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
 			<nativecode>arm64-v8a,armeabi,armeabi-v7a,mips,mips64,x86,x86_64</nativecode>
@@ -49,7 +49,7 @@ Bitwarden is focused on open source software. The source code for Bitwarden is h
 			<size>71265987</size>
 			<sdkver>29</sdkver>
 			<targetSdkVersion>34</targetSdkVersion>
-			<added>2024-10-01</added>
+			<added>2024-10-02</added>
 			<sig>4eca64d92c5726e95b1fcf98e8feef4c</sig>
 			<permissions>ACCESS_NETWORK_STATE,CAMERA,FOREGROUND_SERVICE,INTERNET,NFC,POST_NOTIFICATIONS,RECEIVE_BOOT_COMPLETED,USE_BIOMETRIC,USE_FINGERPRINT,WAKE_LOCK,com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
 			<nativecode>arm64-v8a,armeabi,armeabi-v7a,mips,mips64,x86,x86_64</nativecode>
@@ -57,8 +57,8 @@ Bitwarden is focused on open source software. The source code for Bitwarden is h
 	</application>
 	<application id="com.x8bit.bitwarden.beta">
 		<id>com.x8bit.bitwarden.beta</id>
-		<added>2024-10-01</added>
-		<lastupdated>2024-10-01</lastupdated>
+		<added>2024-10-02</added>
+		<lastupdated>2024-10-02</lastupdated>
 		<name>Bitwarden Beta</name>
 		<summary>Bitwarden mobile app for Android.</summary>
 		<desc>Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.
@@ -88,7 +88,7 @@ Bitwarden is focused on open source software. The source code for Bitwarden is h
 			<size>72688066</size>
 			<sdkver>29</sdkver>
 			<targetSdkVersion>34</targetSdkVersion>
-			<added>2024-10-01</added>
+			<added>2024-10-02</added>
 			<sig>7619526d81e6c4f0fa16ccaef4bb11f4</sig>
 			<permissions>ACCESS_NETWORK_STATE,CAMERA,FOREGROUND_SERVICE,INTERNET,NFC,POST_NOTIFICATIONS,RECEIVE_BOOT_COMPLETED,USE_BIOMETRIC,USE_FINGERPRINT,WAKE_LOCK,com.x8bit.bitwarden.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
 			<nativecode>arm64-v8a,armeabi,armeabi-v7a,mips,mips64,x86,x86_64</nativecode>
@@ -101,7 +101,7 @@ Bitwarden is focused on open source software. The source code for Bitwarden is h
 			<size>71267419</size>
 			<sdkver>29</sdkver>
 			<targetSdkVersion>34</targetSdkVersion>
-			<added>2024-10-01</added>
+			<added>2024-10-02</added>
 			<sig>7619526d81e6c4f0fa16ccaef4bb11f4</sig>
 			<permissions>ACCESS_NETWORK_STATE,CAMERA,FOREGROUND_SERVICE,INTERNET,NFC,POST_NOTIFICATIONS,RECEIVE_BOOT_COMPLETED,USE_BIOMETRIC,USE_FINGERPRINT,WAKE_LOCK,com.x8bit.bitwarden.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
 			<nativecode>arm64-v8a,armeabi,armeabi-v7a,mips,mips64,x86,x86_64</nativecode>
