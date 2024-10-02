@@ -1,0 +1,20 @@
+{
+  "repo": {
+    "name": {
+      "en-US": "Bitwarden F-droid Archive"
+    },
+    "description": {
+      "en-US": "This is a repository of archived Bitwarden apps that are no longer  officially supported."
+    },
+    "icon": {
+      "en-US": {
+        "name": "/icons/icon.png",
+        "sha256": "15efe5cfe8c7bb4d90dc06b72a018208f6dc37202a85ceb623f75f8843ca3a5e",
+        "size": 1362
+      }
+    },
+    "address": "http://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/archive",
+    "timestamp": 1727882917000
+  },
+  "packages": {}
+}
