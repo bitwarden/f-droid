@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1727882920000,
+    "timestamp": 1727986309000,
     "version": 20002,
     "name": "Bitwarden F-Droid",
     "icon": "icon.png",
@@ -24,9 +24,9 @@
       "name": "Bitwarden",
       "sourceCode": "https://github.com/bitwarden/android",
       "summary": "Bitwarden mobile app for Android.",
-      "added": 1727882909000,
+      "added": 1727986298000,
       "packageName": "com.x8bit.bitwarden",
-      "lastUpdated": 1727882911000,
+      "lastUpdated": 1727986299000,
       "localized": {
         "en-US": {
           "featureGraphic": "featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
@@ -47,9 +47,9 @@
       "name": "Bitwarden Beta",
       "sourceCode": "https://github.com/bitwarden/android",
       "summary": "Bitwarden mobile app for Android.",
-      "added": 1727882906000,
+      "added": 1727986293000,
       "packageName": "com.x8bit.bitwarden.beta",
-      "lastUpdated": 1727882907000,
+      "lastUpdated": 1727986296000,
       "localized": {
         "en-US": {
           "featureGraphic": "featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
@@ -62,7 +62,7 @@
   "packages": {
     "com.x8bit.bitwarden": [
       {
-        "added": 1727882911000,
+        "added": 1727986299000,
         "apkName": "bitwarden_v2024.9.0.apk",
         "hash": "73a340a8ae975146fdbbec805ec29ee083290522627e82a56bd1126ff9a1a2d6",
         "hashType": "sha256",
@@ -131,7 +131,7 @@
         "versionName": "2024.9.0"
       },
       {
-        "added": 1727882909000,
+        "added": 1727986298000,
         "apkName": "bitwarden_v2024.8.1.apk",
         "hash": "5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5",
         "hashType": "sha256",
@@ -202,7 +202,7 @@
     ],
     "com.x8bit.bitwarden.beta": [
       {
-        "added": 1727882907000,
+        "added": 1727986296000,
         "apkName": "bitwarden-beta_v2024.9.0.apk",
         "hash": "b361d84fddec1cd4a8c9a8b33a897578564f8ecd46e87e2e57dc44e73050809c",
         "hashType": "sha256",
@@ -271,7 +271,7 @@
         "versionName": "2024.9.0"
       },
       {
-        "added": 1727882906000,
+        "added": 1727986294000,
         "apkName": "bitwarden-beta_v2024.8.1.apk",
         "hash": "f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370",
         "hashType": "sha256",
@@ -338,6 +338,75 @@
         ],
         "versionCode": 19099,
         "versionName": "2024.8.1"
+      },
+      {
+        "added": 1727986293000,
+        "apkName": "bitwarden-beta_v2024.7.3.apk",
+        "hash": "77827e9fa1d00ce3c544ec67a3b712445dae2dfec1d7e2f4afc002650510a922",
+        "hashType": "sha256",
+        "minSdkVersion": 28,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi",
+          "armeabi-v7a",
+          "mips",
+          "mips64",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "com.x8bit.bitwarden.beta",
+        "sig": "7619526d81e6c4f0fa16ccaef4bb11f4",
+        "signer": "3c8f03c4225bc173812def564f7ae8a1b3ef34f1bbdcc8748dadc39eb0a69f74",
+        "size": 97339892,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.USE_BIOMETRIC",
+            null
+          ],
+          [
+            "android.permission.NFC",
+            null
+          ],
+          [
+            "android.permission.CAMERA",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.USE_FINGERPRINT",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "com.x8bit.bitwarden.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 18938,
+        "versionName": "2024.7.3"
       }
     ]
   }

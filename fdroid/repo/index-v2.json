@@ -14,16 +14,16 @@
       }
     },
     "address": "https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo",
-    "timestamp": 1727882920000
+    "timestamp": 1727986309000
   },
   "packages": {
     "com.x8bit.bitwarden": {
       "metadata": {
-        "added": 1727882909000,
+        "added": 1727986298000,
         "categories": [
           "Security"
         ],
-        "lastUpdated": 1727882911000,
+        "lastUpdated": 1727986299000,
         "license": "GPL-3.0",
         "sourceCode": "https://github.com/bitwarden/android",
         "featureGraphic": {
@@ -54,7 +54,7 @@
       },
       "versions": {
         "73a340a8ae975146fdbbec805ec29ee083290522627e82a56bd1126ff9a1a2d6": {
-          "added": 1727882911000,
+          "added": 1727986299000,
           "file": {
             "name": "/bitwarden_v2024.9.0.apk",
             "sha256": "73a340a8ae975146fdbbec805ec29ee083290522627e82a56bd1126ff9a1a2d6",
@@ -119,7 +119,7 @@
           }
         },
         "5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5": {
-          "added": 1727882909000,
+          "added": 1727986298000,
           "file": {
             "name": "/bitwarden_v2024.8.1.apk",
             "sha256": "5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5",
@@ -187,11 +187,11 @@
     },
     "com.x8bit.bitwarden.beta": {
       "metadata": {
-        "added": 1727882906000,
+        "added": 1727986293000,
         "categories": [
           "Security"
         ],
-        "lastUpdated": 1727882907000,
+        "lastUpdated": 1727986296000,
         "license": "GPL-3.0",
         "sourceCode": "https://github.com/bitwarden/android",
         "featureGraphic": {
@@ -222,7 +222,7 @@
       },
       "versions": {
         "b361d84fddec1cd4a8c9a8b33a897578564f8ecd46e87e2e57dc44e73050809c": {
-          "added": 1727882907000,
+          "added": 1727986296000,
           "file": {
             "name": "/bitwarden-beta_v2024.9.0.apk",
             "sha256": "b361d84fddec1cd4a8c9a8b33a897578564f8ecd46e87e2e57dc44e73050809c",
@@ -287,7 +287,7 @@
           }
         },
         "f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370": {
-          "added": 1727882906000,
+          "added": 1727986294000,
           "file": {
             "name": "/bitwarden-beta_v2024.8.1.apk",
             "sha256": "f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370",
@@ -307,6 +307,71 @@
             "versionCode": 19099,
             "usesSdk": {
               "minSdkVersion": 29,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "3c8f03c4225bc173812def564f7ae8a1b3ef34f1bbdcc8748dadc39eb0a69f74"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.POST_NOTIFICATIONS"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE"
+              },
+              {
+                "name": "com.x8bit.bitwarden.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        },
+        "77827e9fa1d00ce3c544ec67a3b712445dae2dfec1d7e2f4afc002650510a922": {
+          "added": 1727986293000,
+          "file": {
+            "name": "/bitwarden-beta_v2024.7.3.apk",
+            "sha256": "77827e9fa1d00ce3c544ec67a3b712445dae2dfec1d7e2f4afc002650510a922",
+            "size": 97339892
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "mips",
+              "mips64",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2024.7.3",
+            "versionCode": 18938,
+            "usesSdk": {
+              "minSdkVersion": 28,
               "targetSdkVersion": 34
             },
             "signer": {
