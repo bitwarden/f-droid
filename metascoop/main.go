@@ -104,7 +104,7 @@ func main() {
 
 					fmt.Printf("::group::App %s\n", app.Name)
 
-					foundArtifact := false
+					// foundArtifact := false
 
 					for _, release := range releases {
 						fmt.Printf("::group::Release %s\n", release.GetTagName())
@@ -146,7 +146,7 @@ func main() {
 						// If the app file already exists for this version, we stop processing this app and move to the next
 						if _, err := os.Stat(appTargetPath); !errors.Is(err, os.ErrNotExist) {
 							log.Printf("Already have APK for version %q at %q\n", release.GetTagName(), appTargetPath)
-							foundArtifact = true
+							// foundArtifact = true
 							break
 						}
 
@@ -183,12 +183,12 @@ func main() {
 						}
 						changedRepos[repo.GitURL][app.Filename] = release
 						mu.Unlock()
-						break
+						// break
 					}
-					if foundArtifact || haveError {
-						// Stop after the first [release] of this [app] is downloaded to prevent back-filling legacy releases.
-						return
-					}
+					// if foundArtifact || haveError {
+					// 	// Stop after the first [release] of this [app] is downloaded to prevent back-filling legacy releases.
+					// 	// return
+					// }
 				}(app)
 			}
 
@@ -506,7 +506,7 @@ func main() {
 		if !hasNewCommits {
 			commitMsg.WriteString("Automatic index update\n\n")
 		}
-		commitMsg.WriteString("Index updated to reflect recent changes to the F-Droid repository.\n")	
+		commitMsg.WriteString("Index updated to reflect recent changes to the F-Droid repository.\n")
 	} else {
 		log.Printf("The index files didn't change significantly")
 
@@ -552,7 +552,7 @@ func main() {
 	}
 
 	// If we have relevant changes, we write the commit message and exit with code 0.
-	
+
 	// Create a temporary commit message file.
 	tempFile, err := os.Create(*commitMsgFile)
 	if err != nil {
