@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1727987376000,
+    "timestamp": 1728270439000,
     "version": 20002,
     "name": "Bitwarden F-Droid",
     "icon": "icon.png",
@@ -24,9 +24,9 @@
       "name": "Bitwarden",
       "sourceCode": "https://github.com/bitwarden/android",
       "summary": "Bitwarden mobile app for Android.",
-      "added": 1727987349000,
+      "added": 1728270366000,
       "packageName": "com.x8bit.bitwarden",
-      "lastUpdated": 1727987365000,
+      "lastUpdated": 1728270427000,
       "localized": {
         "en-US": {
           "featureGraphic": "featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
@@ -47,9 +47,9 @@
       "name": "Bitwarden Beta",
       "sourceCode": "https://github.com/bitwarden/android",
       "summary": "Bitwarden mobile app for Android.",
-      "added": 1727987341000,
+      "added": 1728270359000,
       "packageName": "com.x8bit.bitwarden.beta",
-      "lastUpdated": 1727987346000,
+      "lastUpdated": 1728270364000,
       "localized": {
         "en-US": {
           "featureGraphic": "featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
@@ -62,7 +62,7 @@
   "packages": {
     "com.x8bit.bitwarden": [
       {
-        "added": 1727987365000,
+        "added": 1728270381000,
         "apkName": "bitwarden_v2024.9.0.apk",
         "hash": "73a340a8ae975146fdbbec805ec29ee083290522627e82a56bd1126ff9a1a2d6",
         "hashType": "sha256",
@@ -131,7 +131,7 @@
         "versionName": "2024.9.0"
       },
       {
-        "added": 1727987363000,
+        "added": 1728270380000,
         "apkName": "bitwarden_v2024.8.1.apk",
         "hash": "5a6023235c90aaceb8bbc22c5038a09616c3730294c82131a724ab0605e5ece5",
         "hashType": "sha256",
@@ -200,7 +200,7 @@
         "versionName": "2024.8.1"
       },
       {
-        "added": 1727987362000,
+        "added": 1728270378000,
         "apkName": "bitwarden_v2024.8.0.apk",
         "hash": "cbaf9ec1e63afe41c80e40cfc0aa07dbb394e74d329fe85a37a6763ff8b9c968",
         "hashType": "sha256",
@@ -269,7 +269,7 @@
         "versionName": "2024.8.0"
       },
       {
-        "added": 1727987360000,
+        "added": 1728270376000,
         "apkName": "bitwarden_v2024.7.3.apk",
         "hash": "ee41f3733cbae8e76daa2094a6ee8916052c7330a659a0c3f491aa30be896711",
         "hashType": "sha256",
@@ -338,7 +338,7 @@
         "versionName": "2024.7.3"
       },
       {
-        "added": 1727987358000,
+        "added": 1728270374000,
         "apkName": "bitwarden_v2024.7.2.apk",
         "hash": "73a8fa394226ff2a84cfee9c1fac73370215b37065dc45793a588290a987f528",
         "hashType": "sha256",
@@ -407,7 +407,7 @@
         "versionName": "2024.7.2"
       },
       {
-        "added": 1727987357000,
+        "added": 1728270373000,
         "apkName": "bitwarden_v2024.6.0.apk",
         "hash": "d04c916c9cffbbf7dbea350b014d16cf73a2d89accba759bd9a054f72e603434",
         "hashType": "sha256",
@@ -477,7 +477,7 @@
         "versionName": "2024.6.0"
       },
       {
-        "added": 1727987355000,
+        "added": 1728270371000,
         "apkName": "bitwarden_v2024.5.1.apk",
         "hash": "9f8739c4462f81df14864aa1df3492c95035de26becaaa86580fc30804e03a65",
         "hashType": "sha256",
@@ -547,7 +547,7 @@
         "versionName": "2024.5.1"
       },
       {
-        "added": 1727987354000,
+        "added": 1728270370000,
         "apkName": "bitwarden_v2024.4.0.apk",
         "hash": "002fc33ecde443ae52e08d26408a3dd36b50e67b52e0c401f25f4fc45c454ada",
         "hashType": "sha256",
@@ -617,7 +617,7 @@
         "versionName": "2024.4.0"
       },
       {
-        "added": 1727987352000,
+        "added": 1728270368000,
         "apkName": "bitwarden_v2024.3.3.apk",
         "hash": "14148d4ca4a4ece201d0b3965ce6265353400577868cd446ac10e929e3077938",
         "hashType": "sha256",
@@ -687,7 +687,7 @@
         "versionName": "2024.3.3"
       },
       {
-        "added": 1727987351000,
+        "added": 1728270366000,
         "apkName": "bitwarden_v2024.3.1.apk",
         "hash": "b430d8f8a8315c73702eb9018518fdd306e4ad8f61da53101f0f9ed1ee8d746a",
         "hashType": "sha256",
@@ -759,7 +759,7 @@
     ],
     "com.x8bit.bitwarden.beta": [
       {
-        "added": 1727987346000,
+        "added": 1728270364000,
         "apkName": "bitwarden-beta_v2024.9.0.apk",
         "hash": "b361d84fddec1cd4a8c9a8b33a897578564f8ecd46e87e2e57dc44e73050809c",
         "hashType": "sha256",
@@ -828,7 +828,7 @@
         "versionName": "2024.9.0"
       },
       {
-        "added": 1727987345000,
+        "added": 1728270363000,
         "apkName": "bitwarden-beta_v2024.8.1.apk",
         "hash": "f50f6ff73336d2e95f5ad1c4c0cb49b9a5f5ad9bd82a72a1ea5ed670cd767370",
         "hashType": "sha256",
@@ -897,7 +897,7 @@
         "versionName": "2024.8.1"
       },
       {
-        "added": 1727987343000,
+        "added": 1728270361000,
         "apkName": "bitwarden-beta_v2024.8.0.apk",
         "hash": "936b08207c4b44f8839b173088a15ae285f675f93c5e7351bf9fe6aa944738c1",
         "hashType": "sha256",
@@ -966,7 +966,7 @@
         "versionName": "2024.8.0"
       },
       {
-        "added": 1727987341000,
+        "added": 1728270359000,
         "apkName": "bitwarden-beta_v2024.7.3.apk",
         "hash": "77827e9fa1d00ce3c544ec67a3b712445dae2dfec1d7e2f4afc002650510a922",
         "hashType": "sha256",
