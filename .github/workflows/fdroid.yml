@@ -68,7 +68,7 @@ jobs:
           CONTAINER_NAME: mobile
         run: |
           az storage blob download --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME \
-          --name fdroid_repo_keystore.jks --file fdroid/keystore.p12 --output none
+          --name store_fdroid-keystore.jks --file fdroid/keystore.p12 --output none
           
           az storage blob download --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME \
           --name fdroid-config.yml --file fdroid/config.yml --output none
