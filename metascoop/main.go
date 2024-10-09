@@ -113,6 +113,10 @@ func main() {
 							log.Printf("Skipping draft %q\n", release.GetTagName())
 							continue
 						}
+						if release.GetPrerelease() {
+							log.Printf("Skipping pre-release %q\n", release.GetTagName())
+							continue
+						}
 						if release.GetTagName() == "" {
 							log.Printf("Skipping release with empty tag name")
 							continue
