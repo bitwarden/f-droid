@@ -1,0 +1,4 @@
+# jekyll config file for GH Page
+title: Bitwarden F-Droid Repository
+logo: fdroid/repo/com.x8bit.bitwarden/en-US/icon.png
+theme: minima
