@@ -7,7 +7,7 @@
 
 URL:
 ```
-https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo?fingerprint=BC54EA6FD1CD5175BCCCC47C561C5726E1C3ED7E686B6DB4B18BAC843A3EFE6C
+https://mobileapp.bitwarden.com/fdroid/repo?fingerprint=BC54EA6FD1CD5175BCCCC47C561C5726E1C3ED7E686B6DB4B18BAC843A3EFE6C
 ```
 
 ## Bitwarden Apps
@@ -21,7 +21,7 @@ https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo?fingerprint
 
 ## Instructions
 1. Install the [F-Droid client app](https://f-droid.org/).
-2. Scan the QR code from above or manually copy/paste the Bitwarden F-Droid repository [link](https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo?fingerprint=BC54EA6FD1CD5175BCCCC47C561C5726E1C3ED7E686B6DB4B18BAC843A3EFE6C) into the F-Droid client app under Settings.
+2. Scan the QR code from above or manually copy/paste the Bitwarden F-Droid repository [link](https://mobileapp.bitwarden.com/fdroid/repo?fingerprint=BC54EA6FD1CD5175BCCCC47C561C5726E1C3ED7E686B6DB4B18BAC843A3EFE6C) into the F-Droid client app under Settings.
 3. Add the Bitwarden repository to the F-Droid client app.
 4. Refresh your F-Droid client app under the Categories tab.
 5. Install Bitwarden from the F-Droid client app listing.
