@@ -4,6 +4,7 @@
     <a href="https://mobileapp.bitwarden.com/fdroid/repo?fingerprint=BC54EA6FD1CD5175BCCCC47C561C5726E1C3ED7E686B6DB4B18BAC843A3EFE6C">
         <img src="fdroid/btn.png" alt="F-Droid repo url button" width="323" height="125"/>
     </a>
+    <br>
     <a href="https://mobileapp.bitwarden.com/fdroid/repo?fingerprint=BC54EA6FD1CD5175BCCCC47C561C5726E1C3ED7E686B6DB4B18BAC843A3EFE6C">
         <img src="fdroid/repo/index.png?raw=true" alt="F-Droid repo QR code" width="300" height="300"/>
     </a>
