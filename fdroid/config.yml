@@ -9,7 +9,7 @@ repo_description: >-
 archive_url: https://mobileapp.bitwarden.com/fdroid/archive/
 archive_name: Bitwarden F-droid Archive
 archive_description: >-
-  This is a repository of archived Bitwarden apps that are no longer 
+  This is a repository of archived Bitwarden apps that are no longer
   officially supported.
 
 archive_older: 10
