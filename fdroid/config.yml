@@ -1,6 +1,7 @@
 ---
 repo_url: https://mobileapp.bitwarden.com/fdroid/repo
-servergitmirrors: https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo
+mirrors:
+  - https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid
 repo_name: Bitwarden F-Droid
 repo_description: >-
   This is a repository of Bitwarden apps to be used with F-Droid. Applications
