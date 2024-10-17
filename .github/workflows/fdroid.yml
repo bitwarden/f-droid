@@ -72,23 +72,18 @@ jobs:
 
       - name: Validate secrets
         run: |
-          if [ -f "fdroid/config.yml" ]; then
-            echo "config found. setting permission to 0600"
-            chmod 0600 fdroid/config.yml
-
-            echo "keypass: ${{ secrets.FDROID_STORE_KEYSTORE_PASSWORD }}" >> fdroid/config.yml
-            echo "keystorepass: ${{ secrets.FDROID_STORE_KEYSTORE_PASSWORD }}" >> fdroid/config.yml
-          else
-            echo "config not found!"
-            exit 1
-          fi
-
           if [ -f "fdroid/keystore.p12" ]; then
             echo "keystore found"
           else
             echo "keystore not found!"
             exit 1
           fi
+
+      - name: Configure F-Droid server
+        run: |
+          bash write_config.sh \
+            -k ${{ secrets.FDROID_STORE_KEYSTORE_PASSWORD }} \
+            -s ${{ secrets.FDROID_STORE_KEYSTORE_PASSWORD }}
 
       - name: Install F-Droid server software
         run: |
