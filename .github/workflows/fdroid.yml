@@ -80,10 +80,13 @@ jobs:
           fi
 
       - name: Configure F-Droid server
+        env:
+          FDROID_STORE_KEYSTORE_PASSWORD: ${{ secrets.FDROID_STORE_KEYSTORE_PASSWORD }}
         run: |
-          bash write_config.sh \
-            -k ${{ secrets.FDROID_STORE_KEYSTORE_PASSWORD }} \
-            -s ${{ secrets.FDROID_STORE_KEYSTORE_PASSWORD }}
+          cp base_fdroid_config.yml fdroid/config.yml
+          chmod 0600 fdroid/config.yml
+          echo "keypass: '$FDROID_STORE_KEYSTORE_PASSWORD'" >> fdroid/config.yml
+          echo "keystorepass: '$FDROID_STORE_KEYSTORE_PASSWORD'" >> fdroid/config.yml
 
       - name: Install F-Droid server software
         run: |
@@ -113,6 +116,10 @@ jobs:
             echo "has_changes=false" >> $GITHUB_OUTPUT
           fi
         continue-on-error: true
+
+      - name: Delete F-Droid server config
+        run: |
+          rm -f fdroid/config.yml
 
       - name: Update repo
         env:
