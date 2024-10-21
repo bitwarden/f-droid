@@ -24,6 +24,7 @@ node_modules
 npm-debug.log
 
 # Secrets
+fdroid/config.yml
 keystore.p12
 keystore.jks
 
