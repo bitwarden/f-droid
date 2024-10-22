@@ -5,5 +5,3 @@ markdown: GFM
 theme: minima
 minima:
   skin: auto
-social_links:
-  - { platform: github,         user_url: "https://github.com/bitwarden/f-droid" }
