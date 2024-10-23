@@ -23,16 +23,16 @@
         "url": "https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/archive"
       }
     ],
-    "timestamp": 1729566261000
+    "timestamp": 1729652565000
   },
   "packages": {
     "com.x8bit.bitwarden": {
       "metadata": {
-        "added": 1729566194000,
+        "added": 1729652499000,
         "categories": [
           "Security"
         ],
-        "lastUpdated": 1729566253000,
+        "lastUpdated": 1729652557000,
         "license": "GPL-3.0",
         "sourceCode": "https://github.com/bitwarden/android",
         "authorName": "bitwarden",
@@ -56,7 +56,7 @@
       },
       "versions": {
         "b302e0d114089bf038521da937107c150a794084b9d6701be98c244ffad6ee4e": {
-          "added": 1729566253000,
+          "added": 1729652557000,
           "file": {
             "name": "/bitwarden_v2024.3.0.apk",
             "sha256": "b302e0d114089bf038521da937107c150a794084b9d6701be98c244ffad6ee4e",
@@ -130,7 +130,7 @@
           }
         },
         "facf43eec58ee602e940ee98ae0fcfdef4c8cdca916b7d3dba9b0852adb6ecb2": {
-          "added": 1729566251000,
+          "added": 1729652556000,
           "file": {
             "name": "/bitwarden_v2024.2.1.apk",
             "sha256": "facf43eec58ee602e940ee98ae0fcfdef4c8cdca916b7d3dba9b0852adb6ecb2",
@@ -204,7 +204,7 @@
           }
         },
         "80d89445bd539af6d5691e6dc1327fa495a7a57a393f2116347fb267bed6d2c9": {
-          "added": 1729566250000,
+          "added": 1729652554000,
           "file": {
             "name": "/bitwarden_v2024.2.0.apk",
             "sha256": "80d89445bd539af6d5691e6dc1327fa495a7a57a393f2116347fb267bed6d2c9",
@@ -269,7 +269,7 @@
           }
         },
         "1cc3f95b4952ece55b3898665f091381c0f1924c10d73312dbb6259c94d842ee": {
-          "added": 1729566248000,
+          "added": 1729652552000,
           "file": {
             "name": "/bitwarden_v2024.1.1.apk",
             "sha256": "1cc3f95b4952ece55b3898665f091381c0f1924c10d73312dbb6259c94d842ee",
@@ -334,7 +334,7 @@
           }
         },
         "0c30810b3d7e78c7dad668a5b2ae283a15adbeddeb1acd33152179205306ba51": {
-          "added": 1729566246000,
+          "added": 1729652551000,
           "file": {
             "name": "/bitwarden_v2024.1.0.apk",
             "sha256": "0c30810b3d7e78c7dad668a5b2ae283a15adbeddeb1acd33152179205306ba51",
@@ -399,7 +399,7 @@
           }
         },
         "247482e5a1bba062774532d77ac096e77eaf449fe0a57369a2ea9a49bdd7d89a": {
-          "added": 1729566227000,
+          "added": 1729652531000,
           "file": {
             "name": "/bitwarden_v2023.12.0.apk",
             "sha256": "247482e5a1bba062774532d77ac096e77eaf449fe0a57369a2ea9a49bdd7d89a",
@@ -464,7 +464,7 @@
           }
         },
         "6ad9ca301b6fac2e6e55480f556ce97361eaab9c8c144a3496a1423ec4444ac4": {
-          "added": 1729566225000,
+          "added": 1729652530000,
           "file": {
             "name": "/bitwarden_v2023.10.0.apk",
             "sha256": "6ad9ca301b6fac2e6e55480f556ce97361eaab9c8c144a3496a1423ec4444ac4",
@@ -529,7 +529,7 @@
           }
         },
         "44636bc978f3f8727f31ba568e54f1c6f6ea966c248a66c4997474117ff40e61": {
-          "added": 1729566245000,
+          "added": 1729652549000,
           "file": {
             "name": "/bitwarden_v2023.9.2.apk",
             "sha256": "44636bc978f3f8727f31ba568e54f1c6f6ea966c248a66c4997474117ff40e61",
@@ -594,7 +594,7 @@
           }
         },
         "f6df58379bcbad214f2c3650b032baf7bed3310564be8e0bf3741ff49cd9210e": {
-          "added": 1729566243000,
+          "added": 1729652547000,
           "file": {
             "name": "/bitwarden_v2023.9.1.apk",
             "sha256": "f6df58379bcbad214f2c3650b032baf7bed3310564be8e0bf3741ff49cd9210e",
@@ -659,7 +659,7 @@
           }
         },
         "e06d5b7919a937f26a52d28c2bbdf40a788a30c4c86b3f5aa1d98a2b986a638d": {
-          "added": 1729566241000,
+          "added": 1729652546000,
           "file": {
             "name": "/bitwarden_v2023.9.0.apk",
             "sha256": "e06d5b7919a937f26a52d28c2bbdf40a788a30c4c86b3f5aa1d98a2b986a638d",
@@ -724,7 +724,7 @@
           }
         },
         "6316a5d034506930eaa9898894ab7cd61487785eb2befd8569de22d1a3a0d88d": {
-          "added": 1729566239000,
+          "added": 1729652544000,
           "file": {
             "name": "/bitwarden_v2023.8.0.apk",
             "sha256": "6316a5d034506930eaa9898894ab7cd61487785eb2befd8569de22d1a3a0d88d",
@@ -789,7 +789,7 @@
           }
         },
         "e4092de2720b6689d54196c694bc8df91b0d84ae217f97bcd8c91770efaab36c": {
-          "added": 1729566238000,
+          "added": 1729652542000,
           "file": {
             "name": "/bitwarden_v2023.7.0.apk",
             "sha256": "e4092de2720b6689d54196c694bc8df91b0d84ae217f97bcd8c91770efaab36c",
@@ -854,7 +854,7 @@
           }
         },
         "ffb1325ce0176e650d9e56461f13cec34a936e45808206688c071446136e4d43": {
-          "added": 1729566236000,
+          "added": 1729652541000,
           "file": {
             "name": "/bitwarden_v2023.5.0.apk",
             "sha256": "ffb1325ce0176e650d9e56461f13cec34a936e45808206688c071446136e4d43",
@@ -919,7 +919,7 @@
           }
         },
         "eea5ece211117a78fb122f5dac8f86193a8543093537761649f016382ce672be": {
-          "added": 1729566234000,
+          "added": 1729652539000,
           "file": {
             "name": "/bitwarden_v2023.4.0.apk",
             "sha256": "eea5ece211117a78fb122f5dac8f86193a8543093537761649f016382ce672be",
@@ -984,7 +984,7 @@
           }
         },
         "86e6d5eb3050357fdea660624ebf50d41748b372e3a79c31c6578c04d62f73da": {
-          "added": 1729566233000,
+          "added": 1729652538000,
           "file": {
             "name": "/bitwarden_v2023.3.2.apk",
             "sha256": "86e6d5eb3050357fdea660624ebf50d41748b372e3a79c31c6578c04d62f73da",
@@ -1049,7 +1049,7 @@
           }
         },
         "415211d1d52f17416633fdb06ea49b63ce3527300fdee088e22b565cc7b36b3f": {
-          "added": 1729566231000,
+          "added": 1729652536000,
           "file": {
             "name": "/bitwarden_v2023.3.1.apk",
             "sha256": "415211d1d52f17416633fdb06ea49b63ce3527300fdee088e22b565cc7b36b3f",
@@ -1114,7 +1114,7 @@
           }
         },
         "b2de4b6a2d7db4a7c329d3e8af6b805481f9d1baf5f432c164e8a0c25d75f743": {
-          "added": 1729566230000,
+          "added": 1729652534000,
           "file": {
             "name": "/bitwarden_v2023.3.0.apk",
             "sha256": "b2de4b6a2d7db4a7c329d3e8af6b805481f9d1baf5f432c164e8a0c25d75f743",
@@ -1179,7 +1179,7 @@
           }
         },
         "f3feed9ecb396ada9605ea6e42de014743cf44015de833d4591d9cb9fa18e1f2": {
-          "added": 1729566228000,
+          "added": 1729652533000,
           "file": {
             "name": "/bitwarden_v2023.2.0.apk",
             "sha256": "f3feed9ecb396ada9605ea6e42de014743cf44015de833d4591d9cb9fa18e1f2",
@@ -1244,7 +1244,7 @@
           }
         },
         "e6214ea4b7ddacb482a649a7fc8a7c69cdcf3b177ac9bd3bde0ec71cab6351d6": {
-          "added": 1729566223000,
+          "added": 1729652528000,
           "file": {
             "name": "/bitwarden_v2023.1.0.apk",
             "sha256": "e6214ea4b7ddacb482a649a7fc8a7c69cdcf3b177ac9bd3bde0ec71cab6351d6",
@@ -1309,7 +1309,7 @@
           }
         },
         "da296aa3f5b59fcece9872beabb86f61bc4d2d4e13eb0db76e349c1204d74386": {
-          "added": 1729566213000,
+          "added": 1729652517000,
           "file": {
             "name": "/bitwarden_v2022.11.0.apk",
             "sha256": "da296aa3f5b59fcece9872beabb86f61bc4d2d4e13eb0db76e349c1204d74386",
@@ -1374,7 +1374,7 @@
           }
         },
         "c067c7e45be3d79999971843a25919d7f7e92daf13973d3703fb7c90781067f9": {
-          "added": 1729566211000,
+          "added": 1729652516000,
           "file": {
             "name": "/bitwarden_v2022.10.0.apk",
             "sha256": "c067c7e45be3d79999971843a25919d7f7e92daf13973d3703fb7c90781067f9",
@@ -1439,7 +1439,7 @@
           }
         },
         "d71ec959d77736788e47baab318df32e29c77347ebd425b0c2bd391773b86121": {
-          "added": 1729566222000,
+          "added": 1729652526000,
           "file": {
             "name": "/bitwarden_v2022.9.1.apk",
             "sha256": "d71ec959d77736788e47baab318df32e29c77347ebd425b0c2bd391773b86121",
@@ -1501,7 +1501,7 @@
           }
         },
         "b1825abe4636c19a5d09062c7f74b4868d3eec2c6dfa91111d86d8815a5c789a": {
-          "added": 1729566220000,
+          "added": 1729652525000,
           "file": {
             "name": "/bitwarden_v2022.9.0.apk",
             "sha256": "b1825abe4636c19a5d09062c7f74b4868d3eec2c6dfa91111d86d8815a5c789a",
@@ -1563,7 +1563,7 @@
           }
         },
         "5c35d113c0f6ff87b24e3853f255f8e878fef43eb58bc16f420c18dbd328e743": {
-          "added": 1729566219000,
+          "added": 1729652524000,
           "file": {
             "name": "/bitwarden_v2022.8.0.apk",
             "sha256": "5c35d113c0f6ff87b24e3853f255f8e878fef43eb58bc16f420c18dbd328e743",
@@ -1622,7 +1622,7 @@
           }
         },
         "f2a223f0806ba86ba4f34fae7c95547667b6b57e2561875b1d92f7008726fe41": {
-          "added": 1729566217000,
+          "added": 1729652522000,
           "file": {
             "name": "/bitwarden_v2022.6.2.apk",
             "sha256": "f2a223f0806ba86ba4f34fae7c95547667b6b57e2561875b1d92f7008726fe41",
@@ -1681,7 +1681,7 @@
           }
         },
         "b39d1710465b8589be6b0d3f0cec2ee8ab9db645cf7c57ef3e399baae7e023a7": {
-          "added": 1729566216000,
+          "added": 1729652521000,
           "file": {
             "name": "/bitwarden_v2022.6.1.apk",
             "sha256": "b39d1710465b8589be6b0d3f0cec2ee8ab9db645cf7c57ef3e399baae7e023a7",
@@ -1740,7 +1740,7 @@
           }
         },
         "1d172fde5601028fe1a3844f7e8c48d64fe0b9bdd3aa86965a03cc2094bbe67f": {
-          "added": 1729566214000,
+          "added": 1729652519000,
           "file": {
             "name": "/bitwarden_v2022.6.0.apk",
             "sha256": "1d172fde5601028fe1a3844f7e8c48d64fe0b9bdd3aa86965a03cc2094bbe67f",
@@ -1799,7 +1799,7 @@
           }
         },
         "648f0d320c508c70ea9a6b15c0632f2bc6ad99246a0433b5b68bbcfa8276b051": {
-          "added": 1729566210000,
+          "added": 1729652514000,
           "file": {
             "name": "/bitwarden_v2022.05.0.apk",
             "sha256": "648f0d320c508c70ea9a6b15c0632f2bc6ad99246a0433b5b68bbcfa8276b051",
