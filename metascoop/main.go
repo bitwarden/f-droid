@@ -104,8 +104,6 @@ func main() {
 
 					fmt.Printf("::group::App %s\n", app.Name)
 
-					foundArtifact := false
-
 					for _, release := range releases {
 						fmt.Printf("::group::Release %s\n", release.GetTagName())
 
@@ -146,8 +144,7 @@ func main() {
 						// If the app file already exists for this version, we stop processing this app and move to the next
 						if _, err := os.Stat(appTargetPath); !errors.Is(err, os.ErrNotExist) {
 							log.Printf("Already have APK for version %q at %q\n", release.GetTagName(), appTargetPath)
-							foundArtifact = true
-							break
+							continue
 						}
 
 						log.Printf("Downloading APK %q from release %q to %q", apk.GetName(), release.GetTagName(), appTargetPath)
@@ -183,9 +180,8 @@ func main() {
 						}
 						changedRepos[repo.GitURL][app.Filename] = release
 						mu.Unlock()
-						break
 					}
-					if foundArtifact || haveError {
+					if haveError {
 						// Stop after the first [release] of this [app] is downloaded to prevent back-filling legacy releases.
 						return
 					}
