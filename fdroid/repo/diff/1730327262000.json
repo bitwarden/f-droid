@@ -1,0 +1,27 @@
+{
+  "repo": {
+    "timestamp": 1730327272000
+  },
+  "packages": {
+    "com.x8bit.bitwarden": {
+      "versions": {
+        "f64968e88ded7295e283efe19480acf2bd2acf21b48ae319c7231c99adb3b162": {
+          "releaseChannels": null
+        },
+        "8310315089841001234a7a4d3410d66d1187d4cda17cd1b09590a25094852907": {
+          "releaseChannels": null
+        }
+      }
+    },
+    "com.x8bit.bitwarden.beta": {
+      "versions": {
+        "dbaceda390411bb36660a53be85d604cf362c788879819266aefb126386570d6": {
+          "releaseChannels": null
+        },
+        "9414fdb89fd1bfae13d3defd3805c6a45f6238c50a6966612c9395fa8e34b47e": {
+          "releaseChannels": null
+        }
+      }
+    }
+  }
+}

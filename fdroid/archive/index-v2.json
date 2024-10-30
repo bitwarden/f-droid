@@ -23,16 +23,16 @@
         "url": "https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/archive"
       }
     ],
-    "timestamp": 1730257494000
+    "timestamp": 1730327269000
   },
   "packages": {
     "com.x8bit.bitwarden": {
       "metadata": {
-        "added": 1730257426000,
+        "added": 1730327134000,
         "categories": [
           "Security"
         ],
-        "lastUpdated": 1730257486000,
+        "lastUpdated": 1730327257000,
         "license": "GPL-3.0",
         "sourceCode": "https://github.com/bitwarden/android",
         "authorName": "bitwarden",
@@ -47,16 +47,2006 @@
         },
         "icon": {
           "en-US": {
-            "name": "/icons/com.x8bit.bitwarden.9799.png",
+            "name": "/icons/com.x8bit.bitwarden.10091.png",
             "sha256": "15efe5cfe8c7bb4d90dc06b72a018208f6dc37202a85ceb623f75f8843ca3a5e",
             "size": 1362
           }
         },
-        "preferredSigner": "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+        "preferredSigner": "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
       },
       "versions": {
+        "ceb9e820646a199ac8e93e9f2049d263069daab15e2624c63bd6f0309d97f5b7": {
+          "added": 1730327181000,
+          "file": {
+            "name": "/bitwarden_v2.4.1.apk",
+            "sha256": "ceb9e820646a199ac8e93e9f2049d263069daab15e2624c63bd6f0309d97f5b7",
+            "size": 52903958
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.4.1",
+            "versionCode": 2497,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 29
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "1acb3e8cca2b56b222dd6ec2c299d172cde7c437a084277d92f8f121acb59352": {
+          "added": 1730327179000,
+          "file": {
+            "name": "/bitwarden_v2.4.0.apk",
+            "sha256": "1acb3e8cca2b56b222dd6ec2c299d172cde7c437a084277d92f8f121acb59352",
+            "size": 52883478
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.4.0",
+            "versionCode": 2479,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 29
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "b8333ff29b6c221a8177aa307ad31ceae681ada1ebe8b12dbcaf5de2318b9386": {
+          "added": 1730327178000,
+          "file": {
+            "name": "/bitwarden_v2.3.1.apk",
+            "sha256": "b8333ff29b6c221a8177aa307ad31ceae681ada1ebe8b12dbcaf5de2318b9386",
+            "size": 33765142
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.3.1",
+            "versionCode": 2257,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 29
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "f36279335e57002b2bd7720e75993917ef8b5826b9a871aa656ac98565811565": {
+          "added": 1730327177000,
+          "file": {
+            "name": "/bitwarden_v2.3.0.apk",
+            "sha256": "f36279335e57002b2bd7720e75993917ef8b5826b9a871aa656ac98565811565",
+            "size": 33765142
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.3.0",
+            "versionCode": 2252,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 29
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "1d25f09f2dfa432e7814ff40cca089f180dda0064c4ba28f5613a50f7da1f1b6": {
+          "added": 1730327176000,
+          "file": {
+            "name": "/bitwarden_v2.2.8.apk",
+            "sha256": "1d25f09f2dfa432e7814ff40cca089f180dda0064c4ba28f5613a50f7da1f1b6",
+            "size": 32318739
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.2.8",
+            "versionCode": 2137,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 29
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "2614351a19ecc1d72b9cafa3c6e4c1915ab168baf75d13bbdfa73a0521bb4f99": {
+          "added": 1730327176000,
+          "file": {
+            "name": "/bitwarden_v2.2.7.apk",
+            "sha256": "2614351a19ecc1d72b9cafa3c6e4c1915ab168baf75d13bbdfa73a0521bb4f99",
+            "size": 32105747
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.2.7",
+            "versionCode": 2131,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 29
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "5b95c7957d7493d200ff4ab14b33f012ac090119c92304f559f4cf8f07cfb13c": {
+          "added": 1730327175000,
+          "file": {
+            "name": "/bitwarden_v2.2.6.apk",
+            "sha256": "5b95c7957d7493d200ff4ab14b33f012ac090119c92304f559f4cf8f07cfb13c",
+            "size": 31741203
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.2.6",
+            "versionCode": 2112,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 29
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "047e622116e1bb759182e4f4ae74d61e7d31ace94c1af9c8c909c6241459069b": {
+          "added": 1730327174000,
+          "file": {
+            "name": "/bitwarden_v2.2.2.apk",
+            "sha256": "047e622116e1bb759182e4f4ae74d61e7d31ace94c1af9c8c909c6241459069b",
+            "size": 29719223
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.2.2",
+            "versionCode": 2073,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 28
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "767cdf86457d7e859343d85334eb1eeed0b5ce6cc0b460748c1e5a453c1a3c13": {
+          "added": 1730327173000,
+          "file": {
+            "name": "/bitwarden_v2.2.1.apk",
+            "sha256": "767cdf86457d7e859343d85334eb1eeed0b5ce6cc0b460748c1e5a453c1a3c13",
+            "size": 29717665
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.2.1",
+            "versionCode": 2064,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 28
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "2e6e33c15f226b98fd849cdae587cf43c4128e9b7ef88779330d49031af7a47d": {
+          "added": 1730327172000,
+          "file": {
+            "name": "/bitwarden_v2.2.0.apk",
+            "sha256": "2e6e33c15f226b98fd849cdae587cf43c4128e9b7ef88779330d49031af7a47d",
+            "size": 29717173
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.2.0",
+            "versionCode": 2059,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 28
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "b6d531b16f04f95fddd64ece49eac209db9104f3862ab81ca720ece0d06b4a56": {
+          "added": 1730327149000,
+          "file": {
+            "name": "/bitwarden_v2.1.2.apk",
+            "sha256": "b6d531b16f04f95fddd64ece49eac209db9104f3862ab81ca720ece0d06b4a56",
+            "size": 29711534
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.1.2",
+            "versionCode": 2049,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 28
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "343d3e4d1d54fe7e98d9356d9baa4b768cf753ec16689763c8e2a8634cb5eefb": {
+          "added": 1730327148000,
+          "file": {
+            "name": "/bitwarden_v2.1.0.apk",
+            "sha256": "343d3e4d1d54fe7e98d9356d9baa4b768cf753ec16689763c8e2a8634cb5eefb",
+            "size": 29686897
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.1.0",
+            "versionCode": 2021,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 28
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "be9c2e8c5209b4d770a6ee984645e825240e9e9d77b9656c8e401c2eaf9e67f4": {
+          "added": 1730327148000,
+          "file": {
+            "name": "/bitwarden_v2.0.6.apk",
+            "sha256": "be9c2e8c5209b4d770a6ee984645e825240e9e9d77b9656c8e401c2eaf9e67f4",
+            "size": 29585901
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.0.6",
+            "versionCode": 1938,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 28
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "677de310cbdac860c8cd791ea4dc22883c9e9de674b100fe118d2cfd97eb795e": {
+          "added": 1730327147000,
+          "file": {
+            "name": "/bitwarden_v2.0.5.apk",
+            "sha256": "677de310cbdac860c8cd791ea4dc22883c9e9de674b100fe118d2cfd97eb795e",
+            "size": 29585899
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.0.5",
+            "versionCode": 1935,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 28
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "bca76a200f9a0e1c9e241acbbb6ea42c16b68bcb07674d55d6375625d76107ae": {
+          "added": 1730327146000,
+          "file": {
+            "name": "/bitwarden_v2.0.4.apk",
+            "sha256": "bca76a200f9a0e1c9e241acbbb6ea42c16b68bcb07674d55d6375625d76107ae",
+            "size": 29141410
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a"
+            ],
+            "versionName": "2.0.4",
+            "versionCode": 1921,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 28
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "e54e4673773455d00745b35defd2a76d2086ec88cb249cafd016beacd463c5e3": {
+          "added": 1730327146000,
+          "file": {
+            "name": "/bitwarden_v2.0.3.apk",
+            "sha256": "e54e4673773455d00745b35defd2a76d2086ec88cb249cafd016beacd463c5e3",
+            "size": 27279433
+          },
+          "manifest": {
+            "nativecode": [
+              "armeabi-v7a"
+            ],
+            "versionName": "2.0.3",
+            "versionCode": 1914,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 28
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "d290df3219100a061cf56a766985367dd2d6b159503478d66cd56575c1e54492": {
+          "added": 1730327145000,
+          "file": {
+            "name": "/bitwarden_v2.0.2.apk",
+            "sha256": "d290df3219100a061cf56a766985367dd2d6b159503478d66cd56575c1e54492",
+            "size": 27279434
+          },
+          "manifest": {
+            "nativecode": [
+              "armeabi-v7a"
+            ],
+            "versionName": "2.0.2",
+            "versionCode": 1911,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 28
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "ad717f80e0ae4211e9d13421b8acfd7c12c0dfe8031c78a2084e467091cf5bfc": {
+          "added": 1730327144000,
+          "file": {
+            "name": "/bitwarden_v2.0.1.apk",
+            "sha256": "ad717f80e0ae4211e9d13421b8acfd7c12c0dfe8031c78a2084e467091cf5bfc",
+            "size": 27278912
+          },
+          "manifest": {
+            "nativecode": [
+              "armeabi-v7a"
+            ],
+            "versionName": "2.0.1",
+            "versionCode": 1907,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 28
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "858f0a6e280fb994e0a585027933736699265d46a9e18fe4f3ccb01088b5adb9": {
+          "added": 1730327144000,
+          "file": {
+            "name": "/bitwarden_v2.0.0.apk",
+            "sha256": "858f0a6e280fb994e0a585027933736699265d46a9e18fe4f3ccb01088b5adb9",
+            "size": 28436749
+          },
+          "manifest": {
+            "nativecode": [
+              "armeabi-v7a"
+            ],
+            "versionName": "2.0.0",
+            "versionCode": 1904,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 28
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "248cb011862233590644d197f73115772c1c03a1899b9d2945f4be9d5b43a839": {
+          "added": 1730327143000,
+          "file": {
+            "name": "/bitwarden_v1.22.1.apk",
+            "sha256": "248cb011862233590644d197f73115772c1c03a1899b9d2945f4be9d5b43a839",
+            "size": 32363805
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.22.0",
+            "versionCode": 1661,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 26
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "com.google.android.c2dm.permission.RECEIVE"
+              },
+              {
+                "name": "com.x8bit.bitwarden.permission.C2D_MESSAGE"
+              },
+              {
+                "name": "android.permission.REQUEST_INSTALL_PACKAGES"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "ef3b4bcad3c1f79fc1f8d700f5e2fee45d59ef3046d66308f97b0f038ca65c73": {
+          "added": 1730327142000,
+          "file": {
+            "name": "/bitwarden_v1.22.0.apk",
+            "sha256": "ef3b4bcad3c1f79fc1f8d700f5e2fee45d59ef3046d66308f97b0f038ca65c73",
+            "size": 32363069
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.22.0",
+            "versionCode": 1652,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 26
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "com.google.android.c2dm.permission.RECEIVE"
+              },
+              {
+                "name": "com.x8bit.bitwarden.permission.C2D_MESSAGE"
+              },
+              {
+                "name": "android.permission.REQUEST_INSTALL_PACKAGES"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "ae17693b789b8b19415594ddc91a11c90081395b2d58bf157695992dc2daf633": {
+          "added": 1730327141000,
+          "file": {
+            "name": "/bitwarden_v1.21.0.apk",
+            "sha256": "ae17693b789b8b19415594ddc91a11c90081395b2d58bf157695992dc2daf633",
+            "size": 32611943
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.21.0",
+            "versionCode": 1631,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 26
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "com.google.android.c2dm.permission.RECEIVE"
+              },
+              {
+                "name": "com.x8bit.bitwarden.permission.C2D_MESSAGE"
+              },
+              {
+                "name": "android.permission.REQUEST_INSTALL_PACKAGES"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "d445c537cbd0f4b7df927bc75e4691c46968efc42335587d8ca100b54f662792": {
+          "added": 1730327141000,
+          "file": {
+            "name": "/bitwarden_v1.20.0.apk",
+            "sha256": "d445c537cbd0f4b7df927bc75e4691c46968efc42335587d8ca100b54f662792",
+            "size": 32530840
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.20.0",
+            "versionCode": 1617,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 26
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "com.google.android.c2dm.permission.RECEIVE"
+              },
+              {
+                "name": "com.x8bit.bitwarden.permission.C2D_MESSAGE"
+              },
+              {
+                "name": "android.permission.REQUEST_INSTALL_PACKAGES"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "e44cad48614cd054f095e4014ac86bd3402e5a4c8ef2e17644e6bf67f4787a35": {
+          "added": 1730327140000,
+          "file": {
+            "name": "/bitwarden_v1.19.0.apk",
+            "sha256": "e44cad48614cd054f095e4014ac86bd3402e5a4c8ef2e17644e6bf67f4787a35",
+            "size": 33189560
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.19.0",
+            "versionCode": 1585,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 23
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "com.google.android.c2dm.permission.RECEIVE"
+              },
+              {
+                "name": "com.x8bit.bitwarden.permission.C2D_MESSAGE"
+              },
+              {
+                "name": "android.permission.REQUEST_INSTALL_PACKAGES"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "666e99017f04c1d5c09f1ecbc969011831973f5bf44ba5494ffd4596c1562990": {
+          "added": 1730327139000,
+          "file": {
+            "name": "/bitwarden_v1.18.1.apk",
+            "sha256": "666e99017f04c1d5c09f1ecbc969011831973f5bf44ba5494ffd4596c1562990",
+            "size": 32749379
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.18.1",
+            "versionCode": 1500,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 23
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "com.google.android.c2dm.permission.RECEIVE"
+              },
+              {
+                "name": "android.permission.REQUEST_INSTALL_PACKAGES"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "1f9b9edef13214289ed6a83cc6f91c55fdd8e29feb9401f8b81987c28971c8b4": {
+          "added": 1730327138000,
+          "file": {
+            "name": "/bitwarden_v1.18.0.apk",
+            "sha256": "1f9b9edef13214289ed6a83cc6f91c55fdd8e29feb9401f8b81987c28971c8b4",
+            "size": 32713041
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.18.0",
+            "versionCode": 1493,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 23
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "com.google.android.c2dm.permission.RECEIVE"
+              },
+              {
+                "name": "android.permission.REQUEST_INSTALL_PACKAGES"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "9fc51a8a74ebabd76387a4fde0d5f22eb86ca39c863cadffe25792f22d53d38c": {
+          "added": 1730327137000,
+          "file": {
+            "name": "/bitwarden_v1.17.0.apk",
+            "sha256": "9fc51a8a74ebabd76387a4fde0d5f22eb86ca39c863cadffe25792f22d53d38c",
+            "size": 32584633
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.17.0",
+            "versionCode": 1462,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 23
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "com.google.android.c2dm.permission.RECEIVE"
+              },
+              {
+                "name": "android.permission.REQUEST_INSTALL_PACKAGES"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "2b0efaaf0a0d874c7db665bf7338969e5ea444dba7f6d23996f89f04f1481548": {
+          "added": 1730327137000,
+          "file": {
+            "name": "/bitwarden_v1.16.0.apk",
+            "sha256": "2b0efaaf0a0d874c7db665bf7338969e5ea444dba7f6d23996f89f04f1481548",
+            "size": 32524299
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.16.0",
+            "versionCode": 1411,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 23
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "com.google.android.c2dm.permission.RECEIVE"
+              },
+              {
+                "name": "android.permission.REQUEST_INSTALL_PACKAGES"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "efe4ac141c8349eab0e4c42888624b89cc946dbae1622c4368a61682a827b1e7": {
+          "added": 1730327136000,
+          "file": {
+            "name": "/bitwarden_v1.15.2.apk",
+            "sha256": "efe4ac141c8349eab0e4c42888624b89cc946dbae1622c4368a61682a827b1e7",
+            "size": 31443736
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.15.2",
+            "versionCode": 1396,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 23
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "1b9371eaf2d4cf6942c50b9759a81b7faebaa37ed65063563666815e1df97090": {
+          "added": 1730327135000,
+          "file": {
+            "name": "/bitwarden_v1.15.1.apk",
+            "sha256": "1b9371eaf2d4cf6942c50b9759a81b7faebaa37ed65063563666815e1df97090",
+            "size": 31471093
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.15.1",
+            "versionCode": 1389,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 23
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "b760455b65f2fc5ee9aeb14da37436ffe053b6063f5c5f0ea45bcbb08e0a6aef": {
+          "added": 1730327134000,
+          "file": {
+            "name": "/bitwarden_v1.15.0.apk",
+            "sha256": "b760455b65f2fc5ee9aeb14da37436ffe053b6063f5c5f0ea45bcbb08e0a6aef",
+            "size": 31471096
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.15.0",
+            "versionCode": 1386,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 23
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "51def36e9a51d62fb6f97597c9cae08951c2d1d3ec365c0f29bc9dc3dfb39317": {
+          "added": 1730327134000,
+          "file": {
+            "name": "/bitwarden_v1.14.4.apk",
+            "sha256": "51def36e9a51d62fb6f97597c9cae08951c2d1d3ec365c0f29bc9dc3dfb39317",
+            "size": 31307009
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.14.4",
+            "versionCode": 1351,
+            "usesSdk": {
+              "minSdkVersion": 19,
+              "targetSdkVersion": 23
+            },
+            "signer": {
+              "sha256": [
+                "24e06c04c208048f19f1c993b4dda4430ea8b06db8375ea0e37b834696b9ac3a"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "14148d4ca4a4ece201d0b3965ce6265353400577868cd446ac10e929e3077938": {
+          "added": 1730327244000,
+          "file": {
+            "name": "/bitwarden_v2024.3.3.apk",
+            "sha256": "14148d4ca4a4ece201d0b3965ce6265353400577868cd446ac10e929e3077938",
+            "size": 68368950
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2024.3.3",
+            "versionCode": 10091,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "b430d8f8a8315c73702eb9018518fdd306e4ad8f61da53101f0f9ed1ee8d746a": {
+          "added": 1730327243000,
+          "file": {
+            "name": "/bitwarden_v2024.3.1.apk",
+            "sha256": "b430d8f8a8315c73702eb9018518fdd306e4ad8f61da53101f0f9ed1ee8d746a",
+            "size": 68368950
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2024.3.1",
+            "versionCode": 9865,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
         "b302e0d114089bf038521da937107c150a794084b9d6701be98c244ffad6ee4e": {
-          "added": 1730257486000,
+          "added": 1730327241000,
           "file": {
             "name": "/bitwarden_v2024.3.0.apk",
             "sha256": "b302e0d114089bf038521da937107c150a794084b9d6701be98c244ffad6ee4e",
@@ -130,7 +2120,7 @@
           }
         },
         "facf43eec58ee602e940ee98ae0fcfdef4c8cdca916b7d3dba9b0852adb6ecb2": {
-          "added": 1730257484000,
+          "added": 1730327239000,
           "file": {
             "name": "/bitwarden_v2024.2.1.apk",
             "sha256": "facf43eec58ee602e940ee98ae0fcfdef4c8cdca916b7d3dba9b0852adb6ecb2",
@@ -204,7 +2194,7 @@
           }
         },
         "80d89445bd539af6d5691e6dc1327fa495a7a57a393f2116347fb267bed6d2c9": {
-          "added": 1730257482000,
+          "added": 1730327238000,
           "file": {
             "name": "/bitwarden_v2024.2.0.apk",
             "sha256": "80d89445bd539af6d5691e6dc1327fa495a7a57a393f2116347fb267bed6d2c9",
@@ -269,7 +2259,7 @@
           }
         },
         "1cc3f95b4952ece55b3898665f091381c0f1924c10d73312dbb6259c94d842ee": {
-          "added": 1730257481000,
+          "added": 1730327232000,
           "file": {
             "name": "/bitwarden_v2024.1.1.apk",
             "sha256": "1cc3f95b4952ece55b3898665f091381c0f1924c10d73312dbb6259c94d842ee",
@@ -334,7 +2324,7 @@
           }
         },
         "0c30810b3d7e78c7dad668a5b2ae283a15adbeddeb1acd33152179205306ba51": {
-          "added": 1730257479000,
+          "added": 1730327231000,
           "file": {
             "name": "/bitwarden_v2024.1.0.apk",
             "sha256": "0c30810b3d7e78c7dad668a5b2ae283a15adbeddeb1acd33152179205306ba51",
@@ -399,7 +2389,7 @@
           }
         },
         "247482e5a1bba062774532d77ac096e77eaf449fe0a57369a2ea9a49bdd7d89a": {
-          "added": 1730257459000,
+          "added": 1730327211000,
           "file": {
             "name": "/bitwarden_v2023.12.0.apk",
             "sha256": "247482e5a1bba062774532d77ac096e77eaf449fe0a57369a2ea9a49bdd7d89a",
@@ -464,7 +2454,7 @@
           }
         },
         "6ad9ca301b6fac2e6e55480f556ce97361eaab9c8c144a3496a1423ec4444ac4": {
-          "added": 1730257457000,
+          "added": 1730327209000,
           "file": {
             "name": "/bitwarden_v2023.10.0.apk",
             "sha256": "6ad9ca301b6fac2e6e55480f556ce97361eaab9c8c144a3496a1423ec4444ac4",
@@ -529,7 +2519,7 @@
           }
         },
         "44636bc978f3f8727f31ba568e54f1c6f6ea966c248a66c4997474117ff40e61": {
-          "added": 1730257477000,
+          "added": 1730327229000,
           "file": {
             "name": "/bitwarden_v2023.9.2.apk",
             "sha256": "44636bc978f3f8727f31ba568e54f1c6f6ea966c248a66c4997474117ff40e61",
@@ -594,7 +2584,7 @@
           }
         },
         "f6df58379bcbad214f2c3650b032baf7bed3310564be8e0bf3741ff49cd9210e": {
-          "added": 1730257476000,
+          "added": 1730327227000,
           "file": {
             "name": "/bitwarden_v2023.9.1.apk",
             "sha256": "f6df58379bcbad214f2c3650b032baf7bed3310564be8e0bf3741ff49cd9210e",
@@ -659,7 +2649,7 @@
           }
         },
         "e06d5b7919a937f26a52d28c2bbdf40a788a30c4c86b3f5aa1d98a2b986a638d": {
-          "added": 1730257474000,
+          "added": 1730327226000,
           "file": {
             "name": "/bitwarden_v2023.9.0.apk",
             "sha256": "e06d5b7919a937f26a52d28c2bbdf40a788a30c4c86b3f5aa1d98a2b986a638d",
@@ -724,7 +2714,7 @@
           }
         },
         "6316a5d034506930eaa9898894ab7cd61487785eb2befd8569de22d1a3a0d88d": {
-          "added": 1730257472000,
+          "added": 1730327224000,
           "file": {
             "name": "/bitwarden_v2023.8.0.apk",
             "sha256": "6316a5d034506930eaa9898894ab7cd61487785eb2befd8569de22d1a3a0d88d",
@@ -789,7 +2779,7 @@
           }
         },
         "e4092de2720b6689d54196c694bc8df91b0d84ae217f97bcd8c91770efaab36c": {
-          "added": 1730257470000,
+          "added": 1730327222000,
           "file": {
             "name": "/bitwarden_v2023.7.0.apk",
             "sha256": "e4092de2720b6689d54196c694bc8df91b0d84ae217f97bcd8c91770efaab36c",
@@ -854,7 +2844,7 @@
           }
         },
         "ffb1325ce0176e650d9e56461f13cec34a936e45808206688c071446136e4d43": {
-          "added": 1730257469000,
+          "added": 1730327221000,
           "file": {
             "name": "/bitwarden_v2023.5.0.apk",
             "sha256": "ffb1325ce0176e650d9e56461f13cec34a936e45808206688c071446136e4d43",
@@ -919,7 +2909,7 @@
           }
         },
         "eea5ece211117a78fb122f5dac8f86193a8543093537761649f016382ce672be": {
-          "added": 1730257467000,
+          "added": 1730327219000,
           "file": {
             "name": "/bitwarden_v2023.4.0.apk",
             "sha256": "eea5ece211117a78fb122f5dac8f86193a8543093537761649f016382ce672be",
@@ -984,7 +2974,7 @@
           }
         },
         "86e6d5eb3050357fdea660624ebf50d41748b372e3a79c31c6578c04d62f73da": {
-          "added": 1730257466000,
+          "added": 1730327217000,
           "file": {
             "name": "/bitwarden_v2023.3.2.apk",
             "sha256": "86e6d5eb3050357fdea660624ebf50d41748b372e3a79c31c6578c04d62f73da",
@@ -1049,7 +3039,7 @@
           }
         },
         "415211d1d52f17416633fdb06ea49b63ce3527300fdee088e22b565cc7b36b3f": {
-          "added": 1730257464000,
+          "added": 1730327216000,
           "file": {
             "name": "/bitwarden_v2023.3.1.apk",
             "sha256": "415211d1d52f17416633fdb06ea49b63ce3527300fdee088e22b565cc7b36b3f",
@@ -1114,7 +3104,7 @@
           }
         },
         "b2de4b6a2d7db4a7c329d3e8af6b805481f9d1baf5f432c164e8a0c25d75f743": {
-          "added": 1730257462000,
+          "added": 1730327214000,
           "file": {
             "name": "/bitwarden_v2023.3.0.apk",
             "sha256": "b2de4b6a2d7db4a7c329d3e8af6b805481f9d1baf5f432c164e8a0c25d75f743",
@@ -1179,7 +3169,7 @@
           }
         },
         "f3feed9ecb396ada9605ea6e42de014743cf44015de833d4591d9cb9fa18e1f2": {
-          "added": 1730257461000,
+          "added": 1730327213000,
           "file": {
             "name": "/bitwarden_v2023.2.0.apk",
             "sha256": "f3feed9ecb396ada9605ea6e42de014743cf44015de833d4591d9cb9fa18e1f2",
@@ -1244,7 +3234,7 @@
           }
         },
         "e6214ea4b7ddacb482a649a7fc8a7c69cdcf3b177ac9bd3bde0ec71cab6351d6": {
-          "added": 1730257456000,
+          "added": 1730327208000,
           "file": {
             "name": "/bitwarden_v2023.1.0.apk",
             "sha256": "e6214ea4b7ddacb482a649a7fc8a7c69cdcf3b177ac9bd3bde0ec71cab6351d6",
@@ -1309,7 +3299,7 @@
           }
         },
         "da296aa3f5b59fcece9872beabb86f61bc4d2d4e13eb0db76e349c1204d74386": {
-          "added": 1730257445000,
+          "added": 1730327197000,
           "file": {
             "name": "/bitwarden_v2022.11.0.apk",
             "sha256": "da296aa3f5b59fcece9872beabb86f61bc4d2d4e13eb0db76e349c1204d74386",
@@ -1374,7 +3364,7 @@
           }
         },
         "c067c7e45be3d79999971843a25919d7f7e92daf13973d3703fb7c90781067f9": {
-          "added": 1730257444000,
+          "added": 1730327196000,
           "file": {
             "name": "/bitwarden_v2022.10.0.apk",
             "sha256": "c067c7e45be3d79999971843a25919d7f7e92daf13973d3703fb7c90781067f9",
@@ -1439,7 +3429,7 @@
           }
         },
         "d71ec959d77736788e47baab318df32e29c77347ebd425b0c2bd391773b86121": {
-          "added": 1730257454000,
+          "added": 1730327206000,
           "file": {
             "name": "/bitwarden_v2022.9.1.apk",
             "sha256": "d71ec959d77736788e47baab318df32e29c77347ebd425b0c2bd391773b86121",
@@ -1501,7 +3491,7 @@
           }
         },
         "b1825abe4636c19a5d09062c7f74b4868d3eec2c6dfa91111d86d8815a5c789a": {
-          "added": 1730257453000,
+          "added": 1730327205000,
           "file": {
             "name": "/bitwarden_v2022.9.0.apk",
             "sha256": "b1825abe4636c19a5d09062c7f74b4868d3eec2c6dfa91111d86d8815a5c789a",
@@ -1563,7 +3553,7 @@
           }
         },
         "5c35d113c0f6ff87b24e3853f255f8e878fef43eb58bc16f420c18dbd328e743": {
-          "added": 1730257451000,
+          "added": 1730327203000,
           "file": {
             "name": "/bitwarden_v2022.8.0.apk",
             "sha256": "5c35d113c0f6ff87b24e3853f255f8e878fef43eb58bc16f420c18dbd328e743",
@@ -1622,7 +3612,7 @@
           }
         },
         "f2a223f0806ba86ba4f34fae7c95547667b6b57e2561875b1d92f7008726fe41": {
-          "added": 1730257450000,
+          "added": 1730327202000,
           "file": {
             "name": "/bitwarden_v2022.6.2.apk",
             "sha256": "f2a223f0806ba86ba4f34fae7c95547667b6b57e2561875b1d92f7008726fe41",
@@ -1681,7 +3671,7 @@
           }
         },
         "b39d1710465b8589be6b0d3f0cec2ee8ab9db645cf7c57ef3e399baae7e023a7": {
-          "added": 1730257448000,
+          "added": 1730327200000,
           "file": {
             "name": "/bitwarden_v2022.6.1.apk",
             "sha256": "b39d1710465b8589be6b0d3f0cec2ee8ab9db645cf7c57ef3e399baae7e023a7",
@@ -1740,7 +3730,7 @@
           }
         },
         "1d172fde5601028fe1a3844f7e8c48d64fe0b9bdd3aa86965a03cc2094bbe67f": {
-          "added": 1730257447000,
+          "added": 1730327199000,
           "file": {
             "name": "/bitwarden_v2022.6.0.apk",
             "sha256": "1d172fde5601028fe1a3844f7e8c48d64fe0b9bdd3aa86965a03cc2094bbe67f",
@@ -1799,7 +3789,7 @@
           }
         },
         "648f0d320c508c70ea9a6b15c0632f2bc6ad99246a0433b5b68bbcfa8276b051": {
-          "added": 1730257442000,
+          "added": 1730327194000,
           "file": {
             "name": "/bitwarden_v2022.05.0.apk",
             "sha256": "648f0d320c508c70ea9a6b15c0632f2bc6ad99246a0433b5b68bbcfa8276b051",
@@ -1814,6 +3804,1599 @@
             ],
             "versionName": "2022.05.0",
             "versionCode": 4636,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "5182b6775edfbb1c6df943c9f0c87edb5f499f095c289e10cc819af162b93fd4": {
+          "added": 1730327172000,
+          "file": {
+            "name": "/bitwarden_v2.18.0.apk",
+            "sha256": "5182b6775edfbb1c6df943c9f0c87edb5f499f095c289e10cc819af162b93fd4",
+            "size": 59958023
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.18.0",
+            "versionCode": 4572,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "eb127a0a3ef34de394088c5c61c53ae45ea56931e16ca72903a6f59cbdfdfbb8": {
+          "added": 1730327170000,
+          "file": {
+            "name": "/bitwarden_v2.17.0.apk",
+            "sha256": "eb127a0a3ef34de394088c5c61c53ae45ea56931e16ca72903a6f59cbdfdfbb8",
+            "size": 59945735
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.17.0",
+            "versionCode": 4526,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "ba53150909b3a2d87967f30a64fac40bb4306511c62c4fd24a9054138c356220": {
+          "added": 1730327169000,
+          "file": {
+            "name": "/bitwarden_v2.16.4.apk",
+            "sha256": "ba53150909b3a2d87967f30a64fac40bb4306511c62c4fd24a9054138c356220",
+            "size": 46199894
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.16.4",
+            "versionCode": 4515,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "488998d48f7b7781260040c9c29951f2407c0d58c89b9b21c67c368343f451c1": {
+          "added": 1730327167000,
+          "file": {
+            "name": "/bitwarden_v2.16.3.apk",
+            "sha256": "488998d48f7b7781260040c9c29951f2407c0d58c89b9b21c67c368343f451c1",
+            "size": 46195798
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.16.3",
+            "versionCode": 4489,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "47b43666eacf5e0635f54bfee2f4348e5bbb1276e6bda283a19f04522bb482a5": {
+          "added": 1730327166000,
+          "file": {
+            "name": "/bitwarden_v2.16.2.apk",
+            "sha256": "47b43666eacf5e0635f54bfee2f4348e5bbb1276e6bda283a19f04522bb482a5",
+            "size": 46191702
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.16.2",
+            "versionCode": 4334,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "4a9f2331795b9c2cbcd342e4c185e877651550a63cb6b37805201019ebc6db6d": {
+          "added": 1730327165000,
+          "file": {
+            "name": "/bitwarden_v2.16.1.apk",
+            "sha256": "4a9f2331795b9c2cbcd342e4c185e877651550a63cb6b37805201019ebc6db6d",
+            "size": 46187606
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.16.1",
+            "versionCode": 4306,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "ce47a903fb119e75a1004e5e72f4558d2ad70a56319c3833e53e94db9ad06d22": {
+          "added": 1730327163000,
+          "file": {
+            "name": "/bitwarden_v2.15.0.apk",
+            "sha256": "ce47a903fb119e75a1004e5e72f4558d2ad70a56319c3833e53e94db9ad06d22",
+            "size": 45283764
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.15.0",
+            "versionCode": 4125,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "9c96141cf6bb9dd231032fb7761827a6aac8e6970561dc64c8b042b92ad8d366": {
+          "added": 1730327162000,
+          "file": {
+            "name": "/bitwarden_v2.14.2.apk",
+            "sha256": "9c96141cf6bb9dd231032fb7761827a6aac8e6970561dc64c8b042b92ad8d366",
+            "size": 45205940
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.14.2",
+            "versionCode": 4005,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "71456924da589e5772aa6654cb6e3537c573adf9d39d46c27d5290f162f54798": {
+          "added": 1730327161000,
+          "file": {
+            "name": "/bitwarden_v2.14.1.apk",
+            "sha256": "71456924da589e5772aa6654cb6e3537c573adf9d39d46c27d5290f162f54798",
+            "size": 45205940
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.14.1",
+            "versionCode": 3990,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "978056c4df5e841e86c56e31fbd77cab1b8cd4a7cd5c8ae9d4120ca1d03a0395": {
+          "added": 1730327158000,
+          "file": {
+            "name": "/bitwarden_v2.13.0.apk",
+            "sha256": "978056c4df5e841e86c56e31fbd77cab1b8cd4a7cd5c8ae9d4120ca1d03a0395",
+            "size": 44591090
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.13.0",
+            "versionCode": 3829,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "d8835c7c55ebbf13221ceaf8a72e9e72db1294407f35f09a8335a688ac5aef3b": {
+          "added": 1730327157000,
+          "file": {
+            "name": "/bitwarden_v2.12.0.apk",
+            "sha256": "d8835c7c55ebbf13221ceaf8a72e9e72db1294407f35f09a8335a688ac5aef3b",
+            "size": 44677278
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.12.0",
+            "versionCode": 3742,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "5d75723fb2e70c7b0c1b50986a9061439c095beff94f19da3105c9c28e835caa": {
+          "added": 1730327156000,
+          "file": {
+            "name": "/bitwarden_v2.11.3.apk",
+            "sha256": "5d75723fb2e70c7b0c1b50986a9061439c095beff94f19da3105c9c28e835caa",
+            "size": 44468037
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.11.3",
+            "versionCode": 3653,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "2726a8d09135890f3179433d9a27303519d5d294bf7c55952c78eef7b1fad57f": {
+          "added": 1730327154000,
+          "file": {
+            "name": "/bitwarden_v2.11.2.apk",
+            "sha256": "2726a8d09135890f3179433d9a27303519d5d294bf7c55952c78eef7b1fad57f",
+            "size": 44468037
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.11.2",
+            "versionCode": 3637,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "133c4ab5b13f0e60999afef48e9920ccd258adc25ff5d17da7cd8dbed6f44f09": {
+          "added": 1730327153000,
+          "file": {
+            "name": "/bitwarden_v2.11.1.apk",
+            "sha256": "133c4ab5b13f0e60999afef48e9920ccd258adc25ff5d17da7cd8dbed6f44f09",
+            "size": 44251498
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.11.1",
+            "versionCode": 3605,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "cf706dc68766a16069acc320a118f7b8e9274a11ec380103a1dcdc129e795b5e": {
+          "added": 1730327152000,
+          "file": {
+            "name": "/bitwarden_v2.11.0.apk",
+            "sha256": "cf706dc68766a16069acc320a118f7b8e9274a11ec380103a1dcdc129e795b5e",
+            "size": 44251498
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.11.0",
+            "versionCode": 3598,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "d900483773aa8899fcf5caa56e503ee8896e5b0dd7ad65e9581f76a1c596b3e1": {
+          "added": 1730327150000,
+          "file": {
+            "name": "/bitwarden_v2.10.0.apk",
+            "sha256": "d900483773aa8899fcf5caa56e503ee8896e5b0dd7ad65e9581f76a1c596b3e1",
+            "size": 42850889
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.10.0",
+            "versionCode": 3516,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "91d886c1779fd96e33f30db2922def761b9dfc5366801880fb896b20f53e50ef": {
+          "added": 1730327192000,
+          "file": {
+            "name": "/bitwarden_v2.9.1.apk",
+            "sha256": "91d886c1779fd96e33f30db2922def761b9dfc5366801880fb896b20f53e50ef",
+            "size": 42719731
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.9.1",
+            "versionCode": 3449,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "2c70ab13fde82141d7ad8770535b0a0d8ac955b342bff98e00cfa6e8aa997649": {
+          "added": 1730327191000,
+          "file": {
+            "name": "/bitwarden_v2.9.0.apk",
+            "sha256": "2c70ab13fde82141d7ad8770535b0a0d8ac955b342bff98e00cfa6e8aa997649",
+            "size": 42670579
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.9.0",
+            "versionCode": 3440,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "329d8b886d092e187fcb2b86b15a66eda591d6241f7fdf5933102e3faf5a7c54": {
+          "added": 1730327190000,
+          "file": {
+            "name": "/bitwarden_v2.8.2.apk",
+            "sha256": "329d8b886d092e187fcb2b86b15a66eda591d6241f7fdf5933102e3faf5a7c54",
+            "size": 42338426
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.8.2",
+            "versionCode": 3365,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "263f0f89ff1f866ab98c4c61186fd9b8b2333841b4e4c8f97eeaa6f49cf00980": {
+          "added": 1730327189000,
+          "file": {
+            "name": "/bitwarden_v2.7.0.apk",
+            "sha256": "263f0f89ff1f866ab98c4c61186fd9b8b2333841b4e4c8f97eeaa6f49cf00980",
+            "size": 42215460
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.7.0",
+            "versionCode": 3258,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 30
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "9541fc2d65f3d06b48d1bf14c04fcffa0aa8f807ac88e3b9792f9ae91d861217": {
+          "added": 1730327188000,
+          "file": {
+            "name": "/bitwarden_v2.6.1.apk",
+            "sha256": "9541fc2d65f3d06b48d1bf14c04fcffa0aa8f807ac88e3b9792f9ae91d861217",
+            "size": 41509709
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.6.1",
+            "versionCode": 3178,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 29
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "5672dc438f0018fff8a9165fc3127e6a8514f1e62208b84170f2a5886f886327": {
+          "added": 1730327187000,
+          "file": {
+            "name": "/bitwarden_v2.6.0.apk",
+            "sha256": "5672dc438f0018fff8a9165fc3127e6a8514f1e62208b84170f2a5886f886327",
+            "size": 41505613
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.6.0",
+            "versionCode": 3162,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 29
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "2875c70a4f13caf51d3db254980f879623f065df7bdf9bc1615b1beedddebb64": {
+          "added": 1730327185000,
+          "file": {
+            "name": "/bitwarden_v2.5.6.apk",
+            "sha256": "2875c70a4f13caf51d3db254980f879623f065df7bdf9bc1615b1beedddebb64",
+            "size": 52789516
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.5.6",
+            "versionCode": 3110,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 29
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "d06b0a9a2d4b1809d49e0eae7bf7860665786d054a02e89bf02d45463b936629": {
+          "added": 1730327184000,
+          "file": {
+            "name": "/bitwarden_v2.5.0.apk",
+            "sha256": "d06b0a9a2d4b1809d49e0eae7bf7860665786d054a02e89bf02d45463b936629",
+            "size": 52789516
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.5.0",
+            "versionCode": 3093,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 29
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "3dd3a63b5bcfe5ab423d7fa3ac8c145b9d863de379dd6b8049f43c58506d2e9f": {
+          "added": 1730327183000,
+          "file": {
+            "name": "/bitwarden_v2.4.3.apk",
+            "sha256": "3dd3a63b5bcfe5ab423d7fa3ac8c145b9d863de379dd6b8049f43c58506d2e9f",
+            "size": 52903958
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.4.3",
+            "versionCode": 2518,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 29
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "0c5c7c10a5cb6be9c1d9441f0a2c4fe5744c3bc7565f07c86f28ff5ff02841b7": {
+          "added": 1730327182000,
+          "file": {
+            "name": "/bitwarden_v2.4.2.apk",
+            "sha256": "0c5c7c10a5cb6be9c1d9441f0a2c4fe5744c3bc7565f07c86f28ff5ff02841b7",
+            "size": 52903958
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.4.2",
+            "versionCode": 2501,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 29
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.SYSTEM_ALERT_WINDOW"
+              },
+              {
+                "name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              }
+            ]
+          }
+        },
+        "fa6cdb0841eb7011af068b5938c7d12e555e262a38b7827161147ae641210be7": {
+          "added": 1730327159000,
+          "file": {
+            "name": "/bitwarden_v2.14.0.apk",
+            "sha256": "fa6cdb0841eb7011af068b5938c7d12e555e262a38b7827161147ae641210be7",
+            "size": 45205940
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.14.0",
+            "versionCode": 1,
             "usesSdk": {
               "minSdkVersion": 21,
               "targetSdkVersion": 30
