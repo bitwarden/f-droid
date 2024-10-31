@@ -1,0 +1,6 @@
+## What's Changed
+* [PM-14241] Checking if Timber tree has been added before trying to remove it by @aj-rosado in https://github.com/bitwarden/android/pull/4194
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2024.10.1...v2024.10.2
+**Builds Source**: https://github.com/bitwarden/android/actions/runs/11593088153
