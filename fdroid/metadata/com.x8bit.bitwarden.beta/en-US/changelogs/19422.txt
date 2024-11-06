@@ -1,0 +1,6 @@
+## What's Changed
+* PM-14433 update flow type to nullable so we can handle gracefully and avoid crash. by @dseverns-livefront in https://github.com/bitwarden/android/pull/4231
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2024.11.0...v2024.11.1
+**Builds Source**: https://github.com/bitwarden/android/actions/runs/11676200305
