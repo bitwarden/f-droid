@@ -1,0 +1,5 @@
+## What's Changed
+* Bump VaultDatabase to version 5 by @SaintPatrck in https://github.com/bitwarden/android/pull/4253
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2024.11.2...v2024.11.3
+**Builds Source**: https://github.com/bitwarden/android/actions/runs/11726993550
