@@ -1,0 +1,39 @@
+{
+  "repo": {
+    "timestamp": 1733956926000
+  },
+  "packages": {
+    "com.x8bit.bitwarden": {
+      "versions": {
+        "68ab31f2514f8d31e1a487cacddb6875d0396a3b9d0fa0838debdc9e467b5fcc": {
+          "releaseChannels": null
+        },
+        "fec9ef0f743ee456ea056e051b387c1212f685ce87a11672367d8ee124c997bb": {
+          "releaseChannels": null
+        },
+        "1c392603280b8a91875da5c3941550b23a88a4ab6d381c518c712c656eb6f7c5": {
+          "releaseChannels": null
+        },
+        "03576fa4b45fa1d23fcb420ef5dd382f2297865518f5ce971144f4901bc2f365": {
+          "releaseChannels": null
+        }
+      }
+    },
+    "com.x8bit.bitwarden.beta": {
+      "versions": {
+        "5a2645272cbb89bbe4e88de66a31be81f165c59f86df1e4856110c70749bbab2": {
+          "releaseChannels": null
+        },
+        "bbc678017ca2b621bcbb63607033a8bf0f4df6281e079dd743242f69319397bf": {
+          "releaseChannels": null
+        },
+        "dc504125d423f631df18ac647ec4269015ee15dd54a6d93b67b74b0c3271366b": {
+          "releaseChannels": null
+        },
+        "e838a7f8956134a0c80c92cfee3c74da30e7ce99402876bfd00e18b8e3b1a21d": {
+          "releaseChannels": null
+        }
+      }
+    }
+  }
+}
