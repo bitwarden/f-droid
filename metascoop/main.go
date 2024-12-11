@@ -67,15 +67,15 @@ func main() {
 	fmt.Println("::endgroup::Initializing")
 
 	var (
-		haveError     bool
-		apkInfoMap    = make(map[string]apps.Application)
-		toRemovePaths []string
-		changedRepos  = make(map[string]map[string]*github.RepositoryRelease)
-		mu            sync.Mutex
-		wg            sync.WaitGroup
+		haveError          bool
+		apkInfoMap         = make(map[string]apps.Application)
+		toRemovePaths      []string
+		repoAppReleasesMap = make(map[string]map[*apps.Application][]*github.RepositoryRelease)
+		mu                 sync.Mutex
+		wg                 sync.WaitGroup
 	)
 
-	hasNewCommits := false
+	isCommittingNewReleases := false
 
 	for _, repo := range reposList {
 		wg.Add(1)
@@ -96,7 +96,6 @@ func main() {
 			log.Printf("Received %d releases", len(releases))
 
 			var appWg sync.WaitGroup
-			repoChanged := false
 			for _, app := range repo.Applications {
 				appWg.Add(1)
 				go func(app apps.Application) {
@@ -104,9 +103,11 @@ func main() {
 
 					fmt.Printf("::group::App %s\n", app.Name)
 
-					foundArtifact := false
-
-					for _, release := range releases {
+					for i, release := range releases {
+						if i >= 10 {
+							log.Printf("10 latest releases have been processed for app %s, skipping the rest.", app.Name)
+							break
+						}
 						fmt.Printf("::group::Release %s\n", release.GetTagName())
 
 						if release.GetDraft() {
@@ -143,11 +144,10 @@ func main() {
 
 						appTargetPath := filepath.Join(*repoDir, appName)
 
-						// If the app file already exists for this version, we stop processing this app and move to the next
+						// If the app file already exists for this version, we skip processing this release and move to the next
 						if _, err := os.Stat(appTargetPath); !errors.Is(err, os.ErrNotExist) {
 							log.Printf("Already have APK for version %q at %q\n", release.GetTagName(), appTargetPath)
-							foundArtifact = true
-							break
+							continue
 						}
 
 						log.Printf("Downloading APK %q from release %q to %q", apk.GetName(), release.GetTagName(), appTargetPath)
@@ -176,17 +176,16 @@ func main() {
 						log.Printf("Successfully downloaded app for version %q", release.GetTagName())
 						fmt.Printf("::endgroup:App %s\n", app.Name)
 						mu.Lock()
-						hasNewCommits = true
-						repoChanged = true
-						if changedRepos[repo.GitURL] == nil {
-							changedRepos[repo.GitURL] = make(map[string]*github.RepositoryRelease)
+						isCommittingNewReleases = true
+
+						if repoAppReleasesMap[repo.GitURL] == nil {
+							repoAppReleasesMap[repo.GitURL] = make(map[*apps.Application][]*github.RepositoryRelease)
 						}
-						changedRepos[repo.GitURL][app.Filename] = release
+						repoAppReleasesMap[repo.GitURL][&app] = append(repoAppReleasesMap[repo.GitURL][&app], release)
 						mu.Unlock()
-						break
 					}
-					if foundArtifact || haveError {
-						// Stop after the first [release] of this [app] is downloaded to prevent back-filling legacy releases.
+
+					if haveError {
 						return
 					}
 				}(app)
@@ -194,7 +193,7 @@ func main() {
 
 			appWg.Wait()
 
-			if repoChanged {
+			if isCommittingNewReleases {
 				log.Printf("Changes detected for repo: %s", repo.GitURL)
 			}
 
@@ -205,47 +204,56 @@ func main() {
 	wg.Wait()
 
 	var commitMsg strings.Builder
-	if hasNewCommits {
+	if isCommittingNewReleases {
 		log.Printf("New commits detected in at least one repo. Creating commit message with application update details.")
-		// Create the first line with repo names
-		repoNames := make([]string, 0, len(changedRepos))
-		for repoURL := range changedRepos {
+		// Create the commit title with modified repo names. E.g., "Update apps from repo1, repo2".
+		repoNames := make([]string, 0, len(repoAppReleasesMap))
+		for repoURL := range repoAppReleasesMap {
 			repoName := strings.TrimPrefix(repoURL, "https://github.com/")
 			repoNames = append(repoNames, repoName)
 		}
-		commitMsg.WriteString(fmt.Sprintf("Updated apps from %s\n\n", strings.Join(repoNames, ", ")))
+		commitMsg.WriteString(fmt.Sprintf("Updated apps from %s", strings.Join(repoNames, ", ")))
 
-		commitMsg.WriteString("## Repository updates:\n")
-		// Add details for each repo
-		for repoURL, apps := range changedRepos {
+		// Add newlines before starting commit body
+		commitMsg.WriteString("\n\n")
+
+		// Add header for updated repositories
+		commitMsg.WriteString("## Updated repositories\n")
+
+		for repoURL, appReleasesMap := range repoAppReleasesMap {
+
+			// Add a h2 header for each unique repo with changes. E.g., "## [bitwarden/android](https://github.com/bitawrden/android)".
 			repoFullName := strings.TrimPrefix(repoURL, "https://github.com/")
+			commitMsg.WriteString(fmt.Sprintf("## [%s](%s)\n", repoFullName, repoURL))
 
-			commitMsg.WriteString(fmt.Sprintf("<details>\n<summary>%s</summary>\n\n", repoFullName))
+			// Add h3 header for apps section.
+			commitMsg.WriteString("### Apps\n")
 
-			// Group apps by release
-			releaseApps := make(map[*github.RepositoryRelease][]string)
-			for appFilename, release := range apps {
-				releaseApps[release] = append(releaseApps[release], appFilename)
-			}
+			// Add details section for each app. E.g., "## Bitwarden" or "## Bitwarden Beta".
+			for application, appReleases := range appReleasesMap {
+				commitMsg.WriteString(fmt.Sprintf("<details>\n<summary>%s</summary>\n", application.Name))
 
-			for release, appList := range releaseApps {
-				releaseName := release.GetName()
-				if releaseName == "" {
-					releaseName = release.GetTagName()
+				// Add links to each release of the app. E.g., "- [v2024.11.0](https://github.com/bitwarden/android/releases/v2024.11.0)".
+				for i, appRelease := range appReleases {
+					releaseName := appRelease.GetName()
+					if releaseName == "" {
+						releaseName = appRelease.GetTagName()
+					}
+					releaseTagUrl := appRelease.GetHTMLURL()
+					commitMsg.WriteString(fmt.Sprintf("  - [%s](%s)", releaseName, releaseTagUrl))
+
+					// Append "latest" if this is the newest release
+					if i == 0 {
+						commitMsg.WriteString(" **latest**")
+					}
+					commitMsg.WriteString("\n")
 				}
-				releaseTagURL := release.GetHTMLURL()
-				commitMsg.WriteString(fmt.Sprintf("### [%s](%s)\n\n", releaseName, releaseTagURL))
-
-				for _, appFilename := range appList {
-					commitMsg.WriteString(fmt.Sprintf("- %s\n", appFilename))
-				}
-				commitMsg.WriteString("\n")
+				// Close details tag.
+				commitMsg.WriteString("</details>\n\n")
 			}
-
-			commitMsg.WriteString("</details>\n\n")
 		}
 	} else {
-		log.Printf("No new commits detected.")
+		log.Printf("No new releases detected.")
 	}
 
 	if haveError {
@@ -499,45 +507,45 @@ func main() {
 		log.Fatalf("error generating %q: %s\n", readmePath, err.Error())
 	}
 
-	cpath, haveSignificantChanges := apps.HasSignificantChanges(initialFdroidIndex, fdroidIndex)
-	if haveSignificantChanges {
+	cpath, hasSignificantChanges := apps.HasSignificantChanges(initialFdroidIndex, fdroidIndex)
+	if hasSignificantChanges {
 		log.Printf("The index %q had a significant change at JSON path %q", fdroidIndexFilePath, cpath)
-		// If there were no new commits, we add a commit title indicating index has changes.
-		if !hasNewCommits {
+		// If there were no new releases, we add a commit title indicating the index has changes.
+		if !isCommittingNewReleases {
 			commitMsg.WriteString("Automatic index update\n\n")
 		}
-		commitMsg.WriteString("Index updated to reflect recent changes to the F-Droid repository.\n")	
 	} else {
 		log.Printf("The index files didn't change significantly")
+	}
 
-		changedFiles, err := git.GetChangedFileNames(*repoDir)
-		if err != nil {
-			log.Fatalf("getting changed files: %s\n::endgroup::\n", err.Error())
+	changedFiles, err := git.GetChangedFileNames(*repoDir)
+	if err != nil {
+		log.Fatalf("getting changed files: %s\n::endgroup::\n", err.Error())
+	}
+
+	// If only the index files changed, we ignore the commit
+	var modifiedFiles []string
+	for _, fname := range changedFiles {
+		if !strings.Contains(fname, "index") {
+			hasSignificantChanges = true
+			modifiedFiles = append(modifiedFiles, fname)
+			log.Printf("File %q is a significant change", fname)
 		}
+	}
 
-		// If only the index files changed, we ignore the commit
-		var modifiedFiles []string
-		for _, fname := range changedFiles {
-			if !strings.Contains(fname, "index") {
-				haveSignificantChanges = true
-				modifiedFiles = append(modifiedFiles, fname)
-				log.Printf("File %q is a significant change", fname)
-			}
-		}
+	// If there were modified files, we add them to the commit message
+	if len(modifiedFiles) > 0 {
 
-		// If there were modified files, we add them to the commit message
-		if len(modifiedFiles) > 0 {
-
-			// If there were no new commits, we add a commit title indicating only metadata changes occurred.
-			if !hasNewCommits {
-				commitMsg.WriteString("Automatic metadata updates\n\n")
-			}
-
+		// If there were new releases, we add a header to separate metadata changes.
+		if isCommittingNewReleases {
 			commitMsg.WriteString("## Metadata updates:\n\n")
-			for _, fname := range modifiedFiles {
-				commitMsg.WriteString(fmt.Sprintf("  - %s\n", fname))
-			}
 		}
+		commitMsg.WriteString("We performed updates to repository metadata files.\n")
+		commitMsg.WriteString("<details>\n<summary>See what changed</summary>\n")
+		for _, fname := range modifiedFiles {
+			commitMsg.WriteString(fmt.Sprintf("  - %s\n", fname))
+		}
+		commitMsg.WriteString("</details>\n")
 	}
 
 	if haveError {
@@ -546,13 +554,13 @@ func main() {
 
 	fmt.Println("::endgroup::Assessing changes")
 
-	// If we don't have any good changes, we report it with exit code 2
-	if !haveSignificantChanges {
+	// If we don't have any significant changes, we report it with exit code 2.
+	if !hasSignificantChanges {
 		os.Exit(2)
 	}
 
-	// If we have relevant changes, we write the commit message and exit with code 0.
-	
+	// Otherwise, we write the commit message and exit with code 0.
+
 	// Create a temporary commit message file.
 	tempFile, err := os.Create(*commitMsgFile)
 	if err != nil {
