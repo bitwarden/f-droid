@@ -231,7 +231,7 @@ func main() {
 
 			// Add details section for each app. E.g., "## Bitwarden" or "## Bitwarden Beta".
 			for application, appReleases := range appReleasesMap {
-				commitMsg.WriteString(fmt.Sprintf("<details>\n<summary>%s</summary>\n", application.Name))
+				commitMsg.WriteString(fmt.Sprintf("####  %s\n\n", application.Name))
 
 				// Add links to each release of the app. E.g., "- [v2024.11.0](https://github.com/bitwarden/android/releases/v2024.11.0)".
 				for i, appRelease := range appReleases {
@@ -248,8 +248,6 @@ func main() {
 					}
 					commitMsg.WriteString("\n")
 				}
-				// Close details tag.
-				commitMsg.WriteString("</details>\n\n")
 			}
 		}
 	} else {
@@ -541,7 +539,7 @@ func main() {
 			commitMsg.WriteString("## Metadata updates:\n\n")
 		}
 		commitMsg.WriteString("We performed updates to repository metadata files.\n")
-		commitMsg.WriteString("<details>\n<summary>See what changed</summary>\n")
+		commitMsg.WriteString("<details>\n<summary>See what changed</summary>\n\n")
 		for _, fname := range modifiedFiles {
 			commitMsg.WriteString(fmt.Sprintf("  - %s\n", fname))
 		}
