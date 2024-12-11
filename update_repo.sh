@@ -33,8 +33,6 @@ if [ -f "$COMMIT_MSG_FILE" ]; then
         --body "$PR_BODY")
     echo "pr_number=${PR_URL##*/}"
 
-    gh pr merge $PR_URL --squash --admin --delete-branch
-
     # Clean up the temporary commit message file
     rm "$COMMIT_MSG_FILE"
 
