@@ -1,8 +1,8 @@
 AuthorName: bitwarden
 Categories:
     - Security
-CurrentVersion: 2024.11.3
-CurrentVersionCode: 19432
+CurrentVersion: 2024.11.7
+CurrentVersionCode: 19528
 Description: |
     Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.
 
