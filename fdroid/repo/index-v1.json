@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1736350714000,
+    "timestamp": 1736372095000,
     "version": 20002,
     "name": "Bitwarden F-Droid",
     "icon": "icon.png",
@@ -20,8 +20,8 @@
       "categories": [
         "Security"
       ],
-      "suggestedVersionName": "2024.12.0",
-      "suggestedVersionCode": "19597",
+      "suggestedVersionName": "2025.1.0",
+      "suggestedVersionCode": "19622",
       "description": "Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.\n\nPassword theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.\n\nSecurity experts recommend that you use a different, randomly generated password for every account that you create. But how do you manage all those passwords? Bitwarden makes it easy for you to create, store, and access your passwords.\n\nBitwarden stores all of your logins in an encrypted vault that syncs across all of your devices. Since it's fully encrypted before it ever leaves your device, only you have access to your data. Not even the team at Bitwarden can read your data, even if we wanted to. Your data is sealed with AES-256 bit encryption, salted hashing, and PBKDF2 SHA-256.\n\nBitwarden is focused on open source software. The source code for Bitwarden is hosted on GitHub and everyone is free to review, audit, and contribute to the Bitwarden codebase.\n",
       "license": "GPL-3.0",
       "name": "Bitwarden",
@@ -29,12 +29,12 @@
       "summary": "Bitwarden mobile app for Android.",
       "added": 1731294219000,
       "packageName": "com.x8bit.bitwarden",
-      "lastUpdated": 1736350643000,
+      "lastUpdated": 1736372021000,
       "localized": {
         "en-US": {
           "featureGraphic": "featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
           "icon": "icon_oHucFA9p31FP-JvzlsHvxnwcLZFbI5Thw7pZSHGdkMM=.png",
-          "whatsNew": "## What's Changed\n* PM-15624 \ud83c\udf52 Align handling of no network states with iOS app. (#4431) by @dseverns-livefront in https://github.com/bitwarden/android/pull/4439\n* PM-15831 - \ud83c\udf52 Enable remote configuration of `enable-authenticator-sync-android` feature flag by @phil-livefront in https://github.com/bitwarden/android/pull/4442\n* PM-15890 \ud83c\udf52  TLS related error propagation by @dseverns-livefront in https://github.com/bitwarden/android/pull/4484\n* PM-15976 \ud83c\udf52  prevent app crash for non english language "
+          "whatsNew": "## What's Changed\n* PM-13937: Consolidate button UI and logic by @david-livefront in https://github.com/bitwarden/android/pull/4149\n* QA-950: Adding testTag for VaultUnlockedNavBar component by @ifernandezdiaz in https://github.com/bitwarden/android/pull/4146\n* Update Firebase BOM to 33.5.1 by @david-livefront in https://github.com/bitwarden/android/pull/4150\n* PM-13886 show dialog when no logins were imported by @dseverns-livefront in https://github.com/bitwarden/android/pull/4139\n* QA-951: Add"
         }
       }
     },
@@ -43,8 +43,8 @@
       "categories": [
         "Security"
       ],
-      "suggestedVersionName": "2024.12.0",
-      "suggestedVersionCode": "19597",
+      "suggestedVersionName": "2025.1.0",
+      "suggestedVersionCode": "19622",
       "description": "Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.\n\nPassword theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.\n\nSecurity experts recommend that you use a different, randomly generated password for every account that you create. But how do you manage all those passwords? Bitwarden makes it easy for you to create, store, and access your passwords.\n\nBitwarden stores all of your logins in an encrypted vault that syncs across all of your devices. Since it's fully encrypted before it ever leaves your device, only you have access to your data. Not even the team at Bitwarden can read your data, even if we wanted to. Your data is sealed with AES-256 bit encryption, salted hashing, and PBKDF2 SHA-256.\n\nBitwarden is focused on open source software. The source code for Bitwarden is hosted on GitHub and everyone is free to review, audit, and contribute to the Bitwarden codebase.\n",
       "license": "GPL-3.0",
       "name": "Bitwarden Beta",
@@ -52,40 +52,87 @@
       "summary": "Bitwarden mobile app for Android.",
       "added": 1731294207000,
       "packageName": "com.x8bit.bitwarden.beta",
-      "lastUpdated": 1736350629000,
+      "lastUpdated": 1736372007000,
       "localized": {
         "en-US": {
           "featureGraphic": "featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
           "icon": "icon_qX6aLtm1hvjXAqqBukie1y4RC0NS39o0ih8kBPErlpE=.png",
-          "whatsNew": "## What's Changed\n* PM-15624 \ud83c\udf52 Align handling of no network states with iOS app. (#4431) by @dseverns-livefront in https://github.com/bitwarden/android/pull/4439\n* PM-15831 - \ud83c\udf52 Enable remote configuration of `enable-authenticator-sync-android` feature flag by @phil-livefront in https://github.com/bitwarden/android/pull/4442\n* PM-15890 \ud83c\udf52  TLS related error propagation by @dseverns-livefront in https://github.com/bitwarden/android/pull/4484\n* PM-15976 \ud83c\udf52  prevent app crash for non english language "
+          "whatsNew": "## What's Changed\n* PM-13937: Consolidate button UI and logic by @david-livefront in https://github.com/bitwarden/android/pull/4149\n* QA-950: Adding testTag for VaultUnlockedNavBar component by @ifernandezdiaz in https://github.com/bitwarden/android/pull/4146\n* Update Firebase BOM to 33.5.1 by @david-livefront in https://github.com/bitwarden/android/pull/4150\n* PM-13886 show dialog when no logins were imported by @dseverns-livefront in https://github.com/bitwarden/android/pull/4139\n* QA-951: Add"
         }
       }
-    },
-    {
-      "categories": [
-        "fdroid"
-      ],
-      "suggestedVersionCode": "2147483647",
-      "license": "Unknown",
-      "name": "categories",
-      "added": 1733973097000,
-      "packageName": "13c8ee4a6eefd7bb5d20bb8e340af8c4cc7c9564203f5f9bba4470456226895c",
-      "lastUpdated": 1733973097000
     }
   ],
   "packages": {
-    "13c8ee4a6eefd7bb5d20bb8e340af8c4cc7c9564203f5f9bba4470456226895c": [
-      {
-        "added": 1733973097000,
-        "apkName": "categories.txt",
-        "hash": "13c8ee4a6eefd7bb5d20bb8e340af8c4cc7c9564203f5f9bba4470456226895c",
-        "hashType": "sha256",
-        "packageName": "13c8ee4a6eefd7bb5d20bb8e340af8c4cc7c9564203f5f9bba4470456226895c",
-        "size": 9,
-        "versionName": "13c8ee4"
-      }
-    ],
     "com.x8bit.bitwarden": [
+      {
+        "added": 1736372021000,
+        "apkName": "bitwarden_v2025.1.0.apk",
+        "hash": "b18292077fa102fe06e5af17f0c32920a3ae16725e7b08d27997ce68ef1efd1b",
+        "hashType": "sha256",
+        "minSdkVersion": 29,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi",
+          "armeabi-v7a",
+          "mips",
+          "mips64",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "com.x8bit.bitwarden",
+        "sig": "4eca64d92c5726e95b1fcf98e8feef4c",
+        "signer": "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90",
+        "size": 72124593,
+        "targetSdkVersion": 35,
+        "uses-permission": [
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.USE_BIOMETRIC",
+            null
+          ],
+          [
+            "android.permission.NFC",
+            null
+          ],
+          [
+            "android.permission.CAMERA",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.USE_FINGERPRINT",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 19622,
+        "versionName": "2025.1.0"
+      },
       {
         "added": 1736350643000,
         "apkName": "bitwarden_v2024.12.0.apk",
@@ -706,11 +753,13 @@
         ],
         "versionCode": 19421,
         "versionName": "2024.11.0"
-      },
+      }
+    ],
+    "com.x8bit.bitwarden.beta": [
       {
-        "added": 1731294219000,
-        "apkName": "bitwarden_v2024.10.2.apk",
-        "hash": "f64968e88ded7295e283efe19480acf2bd2acf21b48ae319c7231c99adb3b162",
+        "added": 1736372007000,
+        "apkName": "bitwarden-beta_v2025.1.0.apk",
+        "hash": "887022edc1d9b710c35f6520df753809dd989c1f54444755a064848df7bcbad5",
         "hashType": "sha256",
         "minSdkVersion": 29,
         "nativecode": [
@@ -722,11 +771,11 @@
           "x86",
           "x86_64"
         ],
-        "packageName": "com.x8bit.bitwarden",
-        "sig": "4eca64d92c5726e95b1fcf98e8feef4c",
-        "signer": "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90",
-        "size": 71047619,
-        "targetSdkVersion": 34,
+        "packageName": "com.x8bit.bitwarden.beta",
+        "sig": "7619526d81e6c4f0fa16ccaef4bb11f4",
+        "signer": "3c8f03c4225bc173812def564f7ae8a1b3ef34f1bbdcc8748dadc39eb0a69f74",
+        "size": 72125865,
+        "targetSdkVersion": 35,
         "uses-permission": [
           [
             "android.permission.ACCESS_NETWORK_STATE",
@@ -769,15 +818,13 @@
             null
           ],
           [
-            "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            "com.x8bit.bitwarden.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
             null
           ]
         ],
-        "versionCode": 19397,
-        "versionName": "2024.10.2"
-      }
-    ],
-    "com.x8bit.bitwarden.beta": [
+        "versionCode": 19622,
+        "versionName": "2025.1.0"
+      },
       {
         "added": 1736350629000,
         "apkName": "bitwarden-beta_v2024.12.0.apk",
@@ -1398,75 +1445,6 @@
         ],
         "versionCode": 19421,
         "versionName": "2024.11.0"
-      },
-      {
-        "added": 1731294207000,
-        "apkName": "bitwarden-beta_v2024.10.2.apk",
-        "hash": "dbaceda390411bb36660a53be85d604cf362c788879819266aefb126386570d6",
-        "hashType": "sha256",
-        "minSdkVersion": 29,
-        "nativecode": [
-          "arm64-v8a",
-          "armeabi",
-          "armeabi-v7a",
-          "mips",
-          "mips64",
-          "x86",
-          "x86_64"
-        ],
-        "packageName": "com.x8bit.bitwarden.beta",
-        "sig": "7619526d81e6c4f0fa16ccaef4bb11f4",
-        "signer": "3c8f03c4225bc173812def564f7ae8a1b3ef34f1bbdcc8748dadc39eb0a69f74",
-        "size": 71048891,
-        "targetSdkVersion": 34,
-        "uses-permission": [
-          [
-            "android.permission.ACCESS_NETWORK_STATE",
-            null
-          ],
-          [
-            "android.permission.USE_BIOMETRIC",
-            null
-          ],
-          [
-            "android.permission.NFC",
-            null
-          ],
-          [
-            "android.permission.CAMERA",
-            null
-          ],
-          [
-            "android.permission.INTERNET",
-            null
-          ],
-          [
-            "android.permission.POST_NOTIFICATIONS",
-            null
-          ],
-          [
-            "android.permission.USE_FINGERPRINT",
-            null
-          ],
-          [
-            "android.permission.WAKE_LOCK",
-            null
-          ],
-          [
-            "android.permission.RECEIVE_BOOT_COMPLETED",
-            null
-          ],
-          [
-            "android.permission.FOREGROUND_SERVICE",
-            null
-          ],
-          [
-            "com.x8bit.bitwarden.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
-            null
-          ]
-        ],
-        "versionCode": 19397,
-        "versionName": "2024.10.2"
       }
     ]
   }
