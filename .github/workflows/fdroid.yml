@@ -19,7 +19,7 @@ jobs:
     name: "Generate repo from apps listing"
     runs-on: ubuntu-24.04
     env:
-      COMMIT_MSG_FILE: "${{ github.workspace }}/commit_message.tmp"
+      _COMMIT_MSG_FILE: "${{ github.workspace }}/commit_message.tmp"
 
     steps:
       - name: Checkout repo
@@ -108,7 +108,7 @@ jobs:
         env:
           GH_ACCESS_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
         run: |
-          bash run_metascoop.sh ${{ env.COMMIT_MSG_FILE }}
+          bash run_metascoop.sh ${{ env._COMMIT_MSG_FILE }}
           if [ $? -eq 0 ]; then
             echo "Changes detected"
             echo "has_changes=true" >> $GITHUB_OUTPUT
@@ -134,5 +134,5 @@ jobs:
           elif [ "${{ steps.run-metascoop.outputs.has_changes }}" != "true" ]; then
             echo "No changes to save."
           else
-            bash update_repo.sh ${{ env.COMMIT_MSG_FILE }}
+            bash update_repo.sh ${{ env._COMMIT_MSG_FILE }}
           fi
