@@ -1,0 +1,26 @@
+## What's Changed
+* [PM-15969] Users with Can Edit access cannot assign collections by @andrebispo5 in https://github.com/bitwarden/android/pull/4522
+* [PM-8217] Add local feature flag to ignore environment validation by @andrebispo5 in https://github.com/bitwarden/android/pull/4521
+* Autosync Crowdin Translations by @bw-ghapp in https://github.com/bitwarden/android/pull/4503
+* [PM-13349] Hide edit button unless item is in at least one non-readOnly collection by @mpbw2 in https://github.com/bitwarden/android/pull/4430
+* [deps]: Update kotlin by @renovate in https://github.com/bitwarden/android/pull/4501
+* PM-16474 Adding custom field issues when another text field holds focus by @dseverns-livefront in https://github.com/bitwarden/android/pull/4511
+* PM-14333 fix case of crowdin translation not adding annotations on string with format args by @dseverns-livefront in https://github.com/bitwarden/android/pull/4505
+* PM-16821: remove padding on right side of the vault screen dividers by @david-livefront in https://github.com/bitwarden/android/pull/4528
+* [deps]: Update gh minor by @renovate in https://github.com/bitwarden/android/pull/4496
+* [deps]: Lock file maintenance by @renovate in https://github.com/bitwarden/android/pull/4502
+* [PM-16120] Defer passkey authentication until vault data is loaded by @SaintPatrck in https://github.com/bitwarden/android/pull/4524
+* PM-14179: Update generator screen copy button by @david-livefront in https://github.com/bitwarden/android/pull/4530
+* [PM-16809] Fix remind me later date (#4526) by @andrebispo5 in https://github.com/bitwarden/android/pull/4535
+* [PM-16670] Force app to sync after 2FA notice (#4525) by @andrebispo5 in https://github.com/bitwarden/android/pull/4536
+* [PM-16695] Learn more new device verification by @aj-rosado in https://github.com/bitwarden/android/pull/4527
+* [PM-16827] Fix test.yml sdk package access and refactor test jobs by @vvolkgang in https://github.com/bitwarden/android/pull/4538
+* [PM-13349] Hide Edit option in cipher list item overflow when editing not permitted by @mpbw2 in https://github.com/bitwarden/android/pull/4539
+* PM-15356: Resolve biometrics bypass by @david-livefront in https://github.com/bitwarden/android/pull/4448
+* [PM-9439] Use passkey icon for items with FIDO2 credentials in search results by @SaintPatrck in https://github.com/bitwarden/android/pull/4541
+* [PM-16670] Add check for 2fa status #4542 by @andrebispo5 in https://github.com/bitwarden/android/pull/4543
+* [PM-16808] Add question mark to copy (#4544) by @andrebispo5 in https://github.com/bitwarden/android/pull/4545
+* PM-15804, PM-17130: Add logic to monitor when the screen on state to ensure the vault locks properly by @david-livefront in https://github.com/bitwarden/android/pull/4618
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.1.0...v2025.1.1
