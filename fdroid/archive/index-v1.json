@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1738251488000,
+    "timestamp": 1739370601000,
     "version": 20002,
     "name": "Bitwarden F-droid Archive",
     "icon": "icon.png",
@@ -20,8 +20,8 @@
       "categories": [
         "Security"
       ],
-      "suggestedVersionName": "2025.1.1",
-      "suggestedVersionCode": "19728",
+      "suggestedVersionName": "2025.1.2",
+      "suggestedVersionCode": "19740",
       "description": "Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.\n\nPassword theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.\n\nSecurity experts recommend that you use a different, randomly generated password for every account that you create. But how do you manage all those passwords? Bitwarden makes it easy for you to create, store, and access your passwords.\n\nBitwarden stores all of your logins in an encrypted vault that syncs across all of your devices. Since it's fully encrypted before it ever leaves your device, only you have access to your data. Not even the team at Bitwarden can read your data, even if we wanted to. Your data is sealed with AES-256 bit encryption, salted hashing, and PBKDF2 SHA-256.\n\nBitwarden is focused on open source software. The source code for Bitwarden is hosted on GitHub and everyone is free to review, audit, and contribute to the Bitwarden codebase.\n",
       "license": "GPL-3.0",
       "name": "Bitwarden",
@@ -29,15 +29,15 @@
       "summary": "Bitwarden mobile app for Android.",
       "added": 1731294219000,
       "packageName": "com.x8bit.bitwarden",
-      "lastUpdated": 1738251414000
+      "lastUpdated": 1739370523000
     },
     {
       "authorName": "bitwarden",
       "categories": [
         "Security"
       ],
-      "suggestedVersionName": "2025.1.1",
-      "suggestedVersionCode": "19728",
+      "suggestedVersionName": "2025.1.2",
+      "suggestedVersionCode": "19740",
       "description": "Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.\n\nPassword theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.\n\nSecurity experts recommend that you use a different, randomly generated password for every account that you create. But how do you manage all those passwords? Bitwarden makes it easy for you to create, store, and access your passwords.\n\nBitwarden stores all of your logins in an encrypted vault that syncs across all of your devices. Since it's fully encrypted before it ever leaves your device, only you have access to your data. Not even the team at Bitwarden can read your data, even if we wanted to. Your data is sealed with AES-256 bit encryption, salted hashing, and PBKDF2 SHA-256.\n\nBitwarden is focused on open source software. The source code for Bitwarden is hosted on GitHub and everyone is free to review, audit, and contribute to the Bitwarden codebase.\n",
       "license": "GPL-3.0",
       "name": "Bitwarden Beta",
@@ -45,11 +45,80 @@
       "summary": "Bitwarden mobile app for Android.",
       "added": 1731294207000,
       "packageName": "com.x8bit.bitwarden.beta",
-      "lastUpdated": 1738251400000
+      "lastUpdated": 1739370508000
     }
   ],
   "packages": {
     "com.x8bit.bitwarden": [
+      {
+        "added": 1731294221000,
+        "apkName": "bitwarden_v2024.11.1.apk",
+        "hash": "0c0dd879aafa22da5ba1bf8ffbc8073f20872e51dc9a953de27183d00a375d4a",
+        "hashType": "sha256",
+        "minSdkVersion": 29,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi",
+          "armeabi-v7a",
+          "mips",
+          "mips64",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "com.x8bit.bitwarden",
+        "sig": "4eca64d92c5726e95b1fcf98e8feef4c",
+        "signer": "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90",
+        "size": 71063999,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.USE_BIOMETRIC",
+            null
+          ],
+          [
+            "android.permission.NFC",
+            null
+          ],
+          [
+            "android.permission.CAMERA",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.USE_FINGERPRINT",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 19422,
+        "versionName": "2024.11.1"
+      },
       {
         "added": 1733973078000,
         "apkName": "bitwarden_v2024.11.0.apk",
@@ -2890,6 +2959,75 @@
       }
     ],
     "com.x8bit.bitwarden.beta": [
+      {
+        "added": 1731294209000,
+        "apkName": "bitwarden-beta_v2024.11.1.apk",
+        "hash": "e7865de6c4109076d65c680a366ddd765d952f367d1ed09cfac48ec39558f0fc",
+        "hashType": "sha256",
+        "minSdkVersion": 29,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi",
+          "armeabi-v7a",
+          "mips",
+          "mips64",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "com.x8bit.bitwarden.beta",
+        "sig": "7619526d81e6c4f0fa16ccaef4bb11f4",
+        "signer": "3c8f03c4225bc173812def564f7ae8a1b3ef34f1bbdcc8748dadc39eb0a69f74",
+        "size": 71065271,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.USE_BIOMETRIC",
+            null
+          ],
+          [
+            "android.permission.NFC",
+            null
+          ],
+          [
+            "android.permission.CAMERA",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.USE_FINGERPRINT",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "com.x8bit.bitwarden.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 19422,
+        "versionName": "2024.11.1"
+      },
       {
         "added": 1733973060000,
         "apkName": "bitwarden-beta_v2024.11.0.apk",
