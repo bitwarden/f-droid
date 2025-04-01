@@ -8,8 +8,8 @@ require (
 	github.com/google/go-github/v69 v69.2.0
 	github.com/hashicorp/go-version v1.7.0
 	github.com/r3labs/diff/v3 v3.0.1
-	golang.org/x/oauth2 v0.27.0
-	golang.org/x/text v0.22.0
+	golang.org/x/oauth2 v0.28.0
+	golang.org/x/text v0.23.0
 )
 
 require (
