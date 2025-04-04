@@ -458,7 +458,7 @@ func main() {
 
 		os.Exit(1)
 	}
-	
+
 	cpath, hasSignificantChanges := apps.HasSignificantChanges(initialFdroidIndex, fdroidIndex)
 	if hasSignificantChanges {
 		log.Printf("The index %q had a significant change at JSON path %q", fdroidIndexFilePath, cpath)
@@ -468,6 +468,10 @@ func main() {
 		}
 	} else {
 		log.Printf("The index files didn't change significantly")
+		if !isCommittingNewReleases {
+		    log.Printf("No new releases detected either. Exiting with code 2.")
+		    os.Exit(2)
+		}
 	}
 	changedFiles, err := git.GetChangedFileNames(*repoDir)
 	if err != nil {
