@@ -458,6 +458,54 @@ func main() {
 
 		os.Exit(1)
 	}
+	
+	cpath, hasSignificantChanges := apps.HasSignificantChanges(initialFdroidIndex, fdroidIndex)
+	if hasSignificantChanges {
+		log.Printf("The index %q had a significant change at JSON path %q", fdroidIndexFilePath, cpath)
+		// If there were no new releases, we add a commit title indicating the index has changes.
+		if !isCommittingNewReleases {
+			commitMsg.WriteString("Automatic index update\n\n")
+		}
+	} else {
+		log.Printf("The index files didn't change significantly")
+	}
+	changedFiles, err := git.GetChangedFileNames(*repoDir)
+	if err != nil {
+		log.Fatalf("getting changed files: %s\n::endgroup::\n", err.Error())
+	}
+
+	// If only the index files changed, we ignore the commit
+	var modifiedFiles []string
+	for _, fname := range changedFiles {
+		if !strings.Contains(fname, "index") {
+			hasSignificantChanges = true
+			modifiedFiles = append(modifiedFiles, fname)
+			log.Printf("File %q is a significant change", fname)
+		}
+	}
+	if haveError {
+		os.Exit(1)
+	}
+
+	// If we don't have any significant changes, we report it with exit code 2.
+	if !hasSignificantChanges {
+		os.Exit(2)
+	}
+
+	// If there were modified files, we add them to the commit message
+	if len(modifiedFiles) > 0 {
+
+		// If there were new releases, we add a header to separate metadata changes.
+		if isCommittingNewReleases {
+			commitMsg.WriteString("## Metadata updates:\n\n")
+		}
+		commitMsg.WriteString("We performed updates to repository metadata files.\n")
+		commitMsg.WriteString("<details>\n<summary>See what changed</summary>\n\n")
+		for _, fname := range modifiedFiles {
+			commitMsg.WriteString(fmt.Sprintf("  - %s\n", fname))
+		}
+		commitMsg.WriteString("</details>\n")
+	}
 
 	if !*debugMode {
 		fmt.Println("::group::F-Droid: Reading updated metadata")
@@ -505,57 +553,57 @@ func main() {
 		log.Fatalf("error generating %q: %s\n", readmePath, err.Error())
 	}
 
-	cpath, hasSignificantChanges := apps.HasSignificantChanges(initialFdroidIndex, fdroidIndex)
-	if hasSignificantChanges {
-		log.Printf("The index %q had a significant change at JSON path %q", fdroidIndexFilePath, cpath)
-		// If there were no new releases, we add a commit title indicating the index has changes.
-		if !isCommittingNewReleases {
-			commitMsg.WriteString("Automatic index update\n\n")
-		}
-	} else {
-		log.Printf("The index files didn't change significantly")
-	}
+	// cpath, hasSignificantChanges := apps.HasSignificantChanges(initialFdroidIndex, fdroidIndex)
+	// if hasSignificantChanges {
+	// 	log.Printf("The index %q had a significant change at JSON path %q", fdroidIndexFilePath, cpath)
+	// 	// If there were no new releases, we add a commit title indicating the index has changes.
+	// 	if !isCommittingNewReleases {
+	// 		commitMsg.WriteString("Automatic index update\n\n")
+	// 	}
+	// } else {
+	// 	log.Printf("The index files didn't change significantly")
+	// }
 
-	changedFiles, err := git.GetChangedFileNames(*repoDir)
-	if err != nil {
-		log.Fatalf("getting changed files: %s\n::endgroup::\n", err.Error())
-	}
+	// changedFiles, err := git.GetChangedFileNames(*repoDir)
+	// if err != nil {
+	// 	log.Fatalf("getting changed files: %s\n::endgroup::\n", err.Error())
+	// }
 
-	// If only the index files changed, we ignore the commit
-	var modifiedFiles []string
-	for _, fname := range changedFiles {
-		if !strings.Contains(fname, "index") {
-			hasSignificantChanges = true
-			modifiedFiles = append(modifiedFiles, fname)
-			log.Printf("File %q is a significant change", fname)
-		}
-	}
+	// // If only the index files changed, we ignore the commit
+	// var modifiedFiles []string
+	// for _, fname := range changedFiles {
+	// 	if !strings.Contains(fname, "index") {
+	// 		hasSignificantChanges = true
+	// 		modifiedFiles = append(modifiedFiles, fname)
+	// 		log.Printf("File %q is a significant change", fname)
+	// 	}
+	// }
 
-	// If there were modified files, we add them to the commit message
-	if len(modifiedFiles) > 0 {
+	// // If there were modified files, we add them to the commit message
+	// if len(modifiedFiles) > 0 {
 
-		// If there were new releases, we add a header to separate metadata changes.
-		if isCommittingNewReleases {
-			commitMsg.WriteString("## Metadata updates:\n\n")
-		}
-		commitMsg.WriteString("We performed updates to repository metadata files.\n")
-		commitMsg.WriteString("<details>\n<summary>See what changed</summary>\n\n")
-		for _, fname := range modifiedFiles {
-			commitMsg.WriteString(fmt.Sprintf("  - %s\n", fname))
-		}
-		commitMsg.WriteString("</details>\n")
-	}
+	// 	// If there were new releases, we add a header to separate metadata changes.
+	// 	if isCommittingNewReleases {
+	// 		commitMsg.WriteString("## Metadata updates:\n\n")
+	// 	}
+	// 	commitMsg.WriteString("We performed updates to repository metadata files.\n")
+	// 	commitMsg.WriteString("<details>\n<summary>See what changed</summary>\n\n")
+	// 	for _, fname := range modifiedFiles {
+	// 		commitMsg.WriteString(fmt.Sprintf("  - %s\n", fname))
+	// 	}
+	// 	commitMsg.WriteString("</details>\n")
+	// }
 
-	if haveError {
-		os.Exit(1)
-	}
+	// if haveError {
+	// 	os.Exit(1)
+	// }
 
 	fmt.Println("::endgroup::Assessing changes")
 
-	// If we don't have any significant changes, we report it with exit code 2.
-	if !hasSignificantChanges {
-		os.Exit(2)
-	}
+	// // If we don't have any significant changes, we report it with exit code 2.
+	// if !hasSignificantChanges {
+	// 	os.Exit(2)
+	// }
 
 	// Otherwise, we write the commit message and exit with code 0.
 
