@@ -514,6 +514,10 @@ func main() {
 		}
 	} else {
 		log.Printf("The index files didn't change significantly")
+		if !isCommittingNewReleases {
+		    log.Printf("No new releases detected either. Exiting with code 2.")
+		    os.Exit(2)
+		}
 	}
 
 	changedFiles, err := git.GetChangedFileNames(*repoDir)
