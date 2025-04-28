@@ -21,7 +21,7 @@ import (
 	"metascoop/git"
 	"metascoop/md"
 
-	"github.com/google/go-github/v69/github"
+	"github.com/google/go-github/v71/github"
 	"golang.org/x/oauth2"
 )
 
@@ -515,8 +515,8 @@ func main() {
 	} else {
 		log.Printf("The index files didn't change significantly")
 		if !isCommittingNewReleases {
-		    log.Printf("No new releases detected either. Exiting with code 2.")
-		    os.Exit(2)
+			log.Printf("No new releases detected either. Exiting with code 2.")
+			os.Exit(2)
 		}
 	}
 

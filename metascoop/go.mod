@@ -5,7 +5,7 @@ go 1.23.1
 require gopkg.in/yaml.v3 v3.0.1
 
 require (
-	github.com/google/go-github/v69 v69.2.0
+	github.com/google/go-github/v71 v71.0.0
 	github.com/hashicorp/go-version v1.7.0
 	github.com/r3labs/diff/v3 v3.0.1
 	golang.org/x/oauth2 v0.29.0
