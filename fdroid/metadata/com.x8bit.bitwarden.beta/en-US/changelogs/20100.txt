@@ -1,0 +1,147 @@
+## What's Changed
+* Update Google privileged browsers list by @github-actions in https://github.com/bitwarden/android/pull/4910
+* PM-19550:  Accept app language settings "System default" by @dseverns-livefront in https://github.com/bitwarden/android/pull/4922
+* PM-19559 Remove "Give feedback" from Settings > About by @dseverns-livefront in https://github.com/bitwarden/android/pull/4924
+* Update passkey privileged app community list by @SaintPatrck in https://github.com/bitwarden/android/pull/4923
+* [PM-8331] Using default send url when on US cloud by @aj-rosado in https://github.com/bitwarden/android/pull/4925
+* PM-19547: Delay the delete account success dialog to avoid flicker by @david-livefront in https://github.com/bitwarden/android/pull/4927
+* Update the README dependencies section and clean up toml file by @david-livefront in https://github.com/bitwarden/android/pull/4926
+* [PM-19013] Create core module by @SaintPatrck in https://github.com/bitwarden/android/pull/4836
+* PM-19543: Add flight recorder feature flag by @david-livefront in https://github.com/bitwarden/android/pull/4929
+* [PM-19616] Move OmitFromCoverage annotation to core module by @SaintPatrck in https://github.com/bitwarden/android/pull/4928
+* [PM-19624] Migrate DataState to core module by @SaintPatrck in https://github.com/bitwarden/android/pull/4930
+* PM-19466: Fix snackbar ime padding by @david-livefront in https://github.com/bitwarden/android/pull/4933
+* Autosync Crowdin Translations by @bw-ghapp in https://github.com/bitwarden/android/pull/4935
+* [PM-19626] Migrate SharedFlowExtensions to core module by @SaintPatrck in https://github.com/bitwarden/android/pull/4931
+* Run detekt on `authenticatorbridge` module by @SaintPatrck in https://github.com/bitwarden/android/pull/4940
+* PM-19653: Add tooltip and subtext tupport for the switch by @david-livefront in https://github.com/bitwarden/android/pull/4936
+* [PM-19628] Migrate ResultExtensions to core module by @SaintPatrck in https://github.com/bitwarden/android/pull/4934
+* PM-19723 Group "no folder" items when there is a collection present. by @dseverns-livefront in https://github.com/bitwarden/android/pull/4941
+* [PM-19640] Migrate SpecialCharWithPrecedenceComparator to core module by @SaintPatrck in https://github.com/bitwarden/android/pull/4942
+* Fix detekt issues in `authenticator` tests by @SaintPatrck in https://github.com/bitwarden/android/pull/4944
+* PM-19404: Improve email validation and validation error parsing by @david-livefront in https://github.com/bitwarden/android/pull/4945
+* Update to AGP 8.9.1 by @david-livefront in https://github.com/bitwarden/android/pull/4947
+* Add matching fallback for the `beta` build type to `release` by @SaintPatrck in https://github.com/bitwarden/android/pull/4946
+* [PM-19652] Consolidate check configurations by @SaintPatrck in https://github.com/bitwarden/android/pull/4937
+* [PM-19627] Migrate JsonExtensions to core module by @SaintPatrck in https://github.com/bitwarden/android/pull/4932
+* [PM-19738] Create `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/4948
+* [PM-19625] Migrate DataStateExtensions to core module by @SaintPatrck in https://github.com/bitwarden/android/pull/4943
+* PM-19131 - Custom hidden fields not working properly if TOTP also configured by @phil-livefront in https://github.com/bitwarden/android/pull/4916
+* [PM-19772] Remove scan-authenticator.yml by @vvolkgang in https://github.com/bitwarden/android/pull/4952
+* Update the Hilt and Androidx dependencies by @david-livefront in https://github.com/bitwarden/android/pull/4954
+* PM-19645: Remove new device feature flags by @david-livefront in https://github.com/bitwarden/android/pull/4950
+* PM-19705: Log reason for logout by @david-livefront in https://github.com/bitwarden/android/pull/4959
+* [PM-19738] Migrate NetworkResultCallAdapter to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/4949
+* Update network module minSdk version by @SaintPatrck in https://github.com/bitwarden/android/pull/4961
+* [PM-19782] Migrate network error handling to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/4957
+* Update CODEOWNERS by @SaintPatrck in https://github.com/bitwarden/android/pull/4965
+* PM-19807: Remove IconResource class by @david-livefront in https://github.com/bitwarden/android/pull/4963
+* [PM-19793] Migrate ZonedDateTimeSerializer to core module by @SaintPatrck in https://github.com/bitwarden/android/pull/4960
+* [PM-19820] Replace `ResultCallAdapterFactory` in authenticator module by @SaintPatrck in https://github.com/bitwarden/android/pull/4968
+* Set SARIF upload branch to the merge commit ref/sha retrieved from GH CLI by @vvolkgang in https://github.com/bitwarden/android/pull/4958
+* [PM-19783] Migrate ConfigApi and ConfigResponseJson to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/4964
+* PM-19812: Add navigation rail by @david-livefront in https://github.com/bitwarden/android/pull/4966
+* [PM-19813] Migrate BaseServiceTest to Network module and enable test fixtures by @SaintPatrck in https://github.com/bitwarden/android/pull/4967
+* PM-19830: Updating padding for last sync time label by @david-livefront in https://github.com/bitwarden/android/pull/4974
+* PM-19591: Initial flight recorder UI by @david-livefront in https://github.com/bitwarden/android/pull/4970
+* [PM-19832] Create `data` module by @SaintPatrck in https://github.com/bitwarden/android/pull/4973
+* [PM-19840] Migrate BaseEnumeratedIntSerializer to core module by @SaintPatrck in https://github.com/bitwarden/android/pull/4975
+* PM-19812: Navigation Rail design feedback by @david-livefront in https://github.com/bitwarden/android/pull/4977
+* [PM-19831] Migrate ConfigService to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/4971
+* [PM-19841] Migrate Event API and models to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/4976
+* PM-19850: Update dialog scrim by @david-livefront in https://github.com/bitwarden/android/pull/4980
+* Update Firbase BOM to the latest version (33.12.0) by @david-livefront in https://github.com/bitwarden/android/pull/4981
+* [PM-19845] Migrate `BaseDiskSource` to `data` module by @SaintPatrck in https://github.com/bitwarden/android/pull/4978
+* [PM-19849] Move PushApi and PushTokenRequest to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/4979
+* [PM-19854] Migrate AuthenticatedAuthRequestsApi to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/4984
+* [PM-19855] Migrate AuthenticatedDevicesApi and models to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/4985
+* [PM-19856] Migrate KeyConnectorApi and models to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/4986
+* [PM-19857] Migrate AuthenticatedOrganizationApi and models to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/4987
+* [PM-19858] Migrate HaveIBeenPwnedApi to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/4988
+* [PM-19866] Migrate `BaseEncryptedDiskSource` to `data` module by @SaintPatrck in https://github.com/bitwarden/android/pull/4991
+* PM-19873: Migrate the screen capture feature from user-scoped to app-scoped by @david-livefront in https://github.com/bitwarden/android/pull/4972
+* Autosync Crowdin Translations by @bw-ghapp in https://github.com/bitwarden/android/pull/4995
+* [PM-19851] Migrate network AuthenticatedAccountsApi to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/4982
+* [PM-19871] Migrate EncryptedPreferences to data module by @SaintPatrck in https://github.com/bitwarden/android/pull/4993
+* [PM-19859] Migrate UnauthenticatedAccountsApi and models to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/4989
+* [PM-19860] Migrate UnauthenticateAuthRequestsApi and models to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/4990
+* [PM-19870] Migrate ServerConfig and ConfigDiskSource to the `data` module by @SaintPatrck in https://github.com/bitwarden/android/pull/4992
+* PM-19645: Remove the new device UI email access flow by @david-livefront in https://github.com/bitwarden/android/pull/4996
+* Bump internal version name by @david-livefront in https://github.com/bitwarden/android/pull/4997
+* [PM-19872] Migrate UnencryptedPreferences to data module by @SaintPatrck in https://github.com/bitwarden/android/pull/4994
+* Remove unused FeatureFlagRepository and FeatureFlagDiskSource by @SaintPatrck in https://github.com/bitwarden/android/pull/4998
+* PM-19937: Make navigation rail scrollable by @david-livefront in https://github.com/bitwarden/android/pull/5005
+* [PM-19905] Migrate DispatcherManager to `data` module by @SaintPatrck in https://github.com/bitwarden/android/pull/4999
+* PM-19938: Add empty and loading state to the recorded logs screen by @david-livefront in https://github.com/bitwarden/android/pull/5001
+* [PM-19947] Provide system clock in the `core` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5000
+* [PM-19821] Consolidate scan.yml and scan-ci.yml by @vvolkgang in https://github.com/bitwarden/android/pull/4969
+* [PM-19948] Migrate ServerConfigRepository to data module by @SaintPatrck in https://github.com/bitwarden/android/pull/5002
+* [PM-19949] Provide ConfigDiskSource from `data` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5003
+* [PM-19959] Introduce a new UI module by @SaintPatrck in https://github.com/bitwarden/android/pull/5008
+* [PM-19951] Move EncryptedPreferences to the correct di package by @SaintPatrck in https://github.com/bitwarden/android/pull/5004
+* PM-19978: Build out flight recorder UI by @david-livefront in https://github.com/bitwarden/android/pull/5009
+* [PM-19952] Provide SharedPreference from the `data` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5006
+* [PM-18559] add kitobrowser series support by @Auj625197595 in https://github.com/bitwarden/android/pull/4770
+* [PM-19958] Migrate Text to the UI module by @SaintPatrck in https://github.com/bitwarden/android/pull/5010
+* PM-20005: Make the BitwardenOverflowActionItem more generic by @david-livefront in https://github.com/bitwarden/android/pull/5011
+* Update androidx.credentials by @SaintPatrck in https://github.com/bitwarden/android/pull/4919
+* [PM-19861] Migrate UnauthenticatedDevicesApi to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/5016
+* [PM-19862] Migrate UnauthenticatedIdentityApi to the `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5017
+* [PM-19863] Migrate UnauthenticatedKeyConnectorApi to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5018
+* [PM-20068] Migrate AzureApi to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5020
+* [PM-20070] Migrate DownloadApi to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5022
+* [PM-19864] Migrate UnauthenticatedOrganizationApi to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5019
+* PM-20123: Add flight recorder metadata by @david-livefront in https://github.com/bitwarden/android/pull/5024
+* [PM-20069] Migrate CiphersApi to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5021
+* [PM-20071] Migrate FoldersApi to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5023
+* [PM-20072] Migrate SendsApi to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5027
+* Autosync Crowdin Translations by @bw-ghapp in https://github.com/bitwarden/android/pull/5030
+* [PM-20073] Migrate SyncApi to the network module by @SaintPatrck in https://github.com/bitwarden/android/pull/5028
+* PM-20172: Display errors from WebAuthN results by @david-livefront in https://github.com/bitwarden/android/pull/5032
+* PM-20133: Add initial logging logic by @david-livefront in https://github.com/bitwarden/android/pull/5029
+* [PM-20067] Migrate PushService to the network module by @SaintPatrck in https://github.com/bitwarden/android/pull/5037
+* [PM-20185] Migrate AccountService to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/5038
+* Update Google privileged browsers list by @github-actions in https://github.com/bitwarden/android/pull/5045
+* PM-19592: Enabled and disable flight recorder by @david-livefront in https://github.com/bitwarden/android/pull/5035
+* [PM-20066] Migrate EventService and EventServiceImpl to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/5036
+* [PM-20186] Migrate AuthRequestsService to the network module by @SaintPatrck in https://github.com/bitwarden/android/pull/5039
+* Limit network logs in production by @david-livefront in https://github.com/bitwarden/android/pull/5051
+* PM-19593: Display all flight recorder logs by @david-livefront in https://github.com/bitwarden/android/pull/5050
+* [PM-19613] Save attachment error message update by @andrebispo5 in https://github.com/bitwarden/android/pull/5013
+* Use explicit timezone in tests by @david-livefront in https://github.com/bitwarden/android/pull/5057
+* [PM-20194] Migrate FolderService and related models to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/5054
+* [PM-20187] Migrate DevicesService to the network module by @SaintPatrck in https://github.com/bitwarden/android/pull/5040
+* [PM-20188] Migrate HaveIBeenPwnedService to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/5046
+* Update fastlane by @SaintPatrck in https://github.com/bitwarden/android/pull/5025
+* Revert "[PM-19821] Consolidate scan.yml and scan-ci.yml" by @vvolkgang in https://github.com/bitwarden/android/pull/5058
+* Make MobileErrorReporting flag remotely configured by @SaintPatrck in https://github.com/bitwarden/android/pull/5015
+* [PM-20189] Migrate IdentityService and related components to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5047
+* [PM-20190] Migrate `NewAuthRequestService` to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5048
+* [PM-20191] Migrate OrganizationService to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5049
+* [PM-20192] Migrate CiphersService to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/5052
+* [PM-20304] Migrate HeadersInterceptor to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/5061
+* [PM-20127] Only prompt passkey user verification once by @SaintPatrck in https://github.com/bitwarden/android/pull/5026
+* Update to latest Mockk by @david-livefront in https://github.com/bitwarden/android/pull/5066
+* PM-19622: Add ability to share flight recorder logs by @david-livefront in https://github.com/bitwarden/android/pull/5060
+* [PM-20309] Migrate Environment and EnvironmentUrlDataJson to data module by @SaintPatrck in https://github.com/bitwarden/android/pull/5063
+* [PM-20306] Migrate Auth Token Interceptor by @SaintPatrck in https://github.com/bitwarden/android/pull/5065
+* [PM-20193] Migrate DownloadService to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5053
+* Update user-agent header in Authenticator app by @SaintPatrck in https://github.com/bitwarden/android/pull/5067
+* PM-19620: Auto-delete flight recorder logs after 30 days by @david-livefront in https://github.com/bitwarden/android/pull/5062
+* PM-19593: Update expiration string to be 'Expires on <date>' by @david-livefront in https://github.com/bitwarden/android/pull/5069
+* [PM-20195] Migrate SendsService to network module by @SaintPatrck in https://github.com/bitwarden/android/pull/5055
+* Update Androidx libraries by @david-livefront in https://github.com/bitwarden/android/pull/5070
+* [PM-20196] Migrate SyncService to the network module by @SaintPatrck in https://github.com/bitwarden/android/pull/5056
+* [PM-20305] Migrate BaseUrlInterceptor and BaseUrlInterceptors to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5068
+* [PM-20373] Migrate Digital Asset Link API to `network` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5071
+* PM-20375: Events to use their own scope by @david-livefront in https://github.com/bitwarden/android/pull/5072
+* [PM-18936] Show key connector domain by @aj-rosado in https://github.com/bitwarden/android/pull/5034
+
+## New Contributors
+* @celenityy made their first contribution in https://github.com/bitwarden/android/pull/4534
+* @SymphonicDeviation made their first contribution in https://github.com/bitwarden/android/pull/4189
+* @mandreko-bitwarden made their first contribution in https://github.com/bitwarden/android/pull/4692
+* @rohm1 made their first contribution in https://github.com/bitwarden/android/pull/4486
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.3.0...v2025.4.0
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/14536896217
