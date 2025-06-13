@@ -48,7 +48,7 @@ jobs:
         uses: bitwarden/gh-actions/get-keyvault-secrets@main
         with:
           keyvault: gh-f-droid
-          secrets: "FDROID_STORE_KEYSTORE_PASSWORD"
+          secrets: "FDROID-STORE-KEYSTORE-PASSWORD"
 
       - name: Retrieve secrets
         id: retrieve-secrets
@@ -94,7 +94,7 @@ jobs:
 
       - name: Configure F-Droid server
         env:
-          FDROID_STORE_KEYSTORE_PASSWORD: ${{ steps.get-kv-secrets.outputs.FDROID_STORE_KEYSTORE_PASSWORD }}
+          FDROID_STORE_KEYSTORE_PASSWORD: ${{ steps.get-kv-secrets.outputs.FDROID-STORE-KEYSTORE-PASSWORD }}
         run: |
           cp base_fdroid_config.yml fdroid/config.yml
           chmod 0600 fdroid/config.yml
