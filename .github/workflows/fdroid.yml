@@ -39,9 +39,8 @@ jobs:
       - name: Log in to Azure
         uses: bitwarden/gh-actions/azure-login@main
         with:
-          subscription_id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          tenant_id: ${{ secrets.AZURE_TENANT_ID }}
-          client_id: ${{ secrets.AZURE_CLIENT_ID }}
+          creds: ${{ secrets.AZURE_KV_CI_SERVICE_PRINCIPAL }}
+
       - name: Get Azure Key Vault secrets
         id: get-kv-secrets
         uses: bitwarden/gh-actions/get-keyvault-secrets@main
