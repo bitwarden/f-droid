@@ -41,13 +41,6 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_KV_CI_SERVICE_PRINCIPAL }}
 
-      - name: Get Azure Key Vault secrets
-        id: get-kv-secrets
-        uses: bitwarden/gh-actions/get-keyvault-secrets@main
-        with:
-          keyvault: gh-f-droid
-          secrets: "FDROID-STORE-KEYSTORE-PASSWORD"
-
       - name: Retrieve secrets
         id: retrieve-secrets
         uses: bitwarden/gh-actions/get-keyvault-secrets@main
@@ -78,9 +71,6 @@ jobs:
           az storage blob download --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME \
           --name store_fdroid-keystore.jks --file fdroid/keystore.p12 --output none
 
-      - name: Log out from Azure
-        uses: bitwarden/gh-actions/azure-logout@main
-
       - name: Validate secrets
         run: |
           if [ -f "fdroid/keystore.p12" ]; then
@@ -92,7 +82,7 @@ jobs:
 
       - name: Configure F-Droid server
         env:
-          FDROID_STORE_KEYSTORE_PASSWORD: ${{ steps.get-kv-secrets.outputs.FDROID-STORE-KEYSTORE-PASSWORD }}
+          FDROID_STORE_KEYSTORE_PASSWORD: ${{ secrets.FDROID_STORE_KEYSTORE_PASSWORD }}
         run: |
           cp base_fdroid_config.yml fdroid/config.yml
           chmod 0600 fdroid/config.yml
