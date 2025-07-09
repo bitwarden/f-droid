@@ -20,7 +20,9 @@ jobs:
     runs-on: ubuntu-24.04
     env:
       _COMMIT_MSG_FILE: "${{ github.workspace }}/commit_message.tmp"
-
+    permissions:
+      contents: write
+      id-token: write
     steps:
       - name: Checkout repo
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
