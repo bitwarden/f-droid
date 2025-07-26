@@ -1,0 +1,139 @@
+# Overview
+Updated Autofill settings to provide clearer explanations of functionality.
+Improved server-side validation of encrypted data to address decryption issues.
+Various bug fixes, UI improvements, and internal optimizations
+
+# Overview
+Updated Autofill settings to provide clearer explanations of functionality.
+Improved server-side validation of encrypted data to address decryption issues.
+Various bug fixes, UI improvements, and internal optimizations
+
+## What's Changed
+* [PM-21782] Improve create cipher error handling by @SaintPatrck in https://github.com/bitwarden/android/pull/5362
+* Update the Firebase BOM to 33.15.0 by @david-livefront in https://github.com/bitwarden/android/pull/5366
+* [PM-22552] Update alg type in PasskeyAttestationOptions by @SaintPatrck in https://github.com/bitwarden/android/pull/5363
+* Update to Junit v5.13.1 by @david-livefront in https://github.com/bitwarden/android/pull/5367
+* Update AndroidX AppCompat and Autofill libraries by @david-livefront in https://github.com/bitwarden/android/pull/5368
+* Update version constant names for consistency by @david-livefront in https://github.com/bitwarden/android/pull/5369
+* [PM-19108] Update passkey prompt for unrecognized browser by @SaintPatrck in https://github.com/bitwarden/android/pull/5371
+* [PM-22777] Migrate AnimateNullableContentVisibility to ui module by @SaintPatrck in https://github.com/bitwarden/android/pull/5376
+* [PM-22815] Migrate BitwardenContentBlock to ui module by @SaintPatrck in https://github.com/bitwarden/android/pull/5383
+* PM-22776: Update logic for determining base domains by @david-livefront in https://github.com/bitwarden/android/pull/5374
+* [PM-21363] Migrate ZonedDateTime utils to core module by @SaintPatrck in https://github.com/bitwarden/android/pull/5375
+* [PM-22780] Migrate BitwardenHorizontalDivider to ui module by @SaintPatrck in https://github.com/bitwarden/android/pull/5379
+* [PM-19625] Move DataStateExtensionsTest to data module by @SaintPatrck in https://github.com/bitwarden/android/pull/5377
+* [PM-22786] Migrate BitwardenRowOfActions to ui module by @SaintPatrck in https://github.com/bitwarden/android/pull/5381
+* [PM-22778] Migrate BitwardenTextButton to ui module by @SaintPatrck in https://github.com/bitwarden/android/pull/5378
+* [PM-22786] Migrate PersistentListExtensions to core module by @SaintPatrck in https://github.com/bitwarden/android/pull/5380
+* PM-22835: Update the passkey creation date format style by @david-livefront in https://github.com/bitwarden/android/pull/5386
+* PM-22551: Update remove password copy by @david-livefront in https://github.com/bitwarden/android/pull/5387
+* [PM-22786] Migrate TooltipData to ui module by @SaintPatrck in https://github.com/bitwarden/android/pull/5382
+* PM-22874: Fix Events service domain by @david-livefront in https://github.com/bitwarden/android/pull/5391
+* Crowdin Pull - Authenticator by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5394
+* Crowdin Pull - Password Manager by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5395
+* [PM-15087] Update the device push token every 7 days by @mzieniukbw in https://github.com/bitwarden/android/pull/4386
+* Add Room Gradle plugin by @david-livefront in https://github.com/bitwarden/android/pull/5399
+* Update Turbine to v1.2.1 by @david-livefront in https://github.com/bitwarden/android/pull/5398
+* Update to latest Bitwarden SDK by @david-livefront in https://github.com/bitwarden/android/pull/5403
+* Replace toObjectRoute with custom ParcelableRouteSerializer by @david-livefront in https://github.com/bitwarden/android/pull/5393
+* PM-22875: Done button on keyboard should submit pin or password from dialog by @david-livefront in https://github.com/bitwarden/android/pull/5392
+* Update Kotlin to v2.2.0 by @david-livefront in https://github.com/bitwarden/android/pull/5408
+* Rename Chrome Autofill to Browser Autofill by @david-livefront in https://github.com/bitwarden/android/pull/5409
+* [PM-22903] fix unit test execution by @Nailik in https://github.com/bitwarden/android/pull/5401
+* [PM-22827] Move drawable resources to ui module and enable resource shrinking by @SaintPatrck in https://github.com/bitwarden/android/pull/5388
+* Add Brave integration toggle by @david-livefront in https://github.com/bitwarden/android/pull/5411
+* PM-22213: Update the order of items in the Send and Cipher overflows by @david-livefront in https://github.com/bitwarden/android/pull/5407
+* [PM-22831] Migrate IconData and BitwardenIcon to ui module by @SaintPatrck in https://github.com/bitwarden/android/pull/5385
+* Do not allow Bitwarden to autofill itself by @david-livefront in https://github.com/bitwarden/android/pull/5416
+* PM-22997: Update compatibility versions for Chrome and Brave by @david-livefront in https://github.com/bitwarden/android/pull/5415
+* [PM-22998] Migrate `isBuildVersionBelow` to core module by @SaintPatrck in https://github.com/bitwarden/android/pull/5417
+* [PM-19309] Handle restrict item types policy by @andrebispo5 in https://github.com/bitwarden/android/pull/5357
+* [PM-19108] Add Privileged Apps List Screen by @SaintPatrck in https://github.com/bitwarden/android/pull/5372
+* [PM-22998] Fix isBuildVersionAtLeast check by @SaintPatrck in https://github.com/bitwarden/android/pull/5420
+* Improve autofill version checking by @david-livefront in https://github.com/bitwarden/android/pull/5421
+* Upgrade KSP to 2.2.0-2.0.2 by @SaintPatrck in https://github.com/bitwarden/android/pull/5422
+* [BWA-162] Add `getPackageInstallationSourceOrNull` to `BitwardenPackageManager` by @SaintPatrck in https://github.com/bitwarden/android/pull/5418
+* PM-23092: Update the Autofill settings UI for better communication by @david-livefront in https://github.com/bitwarden/android/pull/5427
+* [BWA-156] Allow TOTP syncing with Authenticator release APKs by @SaintPatrck in https://github.com/bitwarden/android/pull/5429
+* Update Compose BOM to latest version (2025.06.01) by @david-livefront in https://github.com/bitwarden/android/pull/5431
+* Update Robolectric to the latest version by @david-livefront in https://github.com/bitwarden/android/pull/5428
+* Update Androidx Room and WorkManager libraries by @david-livefront in https://github.com/bitwarden/android/pull/5430
+* Crowdin Pull - Authenticator by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5433
+* Crowdin Pull - Password Manager by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5434
+* [PM-19108] Fix untrusted privileged app origin validation error handling by @SaintPatrck in https://github.com/bitwarden/android/pull/5432
+* PM-19776: Change 'Move to Bitwarden' to 'Copy to Bitwarden vault' by @david-livefront in https://github.com/bitwarden/android/pull/5435
+* [BRE-848] Add Workflow Permissions by @pixman20 in https://github.com/bitwarden/android/pull/5389
+* [PM-22786] Migrate BitwardenTextSelectionButton to ui module by @SaintPatrck in https://github.com/bitwarden/android/pull/5436
+* Move item listing models to common location for reuse with search by @david-livefront in https://github.com/bitwarden/android/pull/5438
+* [PM-23121] Capitalize "You" in passkey trust string by @SaintPatrck in https://github.com/bitwarden/android/pull/5437
+* [PM-23122] Make `BitwardenTextRow`s in `PrivilegedAppsListScreen` unclickable by @SaintPatrck in https://github.com/bitwarden/android/pull/5441
+* [PM-22640] Updating screen capture flag when the setting is changed by @aj-rosado in https://github.com/bitwarden/android/pull/5426
+* PM-23136: Only apply 'always' display cutout mode on API 30 and up by @david-livefront in https://github.com/bitwarden/android/pull/5446
+* [PM-23125] Move authenticator drawables to ui module by @SaintPatrck in https://github.com/bitwarden/android/pull/5440
+* [BRE-768] Rename store publish workflow to avoid confusion by @AmyLGalles in https://github.com/bitwarden/android/pull/5439
+* [PM-23131] Make "About privileged apps" screen scrollable by @SaintPatrck in https://github.com/bitwarden/android/pull/5448
+* [PM-23132] Update capitalization and wording in privileged apps strings by @SaintPatrck in https://github.com/bitwarden/android/pull/5449
+* PM-23186: Move 'BitwardenSwitch' to the 'ui' module by @david-livefront in https://github.com/bitwarden/android/pull/5454
+* PM-19780: Authenticator source headers by @david-livefront in https://github.com/bitwarden/android/pull/5450
+* Update Junit and Mockk libraries by @david-livefront in https://github.com/bitwarden/android/pull/5455
+* PM-22213: Hide current access count when editing and there is not max access count by @david-livefront in https://github.com/bitwarden/android/pull/5451
+* Add generic logging to Autofill process by @david-livefront in https://github.com/bitwarden/android/pull/5457
+* Fix flicker on TextField autocomplete by @david-livefront in https://github.com/bitwarden/android/pull/5456
+* [PM-19779] Make Authenticator TOTP codes collapsible by @SaintPatrck in https://github.com/bitwarden/android/pull/5452
+* PM-23275: Update the display name for UK English by @david-livefront in https://github.com/bitwarden/android/pull/5461
+* Update to AGP v8.11.0 by @david-livefront in https://github.com/bitwarden/android/pull/5460
+* [PM-22640] Re-added isScreenCaptureAllowed to the MainViewModel state by @aj-rosado in https://github.com/bitwarden/android/pull/5462
+* log inputs to job summary for build workflows by @AmyLGalles in https://github.com/bitwarden/android/pull/5453
+* Update various dependencies by @david-livefront in https://github.com/bitwarden/android/pull/5465
+* PM-23293: Remove unused Toast events from the app by @david-livefront in https://github.com/bitwarden/android/pull/5463
+* PM-22972: Replace send Toasts with Snackbars by @david-livefront in https://github.com/bitwarden/android/pull/5464
+* [PM-23212] Move bitwarden.pw intent filter to debug and beta builds by @SaintPatrck in https://github.com/bitwarden/android/pull/5467
+* Update to the latest Bitwarden SDK by @david-livefront in https://github.com/bitwarden/android/pull/5466
+* PM-23305: Replace Vault Screen Toasts with Snackbars by @david-livefront in https://github.com/bitwarden/android/pull/5468
+* PM-23308: Replace Toasts with Snackbar in AttachmentsScreen by @david-livefront in https://github.com/bitwarden/android/pull/5469
+* PM-23322: Replace VaultItemScreen toasts with snackbars by @david-livefront in https://github.com/bitwarden/android/pull/5474
+* Clean up lint warnings by @david-livefront in https://github.com/bitwarden/android/pull/5470
+* [PM-23121] Update privileged app list item subtext by @SaintPatrck in https://github.com/bitwarden/android/pull/5475
+* PM-23318: Replace OtherScreen toast with snackbar by @david-livefront in https://github.com/bitwarden/android/pull/5471
+* PM-23320: Replace Export Vault screen toasts with snackbars by @david-livefront in https://github.com/bitwarden/android/pull/5472
+* PM-23321: Replace two-factor screen toasts with snackbars by @david-livefront in https://github.com/bitwarden/android/pull/5473
+* Minor-cleanup of StartRegistration classes by @david-livefront in https://github.com/bitwarden/android/pull/5477
+* PM-23354: Replace Login Approval toasts with snackbar by @david-livefront in https://github.com/bitwarden/android/pull/5478
+* Crowdin Pull - Authenticator by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5481
+* Crowdin Pull - Password Manager by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5482
+* PM-23365: Create ToastManager to simplify displaying toasts from a Manager or ViewModel by @david-livefront in https://github.com/bitwarden/android/pull/5479
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/5485
+* PM-19780: Fix incorrect sub header on authenticator search screen by @david-livefront in https://github.com/bitwarden/android/pull/5488
+* [deps]: Update Azure/login action to v2 by @renovate[bot] in https://github.com/bitwarden/android/pull/5484
+* Update Google privileged browsers list by @github-actions[bot] in https://github.com/bitwarden/android/pull/5483
+* Update Chrome Autofill compatibility mode by @david-livefront in https://github.com/bitwarden/android/pull/5490
+* PM-23503: Update Move to Organization toasts to be snackbars by @david-livefront in https://github.com/bitwarden/android/pull/5489
+* PM-23549: Remove Authenticator app name localizations by @david-livefront in https://github.com/bitwarden/android/pull/5492
+* PM-14063: SDK persistance state by @david-livefront in https://github.com/bitwarden/android/pull/5491
+* PM-23553: Replace Environment toasts with snackbars by @david-livefront in https://github.com/bitwarden/android/pull/5493
+* PM-23557: Replace login with device toasts with snackbars by @david-livefront in https://github.com/bitwarden/android/pull/5495
+* [PM-19309] Fix search when restrict item policy is enabled by @andrebispo5 in https://github.com/bitwarden/android/pull/5497
+* Update the version at which we display the clipboard toast by @david-livefront in https://github.com/bitwarden/android/pull/5502
+* [PM-23604] Add 'getCipher' helper method by @david-livefront in https://github.com/bitwarden/android/pull/5501
+* Update navigation library to v2.9.1 by @david-livefront in https://github.com/bitwarden/android/pull/5503
+* [PM-23606] Update Bitwarden SDK by @SaintPatrck in https://github.com/bitwarden/android/pull/5504
+* [PM-23605] Add decryptCipherListWithFailures to VaultSdkSource  by @SaintPatrck in https://github.com/bitwarden/android/pull/5505
+* PM-23667: Optimize authenticator sync with totp database query by @david-livefront in https://github.com/bitwarden/android/pull/5508
+* [PM-21750] Only show dynamic colors option on Android 12+ by @SaintPatrck in https://github.com/bitwarden/android/pull/5507
+* PM-23625: Remove truncation logic for default deletion date of send by @david-livefront in https://github.com/bitwarden/android/pull/5511
+* PM-23691: remove Flight Recorder feature flag by @david-livefront in https://github.com/bitwarden/android/pull/5512
+* PM-23690: Remove pre-login settings feature flag by @david-livefront in https://github.com/bitwarden/android/pull/5513
+* PM-23692: Remove auth sync feature flag from password manager by @david-livefront in https://github.com/bitwarden/android/pull/5514
+* PM-23693: Remove Authenticator Sync flag from Authenticator app by @david-livefront in https://github.com/bitwarden/android/pull/5515
+* Crowdin Pull - Authenticator by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5516
+* Crowdin Pull - Password Manager by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5517
+* [PM-23710] Fixed logic to getServerConfig and added new test on Authenticator by @aj-rosado in https://github.com/bitwarden/android/pull/5518
+* 🍒 PM-23666: Construct unique SDK client for Authentocator Sync feature by @david-livefront in https://github.com/bitwarden/android/pull/5528
+
+## New Contributors
+* @mzieniukbw made their first contribution in https://github.com/bitwarden/android/pull/4386
+* @Nailik made their first contribution in https://github.com/bitwarden/android/pull/5401
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.6.1-bwpm...v2025.7.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/16224457487
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/16425996781

@@ -23,7 +23,7 @@
         "url": "https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo"
       }
     ],
-    "timestamp": 1751381836000,
+    "timestamp": 1753500272000,
     "categories": {
       "Security": {
         "name": {
@@ -39,7 +39,7 @@
         "categories": [
           "Security"
         ],
-        "lastUpdated": 1751381740000,
+        "lastUpdated": 1753500175000,
         "license": "GPL-3.0",
         "sourceCode": "https://github.com/bitwarden/android",
         "featureGraphic": {
@@ -69,6 +69,74 @@
         "preferredSigner": "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
       },
       "versions": {
+        "66cdbf72bfc9ed1ef04fb951ade67a9c0d0bdd14e5e2debbaccd4f39bd2fe196": {
+          "added": 1753500175000,
+          "file": {
+            "name": "/bitwarden_v2025.7.0-bwpm.apk",
+            "sha256": "66cdbf72bfc9ed1ef04fb951ade67a9c0d0bdd14e5e2debbaccd4f39bd2fe196",
+            "size": 72962099
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "mips",
+              "mips64",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2025.7.0",
+            "versionCode": 20458,
+            "usesSdk": {
+              "minSdkVersion": 29,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.POST_NOTIFICATIONS"
+              },
+              {
+                "name": "android.permission.READ_USER_DICTIONARY"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE"
+              },
+              {
+                "name": "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        },
         "1de486863a0dfda35aea95ddf2928de93572ce9a24172128c320ebf110c9a5fb": {
           "added": 1751381740000,
           "file": {
@@ -671,71 +739,6 @@
               }
             ]
           }
-        },
-        "f4ca64b84c4bdbf79cae7790d3f21602b55fd7ce6ec55187565aa563ddda8593": {
-          "added": 1736350643000,
-          "file": {
-            "name": "/bitwarden_v2024.12.0.apk",
-            "sha256": "f4ca64b84c4bdbf79cae7790d3f21602b55fd7ce6ec55187565aa563ddda8593",
-            "size": 71892306
-          },
-          "manifest": {
-            "nativecode": [
-              "arm64-v8a",
-              "armeabi",
-              "armeabi-v7a",
-              "mips",
-              "mips64",
-              "x86",
-              "x86_64"
-            ],
-            "versionName": "2024.12.0",
-            "versionCode": 19597,
-            "usesSdk": {
-              "minSdkVersion": 29,
-              "targetSdkVersion": 35
-            },
-            "signer": {
-              "sha256": [
-                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
-              ]
-            },
-            "usesPermission": [
-              {
-                "name": "android.permission.ACCESS_NETWORK_STATE"
-              },
-              {
-                "name": "android.permission.USE_BIOMETRIC"
-              },
-              {
-                "name": "android.permission.NFC"
-              },
-              {
-                "name": "android.permission.CAMERA"
-              },
-              {
-                "name": "android.permission.INTERNET"
-              },
-              {
-                "name": "android.permission.POST_NOTIFICATIONS"
-              },
-              {
-                "name": "android.permission.USE_FINGERPRINT"
-              },
-              {
-                "name": "android.permission.WAKE_LOCK"
-              },
-              {
-                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
-              },
-              {
-                "name": "android.permission.FOREGROUND_SERVICE"
-              },
-              {
-                "name": "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-              }
-            ]
-          }
         }
       }
     },
@@ -745,7 +748,7 @@
         "categories": [
           "Security"
         ],
-        "lastUpdated": 1751381725000,
+        "lastUpdated": 1753500160000,
         "license": "GPL-3.0",
         "sourceCode": "https://github.com/bitwarden/android",
         "featureGraphic": {
@@ -775,6 +778,74 @@
         "preferredSigner": "3c8f03c4225bc173812def564f7ae8a1b3ef34f1bbdcc8748dadc39eb0a69f74"
       },
       "versions": {
+        "8ff25391f8d64da78460bdd8c5f5c59103772478ea26229b93a36aa1dcf5a4df": {
+          "added": 1753500160000,
+          "file": {
+            "name": "/bitwarden-beta_v2025.7.0-bwpm.apk",
+            "sha256": "8ff25391f8d64da78460bdd8c5f5c59103772478ea26229b93a36aa1dcf5a4df",
+            "size": 72963347
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "mips",
+              "mips64",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2025.7.0",
+            "versionCode": 20458,
+            "usesSdk": {
+              "minSdkVersion": 29,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "3c8f03c4225bc173812def564f7ae8a1b3ef34f1bbdcc8748dadc39eb0a69f74"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.POST_NOTIFICATIONS"
+              },
+              {
+                "name": "android.permission.READ_USER_DICTIONARY"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE"
+              },
+              {
+                "name": "com.x8bit.bitwarden.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        },
         "c0a7298de8c79c76602423244c38e706a9ec928674e06c3c8990795102192e98": {
           "added": 1751381725000,
           "file": {
@@ -1332,71 +1403,6 @@
             ],
             "versionName": "2025.1.0",
             "versionCode": 19622,
-            "usesSdk": {
-              "minSdkVersion": 29,
-              "targetSdkVersion": 35
-            },
-            "signer": {
-              "sha256": [
-                "3c8f03c4225bc173812def564f7ae8a1b3ef34f1bbdcc8748dadc39eb0a69f74"
-              ]
-            },
-            "usesPermission": [
-              {
-                "name": "android.permission.ACCESS_NETWORK_STATE"
-              },
-              {
-                "name": "android.permission.USE_BIOMETRIC"
-              },
-              {
-                "name": "android.permission.NFC"
-              },
-              {
-                "name": "android.permission.CAMERA"
-              },
-              {
-                "name": "android.permission.INTERNET"
-              },
-              {
-                "name": "android.permission.POST_NOTIFICATIONS"
-              },
-              {
-                "name": "android.permission.USE_FINGERPRINT"
-              },
-              {
-                "name": "android.permission.WAKE_LOCK"
-              },
-              {
-                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
-              },
-              {
-                "name": "android.permission.FOREGROUND_SERVICE"
-              },
-              {
-                "name": "com.x8bit.bitwarden.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-              }
-            ]
-          }
-        },
-        "c33b9c5a15836e66180391659bb8a3c2153aa875794eea8b1981de9d33edf837": {
-          "added": 1736350629000,
-          "file": {
-            "name": "/bitwarden-beta_v2024.12.0.apk",
-            "sha256": "c33b9c5a15836e66180391659bb8a3c2153aa875794eea8b1981de9d33edf837",
-            "size": 71893574
-          },
-          "manifest": {
-            "nativecode": [
-              "arm64-v8a",
-              "armeabi",
-              "armeabi-v7a",
-              "mips",
-              "mips64",
-              "x86",
-              "x86_64"
-            ],
-            "versionName": "2024.12.0",
-            "versionCode": 19597,
             "usesSdk": {
               "minSdkVersion": 29,
               "targetSdkVersion": 35
