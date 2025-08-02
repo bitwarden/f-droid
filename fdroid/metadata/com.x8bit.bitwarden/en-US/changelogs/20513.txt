@@ -1,0 +1,10 @@
+# Overview
+Fixed a stability issue related to in-app navigation
+
+## What's Changed
+* 🍒 [BRE-831] migrate secrets akv (#5347) by @SaintPatrck in https://github.com/bitwarden/android/pull/5595
+* PM-24182: Fix crash in Android 13 by @david-livefront in https://github.com/bitwarden/android/pull/5594
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.7.0-bwa...v2025.7.1-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/16570263642
