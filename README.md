@@ -37,4 +37,3 @@ Since the Bitwarden F-Droid build does not include Firebase Messaging, push noti
 ## Credits
 
 This GitHub repository was forked and adapted from https://github.com/xarantolus/fdroid
-
