@@ -1,0 +1,63 @@
+# Overview
+• Improved Biometric unlock experience.
+• Enhanced security by logging users out when an invalid grant is returned from the server.
+• Various additional bug fixes and under-the-hood improvements
+
+## What's Changed
+* Crowdin Pull - Password Manager by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5586
+* PM-20150, PM-20151: Remove single tap passkey feature flags by @david-livefront in https://github.com/bitwarden/android/pull/5585
+* PM-24182: Fix crash in Android 13 by @david-livefront in https://github.com/bitwarden/android/pull/5588
+* PM-24176: Consolidate all FlagKeys by @david-livefront in https://github.com/bitwarden/android/pull/5593
+* [PM-24204] Correct TOTP generation to use cipherId instead of totpCode by @SaintPatrck in https://github.com/bitwarden/android/pull/5599
+* [PM-24205] Fix Fido2CredentialStore to save new credentials correctly by @SaintPatrck in https://github.com/bitwarden/android/pull/5601
+* [PM-24157] Update Bitwarden SDK to 1.0.0-20250728.143558-250 by @LRNcardozoWDF in https://github.com/bitwarden/android/pull/5602
+* PM-24240: Remove email verification feature flag by @david-livefront in https://github.com/bitwarden/android/pull/5605
+* PM-24245: Remove the restrict-item-deletion-to-can-manage-permission feature flag by @david-livefront in https://github.com/bitwarden/android/pull/5606
+* PM-24267: Move indicators to 'ui' module by @david-livefront in https://github.com/bitwarden/android/pull/5612
+* PM-24275: Move content package to 'ui' module by @david-livefront in https://github.com/bitwarden/android/pull/5613
+* [PM-22814] Migrate BitwardenCard to the `ui` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5615
+* [PM-24206] Fix filtered verification code search by @SaintPatrck in https://github.com/bitwarden/android/pull/5619
+* PM-24303: Master password reprompt fix by @david-livefront in https://github.com/bitwarden/android/pull/5620
+* Add logging for Biometric errors by @david-livefront in https://github.com/bitwarden/android/pull/5621
+* [PM-24175] Refactor Crowdin workflow by @SaintPatrck in https://github.com/bitwarden/android/pull/5587
+* [PM-24113] Remove Authenticator strings and translations  by @SaintPatrck in https://github.com/bitwarden/android/pull/5589
+* Fix lint warnings and imports by @david-livefront in https://github.com/bitwarden/android/pull/5623
+* [PM-24112] Remove Password Manager strings and translations by @SaintPatrck in https://github.com/bitwarden/android/pull/5590
+* PM-15229: Accomidate system bars on specific Android 15 revisions by @david-livefront in https://github.com/bitwarden/android/pull/5617
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5628
+* Update Junit to v5.13.4 by @david-livefront in https://github.com/bitwarden/android/pull/5624
+* Add fingerprint to flight recorder by @david-livefront in https://github.com/bitwarden/android/pull/5625
+* [PM-24292] Correct redundant string interpolation by @mKoonrad in https://github.com/bitwarden/android/pull/5614
+* Update Androidx dependencies to the latest versions by @david-livefront in https://github.com/bitwarden/android/pull/5630
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/5632
+* Commonize version name and bump it by @david-livefront in https://github.com/bitwarden/android/pull/5559
+* Handle tile intents without IntentManager by @david-livefront in https://github.com/bitwarden/android/pull/5635
+* Update to AGP 8.12.0 by @david-livefront in https://github.com/bitwarden/android/pull/5639
+* [deps]: Update gh minor by @renovate[bot] in https://github.com/bitwarden/android/pull/5631
+* PM-24440 PM-24481: Log user out for 'invalid_grant' by @david-livefront in https://github.com/bitwarden/android/pull/5641
+* [PM-24411] Extract pending intent management for Credential Manager requests by @SaintPatrck in https://github.com/bitwarden/android/pull/5636
+* Move FileData to 'ui' module by @david-livefront in https://github.com/bitwarden/android/pull/5644
+* Update to Gradle v9.0.0 by @david-livefront in https://github.com/bitwarden/android/pull/5642
+* [PM-24473] Remove exemption from restrict item types policy by @andrebispo5 in https://github.com/bitwarden/android/pull/5646
+* [PM-24456] Update bitwarden sdk to 1.0.0-2450-9fe3aeda by @LRNcardozoWDF in https://github.com/bitwarden/android/pull/5652
+* [PM-24481] Update AuthTokenInterceptor to refresh token on expiration by @david-livefront in https://github.com/bitwarden/android/pull/5647
+* [PM-24411] Introduce BuildInfoManager for build-related information by @SaintPatrck in https://github.com/bitwarden/android/pull/5654
+* [PM-24411] Add shareErrorReport to IntentManager by @SaintPatrck in https://github.com/bitwarden/android/pull/5655
+* Set base.archivesName for app and authenticator modules by @SaintPatrck in https://github.com/bitwarden/android/pull/5657
+* PM-24481: Logout when token refresh API returns 401 or 403 by @david-livefront in https://github.com/bitwarden/android/pull/5651
+* PM-24539: Prevent token refresh from looping by @david-livefront in https://github.com/bitwarden/android/pull/5658
+* Update scan workflow to use centralized reusable component by @mandreko-bitwarden in https://github.com/bitwarden/android/pull/5592
+* Refactor Autofill Hint Logic and Add Card Autofill Support by @SaintPatrck in https://github.com/bitwarden/android/pull/5640
+* [PM-24411] Use shareErrorReport in BitwardenBasicDialog by @SaintPatrck in https://github.com/bitwarden/android/pull/5656
+* PM-24565: Syncronize token refreshes to avoid duplicate requests by @david-livefront in https://github.com/bitwarden/android/pull/5662
+* [PM-24411] Add MIME type parameter to file chooser intent by @SaintPatrck in https://github.com/bitwarden/android/pull/5661
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5664
+* [PM-24589] Trigger CI builds for release branches by @vvolkgang in https://github.com/bitwarden/android/pull/5667
+* [PM-24564] Address GitHub Release creation workflow feedback by @vvolkgang in https://github.com/bitwarden/android/pull/5666
+* [PM-24575] Add feature flag for AEAD enrollment on key rotation by @SaintPatrck in https://github.com/bitwarden/android/pull/5665
+
+## New Contributors
+* @mKoonrad made their first contribution in https://github.com/bitwarden/android/pull/5614
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.7.2-bwpm...v2025.8.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/16834718954
