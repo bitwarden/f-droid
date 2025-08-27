@@ -23,7 +23,7 @@
         "url": "https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/archive"
       }
     ],
-    "timestamp": 1755055191000,
+    "timestamp": 1756264412000,
     "categories": {
       "Security": {
         "name": {
@@ -39,7 +39,7 @@
         "categories": [
           "Security"
         ],
-        "lastUpdated": 1755055092000,
+        "lastUpdated": 1756264312000,
         "license": "GPL-3.0",
         "sourceCode": "https://github.com/bitwarden/android",
         "authorName": "bitwarden",
@@ -55,6 +55,71 @@
         "preferredSigner": "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
       },
       "versions": {
+        "4eb28860e5990179c7eb39c23028282a1c001cd2126b8b65052602c6c74067e0": {
+          "added": 1739370523000,
+          "file": {
+            "name": "/bitwarden_v2025.1.2.apk",
+            "sha256": "4eb28860e5990179c7eb39c23028282a1c001cd2126b8b65052602c6c74067e0",
+            "size": 69219685
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "mips",
+              "mips64",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2025.1.2",
+            "versionCode": 19740,
+            "usesSdk": {
+              "minSdkVersion": 29,
+              "targetSdkVersion": 35
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.POST_NOTIFICATIONS"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE"
+              },
+              {
+                "name": "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        },
         "65f6ade9861b0a096d6377eed6b9c64c3ac9d799d0e75a8258b952d1850baa52": {
           "added": 1738251414000,
           "file": {
