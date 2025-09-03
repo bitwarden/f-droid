@@ -1,0 +1,91 @@
+# Overview
+* Added support for autofilling credit cards.
+* Resolved a bug that caused autofill to fail and redirect users back to the vault on some devices.
+* Fixed a crash occurring immediately after opening a vault entry on some devices.
+* Addressed an issue where the Identity Address 'State' field was not displaying correctly.
+* Various under the hood improvements.
+
+## What's Changed
+* Add header and custom supportContent functionality to BitwardenMultiSelectButton by @david-livefront in https://github.com/bitwarden/android/pull/5669
+* Fix reusable scan in CI build by @mandreko-bitwarden in https://github.com/bitwarden/android/pull/5668
+* [PM-24411] Use BuildInfoManager for build-related information by @SaintPatrck in https://github.com/bitwarden/android/pull/5663
+* [PM-24568] Add `accountKeys` to `SyncResponseJson.Profile` by @SaintPatrck in https://github.com/bitwarden/android/pull/5678
+* [PM-24590] Add support to hotfix specific apps in Cut Release Branch workflow by @vvolkgang in https://github.com/bitwarden/android/pull/5671
+* [PM-24675] Fix renovate update warning by @vvolkgang in https://github.com/bitwarden/android/pull/5680
+* [PM-24569] Save accountKeys to AuthDiskSource by @SaintPatrck in https://github.com/bitwarden/android/pull/5679
+* [BRE-1074] Adding debug info for failing to find release by @pixman20 in https://github.com/bitwarden/android/pull/5673
+* Remove unused ClearClipboardWorker from Authenticator by @david-livefront in https://github.com/bitwarden/android/pull/5683
+* [PM-24642] Remove captcha connector code by @aj-rosado in https://github.com/bitwarden/android/pull/5677
+* PM-24690: Use ToastManager in MainViewModel by @david-livefront in https://github.com/bitwarden/android/pull/5685
+* PM-24688: Use the realtime elapse time to determine vault lock timeouts by @david-livefront in https://github.com/bitwarden/android/pull/5684
+* [PM-23723] URI Matching detection layout updates on advanced options by @aj-rosado in https://github.com/bitwarden/android/pull/5574
+* [PM-24411] Generalize IntentManager activity handling by @SaintPatrck in https://github.com/bitwarden/android/pull/5689
+* PM-24727: Update VaultUnlockScreen to use user specific environment by @david-livefront in https://github.com/bitwarden/android/pull/5690
+* [PM-24721] Refactor AccountKeys to top-level common model by @SaintPatrck in https://github.com/bitwarden/android/pull/5693
+* PM-24726: Update MDM functionality by @david-livefront in https://github.com/bitwarden/android/pull/5694
+* [PM-24652] Remove AEAD enrollment on key rotation feature flag by @SaintPatrck in https://github.com/bitwarden/android/pull/5695
+* PM-24768: Move text fields to the UI module by @david-livefront in https://github.com/bitwarden/android/pull/5696
+* Update Autofill logging by @david-livefront in https://github.com/bitwarden/android/pull/5697
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5701
+* PM-24769: Move the stepper to the UI module by @david-livefront in https://github.com/bitwarden/android/pull/5699
+* [PM-24740] Make `VaultAddEditUriItem` a multiline URI field by @SaintPatrck in https://github.com/bitwarden/android/pull/5700
+* PM-24771: Move the slider to the UI module by @david-livefront in https://github.com/bitwarden/android/pull/5698
+* Fix Autofill settings deeplink by @SaintPatrck in https://github.com/bitwarden/android/pull/5704
+* [PM-23723] Fix close and cancel text on Match detection dialogs by @aj-rosado in https://github.com/bitwarden/android/pull/5707
+* Refactor Detekt task to use staged files by @SaintPatrck in https://github.com/bitwarden/android/pull/5705
+* [PM-24411] Extract Authenticator functions from IntentManager by @SaintPatrck in https://github.com/bitwarden/android/pull/5702
+* Remove context param from IntentManager extensions by @david-livefront in https://github.com/bitwarden/android/pull/5706
+* [PM-24700] Update email validation in LandingViewModel by @SaintPatrck in https://github.com/bitwarden/android/pull/5711
+* Rename the AutofillTotpCopyActivity by @david-livefront in https://github.com/bitwarden/android/pull/5713
+* PM-24770: Move snackbars to the UI module by @david-livefront in https://github.com/bitwarden/android/pull/5712
+* [PM-24598] Map AutofillSaveItem to VaultItemCipherType by @SaintPatrck in https://github.com/bitwarden/android/pull/5714
+* Update the app dependencies by @david-livefront in https://github.com/bitwarden/android/pull/5715
+* PM-24786: Move radio button to UI module by @david-livefront in https://github.com/bitwarden/android/pull/5708
+* [PM-24347] Tracking UserClientExportedVault event when user exports the vault by @aj-rosado in https://github.com/bitwarden/android/pull/5710
+* [PM-24930] Add placeholder workflow for sdlc-sdk-update.yml by @vvolkgang in https://github.com/bitwarden/android/pull/5723
+* [PM-24599] Add cardholderName to AutofillSaveItem.Card by @SaintPatrck in https://github.com/bitwarden/android/pull/5716
+* Support both camel and pascal case for AccountKeysJson by @SaintPatrck in https://github.com/bitwarden/android/pull/5724
+* PM-24798: Move text components to UI module by @david-livefront in https://github.com/bitwarden/android/pull/5718
+* PM-24943: Move the scrim package to the UI module by @david-livefront in https://github.com/bitwarden/android/pull/5728
+* PM-24949: Move headers package to the ui module by @david-livefront in https://github.com/bitwarden/android/pull/5730
+* PM-24950: Migrate the image package to the ui module by @david-livefront in https://github.com/bitwarden/android/pull/5731
+* [deps]: Update gh minor by @renovate[bot] in https://github.com/bitwarden/android/pull/5722
+* PM-24942: Move Segmented control to UI module by @david-livefront in https://github.com/bitwarden/android/pull/5727
+* chore/SRE-583 Deprecate usage of Auth-Email Header by @bitwarden-charlie in https://github.com/bitwarden/android/pull/5097
+* [PM-24938] Improve Autofill Card Expiration Month and Year Parsing by @SaintPatrck in https://github.com/bitwarden/android/pull/5717
+* Fix autofill overwriting user data with empty field values by @tomikonio in https://github.com/bitwarden/android/pull/5649
+* PM-24944: Migrate scaffold to ui module by @david-livefront in https://github.com/bitwarden/android/pull/5738
+* [PM-24411] Migrate IntentManager to `ui` module by @SaintPatrck in https://github.com/bitwarden/android/pull/5634
+* [PM-24930] New workflow to update the SDK and test ongoing work by @vvolkgang in https://github.com/bitwarden/android/pull/5742
+* [PM-24577] Provision SDK with AccountKeys by @SaintPatrck in https://github.com/bitwarden/android/pull/5682
+* PM-24283: Migrate the common dialogs to the UI module by @david-livefront in https://github.com/bitwarden/android/pull/5746
+* Refactor AccountKeysJson property names by @SaintPatrck in https://github.com/bitwarden/android/pull/5747
+* PM-24993: Move account components to UI module by @david-livefront in https://github.com/bitwarden/android/pull/5749
+* PM-25003: Migrate bottom sheet to the UI module by @david-livefront in https://github.com/bitwarden/android/pull/5751
+* PM-25004: Migrate the MultiSelectButton to the UI module by @david-livefront in https://github.com/bitwarden/android/pull/5752
+* PM-20198: Update generator modal 'Save' button to 'Apply' by @david-livefront in https://github.com/bitwarden/android/pull/5745
+* [PM-24940] Add Card Brand to Autofill by @SaintPatrck in https://github.com/bitwarden/android/pull/5750
+* [PM-24226] Reorder SSH key fields by @SaintPatrck in https://github.com/bitwarden/android/pull/5754
+* PM-25006: Migrate row components to the UI module by @david-livefront in https://github.com/bitwarden/android/pull/5753
+* PM-24544: Update Segmented Control to handle large font better by @david-livefront in https://github.com/bitwarden/android/pull/5748
+* [PM-25027] Rename "Ask to add login" to "Ask to add item" by @SaintPatrck in https://github.com/bitwarden/android/pull/5758
+* PM-25028: Migrate coachmarks and tooltips to UI module by @david-livefront in https://github.com/bitwarden/android/pull/5757
+* PM-22465: Identity state is not pre-populated on edit screen by @david-livefront in https://github.com/bitwarden/android/pull/5759
+* Standardize ui model packages by @david-livefront in https://github.com/bitwarden/android/pull/5760
+* [PM-24697] Allow cleartext traffic on OCSP and CRL servers by @aj-rosado in https://github.com/bitwarden/android/pull/5761
+* Update AGP to v8.12.1 by @david-livefront in https://github.com/bitwarden/android/pull/5763
+* PM-17755: Fix comparator inconsistency based on Locale by @david-livefront in https://github.com/bitwarden/android/pull/5762
+* [PM-25062] [deps]: Update gh minor by @renovate[bot] in https://github.com/bitwarden/android/pull/5766
+* Suppress Gradle lint warnings by @SaintPatrck in https://github.com/bitwarden/android/pull/5767
+* [PM-25057] Filter Card Autofill Ciphers by Policy by @SaintPatrck in https://github.com/bitwarden/android/pull/5768
+* PM-25170: Remove the RemoveCardPolicy feature flag by @david-livefront in https://github.com/bitwarden/android/pull/5770
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5772
+* 🍒[PM-25057] Refactor card restriction logic in AutofillCipherProvider by @SaintPatrck in https://github.com/bitwarden/android/pull/5791
+* 🍒 PM-25143: Retain intent data on recreate by @david-livefront in https://github.com/bitwarden/android/pull/5798
+
+## New Contributors
+* @bitwarden-charlie made their first contribution in https://github.com/bitwarden/android/pull/5097
+* @tomikonio made their first contribution in https://github.com/bitwarden/android/pull/5649
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.8.0-bwpm...v2025.8.1-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/17277676605
