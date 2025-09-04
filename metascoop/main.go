@@ -104,8 +104,8 @@ func main() {
 					fmt.Printf("::group::App %s\n", app.Name)
 
 					for i, release := range releases {
-						if i >= 10 {
-							log.Printf("10 latest releases have been processed for app %s, skipping the rest.", app.Name)
+						if i >= 5 {
+							log.Printf("5 latest releases have been processed for app %s, skipping the rest.", app.Name)
 							break
 						}
 						fmt.Printf("::group::Release %s\n", release.GetTagName())
