@@ -20,18 +20,30 @@ if [ -f "$COMMIT_MSG_FILE" ]; then
     PR_BODY=$(tail -n +2 "$COMMIT_MSG_FILE")
     echo "PR Body: $PR_BODY"
 
-    echo "Pushing changes..."
+    echo "Checking for existing PR from branch update_fdroid_apps..."
+    EXISTING_PR_JSON=$(gh pr list --head update_fdroid_apps --json number)
+    EXISTING_PR_NUMBER=$(echo "$EXISTING_PR_JSON" | grep -o '"number":[0-9]*' | grep -o '[0-9]*')
+
+    # Always push changes to update_fdroid_apps branch
     git add .
-    git checkout -b update_fdroid_apps
+    git checkout -B update_fdroid_apps
     git commit -F "$COMMIT_MSG_FILE"
     git push -f -u origin update_fdroid_apps
 
-    echo "Creating PR..."
-    PR_URL=$(gh pr create --title "$PR_TITLE" \
-        --base main \
-        --label "automated pr" \
-        --body "$PR_BODY")
-    echo "pr_number=${PR_URL##*/}"
+    if [ -n "$EXISTING_PR_NUMBER" ]; then
+        echo "Existing PR found: #$EXISTING_PR_NUMBER"
+        # Update title and body of the existing PR
+        gh pr edit "$EXISTING_PR_NUMBER" --title "$PR_TITLE" --body "$PR_BODY"
+        echo "PR updated."
+        echo "pr_number=$EXISTING_PR_NUMBER"
+    else
+        echo "Creating PR..."
+        PR_URL=$(gh pr create --title "$PR_TITLE" \
+            --base main \
+            --label "automated pr" \
+            --body "$PR_BODY")
+        echo "pr_number=${PR_URL##*/}"
+    fi
 
     # Clean up the temporary commit message file
     rm "$COMMIT_MSG_FILE"
