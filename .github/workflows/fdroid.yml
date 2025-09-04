@@ -30,12 +30,6 @@ jobs:
       - name: Create basic directory structure
         run: mkdir -p fdroid/repo
 
-      - name: Restore correct mtime
-        run: |
-          sudo apt install git-restore-mtime
-
-          git restore-mtime
-
       - name: Log in to Azure
         uses: bitwarden/gh-actions/azure-login@main
         with:
