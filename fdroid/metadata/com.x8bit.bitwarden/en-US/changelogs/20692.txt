@@ -1,0 +1,44 @@
+# Overview
+* Improved reliability of push notifications for deleted items.
+* Fixed an issue where autofill logins could disappear.
+* Resolved a crash that could occur when unlocking your vault with Biometric unlock.
+* Various under-the-hood improvements and minor bug fixes.
+
+## What's Changed
+* Update SDK to 1.0.0-2681-1a956d45 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5756
+* Update ARCHITECTURE.md by @SaintPatrck in https://github.com/bitwarden/android/pull/5765
+* PM-25069: Update VaultAddEditViewModel toasts to snackbars by @david-livefront in https://github.com/bitwarden/android/pull/5769
+* PM-25125: Refactor user state managment into UserStateManager by @david-livefront in https://github.com/bitwarden/android/pull/5774
+* PM-25194: Fix CollectionTypeJson data type in database by @david-livefront in https://github.com/bitwarden/android/pull/5786
+* PM-25193: Clear last sync time on push notification for inactive user by @david-livefront in https://github.com/bitwarden/android/pull/5784
+* [PM-25057] Refactor card restriction logic in AutofillCipherProvider by @SaintPatrck in https://github.com/bitwarden/android/pull/5788
+* [PM-18210] Cipher key encryption error handling by @andrebispo5 in https://github.com/bitwarden/android/pull/5611
+* Update SDK to 1.0.0-2807-ae9b9f17 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5785
+* PM-25238: Remove debug toast by @david-livefront in https://github.com/bitwarden/android/pull/5792
+* PM-25143: Retain intent data on recreate by @david-livefront in https://github.com/bitwarden/android/pull/5787
+* [PM-25239] Remove unnecessary vault sync from `Fido2CredentialStoreImpl` by @SaintPatrck in https://github.com/bitwarden/android/pull/5794
+* Fix plurals string for decryption error by @SaintPatrck in https://github.com/bitwarden/android/pull/5796
+* Update SDK to 1.0.0-2825-e05ba6eb by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5809
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5807
+* [PM-24930] Fix updating open SDK PRs and set token permissions by @vvolkgang in https://github.com/bitwarden/android/pull/5804
+* [PM-25327] Display default user collections first by @SaintPatrck in https://github.com/bitwarden/android/pull/5810
+* Update AGP to v8.12.2 by @david-livefront in https://github.com/bitwarden/android/pull/5816
+* PM-25393: Allow push notifications to update a cipher while vault is locked by @david-livefront in https://github.com/bitwarden/android/pull/5818
+* [PM-25396] Publish store builds when release branches are updated by @vvolkgang in https://github.com/bitwarden/android/pull/5821
+* [PM-23665] Refactor FIDO2 credential discovery by @SaintPatrck in https://github.com/bitwarden/android/pull/5817
+* Update the Compose BOM and Androidx Lifecycle libraries by @david-livefront in https://github.com/bitwarden/android/pull/5820
+* [PM-25394] Sort default user collections by Organization name by @SaintPatrck in https://github.com/bitwarden/android/pull/5819
+* Update SDK to 1.0.0-2887-7b5d9db2 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5815
+* Update Firebase BOM by @david-livefront in https://github.com/bitwarden/android/pull/5823
+* Update Hilt to v2.57.1 by @david-livefront in https://github.com/bitwarden/android/pull/5826
+* Update Kotlin to the latest version v2.2.10 by @david-livefront in https://github.com/bitwarden/android/pull/5828
+* PM-25431: Allow SYNC_SEND_DELETE notification to delete sends for inactive user by @david-livefront in https://github.com/bitwarden/android/pull/5827
+* PM-25462: Allow SYNC_FOLDER_DELETE notification to delete Folders for inactive user by @david-livefront in https://github.com/bitwarden/android/pull/5832
+* [PM-25133] Plural forms by @mKoonrad in https://github.com/bitwarden/android/pull/5773
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5838
+* PM-25474: Allow SYNC_CIPHER_DELETE notification to delete Cipher for inactive user by @david-livefront in https://github.com/bitwarden/android/pull/5836
+* PM-25478: Update sends and folders while vault is locked by @david-livefront in https://github.com/bitwarden/android/pull/5837
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.8.1-bwpm...v2025.9.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/17498992515
