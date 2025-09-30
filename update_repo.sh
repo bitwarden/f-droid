@@ -22,7 +22,7 @@ if [ -f "$COMMIT_MSG_FILE" ]; then
 
     echo "Checking for existing PR from branch update_fdroid_apps..."
     EXISTING_PR_JSON=$(gh pr list --head update_fdroid_apps --json number)
-    EXISTING_PR_NUMBER=$(echo "$EXISTING_PR_JSON" | grep -o '"number":[0-9]*' | grep -o '[0-9]*')
+    EXISTING_PR_NUMBER=$(echo "$EXISTING_PR_JSON" | jq -r '.[0].number // empty')
 
     # Always push changes to update_fdroid_apps branch
     git add .
