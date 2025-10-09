@@ -1,0 +1,60 @@
+# Overview
+• Fixed an issue with navigation in settings sub-menu.
+• Various under the hood improvements. (edited)
+
+## What's Changed
+* [PM-15055] Add SDK support for exporting vault data to CXF by @SaintPatrck in https://github.com/bitwarden/android/pull/5840
+* PM-25162: Fix a navigation bug in bottom navigation by @david-livefront in https://github.com/bitwarden/android/pull/5842
+* [PM-25522] Add `importCxf` function to `VaultSdkSource` by @SaintPatrck in https://github.com/bitwarden/android/pull/5841
+* Update protobuff library to v4.32.0 by @david-livefront in https://github.com/bitwarden/android/pull/5845
+* Cleanup minor lint warnings in string resources by @david-livefront in https://github.com/bitwarden/android/pull/5843
+* [PM-25523] Add `importCxfPayload` to `VaultRepository` by @SaintPatrck in https://github.com/bitwarden/android/pull/5846
+* Update appVersionName to 2025.9.1 by @david-livefront in https://github.com/bitwarden/android/pull/5848
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5853
+* Update SDK to 1.0.0-2944-8447df0c by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5830
+* Update to Java 21 by @david-livefront in https://github.com/bitwarden/android/pull/5835
+* Update untranslatable strings by @mKoonrad in https://github.com/bitwarden/android/pull/5854
+* [PM-15056] Add `exportVaultDataToCxf` function to `VaultRepository` by @SaintPatrck in https://github.com/bitwarden/android/pull/5847
+* Fix sdk-update Test by using Java 21 in setup-android action by @vvolkgang in https://github.com/bitwarden/android/pull/5861
+* [PM-25637] Add CXF module for Credential Exchange support by @SaintPatrck in https://github.com/bitwarden/android/pull/5858
+* [PM-25624] Hide decryption errors from autofill list view by @andrebispo5 in https://github.com/bitwarden/android/pull/5855
+* [PM-25640] Dialog flickers when switching accounts by @andrebispo5 in https://github.com/bitwarden/android/pull/5865
+* [PM-25661] Add placeholder ProviderEvents API for credential import/export by @SaintPatrck in https://github.com/bitwarden/android/pull/5866
+* [PM-25665] Add BitwardenImportCredentialsRequest and helper by @SaintPatrck in https://github.com/bitwarden/android/pull/5870
+* [PM-22320] Default to SHA1 on 2fas importer if algorithm is missing by @aj-rosado in https://github.com/bitwarden/android/pull/5875
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5874
+* Update Robolectric to v4.16 by @david-livefront in https://github.com/bitwarden/android/pull/5833
+* [deps]: Update gh minor by @renovate[bot] in https://github.com/bitwarden/android/pull/5877
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/5881
+* [PM-25662] Add CredentialExchangeCompletionManager by @SaintPatrck in https://github.com/bitwarden/android/pull/5867
+* PM-24234: Add missing plurals by @david-livefront in https://github.com/bitwarden/android/pull/5886
+* [PM-25663] Introduce CredentialExchangeImporter by @SaintPatrck in https://github.com/bitwarden/android/pull/5868
+* Update to AGP v8.13.0 by @david-livefront in https://github.com/bitwarden/android/pull/5887
+* Update to Kotlin v2.2.20 by @david-livefront in https://github.com/bitwarden/android/pull/5888
+* [PM-15051] Add CredentialExchangeRegistry by @SaintPatrck in https://github.com/bitwarden/android/pull/5869
+* Update navigation libs to latest version by @david-livefront in https://github.com/bitwarden/android/pull/5889
+* [deps]: Update actions/checkout action to v5 by @renovate[bot] in https://github.com/bitwarden/android/pull/5879
+* [deps]: Update actions/setup-java action to v5 by @renovate[bot] in https://github.com/bitwarden/android/pull/5880
+* Update the Protobuf library by @david-livefront in https://github.com/bitwarden/android/pull/5891
+* Refactor Vault Sync Logic into VaultSyncManager by @SaintPatrck in https://github.com/bitwarden/android/pull/5871
+* Update SDK to 1.0.0-3005-5a722fd2 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5860
+* Update Androidx libraries to latest versions by @david-livefront in https://github.com/bitwarden/android/pull/5890
+* Update resources to use LocalResources by @david-livefront in https://github.com/bitwarden/android/pull/5894
+* [PM-25664] Add CredentialExchangeImportManager for CXF payload import by @SaintPatrck in https://github.com/bitwarden/android/pull/5872
+* Refactor Send logic into SendManager by @david-livefront in https://github.com/bitwarden/android/pull/5892
+* [PM-25822] Add `ImportItemsViewModel` and related strings  by @SaintPatrck in https://github.com/bitwarden/android/pull/5882
+* Move NativeLibraryManager to data module by @SaintPatrck in https://github.com/bitwarden/android/pull/5899
+* Refactor cipher logic into CipherManager by @david-livefront in https://github.com/bitwarden/android/pull/5898
+* [PM-25912] Remove ImportCredentialsRequest by @SaintPatrck in https://github.com/bitwarden/android/pull/5901
+* [PM-25826] Update `folderRelationships` type for cipher import  by @SaintPatrck in https://github.com/bitwarden/android/pull/5885
+* Update `registerExport` to return `RegisterExportResponse` by @SaintPatrck in https://github.com/bitwarden/android/pull/5903
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5908
+* [PM-25824] Add "Import items" screen by @SaintPatrck in https://github.com/bitwarden/android/pull/5906
+* PM-25908: Process 400 responses from verification code APIs by @david-livefront in https://github.com/bitwarden/android/pull/5900
+* Refactor Folder logic into FolderManager by @david-livefront in https://github.com/bitwarden/android/pull/5904
+* Update SDK to 1.0.0-3101-0eba924a by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5893
+* Pm 25258 browser autofill dialog by @david-livefront in https://github.com/bitwarden/android/pull/5907
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.9.0-bwpm...v2025.9.1-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/17865058734
