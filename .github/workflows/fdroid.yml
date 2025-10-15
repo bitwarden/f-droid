@@ -26,6 +26,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: true
 
       - name: Create basic directory structure
         run: mkdir -p fdroid/repo
@@ -72,7 +74,7 @@ jobs:
           ACCOUNT_NAME: bitwardenci
           CONTAINER_NAME: mobile
         run: |
-          az storage blob download --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME \
+          az storage blob download --account-name "$ACCOUNT_NAME" --container-name "$CONTAINER_NAME" \
           --name store_fdroid-keystore.jks --file fdroid/keystore.p12 --output none
 
       - name: Log out from Azure
@@ -117,16 +119,16 @@ jobs:
         env:
           GH_ACCESS_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
         run: |
-          bash run_metascoop.sh ${{ env._COMMIT_MSG_FILE }}
+          bash run_metascoop.sh "${_COMMIT_MSG_FILE}"
           if [ $? -eq 0 ]; then
             echo "Changes detected"
-            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
           elif [ $? -eq 2 ]; then
             echo "No changes detected"
-            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else
             echo "Unexpected exit code: $?"
-            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
           fi
         continue-on-error: true
 
@@ -137,11 +139,12 @@ jobs:
       - name: Update repo
         env:
           GH_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
+          _METASCOOP_HAS_CHANGES: ${{ steps.run-metascoop.outputs.has_changes }}
         run: |
           if [ "${{ inputs.dry-run }}" = "true" ]; then
             echo "Dry run. Changes are not being saved."
-          elif [ "${{ steps.run-metascoop.outputs.has_changes }}" != "true" ]; then
+          elif [ "$_METASCOOP_HAS_CHANGES" != "true" ]; then
             echo "No changes to save."
           else
-            bash update_repo.sh ${{ env._COMMIT_MSG_FILE }}
+            bash update_repo.sh "${_COMMIT_MSG_FILE}"
           fi
