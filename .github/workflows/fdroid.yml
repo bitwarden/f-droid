@@ -53,13 +53,16 @@ jobs:
             github-gpg-private-key,
             github-gpg-private-key-passphrase
 
+      - name: Create basic directory structure
+        run: mkdir -p fdroid/repo # required by az storage keystore download step
+
       - name: Download secrets
         env:
           ACCOUNT_NAME: bitwardenci
           CONTAINER_NAME: mobile
         run: |
           az storage blob download --account-name "$ACCOUNT_NAME" --container-name "$CONTAINER_NAME" \
-            --name store_fdroid-keystore.jks --file fdroid/keystore.p12 --output none
+          --name store_fdroid-keystore.jks --file fdroid/keystore.p12 --output none
 
       - name: Log out from Azure
         uses: bitwarden/gh-actions/azure-logout@main
@@ -79,9 +82,6 @@ jobs:
         with:
           token: ${{ steps.app-token.outputs.token }}
           persist-credentials: true
-
-      - name: Create basic directory structure
-        run: mkdir -p fdroid/repo
 
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
