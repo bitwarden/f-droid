@@ -38,22 +38,28 @@ jobs:
           tenant_id: ${{ secrets.AZURE_TENANT_ID }}
           client_id: ${{ secrets.AZURE_CLIENT_ID }}
 
-      - name: Get Azure Key Vault secrets
+      - name: Get Azure Key Vault secrets - GH Org
         id: get-kv-secrets
+        uses: bitwarden/gh-actions/get-keyvault-secrets@main
+        with:
+          keyvault: gh-org-bitwarden
+          secrets: "BW-GHAPP-ID,BW-GHAPP-KEY"
+
+      - name: Get Azure Key Vault secrets - f-droid
+        id: get-kv-fdroid
         uses: bitwarden/gh-actions/get-keyvault-secrets@main
         with:
           keyvault: gh-f-droid
           secrets: "FDROID-STORE-KEYSTORE-PASSWORD"
 
-      - name: Retrieve secrets
-        id: retrieve-secrets
+      - name: Get Azure Key Vault secrets - BW CI
+        id: get-kv-secrets-ci
         uses: bitwarden/gh-actions/get-keyvault-secrets@main
         with:
           keyvault: "bitwarden-ci"
           secrets: >
             github-gpg-private-key,
-            github-gpg-private-key-passphrase,
-            github-pat-bitwarden-devops-bot-repo-scope
+            github-gpg-private-key-passphrase
 
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
