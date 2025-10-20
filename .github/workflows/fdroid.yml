@@ -154,9 +154,10 @@ jobs:
       - name: Update repo
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          _DRY_RUN: ${{ inputs.dry-run }}
           _METASCOOP_HAS_CHANGES: ${{ steps.run-metascoop.outputs.has_changes }}
         run: |
-          if [ "${{ inputs.dry-run }}" = "true" ]; then
+          if [ "$_DRY_RUN" = "true" ]; then
             echo "Dry run. Changes are not being saved."
           elif [ "$_METASCOOP_HAS_CHANGES" != "true" ]; then
             echo "No changes to save."
