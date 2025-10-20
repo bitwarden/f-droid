@@ -62,7 +62,7 @@ jobs:
           CONTAINER_NAME: mobile
         run: |
           az storage blob download --account-name "$ACCOUNT_NAME" --container-name "$CONTAINER_NAME" \
-          --name store_fdroid-keystore.jks --file fdroid/keystore.p12 --output none
+          --name store_fdroid-keystore.jks --file secrets/keystore.p12 --output none
 
       - name: Log out from Azure
         uses: bitwarden/gh-actions/azure-logout@main
@@ -100,7 +100,7 @@ jobs:
         env:
           FDROID_STORE_KEYSTORE_PASSWORD: ${{ steps.get-kv-fdroid.outputs.FDROID-STORE-KEYSTORE-PASSWORD }}
         run: |
-          if [ -f "fdroid/keystore.p12" ]; then
+          if [ -f "secrets/keystore.p12" ]; then
             echo "keystore found"
           else
             echo "keystore not found!"

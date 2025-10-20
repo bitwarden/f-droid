@@ -9,3 +9,4 @@ repo_keyalias: 'bitwarden-Virtual-Machine'
 keydname: 'CN=bitwarden-Virtual-Machine, OU=F-Droid'
 gpg_keyid: 'ggpkey'
 email: android@bitwarden.com
+keystore: 'secrets/keystore.p12'
