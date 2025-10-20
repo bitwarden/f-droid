@@ -61,6 +61,17 @@ jobs:
             github-gpg-private-key,
             github-gpg-private-key-passphrase
 
+      - name: Download secrets
+        env:
+          ACCOUNT_NAME: bitwardenci
+          CONTAINER_NAME: mobile
+        run: |
+          az storage blob download --account-name "$ACCOUNT_NAME" --container-name "$CONTAINER_NAME" \
+            --name store_fdroid-keystore.jks --file fdroid/keystore.p12 --output none
+
+      - name: Log out from Azure
+        uses: bitwarden/gh-actions/azure-logout@main
+
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
         with:
@@ -74,16 +85,6 @@ jobs:
           git config --local user.email "106330231+bitwarden-devops-bot@users.noreply.github.com"
           git config --local user.name "bitwarden-devops-bot"
 
-      - name: Download secrets
-        env:
-          ACCOUNT_NAME: bitwardenci
-          CONTAINER_NAME: mobile
-        run: |
-          az storage blob download --account-name "$ACCOUNT_NAME" --container-name "$CONTAINER_NAME" \
-          --name store_fdroid-keystore.jks --file fdroid/keystore.p12 --output none
-
-      - name: Log out from Azure
-        uses: bitwarden/gh-actions/azure-logout@main
 
       - name: Validate secrets
         run: |
