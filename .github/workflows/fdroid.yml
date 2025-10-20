@@ -21,7 +21,6 @@ jobs:
     env:
       _COMMIT_MSG_FILE: "${{ github.workspace }}/commit_message.tmp"
     permissions:
-      contents: write
       id-token: write
     steps:
       - name: Checkout repo
