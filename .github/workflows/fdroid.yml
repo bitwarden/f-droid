@@ -96,7 +96,10 @@ jobs:
           git config --local user.name "bitwarden-devops-bot"
 
 
-      - name: Validate secrets
+
+      - name: Configure F-Droid server
+        env:
+          FDROID_STORE_KEYSTORE_PASSWORD: ${{ steps.get-kv-fdroid.outputs.FDROID-STORE-KEYSTORE-PASSWORD }}
         run: |
           if [ -f "fdroid/keystore.p12" ]; then
             echo "keystore found"
@@ -105,10 +108,6 @@ jobs:
             exit 1
           fi
 
-      - name: Configure F-Droid server
-        env:
-          FDROID_STORE_KEYSTORE_PASSWORD: ${{ steps.get-kv-secrets.outputs.FDROID-STORE-KEYSTORE-PASSWORD }}
-        run: |
           cp base_fdroid_config.yml fdroid/config.yml
           chmod 0600 fdroid/config.yml
           echo "keypass: '$FDROID_STORE_KEYSTORE_PASSWORD'" >> fdroid/config.yml
