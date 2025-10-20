@@ -132,7 +132,7 @@ jobs:
       - name: Run metascoop
         id: run-metascoop
         env:
-          GH_ACCESS_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
+          GH_ACCESS_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           bash run_metascoop.sh "${_COMMIT_MSG_FILE}"
           if [ $? -eq 0 ]; then
@@ -153,7 +153,7 @@ jobs:
 
       - name: Update repo
         env:
-          GH_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
           _METASCOOP_HAS_CHANGES: ${{ steps.run-metascoop.outputs.has_changes }}
         run: |
           if [ "${{ inputs.dry-run }}" = "true" ]; then
