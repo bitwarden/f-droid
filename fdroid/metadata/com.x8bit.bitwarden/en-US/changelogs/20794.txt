@@ -1,0 +1,62 @@
+# Overview
+* Enhanced biometric unlock experience.
+* Improved app stability with bug fixes.
+* Various performance and stability improvements
+
+## What's Changed
+* PM-26026: save layout state through config change by @david-livefront in https://github.com/bitwarden/android/pull/5913
+* PM-26027: Remove the UserManagedPrivilegedApps feature flag by @david-livefront in https://github.com/bitwarden/android/pull/5914
+* Update SDK to 1.0.0-3157-1ca5a589 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5917
+* Add empty state for debug menu without feature flags by @david-livefront in https://github.com/bitwarden/android/pull/5918
+* Update SDK to 1.0.0-3165-92bb5c30 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5920
+* [PM-25825] Add ImportItems navigation by @SaintPatrck in https://github.com/bitwarden/android/pull/5915
+* [PM-25933] Replace SDK call updatePassword by @andrebispo5 in https://github.com/bitwarden/android/pull/5916
+* Display the CipherKeyEncryption flag in debug menu by @david-livefront in https://github.com/bitwarden/android/pull/5923
+* PM-26106: Update quotes accross all strings by @david-livefront in https://github.com/bitwarden/android/pull/5924
+* Update Credential Provider Events APIs by @SaintPatrck in https://github.com/bitwarden/android/pull/5926
+* Remove unnecessary quotes by @david-livefront in https://github.com/bitwarden/android/pull/5929
+* [PM-26112] Handle Credential Exchange export requests  by @SaintPatrck in https://github.com/bitwarden/android/pull/5928
+* PM-26151: Disable continue button for Autofill onboarding flow when autofill is disabled by @david-livefront in https://github.com/bitwarden/android/pull/5933
+* Minor design tweaks for action cards by @david-livefront in https://github.com/bitwarden/android/pull/5934
+* Update SDK to 1.0.0-3175-c9758478 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5922
+* Update onboarding secondary buttons to match designs by @david-livefront in https://github.com/bitwarden/android/pull/5936
+* PM-26025: Add browser autofill screen for onboarding flow by @david-livefront in https://github.com/bitwarden/android/pull/5931
+* [PM-26095] Add account selection screen for Credential Exchange by @SaintPatrck in https://github.com/bitwarden/android/pull/5932
+* PM-26161: Add badging for browser autofill by @david-livefront in https://github.com/bitwarden/android/pull/5939
+* [PM-20977] Handle new sdk exception type. by @andrebispo5 in https://github.com/bitwarden/android/pull/5937
+* [PM-26110] Add verify password screen for item export by @SaintPatrck in https://github.com/bitwarden/android/pull/5935
+* PM-23292: Migrate toasts to snackbars by @david-livefront in https://github.com/bitwarden/android/pull/5940
+* PM-26181: Minor clean up and adjustments for browser autofill integration by @david-livefront in https://github.com/bitwarden/android/pull/5941
+* PM-26187: Add autofill help call-to-action by @david-livefront in https://github.com/bitwarden/android/pull/5942
+* Commonize minor UI utility functions by @david-livefront in https://github.com/bitwarden/android/pull/5945
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/5954
+* Fully extract more sync logic into the VaultSyncManager by @david-livefront in https://github.com/bitwarden/android/pull/5912
+* PM-26303: Remoe the 'Exit' button from the VaultScreen overflow menu by @david-livefront in https://github.com/bitwarden/android/pull/5956
+* [PM-26094] Update Credential Manager library and remove stubs by @SaintPatrck in https://github.com/bitwarden/android/pull/5947
+* Update the Compose BOM by @david-livefront in https://github.com/bitwarden/android/pull/5957
+* BRE-1158 Dockerfiles shared ownership by @fntyler in https://github.com/bitwarden/android/pull/5902
+* PM-25642: Force sync or clear last sync time on sync notification by @david-livefront in https://github.com/bitwarden/android/pull/5958
+* [PM-25452] Dont show move to organization when user has no orgs by @aj-rosado in https://github.com/bitwarden/android/pull/5862
+* [PM-26111] Implement Review Export Screen and Navigation by @SaintPatrck in https://github.com/bitwarden/android/pull/5946
+* Update AndroidX libraries by @david-livefront in https://github.com/bitwarden/android/pull/5959
+* Firebase BOM update by @david-livefront in https://github.com/bitwarden/android/pull/5960
+* Update hilt to v2.57.2 by @david-livefront in https://github.com/bitwarden/android/pull/5961
+* Update Guava to v33.5.0 by @david-livefront in https://github.com/bitwarden/android/pull/5962
+* PM-26312: Add browser integration help link by @david-livefront in https://github.com/bitwarden/android/pull/5963
+* [PM-17870] Always include clientExtensionResults in Fido2AttestationResponse by @aj-rosado in https://github.com/bitwarden/android/pull/5964
+* Update Androidx Camera to v1.5.0 by @david-livefront in https://github.com/bitwarden/android/pull/5896
+* Update Kover to v0.9.2 by @david-livefront in https://github.com/bitwarden/android/pull/5966
+* Update SDK to 1.0.0-3194-9947387b by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/5938
+* [PM-23280] Save MasterPasswordUnlockData to local state by @andrebispo5 in https://github.com/bitwarden/android/pull/5944
+* [PM-26330] Correct owner data when individual vault is disabled by @SaintPatrck in https://github.com/bitwarden/android/pull/5968
+* PM-26445: Common Debug menu components by @david-livefront in https://github.com/bitwarden/android/pull/5970
+* Update UI elements for common use in Authenticator by @david-livefront in https://github.com/bitwarden/android/pull/5971
+* Update renovate.json to exclude com.github.bumptech.glide from gradle-minor group by @vvolkgang in https://github.com/bitwarden/android/pull/5974
+* [deps]: Update org.sonarqube to v6.3.1.5724 by @david-livefront in https://github.com/bitwarden/android/pull/5973
+* [PM-26355] Improve SelectAccountScreen state handling by @SaintPatrck in https://github.com/bitwarden/android/pull/5965
+
+## New Contributors
+* @fntyler made their first contribution in https://github.com/bitwarden/android/pull/5902
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.9.1-bwpm...v2025.10.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/18227627683

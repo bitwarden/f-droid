@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1759892970000,
+    "timestamp": 1760930207000,
     "version": 20002,
     "name": "Bitwarden F-Droid",
     "icon": "icon.png",
@@ -20,8 +20,8 @@
       "categories": [
         "Security"
       ],
-      "suggestedVersionName": "2025.9.1",
-      "suggestedVersionCode": "20742",
+      "suggestedVersionName": "2025.10.0",
+      "suggestedVersionCode": "20794",
       "description": "Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.\n\nPassword theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.\n\nSecurity experts recommend that you use a different, randomly generated password for every account that you create. But how do you manage all those passwords? Bitwarden makes it easy for you to create, store, and access your passwords.\n\nBitwarden stores all of your logins in an encrypted vault that syncs across all of your devices. Since it's fully encrypted before it ever leaves your device, only you have access to your data. Not even the team at Bitwarden can read your data, even if we wanted to. Your data is sealed with AES-256 bit encryption, salted hashing, and PBKDF2 SHA-256.\n\nBitwarden is focused on open source software. The source code for Bitwarden is hosted on GitHub and everyone is free to review, audit, and contribute to the Bitwarden codebase.\n",
       "license": "GPL-3.0",
       "name": "Bitwarden",
@@ -29,12 +29,12 @@
       "summary": "Bitwarden mobile app for Android.",
       "added": 1746466260000,
       "packageName": "com.x8bit.bitwarden",
-      "lastUpdated": 1759892967000,
+      "lastUpdated": 1760930188000,
       "localized": {
         "en-US": {
           "featureGraphic": "featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
           "icon": "icon_oHucFA9p31FP-JvzlsHvxnwcLZFbI5Thw7pZSHGdkMM=.png",
-          "whatsNew": "# Overview\n\u2022 Fixed an issue with navigation in settings sub-menu.\n\u2022 Various under the hood improvements. (edited)\n\n## What's Changed\n* [PM-15055] Add SDK support for exporting vault data to CXF by @SaintPatrck in https://github.com/bitwarden/android/pull/5840\n* PM-25162: Fix a navigation bug in bottom navigation by @david-livefront in https://github.com/bitwarden/android/pull/5842\n* [PM-25522] Add `importCxf` function to `VaultSdkSource` by @SaintPatrck in https://github.com/bitwarden/android/pu"
+          "whatsNew": "# Overview\n* Enhanced biometric unlock experience.\n* Improved app stability with bug fixes.\n* Various performance and stability improvements\n\n## What's Changed\n* PM-26026: save layout state through config change by @david-livefront in https://github.com/bitwarden/android/pull/5913\n* PM-26027: Remove the UserManagedPrivilegedApps feature flag by @david-livefront in https://github.com/bitwarden/android/pull/5914\n* Update SDK to 1.0.0-3157-1ca5a589 by @bw-ghapp[bot] in https://github.com/bitwarden/"
         }
       }
     },
@@ -64,6 +64,79 @@
   ],
   "packages": {
     "com.x8bit.bitwarden": [
+      {
+        "added": 1760930188000,
+        "apkName": "bitwarden_v2025.10.0-bwpm.apk",
+        "hash": "925a414cdf447ad593c57c68885159936371ebcdf0d5adbfd0803181117aceb5",
+        "hashType": "sha256",
+        "minSdkVersion": 29,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi",
+          "armeabi-v7a",
+          "mips",
+          "mips64",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "com.x8bit.bitwarden",
+        "sig": "4eca64d92c5726e95b1fcf98e8feef4c",
+        "signer": "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90",
+        "size": 88291799,
+        "targetSdkVersion": 36,
+        "uses-permission": [
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.USE_BIOMETRIC",
+            null
+          ],
+          [
+            "android.permission.NFC",
+            null
+          ],
+          [
+            "android.permission.CAMERA",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.READ_USER_DICTIONARY",
+            null
+          ],
+          [
+            "android.permission.USE_FINGERPRINT",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 20794,
+        "versionName": "2025.10.0"
+      },
       {
         "added": 1759892967000,
         "apkName": "bitwarden_v2025.9.1-bwpm.apk",
