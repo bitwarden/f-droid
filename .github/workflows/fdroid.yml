@@ -53,14 +53,12 @@ jobs:
             github-gpg-private-key,
             github-gpg-private-key-passphrase
 
-      - name: Create basic directory structure
-        run: mkdir -p fdroid/repo # required by az storage keystore download step
-
       - name: Download secrets
         env:
           ACCOUNT_NAME: bitwardenci
           CONTAINER_NAME: mobile
         run: |
+          mkdir secrets
           az storage blob download --account-name "$ACCOUNT_NAME" --container-name "$CONTAINER_NAME" \
           --name store_fdroid-keystore.jks --file secrets/keystore.p12 --output none
 
