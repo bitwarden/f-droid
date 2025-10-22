@@ -21,17 +21,8 @@ jobs:
     env:
       _COMMIT_MSG_FILE: "${{ github.workspace }}/commit_message.tmp"
     permissions:
-      contents: write
       id-token: write
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
-        with:
-          persist-credentials: true
-
-      - name: Create basic directory structure
-        run: mkdir -p fdroid/repo
-
       - name: Log in to Azure
         uses: bitwarden/gh-actions/azure-login@main
         with:
@@ -39,28 +30,64 @@ jobs:
           tenant_id: ${{ secrets.AZURE_TENANT_ID }}
           client_id: ${{ secrets.AZURE_CLIENT_ID }}
 
-      - name: Get Azure Key Vault secrets
+      - name: Get Azure Key Vault secrets - GH Org
         id: get-kv-secrets
+        uses: bitwarden/gh-actions/get-keyvault-secrets@main
+        with:
+          keyvault: gh-org-bitwarden
+          secrets: "BW-GHAPP-ID,BW-GHAPP-KEY"
+
+      - name: Get Azure Key Vault secrets - f-droid
+        id: get-kv-fdroid
         uses: bitwarden/gh-actions/get-keyvault-secrets@main
         with:
           keyvault: gh-f-droid
           secrets: "FDROID-STORE-KEYSTORE-PASSWORD"
 
-      - name: Retrieve secrets
-        id: retrieve-secrets
+      - name: Get Azure Key Vault secrets - BW CI
+        id: get-kv-secrets-ci
         uses: bitwarden/gh-actions/get-keyvault-secrets@main
         with:
           keyvault: "bitwarden-ci"
           secrets: >
             github-gpg-private-key,
-            github-gpg-private-key-passphrase,
-            github-pat-bitwarden-devops-bot-repo-scope
+            github-gpg-private-key-passphrase
+
+      - name: Generate GH App token
+        uses: actions/create-github-app-token@a8d616148505b5069dccd32f177bb87d7f39123b # v2.1.1
+        id: app-token
+        with:
+          app-id: ${{ steps.get-kv-secrets.outputs.BW-GHAPP-ID }}
+          private-key: ${{ steps.get-kv-secrets.outputs.BW-GHAPP-KEY }}
+          owner: bitwarden
+          repositories: f-droid
+          permission-contents: write # used to: push code; create github release
+
+      # NOTE: intentionally checking out before downloading secrets, otherwise the downloaded files are removed.
+      # This may be later solved by: https://github.com/actions/checkout/pull/2286
+      - name: Checkout repo
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          persist-credentials: true
+
+      - name: Download secrets
+        env:
+          ACCOUNT_NAME: bitwardenci
+          CONTAINER_NAME: mobile
+        run: |
+          mkdir -p fdroid/repo
+          az storage blob download --account-name "$ACCOUNT_NAME" --container-name "$CONTAINER_NAME" \
+          --name store_fdroid-keystore.jks --file fdroid/keystore.p12 --output none
+
+      - name: Log out from Azure
+        uses: bitwarden/gh-actions/azure-logout@main
 
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
         with:
-          gpg_private_key: ${{ steps.retrieve-secrets.outputs.github-gpg-private-key }}
-          passphrase: ${{ steps.retrieve-secrets.outputs.github-gpg-private-key-passphrase }}
+          gpg_private_key: ${{ steps.get-kv-secrets-ci.outputs.github-gpg-private-key }}
+          passphrase: ${{ steps.get-kv-secrets-ci.outputs.github-gpg-private-key-passphrase }}
           git_user_signingkey: true
           git_commit_gpgsign: true
 
@@ -69,18 +96,9 @@ jobs:
           git config --local user.email "106330231+bitwarden-devops-bot@users.noreply.github.com"
           git config --local user.name "bitwarden-devops-bot"
 
-      - name: Download secrets
+      - name: Configure F-Droid server
         env:
-          ACCOUNT_NAME: bitwardenci
-          CONTAINER_NAME: mobile
-        run: |
-          az storage blob download --account-name "$ACCOUNT_NAME" --container-name "$CONTAINER_NAME" \
-          --name store_fdroid-keystore.jks --file fdroid/keystore.p12 --output none
-
-      - name: Log out from Azure
-        uses: bitwarden/gh-actions/azure-logout@main
-
-      - name: Validate secrets
+          FDROID_STORE_KEYSTORE_PASSWORD: ${{ steps.get-kv-fdroid.outputs.FDROID-STORE-KEYSTORE-PASSWORD }}
         run: |
           if [ -f "fdroid/keystore.p12" ]; then
             echo "keystore found"
@@ -89,10 +107,6 @@ jobs:
             exit 1
           fi
 
-      - name: Configure F-Droid server
-        env:
-          FDROID_STORE_KEYSTORE_PASSWORD: ${{ steps.get-kv-secrets.outputs.FDROID-STORE-KEYSTORE-PASSWORD }}
-        run: |
           cp base_fdroid_config.yml fdroid/config.yml
           chmod 0600 fdroid/config.yml
           echo "keypass: '$FDROID_STORE_KEYSTORE_PASSWORD'" >> fdroid/config.yml
@@ -117,7 +131,7 @@ jobs:
       - name: Run metascoop
         id: run-metascoop
         env:
-          GH_ACCESS_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
+          GH_ACCESS_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           bash run_metascoop.sh "${_COMMIT_MSG_FILE}"
           if [ $? -eq 0 ]; then
@@ -138,10 +152,11 @@ jobs:
 
       - name: Update repo
         env:
-          GH_TOKEN: ${{ steps.retrieve-secrets.outputs.github-pat-bitwarden-devops-bot-repo-scope }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          _DRY_RUN: ${{ inputs.dry-run }}
           _METASCOOP_HAS_CHANGES: ${{ steps.run-metascoop.outputs.has_changes }}
         run: |
-          if [ "${{ inputs.dry-run }}" = "true" ]; then
+          if [ "$_DRY_RUN" = "true" ]; then
             echo "Dry run. Changes are not being saved."
           elif [ "$_METASCOOP_HAS_CHANGES" != "true" ]; then
             echo "No changes to save."
