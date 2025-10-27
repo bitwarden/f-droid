@@ -6,7 +6,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/google/go-github/v75/github"
+	"github.com/google/go-github/v76/github"
 	"golang.org/x/text/runes"
 	"golang.org/x/text/transform"
 	"golang.org/x/text/unicode/norm"
