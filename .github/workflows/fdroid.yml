@@ -59,9 +59,8 @@ jobs:
         with:
           app-id: ${{ steps.get-kv-secrets.outputs.BW-GHAPP-ID }}
           private-key: ${{ steps.get-kv-secrets.outputs.BW-GHAPP-KEY }}
-          owner: bitwarden
-          repositories: f-droid
-          permission-contents: write # used to: push code; create github release
+          permission-contents: write
+          permission-pull-requests: write
 
       # NOTE: intentionally checking out before downloading secrets, otherwise the downloaded files are removed.
       # This may be later solved by: https://github.com/actions/checkout/pull/2286
