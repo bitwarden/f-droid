@@ -6,5 +6,6 @@ theme: minima
 minima:
   skin: auto
 exclude:
-  - "./fdroid/archive/*"
-  - "./metascoop/*"
+  - fdroid/archive/
+  - metascoop/
+  - CONTRIBUTING.md
