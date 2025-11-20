@@ -5,3 +5,6 @@ markdown: GFM
 theme: minima
 minima:
   skin: auto
+exclude:
+  - "./fdroid/archive/*"
+  - "./metascoop/*"
