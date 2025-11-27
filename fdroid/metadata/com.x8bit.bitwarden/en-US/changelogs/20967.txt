@@ -1,8 +1,7 @@
 # Overview
-<insert product release notes here>
 
-**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.11.0-bwpm...v2025.11.0-bwpm
-**Builds Source:** https://github.com/bitwarden/android/actions/runs/19309927902
+* Fixed an issue that could cause unexpected app crashes.
+* General stability improvements and bug fixes.
 
 ## What's Changed
 * Update OkHttp to latest version by @david-livefront in https://github.com/bitwarden/android/pull/6054
@@ -56,3 +55,4 @@
 
 
 **Full Changelog**: https://github.com/bitwarden/android/compare/v2025.10.1-bwa...v2025.11.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/19309927902
