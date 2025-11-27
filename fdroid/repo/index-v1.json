@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1763608412000,
+    "timestamp": 1764261192000,
     "version": 20002,
     "name": "Bitwarden F-Droid",
     "icon": "icon.png",
@@ -34,7 +34,7 @@
         "en-US": {
           "featureGraphic": "featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
           "icon": "icon_oHucFA9p31FP-JvzlsHvxnwcLZFbI5Thw7pZSHGdkMM=.png",
-          "whatsNew": "# Overview\n<insert product release notes here>\n\n**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.11.0-bwpm...v2025.11.0-bwpm\n**Builds Source:** https://github.com/bitwarden/android/actions/runs/19309927902\n\n## What's Changed\n* Update OkHttp to latest version by @david-livefront in https://github.com/bitwarden/android/pull/6054\n* Update SDK to 1.0.0-3436-2a00b727 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6042\n* [PM-26986] Hide select other account button"
+          "whatsNew": "# Overview\n\n* Fixed an issue that could cause unexpected app crashes.\n* General stability improvements and bug fixes.\n\n## What's Changed\n* Update OkHttp to latest version by @david-livefront in https://github.com/bitwarden/android/pull/6054\n* Update SDK to 1.0.0-3436-2a00b727 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6042\n* [PM-26986] Hide select other account button if user has no other account by @aj-rosado in https://github.com/bitwarden/android/pull/6041\n* [PM-23290] Mig"
         }
       }
     },
