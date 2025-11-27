@@ -19,7 +19,7 @@ https://mobileapp.bitwarden.com/fdroid/repo?fingerprint=BC54EA6FD1CD5175BCCCC47C
 | Icon | Name | Description | Version |
 | --- | --- | --- | --- |
 | <a href="https://github.com/bitwarden/android"><img src="fdroid/repo/com.x8bit.bitwarden/en-US/icon.png" alt="Bitwarden icon" width="36px" height="36px"></a> | [**Bitwarden**](https://github.com/bitwarden/android) | Bitwarden mobile app for Android. | 2025.11.0 (20967) |
-| <a href="https://github.com/bitwarden/android"><img src="fdroid/repo/com.x8bit.bitwarden.beta/en-US/icon.png" alt="Bitwarden Beta icon" width="36px" height="36px"></a> | [**Bitwarden Beta**](https://github.com/bitwarden/android) | Bitwarden mobile app for Android. | 2025.7.2 (20551) |
+| <a href=""><img src="fdroid/repo/com.x8bit.bitwarden.beta/en-US/icon.png" alt="Bitwarden Beta icon" width="36px" height="36px"></a> | [**Bitwarden Beta**]() |  |  (2147483647) |
 <!-- end apps table -->
 
 ## Instructions
