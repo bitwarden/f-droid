@@ -1,9 +1,0 @@
-## What's Changed
-* PM-15624 🍒 Align handling of no network states with iOS app. (#4431) by @dseverns-livefront in https://github.com/bitwarden/android/pull/4439
-* PM-15831 - 🍒 Enable remote configuration of `enable-authenticator-sync-android` feature flag by @phil-livefront in https://github.com/bitwarden/android/pull/4442
-* PM-15890 🍒  TLS related error propagation by @dseverns-livefront in https://github.com/bitwarden/android/pull/4484
-* PM-15976 🍒  prevent app crash for non english language by @dseverns-livefront in https://github.com/bitwarden/android/pull/4485
-
-
-**Full Changelog**: https://github.com/bitwarden/android/compare/v2024.11.7...v2024.12.0
-**Builds Source:** https://github.com/bitwarden/android/actions/runs/12380700849

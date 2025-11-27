@@ -1,9 +1,0 @@
-# Overview
-Fix for a crash for Android 10 users
-
-## What's Changed
-* PM-23136: Android 10 crash hotfix by @david-livefront in https://github.com/bitwarden/android/pull/5447
-
-
-**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.6.0-bwpm...v2025.6.1-bwpm
-**Builds Source:** https://github.com/bitwarden/android/actions/runs/15984517798

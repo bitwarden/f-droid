@@ -1,8 +1,0 @@
-## What's Changed
-* 🍒 All user input syncs should be forced by @david-livefront in https://github.com/bitwarden/android/pull/4370
-* 🍒 Improve destructive fallback logic by @david-livefront in https://github.com/bitwarden/android/pull/4372
-* 🍒 Pull-to-refresh operations should not invoke a forced sync. by @dseverns-livefront in https://github.com/bitwarden/android/pull/4389
-
-
-**Full Changelog**: https://github.com/bitwarden/android/compare/v2024.11.6...v2024.11.7
-**Builds Source:** https://github.com/bitwarden/android/actions/runs/12039441634
