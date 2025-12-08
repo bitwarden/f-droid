@@ -1,0 +1,57 @@
+# Overview
+
+- Improved Autofill functionality in Samsung Internet, Opera, and Edge browsers.
+- General under-the-hood improvements and bug fixes.
+
+## What's Changed
+* PM-27705: Enable `filterTouchesWhenObscured` in Authenticator for security by @david-livefront in https://github.com/bitwarden/android/pull/6105
+* Remove unused xml colors from Authenticator by @david-livefront in https://github.com/bitwarden/android/pull/6108
+* Optimize reviewing-changes skill by @SaintPatrck in https://github.com/bitwarden/android/pull/6099
+* [deps]: Update org.sonarqube to v7 by @renovate[bot] in https://github.com/bitwarden/android/pull/6082
+* PM-27703: Update Authenticator navigation by @david-livefront in https://github.com/bitwarden/android/pull/6109
+* [PM-24971] Sanitize passkey attestation options from AliExpress by @SaintPatrck in https://github.com/bitwarden/android/pull/6106
+* [PM-27657] KDF silent update with MasterPasswordUnlock data by @andrebispo5 in https://github.com/bitwarden/android/pull/6113
+* PM-27755: Create a common LocalQrCodeAnalyzer for both apps by @david-livefront in https://github.com/bitwarden/android/pull/6115
+* [PM-26736] Fix push notification logout reason serialization by @andrebispo5 in https://github.com/bitwarden/android/pull/6116
+* PM-27756: Create common ExitManager by @david-livefront in https://github.com/bitwarden/android/pull/6117
+* PM-27770: Update error parsing when creating or updating a cipher by @david-livefront in https://github.com/bitwarden/android/pull/6118
+* PM-24277: Add language selector to Authenticator by @david-livefront in https://github.com/bitwarden/android/pull/6120
+* PM-27771: Improve TOTP parsing by @david-livefront in https://github.com/bitwarden/android/pull/6119
+* PM-27817: Consolidate totp parsing with TotpUriUtils by @david-livefront in https://github.com/bitwarden/android/pull/6122
+* PM-27597: Update Yubikey illustration to match the rest of the app by @david-livefront in https://github.com/bitwarden/android/pull/6087
+* Reduce verbosity in reviewing-changes skill for clean PRs by @SaintPatrck in https://github.com/bitwarden/android/pull/6121
+* [PM-27834] Use Authenticator Bridge as a project reference by @vvolkgang in https://github.com/bitwarden/android/pull/5793
+* PM-27846: Move DispatcherManager to core module by @david-livefront in https://github.com/bitwarden/android/pull/6124
+* Refine reviewing-changes skill to eliminate verbosity and praise by @SaintPatrck in https://github.com/bitwarden/android/pull/6128
+* [PM-27752] Add certificate signature verification to AuthenticatorBridge by @SaintPatrck in https://github.com/bitwarden/android/pull/6126
+* [PM-27806] Reverted changes to order of StorePolicies after sync by @aj-rosado in https://github.com/bitwarden/android/pull/6130
+* PM-27845: Move SnackbarRelayManager to ui module by @david-livefront in https://github.com/bitwarden/android/pull/6127
+* Enforce strict brevity in reviewing-changes skill output by @SaintPatrck in https://github.com/bitwarden/android/pull/6131
+* PM-27902: Logout user after successful master password reset by @SaintPatrck in https://github.com/bitwarden/android/pull/6133
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6135
+* Clarify package id parsing and AutofillView creation by @david-livefront in https://github.com/bitwarden/android/pull/6138
+* Fix a test that was not running by @david-livefront in https://github.com/bitwarden/android/pull/6140
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/6146
+* Exclude Bitwarden Android SDK from Renovate auto-updates by @SaintPatrck in https://github.com/bitwarden/android/pull/6147
+* Update Firebase BoM to 34.5.0 by @SaintPatrck in https://github.com/bitwarden/android/pull/6150
+* Update OkHttp to version 5.3.0 by @SaintPatrck in https://github.com/bitwarden/android/pull/6148
+* Bump JUnit from 6.0.0 to 6.0.1 by @SaintPatrck in https://github.com/bitwarden/android/pull/6149
+* [PM-27901] Add f-droid fastlane metadata by @vvolkgang in https://github.com/bitwarden/android/pull/6134
+* [PM-28041] Remove SDK Update PR changelog list size limit by @vvolkgang in https://github.com/bitwarden/android/pull/6152
+* All tests should assert if a value is displayed by @david-livefront in https://github.com/bitwarden/android/pull/6153
+* [PM-28029] Address Sonar Cloud and Linter errors by @vvolkgang in https://github.com/bitwarden/android/pull/6151
+* [deps]: Update gradle minor by @renovate[bot] in https://github.com/bitwarden/android/pull/6143
+* [PM-27119] Prevent import card data when ITEM_RESTRICT_TYPES policy is active by @aj-rosado in https://github.com/bitwarden/android/pull/6123
+* PM-28056: Consolidate IntentManager extensions by @david-livefront in https://github.com/bitwarden/android/pull/6156
+* Replace blank account name with null by @david-livefront in https://github.com/bitwarden/android/pull/6158
+* [deps]: Update actions/upload-artifact action to v5 by @renovate[bot] in https://github.com/bitwarden/android/pull/6145
+* Update App version name to '2025.11.1' by @david-livefront in https://github.com/bitwarden/android/pull/6162
+* Update Autofill to detect url bar webDomain for certain browsers by @david-livefront in https://github.com/bitwarden/android/pull/6141
+* [PM-28029] ci: add missing permission to fdroid job to fix f-droid build failures by @vvolkgang in https://github.com/bitwarden/android/pull/6163
+* [PM-27181] - Grant additional permissions for review code by @theMickster in https://github.com/bitwarden/android/pull/6165
+* Update RTL transitions to go the correct direction by @david-livefront in https://github.com/bitwarden/android/pull/6166
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6167
+* 🍒 PM-28545: Remove the compatibility mode toggle from the Autofill screen by @SaintPatrck in https://github.com/bitwarden/android/pull/6191
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.11.0-bwpm...v2025.11.1-bwpm
