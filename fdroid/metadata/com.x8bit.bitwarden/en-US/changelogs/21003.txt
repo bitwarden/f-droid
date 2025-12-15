@@ -1,0 +1,34 @@
+# Overview
+• Improved autofill compatibility with Samsung Internet, Opera, and Edge browsers
+• Fixed app crashes when unlocking during sync errors
+• Fixed passkey creation for AliExpress
+• General under-the-hood improvements for usability and performance
+
+## What's Changed
+* [PM-14880] ci: Add automated PR labelling based on file paths and title patterns by @vvolkgang in https://github.com/bitwarden/android/pull/6157
+* PM-28053: Ensure any exception thrown during re-auth is an IO exception by @david-livefront in https://github.com/bitwarden/android/pull/6175
+* Update logic for handling the pin protected user key by @david-livefront in https://github.com/bitwarden/android/pull/6169
+* [PM-27150] React to device changes on device screen unlock method by @andrebispo5 in https://github.com/bitwarden/android/pull/6103
+* [PM-27869] fix/[PM-26241] : draw out keyboard on talkback click by @dev-sharma3624 in https://github.com/bitwarden/android/pull/6129
+* PM-28408: Update CameraPreview composable to address flakey test by @david-livefront in https://github.com/bitwarden/android/pull/6178
+* [deps]: Update actions/checkout action to v5 by @renovate[bot] in https://github.com/bitwarden/android/pull/6144
+* [PM-24148] add credential manager provider for create passwords by @Nailik in https://github.com/bitwarden/android/pull/5579
+* PM-28492: Replace Authenticator Toasts with Snackbars by @david-livefront in https://github.com/bitwarden/android/pull/6180
+* [PM-28157] Add string extension to prefix URIs with www by @SaintPatrck in https://github.com/bitwarden/android/pull/6183
+* [PM-21391] Remove debug credential provider configuration by @SaintPatrck in https://github.com/bitwarden/android/pull/6182
+* [PM-27816] Not clearing the fingerprint on requests that don't return fingerprint on LoginWithDevice by @aj-rosado in https://github.com/bitwarden/android/pull/6185
+* PM-28525: Update the LoginApprovalScreen ui by @david-livefront in https://github.com/bitwarden/android/pull/6187
+* PM-28545: Remove the compatibility mode toggle from the Autofill screen by @david-livefront in https://github.com/bitwarden/android/pull/6188
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6189
+* [PM-28086] Add testharness for Credential Manager and Autofill testing by @SaintPatrck in https://github.com/bitwarden/android/pull/6159
+* Update SDK to 1.0.0-3674-c60a5d79 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6064
+* Update SDK to 1.0.0-3896-f75a58cd by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6198
+* Update SDK to 1.0.0-3908-4b0d1280 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6201
+* Enhance code review skill documentation with TOCs and missing severity categories by @SaintPatrck in https://github.com/bitwarden/android/pull/6186
+* [PM-28157] Revert "Add string extension to prefix URIs with www" by @SaintPatrck in https://github.com/bitwarden/android/pull/6192
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6206
+* Update SDK to 1.0.0-3928-2cca3d46 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6205
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.11.1-bwpm...v2025.12.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/19830126705
