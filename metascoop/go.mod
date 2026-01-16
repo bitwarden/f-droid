@@ -6,10 +6,10 @@ require gopkg.in/yaml.v3 v3.0.1
 
 require (
 	github.com/google/go-github/v76 v76.0.0
-	github.com/hashicorp/go-version v1.7.0
+	github.com/hashicorp/go-version v1.8.0
 	github.com/r3labs/diff/v3 v3.0.2
-	golang.org/x/oauth2 v0.32.0
-	golang.org/x/text v0.30.0
+	golang.org/x/oauth2 v0.34.0
+	golang.org/x/text v0.33.0
 )
 
 require (
