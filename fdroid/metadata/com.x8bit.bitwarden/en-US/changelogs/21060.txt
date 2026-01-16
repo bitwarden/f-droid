@@ -1,0 +1,66 @@
+# Overview
+* Fixed login error that prevented users from accessing their accounts in certain scenarios
+* Fixed case-sensitive email handling in device login fingerprint phrase
+* Improved handling when importing passwords for organization users with disabled personal vaults
+* Fixed account switching to properly sync changes made while profile was inactive
+* Various under the hood improvements and bug fixes
+
+## What's Changed
+* PM-28522: Update the Login With Device Screen by @david-livefront in https://github.com/bitwarden/android/pull/6184
+* [BWA-179] Added clarification of functionality on Authenticator's ExportScreen by @aj-rosado in https://github.com/bitwarden/android/pull/6190
+* Update SDK to 1.0.0-3958-7f09fd2f by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6213
+* [deps]: Update ksp by @david-livefront in https://github.com/bitwarden/android/pull/6217
+* [PM-28835] Added validations to prevent duplicate press on buttons by @aj-rosado in https://github.com/bitwarden/android/pull/6209
+* PM-28522: Update the LoginWithDevice ui by @david-livefront in https://github.com/bitwarden/android/pull/6221
+* [PM-27118] Restrict Credential Exchange import based on Personal Ownership policy by @SaintPatrck in https://github.com/bitwarden/android/pull/6220
+* Update Androidx dependencies to the latest versions by @david-livefront in https://github.com/bitwarden/android/pull/6224
+* [PM-29097] Fix privacy statement alignment in landscape mode by @SaintPatrck in https://github.com/bitwarden/android/pull/6225
+* [PM-27290] Remove password unlock method by @andrebispo5 in https://github.com/bitwarden/android/pull/6176
+* PM-28634: Update Autofill terms to support other languages better by @david-livefront in https://github.com/bitwarden/android/pull/6226
+* PM-25632: Ensure that we use lowercase email addresses when creating a fingerprint by @david-livefront in https://github.com/bitwarden/android/pull/6227
+* [PM-29096] Update Fastlane and Gemfile dependencies by @SaintPatrck in https://github.com/bitwarden/android/pull/6216
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/6197
+* [PM-28467] Add revisionDate to policy JSON model by @SaintPatrck in https://github.com/bitwarden/android/pull/6228
+* [PM-28352] Add logging to Credential Manager and Origin Manager flows by @SaintPatrck in https://github.com/bitwarden/android/pull/6229
+* Update SonarQube plugin version by @SaintPatrck in https://github.com/bitwarden/android/pull/6231
+* Update ZXing library version by @SaintPatrck in https://github.com/bitwarden/android/pull/6230
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6234
+* [PM-28442] Added feature flag for migrate myvault to myitems by @aj-rosado in https://github.com/bitwarden/android/pull/6235
+* Address several small lint warning throughout the app by @david-livefront in https://github.com/bitwarden/android/pull/6233
+* Move MissingPropertyException to common location by @david-livefront in https://github.com/bitwarden/android/pull/6237
+* [deps]: Update actions/checkout action to v6 by @renovate[bot] in https://github.com/bitwarden/android/pull/6247
+* PM-28355: Clear pin data on hard-logout or security stamp by @david-livefront in https://github.com/bitwarden/android/pull/6232
+* Move BiometricsEncryptionManager into the AuthRepository by @david-livefront in https://github.com/bitwarden/android/pull/6249
+* [PM-28468]  Added service methods to migration to MyItems validation by @aj-rosado in https://github.com/bitwarden/android/pull/6248
+* [PM-28504] Add testharness build workflow with dynamic versioning by @SaintPatrck in https://github.com/bitwarden/android/pull/6181
+* [PM-28836] Add AndroidManifest permission for HEADSET_CAMERA by @aj-rosado in https://github.com/bitwarden/android/pull/6251
+* PM-29172: Update Authenticator biometric encryption by @david-livefront in https://github.com/bitwarden/android/pull/6240
+* PM-1908: Push notifications for non-active accounts prompt for future sync by @david-livefront in https://github.com/bitwarden/android/pull/6252
+* [BRE-1333] Added permissions to token generation step to limit token scope by @gitclonebrian in https://github.com/bitwarden/android/pull/6171
+* Update STYLE_AND_BEST_PRACTICES.md to clarify KDoc requirements and fix whitespace by @SaintPatrck in https://github.com/bitwarden/android/pull/6256
+* PM-29491: Implement LeaveOrganizationScreen by @SaintPatrck in https://github.com/bitwarden/android/pull/6253
+* Update OkHttp to v5.3.2 by @david-livefront in https://github.com/bitwarden/android/pull/6257
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6261
+* Update to AGP v8.13.2 by @david-livefront in https://github.com/bitwarden/android/pull/6258
+* Update Androidx Camera to v1.5.2 by @david-livefront in https://github.com/bitwarden/android/pull/6259
+* Update Mockk and Kover by @david-livefront in https://github.com/bitwarden/android/pull/6260
+* PM-29795: Move FileManager to data module by @david-livefront in https://github.com/bitwarden/android/pull/6268
+* PM-29442: Change 2fa field to not be a password field by @david-livefront in https://github.com/bitwarden/android/pull/6269
+* [PM-29297] Add MigrateToMyItemsScreen by @SaintPatrck in https://github.com/bitwarden/android/pull/6239
+* PM-29806: Move FlightRecorderWriter to the data module by @david-livefront in https://github.com/bitwarden/android/pull/6270
+* PM-29824: Add bulk share ciphers network layer implementation by @SaintPatrck in https://github.com/bitwarden/android/pull/6271
+* [PM-29842] Add organization event types for item migration acceptance and rejection by @SaintPatrck in https://github.com/bitwarden/android/pull/6273
+* PM-29827: Move FlightRecorderManager to common data module by @david-livefront in https://github.com/bitwarden/android/pull/6274
+* Move extensions to common module by @david-livefront in https://github.com/bitwarden/android/pull/6276
+* [PM-29911] Update cron jobs to run at midnight on Sundays by @KatherineInCode in https://github.com/bitwarden/android/pull/6280
+* Remove flaky tests by @david-livefront in https://github.com/bitwarden/android/pull/6278
+* [PM-29947] Remove ResetMasterPassword property from token response model by @SaintPatrck in https://github.com/bitwarden/android/pull/6285
+* [PM-29913] ci: Fix release notes fetch failure while creating GitHub Releases by @vvolkgang in https://github.com/bitwarden/android/pull/6282
+* 🍒 [PM-30106] Updated sdk to a version that fixes the password protected export issues (1.0.0-4328-km-fix-cherry-pick) by @aj-rosado in https://github.com/bitwarden/android/pull/6301
+
+## New Contributors
+* @gitclonebrian made their first contribution in https://github.com/bitwarden/android/pull/6171
+* @KatherineInCode made their first contribution in https://github.com/bitwarden/android/pull/6280
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2025.12.0-bwpm...v2025.12.1-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/20584595942
