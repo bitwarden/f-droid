@@ -1,0 +1,66 @@
+# Overview
+* Improved vault organization with bulk sharing and moving items between vaults
+* Fixed vault migration behavior when offline
+* Improved organization-related event logging
+* General bug fixes and stability improvements
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.1-rc45 -->
+
+## What's Changed
+### ✨ Community Highlight
+* [PM-30394] PM-29960: Skip biometric prompt on Xiaomi HyperOS by @Gavin-Guiii in https://github.com/bitwarden/android/pull/6316
+* [PM-30664] Unlock with PIN doesn’t appear as enabled after enabling ‘Require master password on app restart’ by @shamim-emon in https://github.com/bitwarden/android/pull/6344
+### 🚀 New Features & Enhancements
+* PM-31162: Update copy on the snackbar for archive feature by @david-livefront in https://github.com/bitwarden/android/pull/6399
+* PM-29696: Add action card for lapsed premium subscription by @david-livefront in https://github.com/bitwarden/android/pull/6389
+* PM-29693: Add introducing archive action card to vault screen by @david-livefront in https://github.com/bitwarden/android/pull/6390
+### 🐛 Bug fixes
+* 🍒 PM-31363: Fix crash caused by a duplicate ID by @david-livefront in https://github.com/bitwarden/android/pull/6430
+* 🍒 [PM-31446] fix:Append assetlinks.json path to DAL URLs by @SaintPatrck in https://github.com/bitwarden/android/pull/6449
+### ⚙️ Maintenance
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6342
+* Update SDK to 2.0.0-4479-ad9fb51d by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6345
+* [PM-14880] ci: Update feature labels by @vvolkgang in https://github.com/bitwarden/android/pull/6346
+* PM-30708: Add archive item navigation by @david-livefront in https://github.com/bitwarden/android/pull/6348
+* Update SDK to 2.0.0-4498-7681828f by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6350
+* End subtext and end icon support to BitwardenGroupItem by @david-livefront in https://github.com/bitwarden/android/pull/6349
+* Update archive string with noun suffix by @david-livefront in https://github.com/bitwarden/android/pull/6351
+* Remove the unused showDivider flag from BitwardenGroupItem by @david-livefront in https://github.com/bitwarden/android/pull/6353
+* PM-30767: Add archive row to Vault Screen by @david-livefront in https://github.com/bitwarden/android/pull/6354
+* PM-30774: Add archiving and unarchiving network requests by @david-livefront in https://github.com/bitwarden/android/pull/6356
+* Update SDK to 2.0.0-4505-df9bd639 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6355
+* refactor(claude): Refine reviewing-changes skill description for clarity and usage by @SaintPatrck in https://github.com/bitwarden/android/pull/6366
+* [PM-30823] ci: Fix BWA Play Store publishing for rc cherry picks and update upload step names by @vvolkgang in https://github.com/bitwarden/android/pull/6360
+* PM-30795: Update cipher filtering logic for archive by @david-livefront in https://github.com/bitwarden/android/pull/6359
+* Update SDK to 2.0.0-4524-513f18bf by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6361
+* PM-30807: Add archived header to ViewItem Screen by @david-livefront in https://github.com/bitwarden/android/pull/6362
+* PM-29694: Update archive empty state by @david-livefront in https://github.com/bitwarden/android/pull/6369
+* PM-30897: Add archive and unarchive button on Edit Cipher Screen by @david-livefront in https://github.com/bitwarden/android/pull/6372
+* [PM-28471] Migrate individual vault to organization by @aj-rosado in https://github.com/bitwarden/android/pull/6352
+* PM-30868: Archive Banner on Edit Item Screen by @david-livefront in https://github.com/bitwarden/android/pull/6367
+* Move Vault Listing Dialog clicks to VaultItemListingHandlers by @david-livefront in https://github.com/bitwarden/android/pull/6375
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6380
+* PM-29697: Finish View and Edit Cipher UI for archive by @david-livefront in https://github.com/bitwarden/android/pull/6377
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/6382
+* Fix minor typos by @david-livefront in https://github.com/bitwarden/android/pull/6386
+* Update SDK to 2.0.0-4672-b3e4ea24 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6371
+* PM-31042: Add overflow archive button by @david-livefront in https://github.com/bitwarden/android/pull/6385
+* PM-31043: Add unarchive button to overflow menus by @david-livefront in https://github.com/bitwarden/android/pull/6387
+* [PM-28470] Implement revoke from organization by @aj-rosado in https://github.com/bitwarden/android/pull/6383
+* Update SDK to 2.0.0-4676-0544ddec by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6388
+* [PM-14880] ci: Address automated PR labeling workflow feedback by @vvolkgang in https://github.com/bitwarden/android/pull/6400
+* Update to Firebase v34.8.0 by @david-livefront in https://github.com/bitwarden/android/pull/6396
+* [PM-31069] Add OrganizationId support for Vault Migration operations by @aj-rosado in https://github.com/bitwarden/android/pull/6397
+* [PM-28990] Skipping vault migration on Network or Timeout error by @aj-rosado in https://github.com/bitwarden/android/pull/6393
+* [PM-31081] Added snackbar when items are successfully migrated by @aj-rosado in https://github.com/bitwarden/android/pull/6394
+* [PM-30644] Removing special circumstance validation from MigrateToMyItems route by @aj-rosado in https://github.com/bitwarden/android/pull/6358
+* Update to Junit v6.0.2 by @david-livefront in https://github.com/bitwarden/android/pull/6402
+* [PM-30899] Store account keys upon SSO user creation by @SaintPatrck in https://github.com/bitwarden/android/pull/6384
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6412
+
+## New Contributors
+* @Gavin-Guiii made their first contribution in https://github.com/bitwarden/android/pull/6316
+* @shamim-emon made their first contribution in https://github.com/bitwarden/android/pull/6344
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.1.0-bwpm...v2026.1.1-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/21527118876
