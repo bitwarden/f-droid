@@ -5,7 +5,7 @@ go 1.24.8
 require gopkg.in/yaml.v3 v3.0.1
 
 require (
-	github.com/google/go-github/v76 v76.0.0
+	github.com/google/go-github/v82 v82.0.0
 	github.com/hashicorp/go-version v1.8.0
 	github.com/r3labs/diff/v3 v3.0.2
 	golang.org/x/oauth2 v0.34.0
@@ -13,7 +13,7 @@ require (
 )
 
 require (
-	github.com/google/go-querystring v1.1.0 // indirect
+	github.com/google/go-querystring v1.2.0 // indirect
 	github.com/vmihailenco/msgpack/v5 v5.4.1 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
 )
