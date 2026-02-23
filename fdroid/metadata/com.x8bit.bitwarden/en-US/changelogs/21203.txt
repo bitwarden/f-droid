@@ -1,0 +1,76 @@
+# Overview
+* Fixed multiple crashes during account setup and vault use
+* Resolved passkey autofill and registration issues
+* Fixed syncing issue with archived logins and Authenticator
+* Added new Archive feature
+* General stability and usability improvements
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.2-rc46 -->
+
+## What's Changed
+### ✨ Community Highlight
+* [PM-31445] Fix minor KDoc typos and wording issues. by @ruyut in https://github.com/bitwarden/android/pull/6441
+* [PM-31583] Fix typos in authentication-related KDoc comments by @ruyut in https://github.com/bitwarden/android/pull/6461
+* [PM-30259] Add iodéOS browser to community FIDO2 privileged list by @lucasmz-dev in https://github.com/bitwarden/android/pull/6298
+* [PM-31393] Sends: UI/UX inconsistency of the password field by @shamim-emon in https://github.com/bitwarden/android/pull/6435
+### :shipit: Feature Development
+* Optimize build times by @david-livefront in https://github.com/bitwarden/android/pull/6418
+* [BWA-182] Add mTLS support for Glide image loading by @aj-rosado in https://github.com/bitwarden/android/pull/6125
+* Update Google privileged browsers list by @github-actions[bot] in https://github.com/bitwarden/android/pull/6452
+* Update build optimizations by @david-livefront in https://github.com/bitwarden/android/pull/6433
+### 🐛 Bug fixes
+* Remove intialization of NetworkConnectionManager from application class by @david-livefront in https://github.com/bitwarden/android/pull/6419
+* PM-31363: Fix crash caused by a duplicate ID by @david-livefront in https://github.com/bitwarden/android/pull/6428
+* [PM-31446] fix:Append assetlinks.json path to DAL URLs by @SaintPatrck in https://github.com/bitwarden/android/pull/6447
+* [PM-30279] Extract credential provider handling to dedicated activity by @SaintPatrck in https://github.com/bitwarden/android/pull/6472
+* [PM-31775] Refactor popUpToCompleteRegistration to use type-safe KClass reference by @SaintPatrck in https://github.com/bitwarden/android/pull/6480
+* PM-31734: Add archived item filtering for passkeys by @david-livefront in https://github.com/bitwarden/android/pull/6482
+* PM-31735: Add the archivedDate property to the updateCipher API by @david-livefront in https://github.com/bitwarden/android/pull/6483
+### ⚙️ Maintenance
+* [PM-31343] Fix dependencies listed under Maintenance by adding a new fallback section to release.yml by @vvolkgang in https://github.com/bitwarden/android/pull/6420
+* Minor cleanup of the MigrateToMyItemsScreen by @david-livefront in https://github.com/bitwarden/android/pull/6421
+* Item migration flow has been moved into a graph by @david-livefront in https://github.com/bitwarden/android/pull/6427
+* Set cache problem to warning by @david-livefront in https://github.com/bitwarden/android/pull/6436
+* use option to determine if release will be marked latest by @AmyLGalles in https://github.com/bitwarden/android/pull/6417
+* [PM-31292] ci: update renovate config to remove gradle group and ignore sdk updates by @vvolkgang in https://github.com/bitwarden/android/pull/6437
+* [PM-31436] Consolidate Feature categories in release notes and add labels by @vvolkgang in https://github.com/bitwarden/android/pull/6439
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6453
+* Remove the configuration cache to avoid play store build issues by @david-livefront in https://github.com/bitwarden/android/pull/6466
+### 📦 Dependency Updates
+* Update app version name to 2026.2.0 by @david-livefront in https://github.com/bitwarden/android/pull/6409
+* Update the Gradle Wrapper to the latest version by @david-livefront in https://github.com/bitwarden/android/pull/6405
+* Update Sonarqube to v7.2.2.6593 by @david-livefront in https://github.com/bitwarden/android/pull/6406
+* Update the Compose BOM to v2026.01.00 by @david-livefront in https://github.com/bitwarden/android/pull/6401
+* Update protobufs to v4.33.4 by @david-livefront in https://github.com/bitwarden/android/pull/6414
+* Update testing tools by @david-livefront in https://github.com/bitwarden/android/pull/6407
+* GradlewWrapper updates by @david-livefront in https://github.com/bitwarden/android/pull/6415
+* Update Kotlin and associated dependencies by @david-livefront in https://github.com/bitwarden/android/pull/6408
+* Update SDK to 2.0.0-4772-490c1be4 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6395
+* Update SDK to 2.0.0-4800-bed92cae by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6431
+* Update SDK to 2.0.0-4818-c1e4bb66 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6444
+* Update SDK to 2.0.0-4835-5285d3fc by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6446
+* Update Androidx dependencies by @david-livefront in https://github.com/bitwarden/android/pull/6467
+* [deps]: Update androidx.credentials:credentials to v1.6.0-rc01 by @renovate[bot] in https://github.com/bitwarden/android/pull/6455
+* Update test tools by @david-livefront in https://github.com/bitwarden/android/pull/6468
+* Update SDK to 2.0.0-4872-065ef30b by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6464
+* Update protobuf to v4.33.5 by @david-livefront in https://github.com/bitwarden/android/pull/6478
+### 🎨 Other
+* Cleanup organizations by @david-livefront in https://github.com/bitwarden/android/pull/6391
+* [PM-31370] Refactor stringToUri and consolidate FileManager by @SaintPatrck in https://github.com/bitwarden/android/pull/6432
+* Add comprehensive tests for Import Parsers and UuidManager by @SaintPatrck in https://github.com/bitwarden/android/pull/6423
+* Add comprehensive tests for AuthenticatorRepositoryImpl by @SaintPatrck in https://github.com/bitwarden/android/pull/6424
+* Add comprehensive tests for ExportViewModel by @SaintPatrck in https://github.com/bitwarden/android/pull/6442
+* Add comprehensive tests for FileManagerImpl by @SaintPatrck in https://github.com/bitwarden/android/pull/6425
+* PM-31603: Add toast when resetpassword succeeds by @david-livefront in https://github.com/bitwarden/android/pull/6465
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/6460
+* Add Android testing skill for Claude by @SaintPatrck in https://github.com/bitwarden/android/pull/6370
+* Add comprehensive tests for Unlock feature by @SaintPatrck in https://github.com/bitwarden/android/pull/6426
+* [PM-31613] Add send email verification feature flag by @aj-rosado in https://github.com/bitwarden/android/pull/6470
+* PM-31656, PM-31658, PM-31659: Address Archive feature bugs by @david-livefront in https://github.com/bitwarden/android/pull/6473
+* Configure Claude to use the Bitwarden marketplace by @SaintPatrck in https://github.com/bitwarden/android/pull/6484
+
+## New Contributors
+* @ruyut made their first contribution in https://github.com/bitwarden/android/pull/6441
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.1.1-bwpm...v2026.2.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/21762978463
