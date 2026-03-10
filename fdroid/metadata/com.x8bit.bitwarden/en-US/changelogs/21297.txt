@@ -1,0 +1,86 @@
+# Overview
+* Improved browser compatibility and autofill behavior
+* Fixed export, archiving, and item editing bugs
+* Resolved issues with passphrase generation and date handling
+* Improved accessibility and interface elements
+* Enhanced stability, compatibility, and network request handling
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.2-rc47 -->
+
+## What's Changed
+### ✨ Community Highlight
+* [PM-31980] Fix passkeys on some browsers by fixing JSON parsing by @Darkness4 in https://github.com/bitwarden/android/pull/6502
+* [PM-22523] PM-19476: Allow empty string as word separator by @EranBoudjnah in https://github.com/bitwarden/android/pull/5334
+* [PM-32022] Fix browser autofill dialog showing for non-default browsers by @Vateva in https://github.com/bitwarden/android/pull/6514
+* [PM-32356] Fix: Use soft logout for token refresh failures to preserve account by @hwittenborn in https://github.com/bitwarden/android/pull/6545
+### :shipit: Feature Development
+* Update AGP to v9.0.0 by @david-livefront in https://github.com/bitwarden/android/pull/6479
+* PM-31926: Add Autofill reminder for Vivaldi browser by @david-livefront in https://github.com/bitwarden/android/pull/6494
+* [PM-31982] Add CookieDiskSource for cookie persistence by @SaintPatrck in https://github.com/bitwarden/android/pull/6504
+* [PM-31993] Add deep link utilities for cookie vendor callbacks by @SaintPatrck in https://github.com/bitwarden/android/pull/6506
+* [PM-31993] Add cookie vendor deep link intent filter by @SaintPatrck in https://github.com/bitwarden/android/pull/6507
+* [PM-32011] Add cookie callback flow to AuthRepository by @SaintPatrck in https://github.com/bitwarden/android/pull/6510
+* PM-31922: Remove deprecated Android block where possible by @david-livefront in https://github.com/bitwarden/android/pull/6512
+* [PM-31615] feat: Updated Send network models to support email verification by @aj-rosado in https://github.com/bitwarden/android/pull/6519
+* [PM-31614] feat: Added new UI for the Email verification on sends by @aj-rosado in https://github.com/bitwarden/android/pull/6488
+* Update Google privileged browsers list by @github-actions[bot] in https://github.com/bitwarden/android/pull/6538
+* [PM-31835] feat: add generator copy password field on send by @aj-rosado in https://github.com/bitwarden/android/pull/6508
+### 🐛 Bug fixes
+* PM-31888: Update the ZonedDateTimeSerializer to be more lenient when deserializing by @david-livefront in https://github.com/bitwarden/android/pull/6489
+* [PM-30870] Fix editing blocked autofill URIs   by @andrebispo5 in https://github.com/bitwarden/android/pull/6532
+* PM-32354: Filter out archived items from CXP by @david-livefront in https://github.com/bitwarden/android/pull/6547
+* PM-32353: Archive and Unarchive buttons should honor MP reprompt by @david-livefront in https://github.com/bitwarden/android/pull/6546
+* 🍒 PM-32607: Label headers for accesibility by @david-livefront in https://github.com/bitwarden/android/pull/6578
+* 🍒 [PM-32802] fix: 400 error when archiving/unarchiving org-owned ciphers by @SaintPatrck in https://github.com/bitwarden/android/pull/6596
+### ⚙️ Maintenance
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6491
+* PM-31924: Remove the 'android.dependency.useConstraints' gradle property by @david-livefront in https://github.com/bitwarden/android/pull/6509
+* Slim down and align with our current practices by @theMickster in https://github.com/bitwarden/android/pull/6518
+* [PM-32251] Decouple SDK token repository from network module by @SaintPatrck in https://github.com/bitwarden/android/pull/6537
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6539
+* Clean up ColorExtensions tests by @david-livefront in https://github.com/bitwarden/android/pull/6551
+* [PM-32200] ci: Add workflow to enforce PR labels by @vvolkgang in https://github.com/bitwarden/android/pull/6530
+### 📦 Dependency Updates
+* Update SDK to 2.0.0-5002-7f4059e7 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6481
+* Update Firebase BOM to v34.9.0 by @david-livefront in https://github.com/bitwarden/android/pull/6493
+* Update the gradlew Wrapper to v9.3.1 by @david-livefront in https://github.com/bitwarden/android/pull/6496
+* Update to Kotlin v2.3.10 by @david-livefront in https://github.com/bitwarden/android/pull/6499
+* Update SDK to 2.0.0-5021-f954d14b by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6495
+* Update SDK to 2.0.0-5046-d59280a3 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6511
+* Update Kover to v0.9.7 by @david-livefront in https://github.com/bitwarden/android/pull/6516
+* Update SDK to 2.0.0-5064-8700dc73 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6513
+* Update SDK to 2.0.0-5087-3e8a45eb by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6521
+* Update SDK to 2.0.0-5131-c0c3ee5f by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6531
+* Update Anroidx dependencies by @david-livefront in https://github.com/bitwarden/android/pull/6536
+* [deps]: Update com.google.devtools.ksp to v2.3.5 by @renovate[bot] in https://github.com/bitwarden/android/pull/6541
+* Update SDK to 2.0.0-5210-4ffddfe5 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6533
+* Update AGP to v9.0.1 by @david-livefront in https://github.com/bitwarden/android/pull/6543
+* [PM-30703] Introduce CXF payload parser and update to alpha05 by @SaintPatrck in https://github.com/bitwarden/android/pull/6347
+### 🎨 Other
+* PM-31927: Pre-emptively patch Brave browser Autofill bug by @david-livefront in https://github.com/bitwarden/android/pull/6497
+* [PM-31954] Add server communication models to ConfigResponseJson by @SaintPatrck in https://github.com/bitwarden/android/pull/6500
+* PM-31953: Support multiple schemes for Duo, WebAuthn, and SSO callbacks by @david-livefront in https://github.com/bitwarden/android/pull/6498
+* [PM-80371] Enhance CLAUDE.md using bitwarden-init plugin by @SaintPatrck in https://github.com/bitwarden/android/pull/6368
+* PM-31925: Replace 'android' reference with logic in LibraryExtension by @david-livefront in https://github.com/bitwarden/android/pull/6520
+* [PM-32029] Implement SDK interfaces for cookie management by @SaintPatrck in https://github.com/bitwarden/android/pull/6517
+* PM-32146: Add back 'parent' param to webAuthn url by @david-livefront in https://github.com/bitwarden/android/pull/6527
+* PM-31664: Add new SnackbarRelay type specific for the View Screen by @david-livefront in https://github.com/bitwarden/android/pull/6528
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/6542
+* PM-32252: Update View Item date information layout by @david-livefront in https://github.com/bitwarden/android/pull/6544
+* [PM-29885] Implement SSO cookie vending authentication flow by @SaintPatrck in https://github.com/bitwarden/android/pull/6522
+* [PM-32121] Add CookieAcquisition screen and ViewModel by @SaintPatrck in https://github.com/bitwarden/android/pull/6523
+* Update RootNavScreen docs by @SaintPatrck in https://github.com/bitwarden/android/pull/6553
+* [PM-32122] Add cookie acquisition navigation by @SaintPatrck in https://github.com/bitwarden/android/pull/6529
+* [PM-32149] Send email verification error dialogs by @aj-rosado in https://github.com/bitwarden/android/pull/6535
+* PM-29863: Update segmented control font by @david-livefront in https://github.com/bitwarden/android/pull/6555
+* [PM-31810] Added logic to gate Send auth verification behind premium by @aj-rosado in https://github.com/bitwarden/android/pull/6556
+* Fix incorrect apostrophe by @david-livefront in https://github.com/bitwarden/android/pull/6557
+
+## New Contributors
+* @Darkness4 made their first contribution in https://github.com/bitwarden/android/pull/6502
+* @EranBoudjnah made their first contribution in https://github.com/bitwarden/android/pull/5334
+* @Vateva made their first contribution in https://github.com/bitwarden/android/pull/6514
+* @hwittenborn made their first contribution in https://github.com/bitwarden/android/pull/6545
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.2.0-bwpm...v2026.2.1-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/22503857145
