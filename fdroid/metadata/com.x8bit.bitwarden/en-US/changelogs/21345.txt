@@ -1,0 +1,71 @@
+# Overview
+What's New
+* Trusted browsers now support related origins for passkey sign-in
+Improvements
+* Improved account protection when session tokens expire
+* Passphrase generator no longer inserts unwanted spaces when no separator is configured
+* Long organization names no longer overflow the item owner selection screen
+Bug Fixes
+* Fixed error when archiving or unarchiving an item
+* Improved TalkBack accessibility: focus order, heading navigation, notification badge announcements, and duplicate button label fixes
+* Character type toggles (A-Z, a-z, 0-9, symbols) no longer read twice with TalkBack
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.3-rc48 -->
+
+## What's Changed
+### :shipit: Feature Development
+* BWA-235: Update Authenticator to use state-based navigation for top-level navigation by @david-livefront in https://github.com/bitwarden/android/pull/6586
+* [PM-32714] Add cookie domain-suffix resolution and fix cloud config path exclusion by @SaintPatrck in https://github.com/bitwarden/android/pull/6589
+* Add Authenticator app-lock timeout by @david-livefront in https://github.com/bitwarden/android/pull/6609
+* 🍒[PM-33262] feat: Add cookie support to Glide image requests by @SaintPatrck in https://github.com/bitwarden/android/pull/6630
+* 🍒[PM-32123] feat: Propagate informative cookie redirect error message by @SaintPatrck in https://github.com/bitwarden/android/pull/6631
+* 🍒[PM-33227] feat: Add Clear SSO Cookies button to debug menu by @SaintPatrck in https://github.com/bitwarden/android/pull/6632
+### 🐛 Bug fixes
+* PM-30892: Fix radio button spacing by @david-livefront in https://github.com/bitwarden/android/pull/6559
+* PM-29866: Remove redundant content description in icon buttons by @david-livefront in https://github.com/bitwarden/android/pull/6565
+* PM-29871: Add external links announcements by @david-livefront in https://github.com/bitwarden/android/pull/6566
+* PM-32607: Label headers for accesibility by @david-livefront in https://github.com/bitwarden/android/pull/6567
+* PM-29867: Fix notifications announcement by @david-livefront in https://github.com/bitwarden/android/pull/6570
+* [PM-30916] bug: Create passkey myitems by @andrebispo5 in https://github.com/bitwarden/android/pull/6558
+* PM-31772: Simplify origin for verified sources by @david-livefront in https://github.com/bitwarden/android/pull/6577
+* PM-29870: Add explicit traversal order for scaffold by @david-livefront in https://github.com/bitwarden/android/pull/6580
+* [PM-32802] fix: 400 error when archiving/unarchiving org-owned ciphers by @SaintPatrck in https://github.com/bitwarden/android/pull/6592
+* PM-33112: Avoid double announcement of BitwardenSwitch content description by @david-livefront in https://github.com/bitwarden/android/pull/6611
+* 🍒[PM-33394] fix: Propagate CookieRedirectException error message by @SaintPatrck in https://github.com/bitwarden/android/pull/6640
+* 🍒[PM-33394] fix: Surface CookieRedirectException message during sync-on-unlock by @SaintPatrck in https://github.com/bitwarden/android/pull/6645
+### ⚙️ Maintenance
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6561
+* Remove unnecessary opt-in annotations by @david-livefront in https://github.com/bitwarden/android/pull/6581
+* [PM-32758] ci: Improve CI cache to fix GitHub runners running out of memory by @vvolkgang in https://github.com/bitwarden/android/pull/6583
+* [PM-32751] ci: Fix version name output in run summary by @vvolkgang in https://github.com/bitwarden/android/pull/6585
+* Replace test workflow with sharded parallel CI execution by @SaintPatrck in https://github.com/bitwarden/android/pull/6582
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6600
+* Move FakeLifecycle to core module by @david-livefront in https://github.com/bitwarden/android/pull/6608
+* Move the AppStateManager to the data module by @david-livefront in https://github.com/bitwarden/android/pull/6593
+* Remove Gitter chat badge from README by @djsmith85 in https://github.com/bitwarden/android/pull/6612
+* 🍒[PM-33394] debt: Add userFriendlyMessage extension and errorMessage to result types by @SaintPatrck in https://github.com/bitwarden/android/pull/6644
+### 📦 Dependency Updates
+* Update SDK to 2.0.0-5302-1693d4d4 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6549
+* Update SDK to 2.0.0-5335-7a22aa7f by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6562
+* Update SDK to 2.0.0-5422-26e2b107 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6569
+* Update SDK to 2.0.0-5425-a6f4a233 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6595
+* [deps]: Update org.junit:junit-bom to v6.0.3 by @renovate[bot] in https://github.com/bitwarden/android/pull/6603
+* [deps]: Update com.google.devtools.ksp to v2.3.6 by @renovate[bot] in https://github.com/bitwarden/android/pull/6601
+* [deps]: Update hilt to v2.59.2 by @renovate[bot] in https://github.com/bitwarden/android/pull/6602
+* Update Firebase BOM by @david-livefront in https://github.com/bitwarden/android/pull/6606
+* Update Compose to 2026.02.01 by @david-livefront in https://github.com/bitwarden/android/pull/6607
+### 🎨 Other
+* Replace ZonedDateTime with Instant by @david-livefront in https://github.com/bitwarden/android/pull/6554
+* Add implementing-android-code skill and deduplicate CLAUDE.md by @SaintPatrck in https://github.com/bitwarden/android/pull/6534
+* [PM-32566] Refactor cookie acquisition ViewModel and simplify tests by @SaintPatrck in https://github.com/bitwarden/android/pull/6564
+* [PM-32655] Extract troubleshooting guide into docs/TROUBLESHOOTING.md by @SaintPatrck in https://github.com/bitwarden/android/pull/6571
+* [PM-32780] Disable Claude Code attribution in commits and PRs by @SaintPatrck in https://github.com/bitwarden/android/pull/6588
+* [PM-32656] Fix implementing-android-code skill annotations and formatting by @SaintPatrck in https://github.com/bitwarden/android/pull/6572
+* [PM-32657] Add build-test-verify skill and extract build/test/deploy sections by @SaintPatrck in https://github.com/bitwarden/android/pull/6573
+* [PM-32658] Add skill routing to CLAUDE.md Quick Reference by @SaintPatrck in https://github.com/bitwarden/android/pull/6574
+* [PM-21659] llm: Add workflow skills and finalize CLAUDE.md restructuring by @SaintPatrck in https://github.com/bitwarden/android/pull/6575
+* llm: Add plan-android-work command and planning skills by @SaintPatrck in https://github.com/bitwarden/android/pull/6597
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.2.1-bwpm...v2026.3.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/23011287575
