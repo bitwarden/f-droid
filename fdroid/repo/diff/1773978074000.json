@@ -1,0 +1,14 @@
+{
+  "repo": {
+    "timestamp": 1773978077000
+  },
+  "packages": {
+    "com.x8bit.bitwarden": {
+      "versions": {
+        "77bc93b28caf1ef9fc1054ba0d15502c36a2370bf7fc9fb26b60892e0cc9245f": {
+          "releaseChannels": null
+        }
+      }
+    }
+  }
+}
