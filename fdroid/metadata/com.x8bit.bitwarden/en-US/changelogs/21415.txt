@@ -1,0 +1,101 @@
+# Overview
+What's New
+* Policy changes apply instantly, no manual sync needed
+* Clear archived items directly from your vault
+Improvements
+* Clearer menu labels and in-app prompts
+* Better screen reader labels and icon contrast
+* Passphrase generator and password history fixes
+Bug Fixes
+* Fixed crashes related to autofill, navigation, and screen loading
+* Fixed duplicate items after TOTP QR code scans
+* Fixed passkey creation failing for certain apps
+* Fixed verification codes not syncing
+* Org transfer decline no longer creates a blank log entry
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.3-rc49 -->
+
+## What's Changed
+### :shipit: Feature Development
+* Remove remember ViewModel by @david-livefront in https://github.com/bitwarden/android/pull/6618
+* [PM-33262] feat: Add cookie support to Glide image requests by @SaintPatrck in https://github.com/bitwarden/android/pull/6627
+* [PM-32123] feat: Propagate informative cookie redirect error message by @SaintPatrck in https://github.com/bitwarden/android/pull/6622
+* [PM-33227] feat: Add Clear SSO Cookies button to debug menu by @SaintPatrck in https://github.com/bitwarden/android/pull/6620
+* PM-18596: feat: SSN field should be hidden by default by @david-livefront in https://github.com/bitwarden/android/pull/6628
+* [PM-29673] feat: Improved pre-polutated data on the FlightRecorder logs by @aj-rosado in https://github.com/bitwarden/android/pull/6616
+* [PM-33505] feat: Add MobilePremiumUpgrade feature flag by @SaintPatrck in https://github.com/bitwarden/android/pull/6655
+* [PM-33507] feat: Add premium upgrade banner dismissal persistence by @SaintPatrck in https://github.com/bitwarden/android/pull/6657
+* [PM-33506] feat: Add PremiumStatusChanged push notification support by @SaintPatrck in https://github.com/bitwarden/android/pull/6656
+* PM-33565: Update premium dialog for attachments by @david-livefront in https://github.com/bitwarden/android/pull/6663
+* [PM-33511] feat: Add creationDate to UserState.Account by @SaintPatrck in https://github.com/bitwarden/android/pull/6662
+* [PM-32663] feat: Update vault migration screens by @aj-rosado in https://github.com/bitwarden/android/pull/6660
+* [PM-33356] feat: Sync when push notification policy changed is received by @andrebispo5 in https://github.com/bitwarden/android/pull/6664
+* [PM-33365] feat: Add GmsManager to gate CXP features on GMS Core version by @SaintPatrck in https://github.com/bitwarden/android/pull/6678
+* [PM-33508] feat: Add AuthenticatedBillingApi and BillingService network layer by @SaintPatrck in https://github.com/bitwarden/android/pull/6668
+* [PM-33509] feat: Add BillingRepository and Hilt billing modules by @SaintPatrck in https://github.com/bitwarden/android/pull/6674
+* [PM-33510] feat: Add Play Billing Library dependency and PlayBillingManager by @SaintPatrck in https://github.com/bitwarden/android/pull/6680
+* [PM-33512] feat: Add PremiumStateManager for upgrade banner eligibility by @SaintPatrck in https://github.com/bitwarden/android/pull/6690
+* [PM-33513] feat: Add checkout callback deep link handling by @SaintPatrck in https://github.com/bitwarden/android/pull/6692
+* [PM-33514] feat: Add premium upgrade banner visibility logic by @SaintPatrck in https://github.com/bitwarden/android/pull/6696
+### 🐛 Bug fixes
+* PM-33266: Allow the VaultUnlockViewModel and VaultViewModel to safely initialize without a UserState by @david-livefront in https://github.com/bitwarden/android/pull/6623
+* PM-29871: Add additional callouts for external links in the app by @david-livefront in https://github.com/bitwarden/android/pull/6614
+* PM-29861: Update overflow content description to 'More options' by @david-livefront in https://github.com/bitwarden/android/pull/6621
+* PM-29871: bug: Add external link callouts by @david-livefront in https://github.com/bitwarden/android/pull/6634
+* [PM-33394] fix: Propagate CookieRedirectException error message by @SaintPatrck in https://github.com/bitwarden/android/pull/6639
+* PM-33411: bug: Defer early navigation until lifecycle is resumed by @david-livefront in https://github.com/bitwarden/android/pull/6638
+* PM-33428: bug: Fix loading dialog statusbar content color by @david-livefront in https://github.com/bitwarden/android/pull/6641
+* [PM-33394] fix: Surface CookieRedirectException message during sync-on-unlock by @SaintPatrck in https://github.com/bitwarden/android/pull/6643
+* PM-33441: bug: Add external link callout for start registration screen by @david-livefront in https://github.com/bitwarden/android/pull/6646
+* PM-29869: bug: Update colorscheme to improve accessibility by @david-livefront in https://github.com/bitwarden/android/pull/6647
+* PM-29871: bug: Add external link callouts for buttons by @david-livefront in https://github.com/bitwarden/android/pull/6648
+* [PM-33553] fix: Remove "Why am I seeing this?" link from cookie sync screen by @SaintPatrck in https://github.com/bitwarden/android/pull/6676
+* PM-33893: bug: Crash caused by empty credential password by @david-livefront in https://github.com/bitwarden/android/pull/6693
+* PM-33907: bug: Handle exceptions thrown when querying the AutofillManager by @david-livefront in https://github.com/bitwarden/android/pull/6695
+* PM-33909: bug: Check the column index before querying for 3rd party autofill data by @david-livefront in https://github.com/bitwarden/android/pull/6697
+* PM-33913: bug: Remove org event to avoid duplicate entry by @david-livefront in https://github.com/bitwarden/android/pull/6699
+* PM-32721: bug: Add sorting to password history by @david-livefront in https://github.com/bitwarden/android/pull/6700
+* [PM-23560] bug: Added guard to ensure duplicate scan events are not fired by @aj-rosado in https://github.com/bitwarden/android/pull/6687
+* PM-34193: Rollback SDK update for Vault lockout bug by @david-livefront in https://github.com/bitwarden/android/pull/6724
+* PM-34193: bug: Unlock vault from Never-Lock should be on io thread by @david-livefront in https://github.com/bitwarden/android/pull/6727
+### ⚙️ Maintenance
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6625
+* PM-26059: Remove CipherKeyEncryption feature flag by @david-livefront in https://github.com/bitwarden/android/pull/6617
+* docs: Clean up kdoc issues by @david-livefront in https://github.com/bitwarden/android/pull/6629
+* [PM-33394] debt: Add userFriendlyMessage extension and errorMessage to result types by @SaintPatrck in https://github.com/bitwarden/android/pull/6642
+* [PM-33495] ci: Remove build job to reduce Build workflows time by @vvolkgang in https://github.com/bitwarden/android/pull/6658
+* Update error state to allow for a more customizable button by @david-livefront in https://github.com/bitwarden/android/pull/6654
+* [PM-33560] debt: Wire SendManager and Send ViewModel error handlers by @SaintPatrck in https://github.com/bitwarden/android/pull/6652
+* [PM-33394] debt: Wire FolderManager and folder ViewModel error handlers by @SaintPatrck in https://github.com/bitwarden/android/pull/6653
+* [PM-33561] debt: Wire CipherManager and cipher ViewModel error handlers by @SaintPatrck in https://github.com/bitwarden/android/pull/6651
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6669
+* [deps]: Update actions/upload-artifact action to v7 by @renovate[bot] in https://github.com/bitwarden/android/pull/6672
+* [PM-18892] ci: Comment linked issues when a new GitHub Release is published by @vvolkgang in https://github.com/bitwarden/android/pull/6552
+* misc: Add support for icons in buttons via BitwardenButtonData by @david-livefront in https://github.com/bitwarden/android/pull/6682
+* misc: Add an error message to the DownloadAttachmentResult by @david-livefront in https://github.com/bitwarden/android/pull/6688
+* misc: Rename the VaultDiskSource Flows by @david-livefront in https://github.com/bitwarden/android/pull/6689
+* chore: Reorganize imports in VaultViewModel by @SaintPatrck in https://github.com/bitwarden/android/pull/6701
+* chore: Remove unused how_to_manage_my_vault string by @david-livefront in https://github.com/bitwarden/android/pull/6702
+### 📦 Dependency Updates
+* Update SDK to 2.0.0-5451-c73f9161 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6605
+* Update AGP and gradle wrapper by @david-livefront in https://github.com/bitwarden/android/pull/6619
+* Update protobuf library by @david-livefront in https://github.com/bitwarden/android/pull/6626
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/6604
+* [deps]: Update androidx.credentials:credentials to v1.6.0-rc02 by @renovate[bot] in https://github.com/bitwarden/android/pull/6670
+* [deps]: Update org.sonarqube to v7.2.3.7755 by @renovate[bot] in https://github.com/bitwarden/android/pull/6671
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/6673
+* Update SDK to 2.0.0-5676-14521973 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6615
+* Revert "Update SDK to 2.0.0-5676-14521973" by @SaintPatrck in https://github.com/bitwarden/android/pull/6679
+* Update Androidx dependencies by @david-livefront in https://github.com/bitwarden/android/pull/6683
+* PM-33160: Instantiate SDK client with Repositories class by @david-livefront in https://github.com/bitwarden/android/pull/6681
+* Update app to use the latest version of Kotlin by @david-livefront in https://github.com/bitwarden/android/pull/6684
+* Revert "PM-34193: Rollback SDK update for Vault lockout bug" by @david-livefront in https://github.com/bitwarden/android/pull/6725
+### 🎨 Other
+* [PM-33478] llm: Add android-implementer agent for autonomous development workflow by @SaintPatrck in https://github.com/bitwarden/android/pull/6635
+* llm: Capture test failures on first run in build-test-verify skill by @SaintPatrck in https://github.com/bitwarden/android/pull/6661
+* llm: Clarify @Suppress("MaxLineLength") usage in testing skill by @SaintPatrck in https://github.com/bitwarden/android/pull/6685
+* llm: Add /review-android command and align reviewing-changes skill with agent by @SaintPatrck in https://github.com/bitwarden/android/pull/6665
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.3.0-bwpm...v2026.3.1-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/23660459640
