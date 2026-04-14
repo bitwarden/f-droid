@@ -1,4 +1,4 @@
-# Workflow to generate an Android app repository on F-Droidfrom the apps listing. 
+# Workflow to generate an Android app repository on F-Droid from the apps listing. 
 # This workflow is triggered by a schedule or manually via workflow_dispatch.
 
 name: Generate F-Droid app repository
