@@ -1,0 +1,57 @@
+# Overview
+What's New
+* Preview image attachments before downloading
+Improvements
+* TOTP codes now align consistently for easier reading
+Bug Fixes
+* Fixed crash during autofill with special characters in URIs
+* Fixed passphrase generator incorrectly adding spaces as separators
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.4-rc50 -->
+
+## What's Changed
+### ✨ Community Highlight
+* PM-25654: feat: Preview attachment by @david-livefront in https://github.com/bitwarden/android/pull/6675
+* [PM-34168] Add future CalyxOS Chromium key to FIDO2 privilege community list by @lucasmz-dev in https://github.com/bitwarden/android/pull/6723
+### :shipit: Feature Development
+* [PM-33515] feat: Render premium upgrade banner in Vault UI by @SaintPatrck in https://github.com/bitwarden/android/pull/6698
+* PM-34042: feat: Preview attachments from AttachmentsScreen by @david-livefront in https://github.com/bitwarden/android/pull/6712
+* [PM-33516] feat: Create PlanScreen, PlanViewModel, and modal navigation by @SaintPatrck in https://github.com/bitwarden/android/pull/6715
+* PM-34228: feat: Add feature flag for forthcoming attachment updates by @david-livefront in https://github.com/bitwarden/android/pull/6739
+* PM-34231: feat: Support renaming attachments during creation by @david-livefront in https://github.com/bitwarden/android/pull/6742
+### 🐛 Bug fixes
+* PM-29871: bug: Add more accessibility callouts for external links by @david-livefront in https://github.com/bitwarden/android/pull/6708
+* PM-32721: bug: Sort password history before persisting by @david-livefront in https://github.com/bitwarden/android/pull/6709
+* BWA-238: bug: Send additional cipher data for Authenticator Sync by @david-livefront in https://github.com/bitwarden/android/pull/6714
+* PM-34115: bug: Consistent visual length of TOTP codes by @david-livefront in https://github.com/bitwarden/android/pull/6716
+* PM-34193: bug: Unlock vault from Never-Lock should be on io thread by @david-livefront in https://github.com/bitwarden/android/pull/6728
+* BWA-224: bug: Add sort order for Authenticator items by @david-livefront in https://github.com/bitwarden/android/pull/6740
+* BWA-228: bug: Update identity custom field keys to use index by @david-livefront in https://github.com/bitwarden/android/pull/6743
+* PM-29763: bug: Handle invalid URI crash by @david-livefront in https://github.com/bitwarden/android/pull/6748
+* PM-34499: bug: Add appropriate external link callouts for attachments by @david-livefront in https://github.com/bitwarden/android/pull/6752
+* PM-34498: bug: Update attachments premium dialogs by @david-livefront in https://github.com/bitwarden/android/pull/6753
+* PM-34544: bug: Handle large attachments in preview by @david-livefront in https://github.com/bitwarden/android/pull/6757
+### ⚙️ Maintenance
+* misc: Update BitwardenButtonData for more usability by @david-livefront in https://github.com/bitwarden/android/pull/6704
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6705
+* [PM-33999] chore: Standardize casing of Premium account status references by @SaintPatrck in https://github.com/bitwarden/android/pull/6707
+* chore: Implement Folder Repo interface for Bitwarden SDK by @david-livefront in https://github.com/bitwarden/android/pull/6691
+* chore: Update RootNavScreen to enforce state-based navigation by @david-livefront in https://github.com/bitwarden/android/pull/6713
+* chore: Update UI lists to ImmutableLists by @david-livefront in https://github.com/bitwarden/android/pull/6718
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6731
+* chore: Update AttachmentsState to use immutable list by @david-livefront in https://github.com/bitwarden/android/pull/6741
+* [deps]: Update actions/create-github-app-token action to v3 by @renovate[bot] in https://github.com/bitwarden/android/pull/6737
+* chore: Create common UI elements for VaultItemScreen by @david-livefront in https://github.com/bitwarden/android/pull/6746
+* chore: Attachment UI tweaks by @david-livefront in https://github.com/bitwarden/android/pull/6749
+### 📦 Dependency Updates
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/6738
+* [deps]: Update com.google.firebase:firebase-bom to v34.11.0 by @renovate[bot] in https://github.com/bitwarden/android/pull/6736
+### 🎨 Other
+* [PM-33941] llm: Refine skills and commands for agent reliability by @SaintPatrck in https://github.com/bitwarden/android/pull/6703
+* [PM-34107] llm: Add android-architect agent by @SaintPatrck in https://github.com/bitwarden/android/pull/6686
+* llm: Add test constants placement rule to testing skill by @SaintPatrck in https://github.com/bitwarden/android/pull/6726
+* llm: Add AI review label prompt to PR creation skill by @SaintPatrck in https://github.com/bitwarden/android/pull/6729
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.3.1-bwpm...v2026.4.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/23952219208
