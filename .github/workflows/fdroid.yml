@@ -130,9 +130,41 @@ jobs:
           fi
         continue-on-error: true
 
-      - name: Delete F-Droid server config
+      - name: Truncate F-Droid changelogs
+        if: ${{ steps.run-metascoop.outputs.has_changes == 'true' }}
         run: |
-          rm -f fdroid/config.yml
+          # F-Droid limits changelog/"What's New" text to 500 characters.
+          # Metascoop pulls release notes from upstream GitHub Releases, which
+          # can exceed this — truncate any oversized files before fdroid update.
+          MAX_LENGTH=500
+          shopt -s nullglob globstar
+
+          truncated_count=0
+          for file in fdroid/repo/**/changelogs/*.txt fdroid/metadata/**/changelogs/*.txt; do
+            [ -f "$file" ] || continue
+            char_count=$(python3 -c "import sys; print(len(open(sys.argv[1], encoding='utf-8').read()))" "$file")
+            if [ "$char_count" -gt "$MAX_LENGTH" ]; then
+              echo "Truncating $file ($char_count -> $MAX_LENGTH chars)"
+              python3 - "$file" "$MAX_LENGTH" <<'EOF'
+          import sys
+          path, max_len = sys.argv[1], int(sys.argv[2])
+          text = open(path, encoding='utf-8').read()
+          cutoff = max_len - 1  # leave room for ellipsis
+          truncated = text[:cutoff]
+          last_space = truncated.rfind(' ')
+          if last_space > cutoff - 50:
+              truncated = truncated[:last_space]
+          truncated = truncated.rstrip() + '…'
+          open(path, 'w', encoding='utf-8').write(truncated)
+          EOF
+              truncated_count=$((truncated_count + 1))
+            fi
+          done
+          echo "Truncated $truncated_count changelog file(s)"
+
+            - name: Delete F-Droid server config
+              run: |
+                rm -f fdroid/config.yml
 
       - name: Update repo
         env:
