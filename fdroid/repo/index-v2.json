@@ -23,7 +23,7 @@
         "url": "https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo"
       }
     ],
-    "timestamp": 1776657607000,
+    "timestamp": 1778280678000,
     "categories": {
       "Security": {
         "name": {
@@ -39,7 +39,7 @@
         "categories": [
           "Security"
         ],
-        "lastUpdated": 1776657604000,
+        "lastUpdated": 1778280674000,
         "license": "GPL-3.0",
         "sourceCode": "https://github.com/bitwarden/android",
         "featureGraphic": {
@@ -70,7 +70,7 @@
       },
       "versions": {
         "786cfad23c2be2a84484e525a6022e2dee5931e8e01b7970bd31c3c16e49c8fb": {
-          "added": 1776657604000,
+          "added": 1778280674000,
           "file": {
             "name": "/bitwarden_v2026.4.0-bwpm.apk",
             "sha256": "786cfad23c2be2a84484e525a6022e2dee5931e8e01b7970bd31c3c16e49c8fb",
