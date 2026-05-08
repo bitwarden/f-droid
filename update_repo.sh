@@ -46,11 +46,19 @@ while IFS= read -r line; do
     else
         # Added or modified file — create a blob
         CONTENT=$(base64 -w 0 "$FILE")
-        BLOB_SHA=$(gh api "repos/${REPO}/git/blobs" \
-            --method POST \
-            --field encoding=base64 \
-            --field content="$CONTENT" \
-            --jq '.sha')
+        # BLOB_SHA=$(gh api "repos/${REPO}/git/blobs" \
+        #     --method POST \
+        #     --field encoding=base64 \
+        #     --field content="$CONTENT" \
+        #     --jq '.sha')
+        # Added or modified file — create a blob via the API.
+        # Stream content via stdin to avoid ARG_MAX on large files (entry.jar etc).
+        BLOB_SHA=$(base64 -w 0 "$FILE" \
+            | jq -Rs '{encoding: "base64", content: rtrimstr("\n")}' \
+            | gh api "repos/${REPO}/git/blobs" \
+                --method POST \
+                --input - \
+                --jq '.sha')
         TREE_ENTRIES=$(echo "$TREE_ENTRIES" | jq \
             --arg path "$FILE" \
             --arg sha "$BLOB_SHA" \
