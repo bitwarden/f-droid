@@ -45,7 +45,7 @@ while IFS= read -r line; do
             '. + [{"path": $path, "mode": "100644", "type": "blob", "sha": null}]')
     else
         # Added or modified file — create a blob
-        CONTENT=$(base64 -w 0 "$FILE")
+        # CONTENT=$(base64 -w 0 "$FILE")
         # BLOB_SHA=$(gh api "repos/${REPO}/git/blobs" \
         #     --method POST \
         #     --field encoding=base64 \
