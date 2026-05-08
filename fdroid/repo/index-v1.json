@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1776657607000,
+    "timestamp": 1778280678000,
     "version": 20002,
     "name": "Bitwarden F-Droid",
     "icon": "icon.png",
@@ -29,7 +29,7 @@
       "summary": "Bitwarden mobile app for Android.",
       "added": 1746466260000,
       "packageName": "com.x8bit.bitwarden",
-      "lastUpdated": 1776657604000,
+      "lastUpdated": 1778280674000,
       "localized": {
         "en-US": {
           "featureGraphic": "featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
@@ -42,7 +42,7 @@
   "packages": {
     "com.x8bit.bitwarden": [
       {
-        "added": 1776657604000,
+        "added": 1778280674000,
         "apkName": "bitwarden_v2026.4.0-bwpm.apk",
         "hash": "786cfad23c2be2a84484e525a6022e2dee5931e8e01b7970bd31c3c16e49c8fb",
         "hashType": "sha256",
