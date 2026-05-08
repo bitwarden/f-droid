@@ -5,4 +5,4 @@
 
 
 **Full Changelog**: https://github.com/bitwarden/android/compare/v2024.11.6...v2024.11.7
-**Builds Source:** https://github.com/bitwarden/android/actions/runs/12039441634
+**Builds Source:**…

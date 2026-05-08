@@ -130,9 +130,36 @@ jobs:
           fi
         continue-on-error: true
 
-      - name: Delete F-Droid server config
+      - name: Truncate F-Droid changelogs
+        if: ${{ steps.run-metascoop.outputs.has_changes == 'true' }}
         run: |
-          rm -f fdroid/config.yml
+          python3 <<'PYEOF'
+          import glob
+
+          MAX_LENGTH = 500
+
+          paths = (
+              glob.glob('fdroid/repo/**/changelogs/*.txt', recursive=True)
+              + glob.glob('fdroid/metadata/**/changelogs/*.txt', recursive=True)
+          )
+
+          truncated = 0
+          for path in paths:
+              text = open(path, encoding='utf-8').read()
+              if len(text) <= MAX_LENGTH:
+                  continue
+              cutoff = MAX_LENGTH - 1  # leave room for ellipsis
+              s = text[:cutoff]
+              last_space = s.rfind(' ')
+              if last_space > cutoff - 50:
+                  s = s[:last_space]
+              s = s.rstrip() + '…'
+              open(path, 'w', encoding='utf-8').write(s)
+              print(f'Truncated {path} ({len(text)} -> {len(s)} chars)')
+              truncated += 1
+
+          print(f'Truncated {truncated} changelog file(s)')
+          PYEOF
 
       - name: Update repo
         env:
