@@ -1,0 +1,17 @@
+# Overview
+
+- Fix crash on startup for F-Droid build
+- Fix for missing search option during autofill
+- Fix for login issues on devices running 32bit Android
+
+<!-- Release notes generated using configuration in .github/release.yml at release/hotfix-v2026.4.1-bwpm -->
+
+## What's Changed
+### 🐛 Bug fixes
+* [PM-36867] fix: Disable card scanner on F-Droid builds (hotfix v2026.4.1) by @SaintPatrck in https://github.com/bitwarden/android/pull/6890
+* 🍒 PM-36475: Update when search icon is shown by @david-livefront in https://github.com/bitwarden/android/pull/6907
+* [PM-37224] bug: Update Bitwarden SDK to hotfix version by @SaintPatrck in https://github.com/bitwarden/android/pull/6920
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.4.1-bwpm...v2026.4.2-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/25866701011
