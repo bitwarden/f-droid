@@ -1,0 +1,123 @@
+# Overview
+* Scan payment cards to add them faster
+* Passkey support for Perplexity Browser
+* Stronger encryption for new accounts
+* Better passkey compatibility on more browsers
+* Fixed TOTP codes syncing with wrong username
+* No longer shows TOTP on items without one
+* Fixed rare crash related to avatar colors
+* Self-hosted logs no longer reference cloud
+* General stability improvements
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.5-rc53 -->
+
+## What's Changed
+### ✨ Community Highlight
+* [PM-35700] fix(about): localize Version label with parameterized string resource (#6824) by @mvanhorn in https://github.com/bitwarden/android/pull/6827
+* [PM-35352] [PM-21264] Group card numbers in vault item display by @Cooperr06 in https://github.com/bitwarden/android/pull/6810
+* Use string resource for button label by @gabrbrand in https://github.com/bitwarden/android/pull/6897
+* [PM-37042] chore: Add eu.weblibre.gecko.alpha to privileged apps by @FaFre in https://github.com/bitwarden/android/pull/6905
+### :shipit: Feature Development
+* [BWA-99] feat: Add next TOTP code preview in Authenticator by @SaintPatrck in https://github.com/bitwarden/android/pull/6779
+* PM-35273: feat: Add support for SDK API calls by providing base urls by @david-livefront in https://github.com/bitwarden/android/pull/6805
+* PM-35281: feat: Update the BlockAutofill screen UI by @david-livefront in https://github.com/bitwarden/android/pull/6807
+* [PM-33946] feat: Add dynamic pricing and fix checkout flow by @SaintPatrck in https://github.com/bitwarden/android/pull/6793
+* PM-27237: feat: v2 encryption for key connector by @david-livefront in https://github.com/bitwarden/android/pull/6814
+* [PM-33517] feat: Add Plan row to Settings and premium upgrade flow by @SaintPatrck in https://github.com/bitwarden/android/pull/6794
+* [PM-33518] feat: Add isInAppUpgradeAvailableFlow to PremiumStateManager by @SaintPatrck in https://github.com/bitwarden/android/pull/6795
+* [PM-33519] feat: Rewire upgrade CTAs to use conditional routing by @SaintPatrck in https://github.com/bitwarden/android/pull/6796
+* [PM-35454] feat: Add subscription API, domain models, and status badge component by @SaintPatrck in https://github.com/bitwarden/android/pull/6818
+* PM-30130: feat: Remove the Archive Items feature flag by @david-livefront in https://github.com/bitwarden/android/pull/6667
+* [PM-35455] feat: Wire premium subscription data into Plan screen by @SaintPatrck in https://github.com/bitwarden/android/pull/6819
+* PM-27234: feat: jit password v2 encryption by @david-livefront in https://github.com/bitwarden/android/pull/6835
+* PM-27241: feat: TDE encryption v2 by @david-livefront in https://github.com/bitwarden/android/pull/6821
+* [PM-32009] feat: Add infrastructure for new vault item types by @SaintPatrck in https://github.com/bitwarden/android/pull/6828
+* [PM-36057] feat: Add Upgraded to Premium acknowledgment by @SaintPatrck in https://github.com/bitwarden/android/pull/6863
+* [PM-32810] feat: Add Bank Account item detail view by @SaintPatrck in https://github.com/bitwarden/android/pull/6875
+* [PM-32810] feat: Add Bank Account vault, listing, and search surfaces by @SaintPatrck in https://github.com/bitwarden/android/pull/6877
+* PM-24225: feat: Support V2 encryption in user password flow by @david-livefront in https://github.com/bitwarden/android/pull/6891
+* [PM-32810] feat: Add Add/Edit support for Bank Account item type by @SaintPatrck in https://github.com/bitwarden/android/pull/6851
+* chore: Update Google privileged browsers list by @github-actions[bot] in https://github.com/bitwarden/android/pull/6899
+* [PM-32808] feat: View License item type by @SaintPatrck in https://github.com/bitwarden/android/pull/6852
+* [PM-32808] feat: Add Add/Edit support for Driver's License item type by @SaintPatrck in https://github.com/bitwarden/android/pull/6908
+* [PM-32808] feat: Add Driver's License vault, listing, and search surfaces by @SaintPatrck in https://github.com/bitwarden/android/pull/6909
+* [PM-32806] feat: View Passport item type by @SaintPatrck in https://github.com/bitwarden/android/pull/6853
+* 🍒 PM-38587: Feat: Add accessibility service disclaimer at startup by @david-livefront in https://github.com/bitwarden/android/pull/7019
+### 🐛 Bug fixes
+* bug: Move string to correct resource file by @david-livefront in https://github.com/bitwarden/android/pull/6812
+* PM-35444: bug: Pass org identifier and email directly into continueKeyConnectorLogin function by @david-livefront in https://github.com/bitwarden/android/pull/6817
+* PM-35654: bug: User switch should not occur on soft-logout by @david-livefront in https://github.com/bitwarden/android/pull/6825
+* PM-35925: bug: Update 'hexToColor' function to handle default names by @david-livefront in https://github.com/bitwarden/android/pull/6841
+* [PM-24380] fix: Correct and redact flight recorder hostname on logs by @aj-rosado in https://github.com/bitwarden/android/pull/6633
+* [PM-28834] bug: Setting configuration for VR devices on MainActivity by @aj-rosado in https://github.com/bitwarden/android/pull/6563
+* PM-36475: bug: Update when search icon is shown by @david-livefront in https://github.com/bitwarden/android/pull/6868
+* PM-36474: bug: Ensure shared totp labels do not parse secret by @david-livefront in https://github.com/bitwarden/android/pull/6873
+* bug: Add plurals support for subscription past due string by @david-livefront in https://github.com/bitwarden/android/pull/6876
+* [BWA-253] bug: Filtering empty otp uris sent by Password Manager app by @aj-rosado in https://github.com/bitwarden/android/pull/6869
+* [PM-30625] fix: Filtering empty totp from count on vault screen by @aj-rosado in https://github.com/bitwarden/android/pull/6834
+* [PM-34038] fix: Address card scanner QA findings by @SaintPatrck in https://github.com/bitwarden/android/pull/6867
+* [PM-36867] fix: Disable card scanner on F-Droid builds by @SaintPatrck in https://github.com/bitwarden/android/pull/6888
+* bug: Fix minor pading issue on CompleteRegistrationScreen by @david-livefront in https://github.com/bitwarden/android/pull/6894
+* Bug: Support translations for Cookie Acquisition error by @david-livefront in https://github.com/bitwarden/android/pull/6917
+* Bug: Fix CipherType crash by @david-livefront in https://github.com/bitwarden/android/pull/6922
+### ⚙️ Maintenance
+* Add missing Password Manager Locale for Play Store by @vgrassia in https://github.com/bitwarden/android/pull/6804
+* Chore: Remove UI decisions based on portrait vs landscape by @david-livefront in https://github.com/bitwarden/android/pull/6792
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6809
+* chore: Update to latest Protobuf plugin and start using new DSL by @david-livefront in https://github.com/bitwarden/android/pull/6811
+* chore: Use private key accessor by @david-livefront in https://github.com/bitwarden/android/pull/6808
+* chore: Remove MaxLineLength suppression guidance from testing skill by @SaintPatrck in https://github.com/bitwarden/android/pull/6813
+* chore: Remove deprecated code from BitwardenCutCopyTextToolbar by @david-livefront in https://github.com/bitwarden/android/pull/6815
+* PM-32814: Chore: Parsing lists safely by @david-livefront in https://github.com/bitwarden/android/pull/6846
+* [BRE-1851] Update the Crowdin API token by @vgrassia in https://github.com/bitwarden/android/pull/6859
+* [BRE-1851] Remove GPG secrets by @vgrassia in https://github.com/bitwarden/android/pull/6862
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6866
+* Chore: Remove the unused register API by @david-livefront in https://github.com/bitwarden/android/pull/6870
+* [PM-35434] Update renovate config to remove bundler group and add t:deps label by @vvolkgang in https://github.com/bitwarden/android/pull/6861
+* [PM-36184] Update jira issue fetching process by @vvolkgang in https://github.com/bitwarden/android/pull/6860
+* [PM-32810] test: Cover Bank Account vault, listing, and search surfaces by @SaintPatrck in https://github.com/bitwarden/android/pull/6881
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6900
+* build: Allow logging and access to the debug menu for beta builds by @david-livefront in https://github.com/bitwarden/android/pull/6874
+* Chore: Remove Retrofit dependency from app module by @david-livefront in https://github.com/bitwarden/android/pull/6896
+* [QA-1859] Updating `testTags` in AddEditSendItemView by @ifernandezdiaz in https://github.com/bitwarden/android/pull/6911
+### 📦 Dependency Updates
+* Update to Kotlinx Serialization v1.11.0 by @david-livefront in https://github.com/bitwarden/android/pull/6803
+* Update Firebase BOM to v34.12.0 by @david-livefront in https://github.com/bitwarden/android/pull/6791
+* Update Glide to latest version (v5.0.7) by @david-livefront in https://github.com/bitwarden/android/pull/6816
+* deps: Update the Bitwarden SDK to address breaking change by @david-livefront in https://github.com/bitwarden/android/pull/6820
+* SDK Update - com.bitwarden:sdk-android 2.0.0-6340-00b609f9 by @david-livefront in https://github.com/bitwarden/android/pull/6823
+* Update the Androidx Credentials dependency by @david-livefront in https://github.com/bitwarden/android/pull/6831
+* [deps]: Update com.google.guava:guava to v33.6.0-jre by @renovate[bot] in https://github.com/bitwarden/android/pull/6838
+* Update SDK to 2.0.0-6370-96753eef by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6780
+* deps: Update Androidx Compose BOM and Navigation libraries by @david-livefront in https://github.com/bitwarden/android/pull/6832
+* deps: Update to Kotlin v2.3.21 by @david-livefront in https://github.com/bitwarden/android/pull/6843
+* Deps: Update to AGP v9.2.0 by @david-livefront in https://github.com/bitwarden/android/pull/6845
+* Update SDK to 2.0.0-6484-a19b6544 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6847
+* [PM-36177] Pin bundler dependencies by @mpbw2 in https://github.com/bitwarden/android/pull/6858
+* Update Google privileged browsers list by @github-actions[bot] in https://github.com/bitwarden/android/pull/6865
+* Deps: Update AGP to v9.2.1 by @david-livefront in https://github.com/bitwarden/android/pull/6872
+* Update SDK to 2.0.0-6639-21488a37 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6864
+* Update SDK to 2.0.0-6645-6849537d by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6878
+* Deps: Update to latest Compose BOM and CameraX libraries by @david-livefront in https://github.com/bitwarden/android/pull/6886
+* Deps: Update KSP to v2.3.7 by @david-livefront in https://github.com/bitwarden/android/pull/6892
+* Deps: Update Firebase BOM to 34.13.0 by @david-livefront in https://github.com/bitwarden/android/pull/6893
+* Update SDK to 3.0.0-6774-0a0f5faf by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6895
+* [deps]: Update org.sonarqube to v7.3.0.8198 by @renovate[bot] in https://github.com/bitwarden/android/pull/6903
+* deps: Update SDK to 3.0.0-6822-fe351b43 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6912
+* [deps]: Update fastlane to v2.233.1 by @renovate[bot] in https://github.com/bitwarden/android/pull/6902
+### 🎨 Other
+* [PM-35116] llm: Remove local agents and delivery skills, migrate to marketplace plugins by @SaintPatrck in https://github.com/bitwarden/android/pull/6799
+* PM-35200 - Create contributing guide for Claude tooling by @theMickster in https://github.com/bitwarden/android/pull/6848
+* llm: Codify when-branch brace rule in implementation and review skills by @SaintPatrck in https://github.com/bitwarden/android/pull/6849
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/6839
+* llm: Expand string resource naming convention in CLAUDE.md by @aj-rosado in https://github.com/bitwarden/android/pull/6856
+* [PM-34487] llm: Add Android device interaction MCP server with ADB tooling by @SaintPatrck in https://github.com/bitwarden/android/pull/6747
+* 🍒Update MobilePremiumUpgrade feature flag key to lowercase by @SaintPatrck in https://github.com/bitwarden/android/pull/6938
+
+## New Contributors
+* @mvanhorn made their first contribution in https://github.com/bitwarden/android/pull/6827
+* @Cooperr06 made their first contribution in https://github.com/bitwarden/android/pull/6810
+* @FaFre made their first contribution in https://github.com/bitwarden/android/pull/6905
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.4.2-bwpm...v2026.5.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/26982856055
