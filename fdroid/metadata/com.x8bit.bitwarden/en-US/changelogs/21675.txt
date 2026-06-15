@@ -1,0 +1,89 @@
+# Overview
+View and manage trusted devices in account settings
+Subscription management now available in-app
+Send hidden from navigation when org policy disables it
+Modal headers updated for clarity
+Improved Autofill popup reliability in Firefox
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.5-rc55 -->
+
+## What's Changed
+### :shipit: Feature Development
+* [PM-32806] feat: Add Add/Edit support for Passport item type by @SaintPatrck in https://github.com/bitwarden/android/pull/6923
+* PM-37573: Feat: Create DatePickerDialog by @david-livefront in https://github.com/bitwarden/android/pull/6924
+* [PM-32806] feat: Add Passport vault, listing, and search surfaces by @SaintPatrck in https://github.com/bitwarden/android/pull/6929
+* PM-37573: feat: Add DatePicker functionality to VaultAddEditScreen by @david-livefront in https://github.com/bitwarden/android/pull/6937
+* PM-37690: feat: Update copy for adding a new item by @david-livefront in https://github.com/bitwarden/android/pull/6940
+* [PM-33982] feat: Add device management screen by @aj-rosado in https://github.com/bitwarden/android/pull/6754
+* [PM-36969] feat: Surface subscription substate to premium gates by @SaintPatrck in https://github.com/bitwarden/android/pull/6931
+* PM-37705: Feat: Hide Send navigation when DISABLE_SEND policy is enabled by @david-livefront in https://github.com/bitwarden/android/pull/6945
+* [PM-37814] feat: Add debug flag to disable self-host premium check by @SaintPatrck in https://github.com/bitwarden/android/pull/6954
+* [PM-37804] feat: Confirm before leaving the app to Stripe checkout by @SaintPatrck in https://github.com/bitwarden/android/pull/6958
+* PM-37568: Feat: Remove feature flags by @david-livefront in https://github.com/bitwarden/android/pull/6955
+* [PM-37691] feat: Surface pending cancellation status on Premium plan view by @SaintPatrck in https://github.com/bitwarden/android/pull/6957
+* [PM-37254] feat: Add fill-assist-targeting-rules feature flag by @aj-rosado in https://github.com/bitwarden/android/pull/6952
+* [PM-37916] feat: Add titleExtraLarge typography and apply to Premium header by @SaintPatrck in https://github.com/bitwarden/android/pull/6962
+* [PM-37282] feat: Add Upgrade to Premium CTA to File Send dialog by @SaintPatrck in https://github.com/bitwarden/android/pull/6968
+* PM-37985: Feat: Use PolicyView in the app by @david-livefront in https://github.com/bitwarden/android/pull/6966
+* PM-38130: Feat: Parse new organizations and policies properties from sync response by @david-livefront in https://github.com/bitwarden/android/pull/6977
+* PM-38140 Feat: SDK policy filters by @david-livefront in https://github.com/bitwarden/android/pull/6979
+* PM-38285: Feat: Filter unconfirmed organizations from the app by @david-livefront in https://github.com/bitwarden/android/pull/6987
+* [PM-37181] feat: Surface Expired subscription substate by @SaintPatrck in https://github.com/bitwarden/android/pull/6982
+* PM-37911: Feat: Update Organization model by @david-livefront in https://github.com/bitwarden/android/pull/6960
+* 🍒 PM-38587: Feat: Add accessibility service disclaimer at startup by @david-livefront in https://github.com/bitwarden/android/pull/7021
+* 🍒 PM-38618: Feat: Update Accessibility Service disclosure text by @david-livefront in https://github.com/bitwarden/android/pull/7027
+* 🍒 PM-38745: Feat: Update accessibility UI by @david-livefront in https://github.com/bitwarden/android/pull/7039
+### 🐛 Bug fixes
+* bug: Update Passport and License date formats in VaultItemScreen by @david-livefront in https://github.com/bitwarden/android/pull/6927
+* Update MobilePremiumUpgrade feature flag key to lowercase by @SaintPatrck in https://github.com/bitwarden/android/pull/6934
+* [PM-37465] fix: Gate Plan row and Upgraded card on personal Premium by @SaintPatrck in https://github.com/bitwarden/android/pull/6930
+* Bug: Update BitwardenDatePickerDialog to match current designs by @david-livefront in https://github.com/bitwarden/android/pull/6943
+* [PM-37335] fix: Route attachments upgrade CTA through in-app plan modal by @SaintPatrck in https://github.com/bitwarden/android/pull/6946
+* [PM-37294] fix: Announce external-link affordance on premium upgrade CTAs by @SaintPatrck in https://github.com/bitwarden/android/pull/6951
+* [PM-36886] fix: Gate premium upgrade flow on self-hosted environments by @SaintPatrck in https://github.com/bitwarden/android/pull/6939
+* [PM-37076] fix: Manage Plan launches web vault subscription URL by @SaintPatrck in https://github.com/bitwarden/android/pull/6944
+* [PM-37284] fix: Show Upgraded to Premium card across all Send view states by @SaintPatrck in https://github.com/bitwarden/android/pull/6947
+* [PM-37810] fix: Update cancel premium confirmation dialog by @SaintPatrck in https://github.com/bitwarden/android/pull/6953
+* [PM-37289] fix: Refresh archive row after premium upgrade by @SaintPatrck in https://github.com/bitwarden/android/pull/6949
+* [PM-37232] fix: Hide upgrade CTAs while a Premium upgrade is pending by @SaintPatrck in https://github.com/bitwarden/android/pull/6978
+* [PM-37804] fix: Drop redundant Stripe checkout confirmation on Upgrade Now by @SaintPatrck in https://github.com/bitwarden/android/pull/6980
+* [PM-38279] fix: Hide Cancel Premium action for Update payment status by @SaintPatrck in https://github.com/bitwarden/android/pull/6989
+* [PM-36970] fix: Correct Update Payment status description by @SaintPatrck in https://github.com/bitwarden/android/pull/6988
+* [PM-38118] fix: Support Firefox updated toolbar in accessibility autofill by @aj-rosado in https://github.com/bitwarden/android/pull/6986
+* [PM-38263] fix: Reference invoices in past due subscription description by @SaintPatrck in https://github.com/bitwarden/android/pull/6994
+* [PM-37920] fix: Show Storage cost row when additional storage is present by @SaintPatrck in https://github.com/bitwarden/android/pull/6997
+* 🍒 [PM-38364] fix: Multiply subscription line-item cost by quantity by @SaintPatrck in https://github.com/bitwarden/android/pull/7013
+* 🍒 PM-38513: Bug: Do not emit policies before we have recieved them by @david-livefront in https://github.com/bitwarden/android/pull/7025
+* PM-38610: Bug: Update BitwardenBasicDialog to allow scrolling content by @david-livefront in https://github.com/bitwarden/android/pull/7029
+### ⚙️ Maintenance
+* PM-36508: Chore: Local network access permission by @david-livefront in https://github.com/bitwarden/android/pull/6916
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6932
+* chore: Remove background event interface from action by @david-livefront in https://github.com/bitwarden/android/pull/6941
+* [PM-35435] ci: Stop applying Change Type labels based on changed files by @vvolkgang in https://github.com/bitwarden/android/pull/6925
+* PM-34085: Chore: Remove the Authenticator Sync backwards compatibility by @david-livefront in https://github.com/bitwarden/android/pull/6928
+* PM-36952 - Improve code review workflow with added triggers by @theMickster in https://github.com/bitwarden/android/pull/6933
+* [PM-37916] chore: Align Premium subscription card line items with Web by @SaintPatrck in https://github.com/bitwarden/android/pull/6961
+* Chore: Update Policy Types to conform to known values by @david-livefront in https://github.com/bitwarden/android/pull/6965
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6969
+* Chore: Remove the Manager type from OrganizationType by @david-livefront in https://github.com/bitwarden/android/pull/6984
+* [QA-1826] Adding missing `testTags` for Authenticator/PM apps by @ifernandezdiaz in https://github.com/bitwarden/android/pull/6993
+* Chore: Move dispatcher for sdk functions into SDK sources by @david-livefront in https://github.com/bitwarden/android/pull/6995
+### 📦 Dependency Updates
+* Update SDK to 3.0.0-6963-1256a563 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6921
+* Deps: Update Coroutines to v1.11.0 by @david-livefront in https://github.com/bitwarden/android/pull/6959
+* [deps]: Update gh minor by @renovate[bot] in https://github.com/bitwarden/android/pull/6926
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/6904
+* Update SDK to 3.0.0-7038-1a2acacb by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6956
+* Deps: Update to Junit v6.1.0 by @david-livefront in https://github.com/bitwarden/android/pull/6964
+* Update SDK to 3.0.0-7068-a635e32d by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6967
+* [deps]: Update com.google.devtools.ksp to v2.3.8 by @renovate[bot] in https://github.com/bitwarden/android/pull/6971
+* Update SDK to 3.0.0-7126-025e5d85 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6976
+* Deps: Update the protobuf library to v4.35.0 by @david-livefront in https://github.com/bitwarden/android/pull/6985
+* Deps: Update Firebase BOM to v34.14.0 by @david-livefront in https://github.com/bitwarden/android/pull/6996
+* Deps: Update the Compose BOM to v2026.05.01 by @david-livefront in https://github.com/bitwarden/android/pull/6998
+### 🎨 Other
+* llm: Add interface KDoc rule to implementing-android-code skill by @SaintPatrck in https://github.com/bitwarden/android/pull/6963
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.5.0-bwpm...v2026.5.1-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/27216280703
