@@ -1,0 +1,59 @@
+# Overview
+* Faster, more secure sign-in with app links
+* Passport numbers now hidden for privacy
+* Refreshed password and account screens
+* Fixed an issue with master password update prompt
+* Resolved an autofill-related crash
+* Stability and security improvements
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.6-rc56 -->
+
+## What's Changed
+### ✨ Community Highlight
+* [PM-38918] fix: PM-38644, UI/UX inconsistency: Passport number in Identity items is not a hidden field by @dev-sharma3624 in https://github.com/bitwarden/android/pull/7053
+### :shipit: Feature Development
+* PM-26577: Feat: Support multiple schemes for Duo, WebAuthn, and SSO callbacks by @david-livefront in https://github.com/bitwarden/android/pull/6339
+* PM-38479: Feat: Update the RemovePasswordScreen UI by @david-livefront in https://github.com/bitwarden/android/pull/7010
+* PM-37887: Feat: Update the Key Connector vault unlock to use the SDK by @david-livefront in https://github.com/bitwarden/android/pull/6999
+* [PM-37571] feat: Map Passport and License to SDK types by @SaintPatrck in https://github.com/bitwarden/android/pull/7009
+* PM-38587: Feat: Add accessibility service disclaimer at startup by @david-livefront in https://github.com/bitwarden/android/pull/7018
+* PM-38618: Feat: Update Accessibility Service disclosure text by @david-livefront in https://github.com/bitwarden/android/pull/7026
+* PM-38745: feat: Update accessibility UI by @david-livefront in https://github.com/bitwarden/android/pull/7037
+### 🐛 Bug fixes
+* [PM-38364] fix: Multiply subscription line-item cost by quantity by @SaintPatrck in https://github.com/bitwarden/android/pull/7012
+* PM-38280: Fix: Update collection API to V2 by @david-livefront in https://github.com/bitwarden/android/pull/7014
+* BWA-252: bug: Empty string totp codes should not be counted as a totp code by @david-livefront in https://github.com/bitwarden/android/pull/7015
+* PM-38534: bug: Update LoginResult to use friendly error message by @david-livefront in https://github.com/bitwarden/android/pull/7017
+* PM-38513: Bug: Do not emit policies before we have recieved them by @david-livefront in https://github.com/bitwarden/android/pull/7023
+* PM-38610: Bug: Update BitwardenBasicDialog to allow scrolling content by @david-livefront in https://github.com/bitwarden/android/pull/7028
+* PM-38637: Bug: Add additional CRL distrobution server to clear-text permitted list by @david-livefront in https://github.com/bitwarden/android/pull/7045
+* PM-38779: Bug: Update cursor logic to avoid exception by @david-livefront in https://github.com/bitwarden/android/pull/7044
+### ⚙️ Maintenance
+* [PM-38411] tech-debt: Update deprecated argument in actions/create-github-app-token by @vvolkgang in https://github.com/bitwarden/android/pull/7003
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7001
+* PM-38358: Chore: Remove user key by @david-livefront in https://github.com/bitwarden/android/pull/7004
+* Chore: Add gradle lockfiles by @david-livefront in https://github.com/bitwarden/android/pull/7008
+* [AppSec] AI Fix for Template Injection in GitHub Workflows Action by @aikido-autofix[bot] in https://github.com/bitwarden/android/pull/6784
+* [PM-37571] chore: Remove unused isSdkSupported guard by @SaintPatrck in https://github.com/bitwarden/android/pull/7011
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7032
+* PM-38625: Chore: Store the WrappedAccountCryptographicState by @david-livefront in https://github.com/bitwarden/android/pull/7030
+* [QA-1911] Add testTag to Flight Recorder logging duration dropdown by @Corbet-BW in https://github.com/bitwarden/android/pull/7040
+* Chore: Add a VaultUnlockResult helper method to handle successes by @david-livefront in https://github.com/bitwarden/android/pull/7041
+* Chore: Update the local app version by @david-livefront in https://github.com/bitwarden/android/pull/7043
+* Chore: Create a Overlay Navigation Screen by @david-livefront in https://github.com/bitwarden/android/pull/7049
+* Chore: Isolate the MainActivity composable content from onCreate by @david-livefront in https://github.com/bitwarden/android/pull/7051
+* Chore: Ensure UI it using common components and themeing by @david-livefront in https://github.com/bitwarden/android/pull/7052
+### 📦 Dependency Updates
+* Update Google privileged browsers list by @github-actions[bot] in https://github.com/bitwarden/android/pull/7000
+* Update SDK to 3.0.0-7198-7bca9fca by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/6983
+* Deps: Update the Gradle Wrapper to v9.5.1 by @david-livefront in https://github.com/bitwarden/android/pull/7006
+* [deps]: Update mockk to v1.14.11 by @renovate[bot] in https://github.com/bitwarden/android/pull/7035
+* [deps]: Update kotlin to v2.3.9 by @renovate[bot] in https://github.com/bitwarden/android/pull/7034
+* Update SDK to 3.0.0-7338-5bdc976f by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7007
+
+## New Contributors
+* @aikido-autofix[bot] made their first contribution in https://github.com/bitwarden/android/pull/6784
+* @Corbet-BW made their first contribution in https://github.com/bitwarden/android/pull/7040
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.5.1-bwpm...v2026.6.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/27437870956
