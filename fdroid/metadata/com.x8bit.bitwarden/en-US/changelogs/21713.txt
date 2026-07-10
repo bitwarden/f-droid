@@ -1,0 +1,40 @@
+# Overview
+* Updated accessibility disclosure
+* Passport numbers now hidden on Identity items
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.6-rc57 -->
+
+## What's Changed
+### :shipit: Feature Development
+* PM-38998: Feat: Apply optional auth token to config endpoint by @david-livefront in https://github.com/bitwarden/android/pull/7055
+* [PM-37255] feat: Consume fill-assist targeting rules data by @aj-rosado in https://github.com/bitwarden/android/pull/6990
+* PM-39082: Feat: Do not show accessibility disclosure at app startup for Fdroid by @david-livefront in https://github.com/bitwarden/android/pull/7064
+* PM-32858: Feat: Set and Reset Password flows should use newer request models by @david-livefront in https://github.com/bitwarden/android/pull/7068
+* PM-39072: Feat: Update premium action card copy by @david-livefront in https://github.com/bitwarden/android/pull/7071
+* PM-37319: Feat: Update premium dialog titles by @david-livefront in https://github.com/bitwarden/android/pull/7072
+* PM-37287: Feat: Add premium prompt for TOTP codes by @david-livefront in https://github.com/bitwarden/android/pull/7090
+* PM-39480: Feat: Update the Accessibility Disclaimer copy by @david-livefront in https://github.com/bitwarden/android/pull/7099
+* PM-39510: Feat: Use V1 Set and Reset password models by @david-livefront in https://github.com/bitwarden/android/pull/7100
+### 🐛 Bug fixes
+* PM-39006: Bug: Update the setPassword flow for TDE users by @david-livefront in https://github.com/bitwarden/android/pull/7056
+* PM-39138: Bug: Passport number should be hidden on edit screen by @david-livefront in https://github.com/bitwarden/android/pull/7067
+* PM-38356 PM-37177: Bug: Update premium subscription trouble-states by @david-livefront in https://github.com/bitwarden/android/pull/7073
+* PM-38363: Bug: Add a loading ViewState to the PlanScreen by @david-livefront in https://github.com/bitwarden/android/pull/7080
+* PM-37232: Bug: Update error states for the Send and VaultAddEdit Screens by @david-livefront in https://github.com/bitwarden/android/pull/7098
+* Bug: Handle token refreshes when token is not present by @david-livefront in https://github.com/bitwarden/android/pull/7102
+### ⚙️ Maintenance
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7058
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7081
+### 📦 Dependency Updates
+* Update SDK to 3.0.0-7409-c9f9dba4 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7050
+* [deps]: Update googleBilling to v9 by @renovate[bot] in https://github.com/bitwarden/android/pull/7036
+* Update SDK to 3.0.0-7459-378df4c3 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7065
+* [deps]: Update firebaseBom by @renovate[bot] in https://github.com/bitwarden/android/pull/7082
+* [deps]: Update protobuf monorepo to v4.35.1 by @renovate[bot] in https://github.com/bitwarden/android/pull/7083
+* [deps]: Update okhttp monorepo by @renovate[bot] in https://github.com/bitwarden/android/pull/7087
+* Update SDK to 3.0.0-7501-f20702cb by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7089
+* Update SDK to 3.0.0-7536-159aed97 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7096
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.6.0-bwpm...v2026.6.1-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/28253991408
