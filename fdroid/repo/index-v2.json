@@ -23,7 +23,7 @@
         "url": "https://raw.githubusercontent.com/bitwarden/f-droid/main/fdroid/repo"
       }
     ],
-    "timestamp": 1783656669000,
+    "timestamp": 1784951779000,
     "categories": {
       "Security": {
         "name": {
@@ -39,7 +39,7 @@
         "categories": [
           "Security"
         ],
-        "lastUpdated": 1783656665000,
+        "lastUpdated": 1784951775000,
         "license": "GPL-3.0",
         "sourceCode": "https://github.com/bitwarden/android",
         "featureGraphic": {
@@ -69,6 +69,80 @@
         "preferredSigner": "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
       },
       "versions": {
+        "221a842768dc7cbddc73c9b593082c45cde751f6a4c50567548f05277a012343": {
+          "added": 1784951775000,
+          "file": {
+            "name": "/bitwarden_v2026.7.0-bwpm.apk",
+            "sha256": "221a842768dc7cbddc73c9b593082c45cde751f6a4c50567548f05277a012343",
+            "size": 87269298
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi",
+              "armeabi-v7a",
+              "mips",
+              "mips64",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2026.7.0",
+            "versionCode": 21756,
+            "usesSdk": {
+              "minSdkVersion": 29,
+              "targetSdkVersion": 37
+            },
+            "signer": {
+              "sha256": [
+                "de6ec91431557995297bf3e65bc80349bc603a04708160618c86bc9994171c90"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.ACCESS_LOCAL_NETWORK"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.NFC"
+              },
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "horizons.permission.HEADSET_CAMERA"
+              },
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.POST_NOTIFICATIONS"
+              },
+              {
+                "name": "android.permission.READ_USER_DICTIONARY"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE"
+              },
+              {
+                "name": "com.x8bit.bitwarden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        },
         "3bd4feb3753147c59d2412c251b1bc4adbc3d7f38a40bd2726d8164502243673": {
           "added": 1783656665000,
           "file": {

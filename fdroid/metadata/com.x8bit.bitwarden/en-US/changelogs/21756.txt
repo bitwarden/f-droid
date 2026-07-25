@@ -1,0 +1,67 @@
+# Overview
+* New action card guides you when your vault is empty
+* Better error messages when unlocking or syncing fails
+* Smoother autofill on more apps
+* Fixed unwanted prompt appearing during app use
+* Fixed autofill not working on certain apps
+* Improved account security
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.7-rc58 -->
+
+## What's Changed
+### ✨ Community Highlight
+* [PM-39461] bug: Fix QR scan reliability by using Y plane rowStride in analyzer by @koenyskout in https://github.com/bitwarden/android/pull/7097
+* [PM-39762] bug: Fix RTL divider padding by @helpingstar in https://github.com/bitwarden/android/pull/7115
+### :shipit: Feature Development
+* [PM-37255] feat: Add fill-assist targeting rules data layer by @aj-rosado in https://github.com/bitwarden/android/pull/6991
+* [PM-37255] feat: Wire fill-assist manager into vault sync and app startup by @aj-rosado in https://github.com/bitwarden/android/pull/6992
+* PM-39758: feat: Improve sync failure dialog by @david-livefront in https://github.com/bitwarden/android/pull/7114
+* PM-39707: feat: Display unique unpaid subscription UI by @david-livefront in https://github.com/bitwarden/android/pull/7117
+* PM-40651: feat: Add feature flag for FedRAMP by @david-livefront in https://github.com/bitwarden/android/pull/7136
+* PM-39888: feat: ViewModel controls Environment Selector options by @david-livefront in https://github.com/bitwarden/android/pull/7135
+* PM-35191: feat: Add support for FedRAMP applinks by @david-livefront in https://github.com/bitwarden/android/pull/7137
+* PM-35112: feat: Add underlying FedRAMP environment by @david-livefront in https://github.com/bitwarden/android/pull/7138
+### 🐛 Bug fixes
+* PM-39599: Bug: Must be unlocked to reset your password by @david-livefront in https://github.com/bitwarden/android/pull/7106
+* PM-39441: Bug: KeyConnector user should see SetPassword UI when elevated to Admin by @david-livefront in https://github.com/bitwarden/android/pull/7105
+* [PM-39807] fix: Gate fill-assist rules sync on user settings by @aj-rosado in https://github.com/bitwarden/android/pull/7123
+* PM-39765: bug: Improve error parsing for vault unlock by @david-livefront in https://github.com/bitwarden/android/pull/7124
+* PM-37177: bug: Update subscriptionStatusStateFlow for each getSubscription call by @david-livefront in https://github.com/bitwarden/android/pull/7125
+* [PM-39840] fix: Use dedicated OkHttpClient for fill-assist to prevent load-balancer prompt by @aj-rosado in https://github.com/bitwarden/android/pull/7131
+* [PM-39612] fix: resolve autofill container-hint redirect to autofillable child by @aj-rosado in https://github.com/bitwarden/android/pull/7146
+### ⚙️ Maintenance
+* Chore: Simplify reset password APIs by @david-livefront in https://github.com/bitwarden/android/pull/7103
+* tech-debt: Trust user certificates in debug builds by @david-livefront in https://github.com/bitwarden/android/pull/7108
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7110
+* [PM-18403] tech-debt: Consolidate Authenticator minSDK version, increasing it to API 29 by @vvolkgang in https://github.com/bitwarden/android/pull/7104
+* [BRE-1952] Remove migrated workflows by @AmyLGalles in https://github.com/bitwarden/android/pull/7095
+* [VULN-649] ci: Remove deprecated scan workflow by @theMickster in https://github.com/bitwarden/android/pull/7091
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7143
+* chore: Update renovate.json file by @david-livefront in https://github.com/bitwarden/android/pull/7130
+* [QA-2081] Part 1 - Add testTags to Block Auto-fill settings row and blocked-URI field by @Corbet-BW in https://github.com/bitwarden/android/pull/7149
+* [PM-32685] Send cherry-pick slack message to QA by @mpbw2 in https://github.com/bitwarden/android/pull/7151
+* [PM-32685] Change slack user group in message by @mpbw2 in https://github.com/bitwarden/android/pull/7153
+* Chore: Account Summaries list in UI should be immutable by @david-livefront in https://github.com/bitwarden/android/pull/7147
+### 📦 Dependency Updates
+* [deps]: Update gh minor by @renovate[bot] in https://github.com/bitwarden/android/pull/6973
+* Update SDK to 3.0.0-7585-87e9ad18 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7101
+* deps: Update to gradle v9.6.1 by @david-livefront in https://github.com/bitwarden/android/pull/7122
+* Update SDK to 3.0.0-7612-ce786c52 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7128
+* [deps]: Update kotlin by @renovate[bot] in https://github.com/bitwarden/android/pull/7086
+* [deps]: Update org.sonarqube to v7.3.1.8318 by @renovate[bot] in https://github.com/bitwarden/android/pull/7084
+* Update SDK to 3.0.0-7616-cbecfb7f by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7129
+* Deps: Update Firbase dependencies by @david-livefront in https://github.com/bitwarden/android/pull/7132
+* Update SDK to 3.0.0-7673-101364a4 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7133
+* Update Google privileged browsers list by @github-actions[bot] in https://github.com/bitwarden/android/pull/7142
+* [deps]: Update fastlane to v2.236.1 by @renovate[bot] in https://github.com/bitwarden/android/pull/6972
+* [deps]: Update androidx.core:core-ktx to v1.19.0 by @renovate[bot] in https://github.com/bitwarden/android/pull/7085
+### 🎨 Other
+* doc: Update MinSdk Docs by @david-livefront in https://github.com/bitwarden/android/pull/7118
+* PM-39821: feat: Vault empty state can display action cards by @david-livefront in https://github.com/bitwarden/android/pull/7126
+
+## New Contributors
+* @koenyskout made their first contribution in https://github.com/bitwarden/android/pull/7097
+* @helpingstar made their first contribution in https://github.com/bitwarden/android/pull/7115
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.6.1-bwpm...v2026.7.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/29108828120
