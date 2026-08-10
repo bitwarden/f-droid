@@ -1,0 +1,53 @@
+# Overview
+* Fixed sync prompt appearing incorrectly during autofill
+* Improved account security
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.7-rc59 -->
+
+## What's Changed
+### ✨ Community Highlight
+* [PM-40274] fix(authenticator): force LTR text direction for TOTP code display by @jatinkumar2409 in https://github.com/bitwarden/android/pull/7162
+### :shipit: Feature Development
+* PM-39349: feat: Update Plan Screen by @david-livefront in https://github.com/bitwarden/android/pull/7155
+* [PM-27903] feat: Remove Credential Exchange (CXF) dependency on f-droid builds by @vvolkgang in https://github.com/bitwarden/android/pull/7154
+* tool: Improve Gradle Sync performance with 'org.gradle.tooling.parallel' flag by @david-livefront in https://github.com/bitwarden/android/pull/7174
+* [PM-37255] feat: Integrate fill-assist targeting rules into autofill parser by @aj-rosado in https://github.com/bitwarden/android/pull/7066
+* [PM-38966] feat: Add fill assist opt-in setting and privacy gate by @aj-rosado in https://github.com/bitwarden/android/pull/7075
+* [PM-39564] feat: Fill Assist support email field key for email-based login forms by @aj-rosado in https://github.com/bitwarden/android/pull/7107
+* PM-40657: feat: Restructure Environment to better handle FedRamp requirements by @david-livefront in https://github.com/bitwarden/android/pull/7182
+* [PM-40631] feat: Display personal vault as "My vault" instead of email address by @andrebispo5 in https://github.com/bitwarden/android/pull/7183
+* PM-40657: feat: Add support for disableUserRegistration boolean by @david-livefront in https://github.com/bitwarden/android/pull/7186
+* PM-39902: feat: Update app to support blob encryption by @david-livefront in https://github.com/bitwarden/android/pull/7173
+* PM-40699: feat: Add FedRamp base urls to EnvironmentScreen autocomplete by @david-livefront in https://github.com/bitwarden/android/pull/7190
+* [PM-40635] feat: Update "collection" to "shared folder" by @andrebispo5 in https://github.com/bitwarden/android/pull/7189
+* [PM-40638] feat: Rename "organization" to "vault" by @andrebispo5 in https://github.com/bitwarden/android/pull/7192
+* PM-39902: feat: Add data field for updating a cipher with Blob encryption by @david-livefront in https://github.com/bitwarden/android/pull/7198
+* PM-40727: feat: Add encryption layer for new KeystoreEncryptedSharedPreferences by @david-livefront in https://github.com/bitwarden/android/pull/7191
+### 🐛 Bug fixes
+* PM-40317: bug: All users must follow Master Password policies by @david-livefront in https://github.com/bitwarden/android/pull/7163
+* PM-40497: bug: Update the plan price row announcement for accessibility by @david-livefront in https://github.com/bitwarden/android/pull/7170
+* PM-40278: bug: Freeze public key and fingerprint during auth request and validate against updates by @david-livefront in https://github.com/bitwarden/android/pull/7166
+* fix: Revert VFO-1 naming changes (#7183, #7189, #7192) by @andrebispo5 in https://github.com/bitwarden/android/pull/7195
+* PM-40885: bug: Support overriding the colorscheme by @david-livefront in https://github.com/bitwarden/android/pull/7206
+* 🍒 [PM-41100] fix: Complete the VFO-1 organization-to-vault revert by @andrebispo5 in https://github.com/bitwarden/android/pull/7221
+### ⚙️ Maintenance
+* Add getLivePlayStoreVersion Fastlane lane by @AmyLGalles in https://github.com/bitwarden/android/pull/7156
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7160
+* [PM-32685] Add PR to message if available by @mpbw2 in https://github.com/bitwarden/android/pull/7164
+* [QA-2177] Enabling testTagsAsResourceId flag to make BlockedURI testTag visible… by @ifernandezdiaz in https://github.com/bitwarden/android/pull/7172
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7177
+* [PM-32685] enhancements for testing by @mpbw2 in https://github.com/bitwarden/android/pull/7168
+* [PM-38570] New signing keystore for testharness by @mpbw2 in https://github.com/bitwarden/android/pull/7188
+* Chore: Consolidate functions for setting the MasterPasswordUnlock data by @david-livefront in https://github.com/bitwarden/android/pull/7203
+### 📦 Dependency Updates
+* Update SDK to 3.0.0-7824-f0ac1382 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7145
+* Update SDK to 3.0.0-7895-3831dfe2 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7180
+* Update Google privileged browsers list by @github-actions[bot] in https://github.com/bitwarden/android/pull/7176
+* Update SDK to 3.0.0-7896-62f4decd by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7187
+* Update SDK to 3.0.0-7926-a9b0e184 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7202
+
+## New Contributors
+* @jatinkumar2409 made their first contribution in https://github.com/bitwarden/android/pull/7162
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.7.0-bwpm...v2026.7.1-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/30475765167
