@@ -1,0 +1,43 @@
+# Overview
+* Improved autofill on complex login forms
+* Improved account security and encryption
+* Fixed item import reliability
+* Fixed passkey sign-in issues
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.8-rc60 -->
+
+## What's Changed
+### ✨ Community Highlight
+* [PM-40773] bug: Fix accessibility detection on Android 16+ by @7heMech in https://github.com/bitwarden/android/pull/7197
+### :shipit: Feature Development
+* [PM-40930] feat: Added log when fill assist is invoked by @aj-rosado in https://github.com/bitwarden/android/pull/7208
+* [PM-40527] feat: Add SendControls policy data model and feature flags by @andrebispo5 in https://github.com/bitwarden/android/pull/7179
+* [PM-41103] feat: Add identity autofill feature flag by @aj-rosado in https://github.com/bitwarden/android/pull/7222
+* PM-37879: feat: Add SDK state bridge by @david-livefront in https://github.com/bitwarden/android/pull/7204
+* feat: VFO-1 naming changes feature branch by @andrebispo5 in https://github.com/bitwarden/android/pull/7196
+* PM-41466: feat: Filter out unknown Send types by @david-livefront in https://github.com/bitwarden/android/pull/7241
+* [PM-40529] feat: Add 14-day option to Send deletion date dropdown by @andrebispo5 in https://github.com/bitwarden/android/pull/7240
+### 🐛 Bug fixes
+* [PM-40995] fix: Allow fill-assist to rescue autofill requests when heuristics find no fields by @aj-rosado in https://github.com/bitwarden/android/pull/7214
+* [PM-41100] fix: Complete the VFO-1 organization-to-vault revert by @andrebispo5 in https://github.com/bitwarden/android/pull/7220
+* [PM-39840] fix: Scope cookie bootstrap to the request's environment by @aj-rosado in https://github.com/bitwarden/android/pull/7243
+* Fix Play Store track promotion to search through more releases by @AmyLGalles in https://github.com/bitwarden/android/pull/7248
+### ⚙️ Maintenance
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7210
+* PM-41062: chore: Separate ephemeral and persistent pin envelopes by @david-livefront in https://github.com/bitwarden/android/pull/7218
+* PM-41423: chore: Separate ForcePasswordResetReason from MasterPasswordUnlockData by @david-livefront in https://github.com/bitwarden/android/pull/7237
+* chore: remove checkmarx sast job by @acolom-bw in https://github.com/bitwarden/android/pull/7225
+* PM-41429: Chore: Decouple dependencies by @david-livefront in https://github.com/bitwarden/android/pull/7238
+### 📦 Dependency Updates
+* Update SDK to 3.0.0-8014-7eb08fbb by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7207
+* [PM-39978] Fix compilation errors caused by Item type Send support in the SDK by @mcamirault in https://github.com/bitwarden/android/pull/7224
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/6974
+* Update SDK to 3.0.0-8157-eb825d59 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7217
+
+## New Contributors
+* @7heMech made their first contribution in https://github.com/bitwarden/android/pull/7197
+* @acolom-bw made their first contribution in https://github.com/bitwarden/android/pull/7225
+* @mcamirault made their first contribution in https://github.com/bitwarden/android/pull/7224
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.7.1-bwpm...v2026.8.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/31214376447
