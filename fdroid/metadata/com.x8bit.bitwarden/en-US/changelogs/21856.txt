@@ -1,0 +1,48 @@
+# Overview
+* Improved account security
+* Better autofill for phone numbers on more sites
+* Various under-the-hood improvements and bug fixes
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.8-rc61 -->
+
+## What's Changed
+### :shipit: Feature Development
+* PM-40154: feat: Migrate user data to KeystoreEncryptedSharedPreferences by @david-livefront in https://github.com/bitwarden/android/pull/7158
+* [PM-40528] feat: Wire SendControls precedence into DisableSend/SendOptions enforcement points by @andrebispo5 in https://github.com/bitwarden/android/pull/7239
+* [PM-40530] feat: Hide "hide my email switch" when enforced by SendControls policy by @andrebispo5 in https://github.com/bitwarden/android/pull/7244
+* [PM-40534] feat: Restrict Send creation flow when only one Send type is allowed by @andrebispo5 in https://github.com/bitwarden/android/pull/7249
+* [PM-40532] feat: Lock the Send deletion date when enforced by the SendControls policy by @andrebispo5 in https://github.com/bitwarden/android/pull/7258
+* [PM-40531] feat: Lock the "Who can view" selection when enforced by policy by @andrebispo5 in https://github.com/bitwarden/android/pull/7266
+* [PM-40533] feat: Validate recipient email domains against SendControls allowed domains by @andrebispo5 in https://github.com/bitwarden/android/pull/7269
+* [PM-42107] feat: Wire SendControls policy awareness into the View Send screen by @andrebispo5 in https://github.com/bitwarden/android/pull/7272
+* [PM-42108] feat: Add policy restriction banner to View Send by @andrebispo5 in https://github.com/bitwarden/android/pull/7275
+* [PM-42110] feat: Make a copy of a policy-restricted Send by @andrebispo5 in https://github.com/bitwarden/android/pull/7276
+* [PM-42198] feat: Send encryptedByKeyId on cipher requests by @aj-rosado in https://github.com/bitwarden/android/pull/7287
+### 🐛 Bug fixes
+* [PM-41319] fix: Autofill phone-number login credentials via fill-assist by @aj-rosado in https://github.com/bitwarden/android/pull/7250
+* [PM-41900] fix: Update the vault selection dialog title by @andrebispo5 in https://github.com/bitwarden/android/pull/7263
+* PM-41853: bug: Fix account keys migration for keystore encrypted shared preferences by @david-livefront in https://github.com/bitwarden/android/pull/7273
+* [PM-41896] fix: Default the owner dropdown to the collection's organization by @andrebispo5 in https://github.com/bitwarden/android/pull/7281
+* PM-40295: bug: MP policy check happen directly durring login and unlock by @david-livefront in https://github.com/bitwarden/android/pull/7165
+### ⚙️ Maintenance
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7228
+* [PM-38570] Testharness Firebase distribution by @mpbw2 in https://github.com/bitwarden/android/pull/7274
+* [PM-42156] Fix optional bool checks in workflows by @mpbw2 in https://github.com/bitwarden/android/pull/7282
+* PM-42171: chore: Remove suspend from certain SDK functions by @david-livefront in https://github.com/bitwarden/android/pull/7283
+### 📦 Dependency Updates
+* Update Google privileged browsers list by @github-actions[bot] in https://github.com/bitwarden/android/pull/7159
+* Update Google privileged browsers list by @github-actions[bot] in https://github.com/bitwarden/android/pull/7227
+* Update SDK to 3.0.0-8288-99ffb6ef by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7254
+* deps: Update to AGP v9.3.1 by @david-livefront in https://github.com/bitwarden/android/pull/7246
+* Update SDK to 3.0.0-8379-cc7daf10 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7267
+* Update SDK to 3.0.0-8427-16db8e99 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7284
+### 🎨 Other
+* llm: Add evaluating-sdk-internal-updates skill and CI workflow by @SaintPatrck in https://github.com/bitwarden/android/pull/7251
+* [AI-76] llm: Fix Bash allowlist and Resolve routing in evaluating-sdk-internal-updates by @SaintPatrck in https://github.com/bitwarden/android/pull/7260
+* llm: Route GitHub Packages credential through $GITHUB_ENV in SDK-eval workflow by @SaintPatrck in https://github.com/bitwarden/android/pull/7268
+* llm: Pre-fetch the SDK artifact before Claude runs in SDK-eval workflow by @SaintPatrck in https://github.com/bitwarden/android/pull/7270
+* [AI-88] llm: Remove .claude/CONTRIBUTING.md by @SaintPatrck in https://github.com/bitwarden/android/pull/7285
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.8.0-bwpm...v2026.8.1-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/32510052977
