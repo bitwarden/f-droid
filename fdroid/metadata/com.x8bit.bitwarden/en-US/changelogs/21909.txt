@@ -1,0 +1,63 @@
+# Overview
+* Improved account security
+* Smoother folder menus and clearer confirmations when saving
+* Fixed plan details not updating after upgrading to Premium
+* Fixed Manage devices screen not showing new login requests
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.9-rc62 -->
+
+## What's Changed
+### :shipit: Feature Development
+* PM-31118: feat: Add support for SDK pin unlock by @david-livefront in https://github.com/bitwarden/android/pull/7289
+* [PM-41291] feat: Add model and data layer for Identity Autofill by @aj-rosado in https://github.com/bitwarden/android/pull/7232
+* PM-33857: feat: Add User Notification Policy banner by @david-livefront in https://github.com/bitwarden/android/pull/7303
+* PM-32858: feat: Update password salt creation by @david-livefront in https://github.com/bitwarden/android/pull/7312
+* [PM-41292] feat: Add heuristic detection for identity autofill fields by @aj-rosado in https://github.com/bitwarden/android/pull/7233
+* PM-32154: Feat: Update salt for new registration model by @david-livefront in https://github.com/bitwarden/android/pull/7324
+* PM-42849: Feat: Update Debug menu UI by @david-livefront in https://github.com/bitwarden/android/pull/7338
+* PM-42467: feat: Add debug menu option to share settings by @david-livefront in https://github.com/bitwarden/android/pull/7350
+### 🐛 Bug fixes
+* [PM-36378] fix: Show the new folder created snackbar by @andrebispo5 in https://github.com/bitwarden/android/pull/7299
+* [PM-36231] fix: Show Select without dashes on vault add edit menus by @andrebispo5 in https://github.com/bitwarden/android/pull/7301
+* [PM-36379] fix: Show the item type in the save snackbar by @andrebispo5 in https://github.com/bitwarden/android/pull/7308
+* [PM-36378] fix: Remove the period from the new folder created snackbar by @andrebispo5 in https://github.com/bitwarden/android/pull/7336
+* [PM-41929] fix: Update the manage devices screen when a passwordless request push is received by @aj-rosado in https://github.com/bitwarden/android/pull/7280
+* [PM-40535] fix: Organization policy restriction notice padding and icon by @andrebispo5 in https://github.com/bitwarden/android/pull/7341
+* [PM-36378] fix: Remove "New folder created" snackbar from add/edit cipher flow by @andrebispo5 in https://github.com/bitwarden/android/pull/7345
+* PM-42839, PM-42840, PM-42841, PM-42842: bug: Minor DatePicker bug fixes by @david-livefront in https://github.com/bitwarden/android/pull/7343
+* [PM-41836] fix: Promote Plan screen off Free view without requiring an in-flight checkout by @aj-rosado in https://github.com/bitwarden/android/pull/7337
+* [PM-36376] fix: Clear folder and owner dropdown lag after a card scan by @andrebispo5 in https://github.com/bitwarden/android/pull/7353
+* 🍒 PM-43235: bug: Remove edit button for disabled Send types by @david-livefront in https://github.com/bitwarden/android/pull/7375
+### ⚙️ Maintenance
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7291
+* PM-42381: chore: Separate AuthState and organizations from AuthRepository by @david-livefront in https://github.com/bitwarden/android/pull/7296
+* Chore: Update app version name to 2026.9.0 by @david-livefront in https://github.com/bitwarden/android/pull/7317
+* PM-42616: Chore: Consolidate keys model by @david-livefront in https://github.com/bitwarden/android/pull/7322
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7327
+* chore: Rollback setpassword API changes by @david-livefront in https://github.com/bitwarden/android/pull/7349
+* Added workflow placeholder by @mpbw2 in https://github.com/bitwarden/android/pull/7351
+### 📦 Dependency Updates
+* Deps: Update OkHttp to v5.5.0 by @david-livefront in https://github.com/bitwarden/android/pull/7307
+* Deps: Update Androidx dependencies by @david-livefront in https://github.com/bitwarden/android/pull/7306
+* Deps: Update AGP to v9.3.2 by @david-livefront in https://github.com/bitwarden/android/pull/7305
+* Update SDK to 3.0.0-8495-c1b859a9 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7295
+* Deps: Update Firebase by @david-livefront in https://github.com/bitwarden/android/pull/7310
+* Deps: Update Junit to v6.1.3 by @david-livefront in https://github.com/bitwarden/android/pull/7314
+* Deps: Update to Kotlin v2.4.10 by @david-livefront in https://github.com/bitwarden/android/pull/7315
+* Deps: Update Google dependencies by @david-livefront in https://github.com/bitwarden/android/pull/7316
+* Deps: Update to Glide v5.0.9 by @david-livefront in https://github.com/bitwarden/android/pull/7318
+* Deps: Update Androidx Camera dependencies by @david-livefront in https://github.com/bitwarden/android/pull/7323
+* [deps]: Update csv to v3.3.6 by @renovate[bot] in https://github.com/bitwarden/android/pull/7330
+* [deps]: Update com.google.devtools.ksp to v2.3.11 by @renovate[bot] in https://github.com/bitwarden/android/pull/7329
+* [deps]: Update slackapi/slack-github-action action to v4 by @renovate[bot] in https://github.com/bitwarden/android/pull/7334
+* [deps]: Update codecov/codecov-action action to v7 by @renovate[bot] in https://github.com/bitwarden/android/pull/7333
+* [deps]: Update actions/checkout action to v7 by @renovate[bot] in https://github.com/bitwarden/android/pull/7332
+* [deps]: Lock file maintenance by @renovate[bot] in https://github.com/bitwarden/android/pull/7335
+* Update SDK to 3.0.0-8671-5d8ae614 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7320
+### 🎨 Other
+* llm: Dispatch bitwarden-software-engineer as a subagent for SDK-update evaluation by @SaintPatrck in https://github.com/bitwarden/android/pull/7313
+* llm: Exclude claude-code-action's restored config paths from the SDK-update push guard by @SaintPatrck in https://github.com/bitwarden/android/pull/7321
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.8.1-bwpm...v2026.9.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/34485247881
