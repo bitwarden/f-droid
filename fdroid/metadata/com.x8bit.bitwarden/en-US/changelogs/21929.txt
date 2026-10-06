@@ -1,0 +1,47 @@
+# Overview
+* Improved account security
+* Clearer password generator actions
+* Better TalkBack support across the app
+* Password fields no longer reveal their length
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.9-rc63 -->
+
+## What's Changed
+### ✨ Community Highlight
+* [PM-42349] fix: use fixed-length password mask by @488315 in https://github.com/bitwarden/android/pull/7293
+### :shipit: Feature Development
+* PM-43459: feat: Update how we hash the master password by @david-livefront in https://github.com/bitwarden/android/pull/7381
+* PM-43002: feat: Update inline generator UI by @david-livefront in https://github.com/bitwarden/android/pull/7394
+* [PM-41293] feat: Add identity field-key mapping to fill-assist by @aj-rosado in https://github.com/bitwarden/android/pull/7342
+* PM-27867: feat: Use SDK for prelogin API by @david-livefront in https://github.com/bitwarden/android/pull/7357
+* [PM-41294] feat: Build and fill identity autofill partitions through a multi-partition pipeline by @aj-rosado in https://github.com/bitwarden/android/pull/7369
+* [PM-41295] feat: Detect and fill extended address for identity autofill by @aj-rosado in https://github.com/bitwarden/android/pull/7371
+### 🐛 Bug fixes
+* PM-43235: bug: Remove edit button for disabled Send types by @david-livefront in https://github.com/bitwarden/android/pull/7374
+* PM-42349: bug: Hide static password mask when field is blank by @david-livefront in https://github.com/bitwarden/android/pull/7376
+* PM-43342, PM-43343, PM-43373: bug: Hide copy and share options from disabled Send by @david-livefront in https://github.com/bitwarden/android/pull/7377
+* PM-43353, PM-43354: bug: Update accessibility roles for improved TalkBack support by @david-livefront in https://github.com/bitwarden/android/pull/7378
+* VULN-988: bug: Additional GMS validation for CXP export by @david-livefront in https://github.com/bitwarden/android/pull/7367
+* PM-43354: bug: Fix Version copy button announcement by @david-livefront in https://github.com/bitwarden/android/pull/7400
+### ⚙️ Maintenance
+* [QA-2428] Add testTag to the Make a copy button on the View Send screen by @Corbet-BW in https://github.com/bitwarden/android/pull/7356
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7362
+* Chore: Update AGP and Gradle Wrapper to latest versions by @david-livefront in https://github.com/bitwarden/android/pull/7368
+* PM-43250: chore: Change email param on 'hashPassword' to salt by @david-livefront in https://github.com/bitwarden/android/pull/7372
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7385
+* Chore: Addresses minor lint warnings by @david-livefront in https://github.com/bitwarden/android/pull/7397
+### 📦 Dependency Updates
+* Update SDK to 3.0.0-8685-752729a9 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7355
+* [deps]: Update fastlane to v2.238.0 by @renovate[bot] in https://github.com/bitwarden/android/pull/7331
+* [deps]: Update kotlin by @renovate[bot] in https://github.com/bitwarden/android/pull/7387
+* [deps]: Update protobuf monorepo to v4.36.1 by @renovate[bot] in https://github.com/bitwarden/android/pull/7388
+* Update SDK to 3.0.0-8791-6e68a109 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7365
+* Update SDK to 3.0.0-8826-20e5595c by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7395
+### 🎨 Other
+* Add Basque language support by @SaintPatrck in https://github.com/bitwarden/android/pull/5059
+
+## New Contributors
+* @488315 made their first contribution in https://github.com/bitwarden/android/pull/7293
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.9.0-bwpm...v2026.9.1-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/35384637995
