@@ -1,0 +1,44 @@
+# Overview
+* View your new item after saving it
+* Fixed passkey sign-in failing on some sites
+* Fixed Clear clipboard not clearing copied items
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.10-rc64 -->
+
+## What's Changed
+### ✨ Community Highlight
+* [PM-40488] fix: clear clipboard setting does not clear the clipboard on Android 13+ by @mvanhorn in https://github.com/bitwarden/android/pull/7169
+### :shipit: Feature Development
+* [PM-41296] feat: Display Identities vault list when autofilling for an Identity by @aj-rosado in https://github.com/bitwarden/android/pull/7373
+* PM-39863: feat: Remove the Accepted Policies feature flag by @david-livefront in https://github.com/bitwarden/android/pull/7416
+* [PM-43011] feat: Land on newly created vault item after save by @aj-rosado in https://github.com/bitwarden/android/pull/7417
+* PM-37902: feat: handle key rotations by @david-livefront in https://github.com/bitwarden/android/pull/7420
+* PM-44047: feat: Hide create account button if environment is FedRamp by @david-livefront in https://github.com/bitwarden/android/pull/7421
+### 🐛 Bug fixes
+* bug: fix FedRamp url by @david-livefront in https://github.com/bitwarden/android/pull/7426
+* fix: Pin release candidate to Source Fastlane track to prevent stale promotions by @AmyLGalles in https://github.com/bitwarden/android/pull/7352
+* [PM-44191] fix: Passkey allowCredentials and excludeCredentials never match by @quexten in https://github.com/bitwarden/android/pull/7431
+* [PM-44192] fix: Keep server cipher data after vault migration by @quexten in https://github.com/bitwarden/android/pull/7432
+* [PM-44193] fix: Detect v2 logins for first-time coach marks by @quexten in https://github.com/bitwarden/android/pull/7433
+* PM-44295: bug: Add new cipher types to bulk sharing api model by @david-livefront in https://github.com/bitwarden/android/pull/7439
+### ⚙️ Maintenance
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7406
+* chore: Clean up vault unlock by @david-livefront in https://github.com/bitwarden/android/pull/7404
+* chore: Update PushManager to clarify Logout logic by @david-livefront in https://github.com/bitwarden/android/pull/7423
+* [QA-2565] Allow per-item testTags on overflow menu items by @Corbet-BW in https://github.com/bitwarden/android/pull/7424
+* [QA-2444] Add testTag to the Block Auto-fill dialog Save button by @Corbet-BW in https://github.com/bitwarden/android/pull/7425
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7429
+* chore: Minor cleanup of the BitwardenTextField and BitwardenPasswordField by @david-livefront in https://github.com/bitwarden/android/pull/7427
+* Fix for slack message parsing by @mpbw2 in https://github.com/bitwarden/android/pull/7411
+* chore: Add logger for the SDK by @david-livefront in https://github.com/bitwarden/android/pull/7403
+* Chore: Standardize all expanding headers to use BitwardenExpandingHeader by @david-livefront in https://github.com/bitwarden/android/pull/7440
+### 📦 Dependency Updates
+* Update SDK to 3.0.0-8933-5c534361 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7401
+* Update SDK to 3.0.0-8946-8b9fa3e2 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7413
+* Update SDK to 3.0.0-9018-167d44ec by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7418
+* [deps]: Update actions/setup-java action to v6 by @renovate[bot] in https://github.com/bitwarden/android/pull/7391
+* Update SDK to 4.0.0-9160-171b937c by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7430
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.9.1-bwpm...v2026.10.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/37054920732
