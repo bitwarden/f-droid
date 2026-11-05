@@ -1,0 +1,15 @@
+# Overview
+* Create a new login from the generator tab
+* Improved keyboard navigation
+* Fixed autofill crashes on Android 10
+* Fixed autofill selection being lost after editing an item
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.10-rc65 -->
+
+## What's Changed
+### 🐛 Bug fixes
+* 🍒 [PM-46265] fix: Install AGP's default NDK in CI so native libraries are stripped by @mpbw2 in https://github.com/bitwarden/android/pull/7568
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.10.1-bwpm...v2026.11.0-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/42044993988
