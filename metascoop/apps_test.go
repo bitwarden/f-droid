@@ -34,3 +34,15 @@ func TestRepoFile(t *testing.T) {
 		}
 	}
 }
+
+func TestIsIgnoredRelease(t *testing.T) {
+	if !apps.IsIgnoredRelease("v2026.10.1-bwpm") {
+		t.Errorf("expected v2026.10.1-bwpm to be ignored")
+	}
+	if apps.IsIgnoredRelease("v2026.11.0") {
+		t.Errorf("expected v2026.11.0 not to be ignored")
+	}
+	if apps.IsIgnoredRelease("") {
+		t.Errorf("expected empty tag not to be ignored")
+	}
+}
