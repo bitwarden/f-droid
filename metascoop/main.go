@@ -122,6 +122,10 @@ func main() {
 							log.Printf("Skipping release with empty tag name")
 							continue
 						}
+						if apps.IsIgnoredRelease(release.GetTagName()) {
+							log.Printf("Skipping ignored release %q\n", release.GetTagName())
+							continue
+						}
 
 						log.Printf("Working on release with tag name %q", release.GetTagName())
 						var apk *github.ReleaseAsset = apps.FindAPK(release, app.Filename)
