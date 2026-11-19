@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1793909824000,
+    "timestamp": 1795056755000,
     "version": 20002,
     "name": "Bitwarden F-Droid",
     "icon": "icon.png",
@@ -34,7 +34,7 @@
         "en-US": {
           "featureGraphic": "featureGraphic_Px0sqzJ1g3Dwebaukm0QlJrCbEX-byrjfz0DHq27wW4=.png",
           "icon": "icon_oHucFA9p31FP-JvzlsHvxnwcLZFbI5Thw7pZSHGdkMM=.png",
-          "whatsNew": "# Overview\n* Create a new login from the generator tab\n* Improved keyboard navigation\n* Fixed autofill crashes on Android 10\n* Fixed autofill selection being lost after editing an item\n\n<!-- Release notes generated using configuration in .github/release.yml at release/2026.10-rc65 -->\n\n## What's Changed\n### \ud83d\udc1b Bug fixes\n* \ud83c\udf52 [PM-46265] fix: Install AGP's default NDK in CI so native libraries are stripped by @mpbw2 in https://github.com/bitwarden/android/pull/7568\n\n\n**Full Changelog**: https://gith"
+          "whatsNew": "# Overview\nThis F-Droid-only release was created to address an issue with publishing. It contains everything in 2026.10.1 plus the required fix.\n\n<!-- Release notes generated using configuration in .github/release.yml at release/2026.10-rc65 -->\n\n## What's Changed\n### \ud83d\udc1b Bug fixes\n* \ud83c\udf52 [PM-46265] fix: Install AGP's default NDK in CI so native libraries are stripped by @mpbw2 in https://github.com/bitwarden/android/pull/7568\n\n\n**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.1"
         }
       }
     }

@@ -1,8 +1,5 @@
 # Overview
-* Create a new login from the generator tab
-* Improved keyboard navigation
-* Fixed autofill crashes on Android 10
-* Fixed autofill selection being lost after editing an item
+This F-Droid-only release was created to address an issue with publishing. It contains everything in 2026.10.1 plus the required fix.
 
 <!-- Release notes generated using configuration in .github/release.yml at release/2026.10-rc65 -->
 
