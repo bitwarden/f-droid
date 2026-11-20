@@ -1,19 +1,44 @@
 ---
 android:
   git: "https://github.com/bitwarden/android"
+  summary: "Securely store, share, and autofill passwords and passkeys anywhere."
   applications:
     - filename: "com.x8bit.bitwarden-fdroid.apk"
       id: "bitwarden"
-      name: "Bitwarden"
+      name: "Bitwarden Password Manager"
       categories:
         - Security
       description: |
-        Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices.
+        Bitwarden is the trusted open source password manager used by millions to secure their accounts from hackers and data breaches. Generate, save, and autofill strong passwords for every account on every device.
 
-        Password theft is a serious problem. The websites and apps that you use are under attack every day. Security breaches occur and your passwords are stolen. When you reuse the same passwords across apps and websites hackers can easily access your email, bank, and other important accounts.
+        Recognized by PCMag, WIRED, The Verge, CNET, G2, and more!
 
-        Security experts recommend that you use a different, randomly generated password for every account that you create. But how do you manage all those passwords? Bitwarden makes it easy for you to create, store, and access your passwords.
+        AUTOFILL EVERYTHING INSTANTLY
+        Never forget a password again. Autofill logins from anywhere, on any device.
 
-        Bitwarden stores all of your logins in an encrypted vault that syncs across all of your devices. Since it's fully encrypted before it ever leaves your device, only you have access to your data. Not even the team at Bitwarden can read your data, even if we wanted to. Your data is sealed with AES-256 bit encryption, salted hashing, and PBKDF2 SHA-256.
+        EASILY GENERATE STRONG PASSWORDS
+        Protect all accounts with long, complex, and unique passwords. Generate usernames and email aliases for added security.
 
-        Bitwarden is focused on open source software. The source code for Bitwarden is hosted on GitHub and everyone is free to review, audit, and contribute to the Bitwarden codebase.
+        A SECURE VAULT FOR SENSITIVE INFORMATION
+        Keep passkeys, payment cards, secure notes, identities, and more in the end-to-end encrypted vault that syncs everywhere.
+
+        SYNC PASSKEYS SECURELY
+        Create and store passkeys for your logins that you can use across your devices, regardless of browser, mobile device, or computer OS.
+
+        SHARE PASSWORDS SAFELY
+        Share logins with family or friends in a shared vault or use a secure link to directly share encrypted text, or vault items and files with Premium, with strong security controls.
+
+        ACCESS FROM ANY DEVICE
+        Use Bitwarden on your phone, tablet, and computer, in every major browser. Store unlimited passwords and sync across unlimited devices.
+
+        SECURITY YOU CAN VERIFY
+        Bitwarden codebase is open source, meaning it can be viewed by anyone to ensure it functions securely. Third-party security audits are published annually. There’s nothing to hide.
+
+        INDIVIDUALS AND FAMILIES
+        Bitwarden offers plans for everyone, even a basic free plan. Premium plans have even more features to make security easier, and a Families plan gives six users premium features and a shared vault.
+
+        TEAMS AND ENTERPRISE
+        Bitwarden secures businesses around the world. Features like Login with SSO, role-based access controls, SCIM provisioning, enterprise policies, reporting, and centralized ownership secure organizations of any size.
+
+        MORE FROM BITWARDEN
+        For developers and DevOps, Bitwarden Secrets Manager secures dev secrets, AI agents, and machine accounts and integrates with Bitwarden Password Manager.
