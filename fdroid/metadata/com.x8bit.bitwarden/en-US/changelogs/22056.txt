@@ -1,0 +1,57 @@
+# Overview
+* Collapse and expand vault sections
+* Refreshed look with a new font and tab icons
+* Fixed failed syncs not showing an error
+* Fixed occasional freezes when returning to the app
+
+<!-- Release notes generated using configuration in .github/release.yml at release/2026.11-rc66 -->
+
+## What's Changed
+### ✨ Community Highlight
+* [PM-44484] fix: surface unreachable-server sync failures by @mvanhorn in https://github.com/bitwarden/android/pull/7444
+* [PM-46131] fix: use consistent hyphens in password generator labels by @mvanhorn in https://github.com/bitwarden/android/pull/7556
+* [PM-46454] fix: surface local network permission recovery after IPv6 connection timeouts by @mvanhorn in https://github.com/bitwarden/android/pull/7581
+### :shipit: Feature Development
+* [PM-35396] feat: Add expand/collapse to vault section headers by @andrebispo5 in https://github.com/bitwarden/android/pull/7504
+* [PM-44807] feature: generator slider arrow key by @merrick-cr in https://github.com/bitwarden/android/pull/7535
+* PM-45521: feat: Update illustration colors by @david-livefront in https://github.com/bitwarden/android/pull/7538
+* PM-45846: feat: Update BottomNav icons by @david-livefront in https://github.com/bitwarden/android/pull/7540
+* PM-9502: feat: Update login copy to match updated designs by @david-livefront in https://github.com/bitwarden/android/pull/7561
+* [PM-34837] feat: Update app font to Inter by @andrebispo5 in https://github.com/bitwarden/android/pull/7564
+### 🐛 Bug fixes
+* [PM-44810] fix: Ignore "Vault Items" send type parsing [bug-factory poc] by @andrebispo5 in https://github.com/bitwarden/android/pull/7488
+* [PM-43467] fix: Send Device-Identifier header on unauthenticated requests by @aj-rosado in https://github.com/bitwarden/android/pull/7490
+* [PM-42843] fix: Stop date picker flashing when switching to calendar by @andrebispo5 in https://github.com/bitwarden/android/pull/7536
+* [PM-45908] t:bug Fix sync account Off-by-one error in authenticator bridge by @merrick-cr in https://github.com/bitwarden/android/pull/7547
+* [PM-44566] fix: Lock the Send password field when editing a Send with a password by @andrebispo5 in https://github.com/bitwarden/android/pull/7559
+* PM-39367: bug: When the billing API 404s, the 'Plan' row should be hidden from the UI by @david-livefront in https://github.com/bitwarden/android/pull/7546
+* [PM-46265] fix: Install AGP's default NDK in CI so native libraries are stripped by @mpbw2 in https://github.com/bitwarden/android/pull/7549
+* [PM-46257] fix: Query browser autofill status off the main thread by @aj-rosado in https://github.com/bitwarden/android/pull/7563
+### ⚙️ Maintenance
+* [PM-45006] chore: Migrate from glide to coil for async image loading by @david-livefront in https://github.com/bitwarden/android/pull/7465
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7494
+* [PM-33888] ci: Fix labeler workflow race condition by @vvolkgang in https://github.com/bitwarden/android/pull/7498
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7528
+* PM-45875: chore: Update key connector API to use salt instead of email by @david-livefront in https://github.com/bitwarden/android/pull/7499
+* PM-28629: chore: Remove key connector url from GetTokenResponse by @david-livefront in https://github.com/bitwarden/android/pull/7543
+* PM-45133: chore: Remove Premium Upgrade feature flag by @david-livefront in https://github.com/bitwarden/android/pull/7544
+* Crowdin Pull by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7553
+* [PM-46397] ci: Add F-Droid only option to GitHub release workflow by @mpbw2 in https://github.com/bitwarden/android/pull/7577
+* 🍒 PM-46860: chore: Remove the MigrateMyVaultToMyItems feature flag by @david-livefront in https://github.com/bitwarden/android/pull/7613
+### 📦 Dependency Updates
+* [PM-45008] deps: Migrate the app from Room to Room3 by @david-livefront in https://github.com/bitwarden/android/pull/7471
+* Update SDK to 4.0.0-9547-06f2c6f3 by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7459
+* [deps]: Update kotlin to v2.4.21 by @renovate[bot] in https://github.com/bitwarden/android/pull/7532
+* Update SDK to 4.0.0-9737-d9119f7a by @bw-ghapp[bot] in https://github.com/bitwarden/android/pull/7501
+* deps: Update OkHttp to v5.5.1 by @david-livefront in https://github.com/bitwarden/android/pull/7545
+* [deps]: Update fastlane to v2.241.1 by @renovate[bot] in https://github.com/bitwarden/android/pull/7390
+* [deps]: Update nkf to v0.3.0 by @renovate[bot] in https://github.com/bitwarden/android/pull/7475
+* [deps]: Update time to v0.5.0 by @renovate[bot] in https://github.com/bitwarden/android/pull/7533
+* [deps]: Update org.jetbrains.kotlinx:kotlinx-serialization-json to v1.12.0 by @renovate[bot] in https://github.com/bitwarden/android/pull/7562
+### 🎨 Other
+* chore: Add new policy types by @david-livefront in https://github.com/bitwarden/android/pull/7537
+* chore: Bump semantic version to 2026.11.0 by @david-livefront in https://github.com/bitwarden/android/pull/7541
+
+
+**Full Changelog**: https://github.com/bitwarden/android/compare/v2026.11.0-bwpm...v2026.11.1-bwpm
+**Builds Source:** https://github.com/bitwarden/android/actions/runs/43461222793
